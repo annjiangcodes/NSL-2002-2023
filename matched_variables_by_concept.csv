@@ -1,0 +1,859 @@
+year,raw_variable_name,label,matched_concepts,matched_keywords
+2002,QN20,"Q.20 Do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?",border_immigration,illegal
+2002,QN20,"Q.20 Do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?",border_immigration,illegal
+2002,CITIZEN2,Recoded citizen,citizenship,citizen
+2002,CITIZEN2,Recoded citizen,citizenship,citizen
+2002,QN68,Q.68 Now we would like to ask you about US citizenship. Are you...?,citizenship,citizen
+2002,QN68,Q.68 Now we would like to ask you about US citizenship. Are you...?,citizenship,citizen
+2002,QN69,Q.69 What year did you become a citizen?,citizenship,citizen
+2002,QN69,Q.69 What year did you become a citizen?,citizenship,citizen
+2002,QN83,"Q.83 As you may know, some countries allow people to be legal citizens of their country even if they are also US citizens. Are you a legal citizen of your country or origin?",citizenship,citizen
+2002,QN83,"Q.83 As you may know, some countries allow people to be legal citizens of their country even if they are also US citizens. Are you a legal citizen of your country or origin?",citizenship,citizen
+2002,REC_69,1996 Citizen,citizenship,citizen
+2002,REC_69,1996 Citizen,citizenship,citizen
+2002,RQN69,What year did you become a citizen?,citizenship,citizen
+2002,RQN69,What year did you become a citizen?,citizenship,citizen
+2002,QN11_34,Q.11 What do you think are the two most important issues for the government to address?- Senior citizens/more help for the elderly,citizenship; political_attitudes,citizen; government
+2002,QN11_34,Q.11 What do you think are the two most important issues for the government to address?- Senior citizens/more help for the elderly,citizenship; political_attitudes,citizen; government
+2002,FORBORN2,Foreign Born (W/ PR as US born),generation,us born
+2002,FORBORN2,Foreign Born (W/ PR as US born),generation,us born
+2002,GEN1TO2,Generation (PR as gen 2),generation,generation
+2002,GEN1TO2,Generation (PR as gen 2),generation,generation
+2002,GEN1TO4,Generation (PR as gen 1),generation,generation
+2002,GEN1TO4,Generation (PR as gen 1),generation,generation
+2002,QN23,"Q.23 Do you think there are too many, too few, or about the right amount of immigrants living in the United States today?",immigration,immigrant
+2002,QN23,"Q.23 Do you think there are too many, too few, or about the right amount of immigrants living in the United States today?",immigration,immigrant
+2002,QN28,Q.28 Do you think adult Latino/Hispanic immigrants need to learn to speak English to succeed in the US or can they succeed even if they only speak Spanish?,immigration,immigrant
+2002,QN28,Q.28 Do you think adult Latino/Hispanic immigrants need to learn to speak English to succeed in the US or can they succeed even if they only speak Spanish?,immigration,immigrant
+2002,QN30,"Q.30 If you were talking to a Latino/Hispanic immigrant who had just arrived in this country, which of the following statements offers the best advice?",immigration,immigrant
+2002,QN30,"Q.30 If you were talking to a Latino/Hispanic immigrant who had just arrived in this country, which of the following statements offers the best advice?",immigration,immigrant
+2002,QN31,"Q.31 Again, which is the best advice to a recently arrived Latino/Hispanic immigrant?",immigration,immigrant
+2002,QN31,"Q.31 Again, which is the best advice to a recently arrived Latino/Hispanic immigrant?",immigration,immigrant
+2002,QN25,Q.25 Some people say UNDOCUMENTED OR ILLEGAL immigrants help the economy by providing low-cost labor. Others say they hurt the economy by driving wages down. Which is closer to your views?,immigration; border_immigration,immigrant; undocumented
+2002,QN25,Q.25 Some people say UNDOCUMENTED OR ILLEGAL immigrants help the economy by providing low-cost labor. Others say they hurt the economy by driving wages down. Which is closer to your views?,immigration; border_immigration,immigrant; undocumented
+2002,QN26,Q.26 What would you think of a proposal that would give many of the undocumented or illegal Latino/Hispanic immigrants working in the U.S. a chance to obtain legal status? Is this something you would favor or oppose?,immigration; citizenship; border_immigration,immigrant; legal status; undocumented
+2002,QN26,Q.26 What would you think of a proposal that would give many of the undocumented or illegal Latino/Hispanic immigrants working in the U.S. a chance to obtain legal status? Is this something you would favor or oppose?,immigration; citizenship; border_immigration,immigrant; legal status; undocumented
+2002,QN12_87,Q.12 What do you think are the two most important health care issues for the government to address?- Immigrants/help immigrants,immigration; political_attitudes,immigrant; government
+2002,QN12_87,Q.12 What do you think are the two most important health care issues for the government to address?- Immigrants/help immigrants,immigration; political_attitudes,immigrant; government
+2002,QN11_33,Q.11 What do you think are the two most important issues for the government to address?- Immigration/illegal alien issues (general),immigration; political_attitudes; border_immigration,immigration; government; illegal
+2002,QN11_33,Q.11 What do you think are the two most important issues for the government to address?- Immigration/illegal alien issues (general),immigration; political_attitudes; border_immigration,immigration; government; illegal
+2002,PARTLEAN,Q.90/91. Combination Leaned Party Table,political_attitudes,party
+2002,PARTLEAN,Q.90/91. Combination Leaned Party Table,political_attitudes,party
+2002,Q12_1,Q.12 What do you think are the two most important health care issues for the government to address?- Diseases,political_attitudes,government
+2002,Q12_1,Q.12 What do you think are the two most important health care issues for the government to address?- Diseases,political_attitudes,government
+2002,Q12_10,Q.12 What do you think are the two most important health care issues for the government to address?- Social Issues Related to Health,political_attitudes,government
+2002,Q12_10,Q.12 What do you think are the two most important health care issues for the government to address?- Social Issues Related to Health,political_attitudes,government
+2002,Q12_11,Q.12 What do you think are the two most important health care issues for the government to address?- Terrorism/Public Safety,political_attitudes,government
+2002,Q12_11,Q.12 What do you think are the two most important health care issues for the government to address?- Terrorism/Public Safety,political_attitudes,government
+2002,Q12_12,Q.12 What do you think are the two most important health care issues for the government to address?- Other,political_attitudes,government
+2002,Q12_12,Q.12 What do you think are the two most important health care issues for the government to address?- Other,political_attitudes,government
+2002,Q12_13,Q.12 What do you think are the two most important health care issues for the government to address?- Medicaid,political_attitudes,government
+2002,Q12_13,Q.12 What do you think are the two most important health care issues for the government to address?- Medicaid,political_attitudes,government
+2002,Q12_14,Q.12 What do you think are the two most important health care issues for the government to address?- None,political_attitudes,government
+2002,Q12_14,Q.12 What do you think are the two most important health care issues for the government to address?- None,political_attitudes,government
+2002,Q12_15,Q.12 What do you think are the two most important health care issues for the government to address?- Don't Know,political_attitudes,government
+2002,Q12_15,Q.12 What do you think are the two most important health care issues for the government to address?- Don't Know,political_attitudes,government
+2002,Q12_16,Q.12 What do you think are the two most important health care issues for the government to address?- Refused,political_attitudes,government
+2002,Q12_16,Q.12 What do you think are the two most important health care issues for the government to address?- Refused,political_attitudes,government
+2002,Q12_2,Q.12 What do you think are the two most important health care issues for the government to address?- Lifestyle,political_attitudes,government
+2002,Q12_2,Q.12 What do you think are the two most important health care issues for the government to address?- Lifestyle,political_attitudes,government
+2002,Q12_3,Q.12 What do you think are the two most important health care issues for the government to address?- Perscription Drugs,political_attitudes,government
+2002,Q12_3,Q.12 What do you think are the two most important health care issues for the government to address?- Perscription Drugs,political_attitudes,government
+2002,Q12_4,Q.12 What do you think are the two most important health care issues for the government to address?- Healthcare Costs General and HC Access,political_attitudes,government
+2002,Q12_4,Q.12 What do you think are the two most important health care issues for the government to address?- Healthcare Costs General and HC Access,political_attitudes,government
+2002,Q12_5,Q.12 What do you think are the two most important health care issues for the government to address?- Health Insurance,political_attitudes,government
+2002,Q12_5,Q.12 What do you think are the two most important health care issues for the government to address?- Health Insurance,political_attitudes,government
+2002,Q12_6,Q.12 What do you think are the two most important health care issues for the government to address?- Elderly Perscription Drugs,political_attitudes,government
+2002,Q12_6,Q.12 What do you think are the two most important health care issues for the government to address?- Elderly Perscription Drugs,political_attitudes,government
+2002,Q12_7,Q.12 What do you think are the two most important health care issues for the government to address?- Medicare/Elderly,political_attitudes,government
+2002,Q12_7,Q.12 What do you think are the two most important health care issues for the government to address?- Medicare/Elderly,political_attitudes,government
+2002,Q12_8,Q.12 What do you think are the two most important health care issues for the government to address?- Issues related to Healthcare Professional,political_attitudes,government
+2002,Q12_8,Q.12 What do you think are the two most important health care issues for the government to address?- Issues related to Healthcare Professional,political_attitudes,government
+2002,Q12_9,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance Issues,political_attitudes,government
+2002,Q12_9,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance Issues,political_attitudes,government
+2002,QN10,"Q.10 Some people believe that Religious, charitable and community organizations can do the best job of providing services to people in need. Others believe that The government can do the best job. Which is closer to your view?",political_attitudes,government
+2002,QN10,"Q.10 Some people believe that Religious, charitable and community organizations can do the best job of providing services to people in need. Others believe that The government can do the best job. Which is closer to your view?",political_attitudes,government
+2002,QN1101,Q.11 What do you think are the two most important issues for the government to address?,political_attitudes,government
+2002,QN1101,Q.11 What do you think are the two most important issues for the government to address?,political_attitudes,government
+2002,QN1102,Q.11 What do you think are the two most important issues for the government to address?,political_attitudes,government
+2002,QN1102,Q.11 What do you think are the two most important issues for the government to address?,political_attitudes,government
+2002,QN1103,Q.11 What do you think are the two most important issues for the government to address?,political_attitudes,government
+2002,QN1103,Q.11 What do you think are the two most important issues for the government to address?,political_attitudes,government
+2002,QN11_01,Q.11 What do you think are the two most important issues for the government to address?- Healthcare/healthcare reform,political_attitudes,government
+2002,QN11_01,Q.11 What do you think are the two most important issues for the government to address?- Healthcare/healthcare reform,political_attitudes,government
+2002,QN11_02,Q.11 What do you think are the two most important issues for the government to address?- Medicare,political_attitudes,government
+2002,QN11_02,Q.11 What do you think are the two most important issues for the government to address?- Medicare,political_attitudes,government
+2002,QN11_03,Q.11 What do you think are the two most important issues for the government to address?- Prescription drug costs are too high,political_attitudes,government
+2002,QN11_03,Q.11 What do you think are the two most important issues for the government to address?- Prescription drug costs are too high,political_attitudes,government
+2002,QN11_04,Q.11 What do you think are the two most important issues for the government to address?- Other healthcare,political_attitudes,government
+2002,QN11_04,Q.11 What do you think are the two most important issues for the government to address?- Other healthcare,political_attitudes,government
+2002,QN11_05,Q.11 What do you think are the two most important issues for the government to address?- The economy,political_attitudes,government
+2002,QN11_05,Q.11 What do you think are the two most important issues for the government to address?- The economy,political_attitudes,government
+2002,QN11_06,Q.11 What do you think are the two most important issues for the government to address?- Better wages/increase minimum wage,political_attitudes,government
+2002,QN11_06,Q.11 What do you think are the two most important issues for the government to address?- Better wages/increase minimum wage,political_attitudes,government
+2002,QN11_07,Q.11 What do you think are the two most important issues for the government to address?- Unemployment/create more jobs,political_attitudes,government
+2002,QN11_07,Q.11 What do you think are the two most important issues for the government to address?- Unemployment/create more jobs,political_attitudes,government
+2002,QN11_08,Q.11 What do you think are the two most important issues for the government to address?- Poverty/more help for the poor/homeless,political_attitudes,government
+2002,QN11_08,Q.11 What do you think are the two most important issues for the government to address?- Poverty/more help for the poor/homeless,political_attitudes,government
+2002,QN11_09,Q.11 What do you think are the two most important issues for the government to address?- Welfare/welfare reform,political_attitudes,government
+2002,QN11_09,Q.11 What do you think are the two most important issues for the government to address?- Welfare/welfare reform,political_attitudes,government
+2002,QN11_10,Q.11 What do you think are the two most important issues for the government to address?- Housing/better housing for low income,political_attitudes,government
+2002,QN11_10,Q.11 What do you think are the two most important issues for the government to address?- Housing/better housing for low income,political_attitudes,government
+2002,QN11_11,Q.11 What do you think are the two most important issues for the government to address?- Other economical,political_attitudes,government
+2002,QN11_11,Q.11 What do you think are the two most important issues for the government to address?- Other economical,political_attitudes,government
+2002,QN11_12,Q.11 What do you think are the two most important issues for the government to address?- The election process/revamping the voting process,political_attitudes,government
+2002,QN11_12,Q.11 What do you think are the two most important issues for the government to address?- The election process/revamping the voting process,political_attitudes,government
+2002,QN11_13,Q.11 What do you think are the two most important issues for the government to address?- National budget/deficit/reducing the nation's deficit,political_attitudes,government
+2002,QN11_13,Q.11 What do you think are the two most important issues for the government to address?- National budget/deficit/reducing the nation's deficit,political_attitudes,government
+2002,QN11_14,Q.11 What do you think are the two most important issues for the government to address?- Foreign policy/foreign relations,political_attitudes,government
+2002,QN11_14,Q.11 What do you think are the two most important issues for the government to address?- Foreign policy/foreign relations,political_attitudes,government
+2002,QN11_15,Q.11 What do you think are the two most important issues for the government to address?- World peace/peace in the Middle East,political_attitudes,government
+2002,QN11_15,Q.11 What do you think are the two most important issues for the government to address?- World peace/peace in the Middle East,political_attitudes,government
+2002,QN11_16,Q.11 What do you think are the two most important issues for the government to address?- Military/national defense/strengthen our country's defense,political_attitudes,government
+2002,QN11_16,Q.11 What do you think are the two most important issues for the government to address?- Military/national defense/strengthen our country's defense,political_attitudes,government
+2002,QN11_17,Q.11 What do you think are the two most important issues for the government to address?- Campaign finance reform,political_attitudes,government
+2002,QN11_17,Q.11 What do you think are the two most important issues for the government to address?- Campaign finance reform,political_attitudes,government
+2002,QN11_18,Q.11 What do you think are the two most important issues for the government to address?- Honesty in government,political_attitudes,government
+2002,QN11_18,Q.11 What do you think are the two most important issues for the government to address?- Honesty in government,political_attitudes,government
+2002,QN11_19,Q.11 What do you think are the two most important issues for the government to address?- Keep government out of our lives,political_attitudes,government
+2002,QN11_19,Q.11 What do you think are the two most important issues for the government to address?- Keep government out of our lives,political_attitudes,government
+2002,QN11_20,Q.11 What do you think are the two most important issues for the government to address?- Other governmental/political issues,political_attitudes,government
+2002,QN11_20,Q.11 What do you think are the two most important issues for the government to address?- Other governmental/political issues,political_attitudes,government
+2002,QN11_21,Q.11 What do you think are the two most important issues for the government to address?- Crime/violence,political_attitudes,government
+2002,QN11_21,Q.11 What do you think are the two most important issues for the government to address?- Crime/violence,political_attitudes,government
+2002,QN11_22,Q.11 What do you think are the two most important issues for the government to address?- Drug problems,political_attitudes,government
+2002,QN11_22,Q.11 What do you think are the two most important issues for the government to address?- Drug problems,political_attitudes,government
+2002,QN11_23,Q.11 What do you think are the two most important issues for the government to address?- Gun control/gun laws,political_attitudes,government
+2002,QN11_23,Q.11 What do you think are the two most important issues for the government to address?- Gun control/gun laws,political_attitudes,government
+2002,QN11_24,Q.11 What do you think are the two most important issues for the government to address?- Racism/civil rights,political_attitudes,government
+2002,QN11_24,Q.11 What do you think are the two most important issues for the government to address?- Racism/civil rights,political_attitudes,government
+2002,QN11_25,Q.11 What do you think are the two most important issues for the government to address?- Other unlawful,political_attitudes,government
+2002,QN11_25,Q.11 What do you think are the two most important issues for the government to address?- Other unlawful,political_attitudes,government
+2002,QN11_26,Q.11 What do you think are the two most important issues for the government to address?- Education/school system/better schooling,political_attitudes,government
+2002,QN11_26,Q.11 What do you think are the two most important issues for the government to address?- Education/school system/better schooling,political_attitudes,government
+2002,QN11_27,Q.11 What do you think are the two most important issues for the government to address?- Taxes/tax reform,political_attitudes,government
+2002,QN11_27,Q.11 What do you think are the two most important issues for the government to address?- Taxes/tax reform,political_attitudes,government
+2002,QN11_28,Q.11 What do you think are the two most important issues for the government to address?- Social security,political_attitudes,government
+2002,QN11_28,Q.11 What do you think are the two most important issues for the government to address?- Social security,political_attitudes,government
+2002,QN11_29,Q.11 What do you think are the two most important issues for the government to address?- Environmental issues/lack of concern for the environment,political_attitudes,government
+2002,QN11_29,Q.11 What do you think are the two most important issues for the government to address?- Environmental issues/lack of concern for the environment,political_attitudes,government
+2002,QN11_30,"Q.11 What do you think are the two most important issues for the government to address?- Utility rates/gas, electric and oil rates",political_attitudes,government
+2002,QN11_30,"Q.11 What do you think are the two most important issues for the government to address?- Utility rates/gas, electric and oil rates",political_attitudes,government
+2002,QN11_31,Q.11 What do you think are the two most important issues for the government to address?- Abortion issues,political_attitudes,government
+2002,QN11_31,Q.11 What do you think are the two most important issues for the government to address?- Abortion issues,political_attitudes,government
+2002,QN11_32,Q.11 What do you think are the two most important issues for the government to address?- Moral values,political_attitudes,government
+2002,QN11_32,Q.11 What do you think are the two most important issues for the government to address?- Moral values,political_attitudes,government
+2002,QN11_35,Q.11 What do you think are the two most important issues for the government to address?- Energy crisis,political_attitudes,government
+2002,QN11_35,Q.11 What do you think are the two most important issues for the government to address?- Energy crisis,political_attitudes,government
+2002,QN11_36,Q.11 What do you think are the two most important issues for the government to address?- Childcare/childcare reform,political_attitudes,government
+2002,QN11_36,Q.11 What do you think are the two most important issues for the government to address?- Childcare/childcare reform,political_attitudes,government
+2002,QN11_37,Q.11 What do you think are the two most important issues for the government to address?- Terrorism/events of 9/11,political_attitudes,government
+2002,QN11_37,Q.11 What do you think are the two most important issues for the government to address?- Terrorism/events of 9/11,political_attitudes,government
+2002,QN11_38,Q.11 What do you think are the two most important issues for the government to address?- Aids,political_attitudes,government
+2002,QN11_38,Q.11 What do you think are the two most important issues for the government to address?- Aids,political_attitudes,government
+2002,QN11_39,Q.11 What do you think are the two most important issues for the government to address?- Cancer,political_attitudes,government
+2002,QN11_39,Q.11 What do you think are the two most important issues for the government to address?- Cancer,political_attitudes,government
+2002,QN11_40,Q.11 What do you think are the two most important issues for the government to address?- Hispanic issues/help Hispanics,political_attitudes,government
+2002,QN11_40,Q.11 What do you think are the two most important issues for the government to address?- Hispanic issues/help Hispanics,political_attitudes,government
+2002,QN11_41,Q.11 What do you think are the two most important issues for the government to address?- Religion/religious/churches,political_attitudes,government
+2002,QN11_41,Q.11 What do you think are the two most important issues for the government to address?- Religion/religious/churches,political_attitudes,government
+2002,QN11_42,Q.11 What do you think are the two most important issues for the government to address?- Teenagers/youth/teen issues,political_attitudes,government
+2002,QN11_42,Q.11 What do you think are the two most important issues for the government to address?- Teenagers/youth/teen issues,political_attitudes,government
+2002,QN11_43,Q.11 What do you think are the two most important issues for the government to address?- Foreign aid/help our people first/well being of our people,political_attitudes,government
+2002,QN11_43,Q.11 What do you think are the two most important issues for the government to address?- Foreign aid/help our people first/well being of our people,political_attitudes,government
+2002,QN11_96,Q.11 What do you think are the two most important issues for the government to address?- None,political_attitudes,government
+2002,QN11_96,Q.11 What do you think are the two most important issues for the government to address?- None,political_attitudes,government
+2002,QN11_97,Q.11 What do you think are the two most important issues for the government to address?- Other,political_attitudes,government
+2002,QN11_97,Q.11 What do you think are the two most important issues for the government to address?- Other,political_attitudes,government
+2002,QN11_98,Q.11 What do you think are the two most important issues for the government to address?- Don't Know,political_attitudes,government
+2002,QN11_98,Q.11 What do you think are the two most important issues for the government to address?- Don't Know,political_attitudes,government
+2002,QN11_99,Q.11 What do you think are the two most important issues for the government to address?- Refused,political_attitudes,government
+2002,QN11_99,Q.11 What do you think are the two most important issues for the government to address?- Refused,political_attitudes,government
+2002,QN1201,Q.12 What do you think are the two most important health care issues for the government to address?,political_attitudes,government
+2002,QN1201,Q.12 What do you think are the two most important health care issues for the government to address?,political_attitudes,government
+2002,QN1202,Q.12 What do you think are the two most important health care issues for the government to address?,political_attitudes,government
+2002,QN1202,Q.12 What do you think are the two most important health care issues for the government to address?,political_attitudes,government
+2002,QN1203,Q.12 What do you think are the two most important health care issues for the government to address?,political_attitudes,government
+2002,QN1203,Q.12 What do you think are the two most important health care issues for the government to address?,political_attitudes,government
+2002,QN12_01,Q.12 What do you think are the two most important health care issues for the government to address?- Heart/heart disease (heart conditon/heart failure),political_attitudes,government
+2002,QN12_01,Q.12 What do you think are the two most important health care issues for the government to address?- Heart/heart disease (heart conditon/heart failure),political_attitudes,government
+2002,QN12_02,Q.12 What do you think are the two most important health care issues for the government to address?- Heart attack,political_attitudes,government
+2002,QN12_02,Q.12 What do you think are the two most important health care issues for the government to address?- Heart attack,political_attitudes,government
+2002,QN12_03,Q.12 What do you think are the two most important health care issues for the government to address?- Blood pressure/high blood pressure/hypertension,political_attitudes,government
+2002,QN12_03,Q.12 What do you think are the two most important health care issues for the government to address?- Blood pressure/high blood pressure/hypertension,political_attitudes,government
+2002,QN12_04,Q.12 What do you think are the two most important health care issues for the government to address?- Stroke,political_attitudes,government
+2002,QN12_04,Q.12 What do you think are the two most important health care issues for the government to address?- Stroke,political_attitudes,government
+2002,QN12_05,Q.12 What do you think are the two most important health care issues for the government to address?- Cancer,political_attitudes,government
+2002,QN12_05,Q.12 What do you think are the two most important health care issues for the government to address?- Cancer,political_attitudes,government
+2002,QN12_06,Q.12 What do you think are the two most important health care issues for the government to address?- Hiv/aids,political_attitudes,government
+2002,QN12_06,Q.12 What do you think are the two most important health care issues for the government to address?- Hiv/aids,political_attitudes,government
+2002,QN12_07,Q.12 What do you think are the two most important health care issues for the government to address?- Diabetes,political_attitudes,government
+2002,QN12_07,Q.12 What do you think are the two most important health care issues for the government to address?- Diabetes,political_attitudes,government
+2002,QN12_08,Q.12 What do you think are the two most important health care issues for the government to address?- Arthritis,political_attitudes,government
+2002,QN12_08,Q.12 What do you think are the two most important health care issues for the government to address?- Arthritis,political_attitudes,government
+2002,QN12_09,Q.12 What do you think are the two most important health care issues for the government to address?- Alzheimer's,political_attitudes,government
+2002,QN12_09,Q.12 What do you think are the two most important health care issues for the government to address?- Alzheimer's,political_attitudes,government
+2002,QN12_10,Q.12 What do you think are the two most important health care issues for the government to address?- Std's,political_attitudes,government
+2002,QN12_10,Q.12 What do you think are the two most important health care issues for the government to address?- Std's,political_attitudes,government
+2002,QN12_11,Q.12 What do you think are the two most important health care issues for the government to address?- Respiratory conditions/lung disease,political_attitudes,government
+2002,QN12_11,Q.12 What do you think are the two most important health care issues for the government to address?- Respiratory conditions/lung disease,political_attitudes,government
+2002,QN12_12,Q.12 What do you think are the two most important health care issues for the government to address?- Cholesterol,political_attitudes,government
+2002,QN12_12,Q.12 What do you think are the two most important health care issues for the government to address?- Cholesterol,political_attitudes,government
+2002,QN12_13,Q.12 What do you think are the two most important health care issues for the government to address?- Mental health/depression,political_attitudes,government
+2002,QN12_13,Q.12 What do you think are the two most important health care issues for the government to address?- Mental health/depression,political_attitudes,government
+2002,QN12_14,Q.12 What do you think are the two most important health care issues for the government to address?- Obesity/being overweight (over eating),political_attitudes,government
+2002,QN12_14,Q.12 What do you think are the two most important health care issues for the government to address?- Obesity/being overweight (over eating),political_attitudes,government
+2002,QN12_15,Q.12 What do you think are the two most important health care issues for the government to address?- Other diseases,political_attitudes,government
+2002,QN12_15,Q.12 What do you think are the two most important health care issues for the government to address?- Other diseases,political_attitudes,government
+2002,QN12_16,Q.12 What do you think are the two most important health care issues for the government to address?- Drug abuse,political_attitudes,government
+2002,QN12_16,Q.12 What do you think are the two most important health care issues for the government to address?- Drug abuse,political_attitudes,government
+2002,QN12_17,Q.12 What do you think are the two most important health care issues for the government to address?- Smoking/tobacco (teen smoking,political_attitudes,government
+2002,QN12_17,Q.12 What do you think are the two most important health care issues for the government to address?- Smoking/tobacco (teen smoking,political_attitudes,government
+2002,QN12_18,Q.12 What do you think are the two most important health care issues for the government to address?- Alcohol/drinking too much,political_attitudes,government
+2002,QN12_18,Q.12 What do you think are the two most important health care issues for the government to address?- Alcohol/drinking too much,political_attitudes,government
+2002,QN12_19,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of exercise/inactivity,political_attitudes,government
+2002,QN12_19,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of exercise/inactivity,political_attitudes,government
+2002,QN12_20,Q.12 What do you think are the two most important health care issues for the government to address?- Other lifestyle,political_attitudes,government
+2002,QN12_20,Q.12 What do you think are the two most important health care issues for the government to address?- Other lifestyle,political_attitudes,government
+2002,QN12_21,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of drugs/prescription drugs (paying fro rx),political_attitudes,government
+2002,QN12_21,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of drugs/prescription drugs (paying fro rx),political_attitudes,government
+2002,QN12_22,Q.12 What do you think are the two most important health care issues for the government to address?- Cost/high cost (affordability/bills) (n.s.),political_attitudes,government
+2002,QN12_22,Q.12 What do you think are the two most important health care issues for the government to address?- Cost/high cost (affordability/bills) (n.s.),political_attitudes,government
+2002,QN12_23,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of healthcare/health services,political_attitudes,government
+2002,QN12_23,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of healthcare/health services,political_attitudes,government
+2002,QN12_24,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of doctors (affording to go to doctor),political_attitudes,government
+2002,QN12_24,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of doctors (affording to go to doctor),political_attitudes,government
+2002,QN12_25,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of insurance,political_attitudes,government
+2002,QN12_25,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of insurance,political_attitudes,government
+2002,QN12_26,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of rx/healthcare for elderly/too high,political_attitudes,government
+2002,QN12_26,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of rx/healthcare for elderly/too high,political_attitudes,government
+2002,QN12_27,Q.12 What do you think are the two most important health care issues for the government to address?- Other cost,political_attitudes,government
+2002,QN12_27,Q.12 What do you think are the two most important health care issues for the government to address?- Other cost,political_attitudes,government
+2002,QN12_28,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of (healthcare) insurance (getting it/availability),political_attitudes,government
+2002,QN12_28,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of (healthcare) insurance (getting it/availability),political_attitudes,government
+2002,QN12_29,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of national healthcare,political_attitudes,government
+2002,QN12_29,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of national healthcare,political_attitudes,government
+2002,QN12_30,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of healthcare for poor/lower income/minorities,political_attitudes,government
+2002,QN12_30,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of healthcare for poor/lower income/minorities,political_attitudes,government
+2002,QN12_31,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of coverage/insurance for poor/lower income/minorities,political_attitudes,government
+2002,QN12_31,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of coverage/insurance for poor/lower income/minorities,political_attitudes,government
+2002,QN12_32,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of insurance/healthcare for children,political_attitudes,government
+2002,QN12_32,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of insurance/healthcare for children,political_attitudes,government
+2002,QN12_33,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of healthcare/availability/not enough (unsp),political_attitudes,government
+2002,QN12_33,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of healthcare/availability/not enough (unsp),political_attitudes,government
+2002,QN12_34,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance/health insurance (n.s.),political_attitudes,government
+2002,QN12_34,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance/health insurance (n.s.),political_attitudes,government
+2002,QN12_35,Q.12 What do you think are the two most important health care issues for the government to address?- Inadequate coverage,political_attitudes,government
+2002,QN12_35,Q.12 What do you think are the two most important health care issues for the government to address?- Inadequate coverage,political_attitudes,government
+2002,QN12_36,Q.12 What do you think are the two most important health care issues for the government to address?- Medicare/changes,political_attitudes,government
+2002,QN12_36,Q.12 What do you think are the two most important health care issues for the government to address?- Medicare/changes,political_attitudes,government
+2002,QN12_37,Q.12 What do you think are the two most important health care issues for the government to address?- Healthcare for elderly,political_attitudes,government
+2002,QN12_37,Q.12 What do you think are the two most important health care issues for the government to address?- Healthcare for elderly,political_attitudes,government
+2002,QN12_38,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of preventative care/programs to stay healthy,political_attitudes,government
+2002,QN12_38,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of preventative care/programs to stay healthy,political_attitudes,government
+2002,QN12_39,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of quality healthcare/doctors who care,political_attitudes,government
+2002,QN12_39,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of quality healthcare/doctors who care,political_attitudes,government
+2002,QN12_40,Q.12 What do you think are the two most important health care issues for the government to address?- Access to healthcare/health services,political_attitudes,government
+2002,QN12_40,Q.12 What do you think are the two most important health care issues for the government to address?- Access to healthcare/health services,political_attitudes,government
+2002,QN12_41,Q.12 What do you think are the two most important health care issues for the government to address?- Long term healthcare,political_attitudes,government
+2002,QN12_41,Q.12 What do you think are the two most important health care issues for the government to address?- Long term healthcare,political_attitudes,government
+2002,QN12_42,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance doesn't cover enough services/procedures (unsp),political_attitudes,government
+2002,QN12_42,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance doesn't cover enough services/procedures (unsp),political_attitudes,government
+2002,QN12_43,Q.12 What do you think are the two most important health care issues for the government to address?- Other healthcare/insurance/coverage,political_attitudes,government
+2002,QN12_43,Q.12 What do you think are the two most important health care issues for the government to address?- Other healthcare/insurance/coverage,political_attitudes,government
+2002,QN12_44,Q.12 What do you think are the two most important health care issues for the government to address?- Shortage of healthcare professionals/doctors,political_attitudes,government
+2002,QN12_44,Q.12 What do you think are the two most important health care issues for the government to address?- Shortage of healthcare professionals/doctors,political_attitudes,government
+2002,QN12_45,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of qualified medical professionals/doctors,political_attitudes,government
+2002,QN12_45,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of qualified medical professionals/doctors,political_attitudes,government
+2002,QN12_46,Q.12 What do you think are the two most important health care issues for the government to address?- Other healthcare professionals,political_attitudes,government
+2002,QN12_46,Q.12 What do you think are the two most important health care issues for the government to address?- Other healthcare professionals,political_attitudes,government
+2002,QN12_47,Q.12 What do you think are the two most important health care issues for the government to address?- Improper diet (high fat),political_attitudes,government
+2002,QN12_47,Q.12 What do you think are the two most important health care issues for the government to address?- Improper diet (high fat),political_attitudes,government
+2002,QN12_48,Q.12 What do you think are the two most important health care issues for the government to address?- Malnutrition,political_attitudes,government
+2002,QN12_48,Q.12 What do you think are the two most important health care issues for the government to address?- Malnutrition,political_attitudes,government
+2002,QN12_49,Q.12 What do you think are the two most important health care issues for the government to address?- Other poor nutrition,political_attitudes,government
+2002,QN12_49,Q.12 What do you think are the two most important health care issues for the government to address?- Other poor nutrition,political_attitudes,government
+2002,QN12_50,Q.12 What do you think are the two most important health care issues for the government to address?- Rx's/rx drugs (unsp),political_attitudes,government
+2002,QN12_50,Q.12 What do you think are the two most important health care issues for the government to address?- Rx's/rx drugs (unsp),political_attitudes,government
+2002,QN12_51,Q.12 What do you think are the two most important health care issues for the government to address?- Rx's for elderly,political_attitudes,government
+2002,QN12_51,Q.12 What do you think are the two most important health care issues for the government to address?- Rx's for elderly,political_attitudes,government
+2002,QN12_52,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of drugs/restrictive drug list,political_attitudes,government
+2002,QN12_52,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of drugs/restrictive drug list,political_attitudes,government
+2002,QN12_53,Q.12 What do you think are the two most important health care issues for the government to address?- Other prescription drugs,political_attitudes,government
+2002,QN12_53,Q.12 What do you think are the two most important health care issues for the government to address?- Other prescription drugs,political_attitudes,government
+2002,QN12_54,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance companies (HMO's) making healthcare decisions,political_attitudes,government
+2002,QN12_54,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance companies (HMO's) making healthcare decisions,political_attitudes,government
+2002,QN12_55,Q.12 What do you think are the two most important health care issues for the government to address?- HMO's/insurance companies,political_attitudes,government
+2002,QN12_55,Q.12 What do you think are the two most important health care issues for the government to address?- HMO's/insurance companies,political_attitudes,government
+2002,QN12_56,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of choice of doctors/healthcare providers,political_attitudes,government
+2002,QN12_56,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of choice of doctors/healthcare providers,political_attitudes,government
+2002,QN12_57,Q.12 What do you think are the two most important health care issues for the government to address?- Can't go to specialist/problem getting referral,political_attitudes,government
+2002,QN12_57,Q.12 What do you think are the two most important health care issues for the government to address?- Can't go to specialist/problem getting referral,political_attitudes,government
+2002,QN12_58,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance company/managed care determines payout,political_attitudes,government
+2002,QN12_58,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance company/managed care determines payout,political_attitudes,government
+2002,QN12_59,Q.12 What do you think are the two most important health care issues for the government to address?- HMO-driven healthcare/too many/restrictive,political_attitudes,government
+2002,QN12_59,Q.12 What do you think are the two most important health care issues for the government to address?- HMO-driven healthcare/too many/restrictive,political_attitudes,government
+2002,QN12_60,Q.12 What do you think are the two most important health care issues for the government to address?- Doctors refuse to accept HMO's,political_attitudes,government
+2002,QN12_60,Q.12 What do you think are the two most important health care issues for the government to address?- Doctors refuse to accept HMO's,political_attitudes,government
+2002,QN12_61,Q.12 What do you think are the two most important health care issues for the government to address?- Other insurance company-driven,political_attitudes,government
+2002,QN12_61,Q.12 What do you think are the two most important health care issues for the government to address?- Other insurance company-driven,political_attitudes,government
+2002,QN12_62,Q.12 What do you think are the two most important health care issues for the government to address?- Bioterrorism,political_attitudes,government
+2002,QN12_62,Q.12 What do you think are the two most important health care issues for the government to address?- Bioterrorism,political_attitudes,government
+2002,QN12_63,Q.12 What do you think are the two most important health care issues for the government to address?- Terrorism (general),political_attitudes,government
+2002,QN12_63,Q.12 What do you think are the two most important health care issues for the government to address?- Terrorism (general),political_attitudes,government
+2002,QN12_64,Q.12 What do you think are the two most important health care issues for the government to address?- Osama bin laden,political_attitudes,government
+2002,QN12_64,Q.12 What do you think are the two most important health care issues for the government to address?- Osama bin laden,political_attitudes,government
+2002,QN12_65,Q.12 What do you think are the two most important health care issues for the government to address?- Anthrax,political_attitudes,government
+2002,QN12_65,Q.12 What do you think are the two most important health care issues for the government to address?- Anthrax,political_attitudes,government
+2002,QN12_66,Q.12 What do you think are the two most important health care issues for the government to address?- Smallpox,political_attitudes,government
+2002,QN12_66,Q.12 What do you think are the two most important health care issues for the government to address?- Smallpox,political_attitudes,government
+2002,QN12_67,Q.12 What do you think are the two most important health care issues for the government to address?- Other September 11th terrorists attacks,political_attitudes,government
+2002,QN12_67,Q.12 What do you think are the two most important health care issues for the government to address?- Other September 11th terrorists attacks,political_attitudes,government
+2002,QN12_68,Q.12 What do you think are the two most important health care issues for the government to address?- Aging/old age/being a senior,political_attitudes,government
+2002,QN12_68,Q.12 What do you think are the two most important health care issues for the government to address?- Aging/old age/being a senior,political_attitudes,government
+2002,QN12_69,Q.12 What do you think are the two most important health care issues for the government to address?- Stress,political_attitudes,government
+2002,QN12_69,Q.12 What do you think are the two most important health care issues for the government to address?- Stress,political_attitudes,government
+2002,QN12_70,Q.12 What do you think are the two most important health care issues for the government to address?- Poverty/homelessness (hunger),political_attitudes,government
+2002,QN12_70,Q.12 What do you think are the two most important health care issues for the government to address?- Poverty/homelessness (hunger),political_attitudes,government
+2002,QN12_71,Q.12 What do you think are the two most important health care issues for the government to address?- Environmental issues (toxins/air pollution),political_attitudes,government
+2002,QN12_71,Q.12 What do you think are the two most important health care issues for the government to address?- Environmental issues (toxins/air pollution),political_attitudes,government
+2002,QN12_72,Q.12 What do you think are the two most important health care issues for the government to address?- Drugs (unsp),political_attitudes,government
+2002,QN12_72,Q.12 What do you think are the two most important health care issues for the government to address?- Drugs (unsp),political_attitudes,government
+2002,QN12_73,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of education of general public,political_attitudes,government
+2002,QN12_73,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of education of general public,political_attitudes,government
+2002,QN12_74,Q.12 What do you think are the two most important health care issues for the government to address?- Research/need more,political_attitudes,government
+2002,QN12_74,Q.12 What do you think are the two most important health care issues for the government to address?- Research/need more,political_attitudes,government
+2002,QN12_75,Q.12 What do you think are the two most important health care issues for the government to address?- Elderly need more help,political_attitudes,government
+2002,QN12_75,Q.12 What do you think are the two most important health care issues for the government to address?- Elderly need more help,political_attitudes,government
+2002,QN12_76,"Q.12 What do you think are the two most important health care issues for the government to address?- Minor sickness (flu, cold, etc.)",political_attitudes,government
+2002,QN12_76,"Q.12 What do you think are the two most important health care issues for the government to address?- Minor sickness (flu, cold, etc.)",political_attitudes,government
+2002,QN12_77,Q.12 What do you think are the two most important health care issues for the government to address?- Guns/violence,political_attitudes,government
+2002,QN12_77,Q.12 What do you think are the two most important health care issues for the government to address?- Guns/violence,political_attitudes,government
+2002,QN12_78,Q.12 What do you think are the two most important health care issues for the government to address?- Government/politics/politicians,political_attitudes,government
+2002,QN12_78,Q.12 What do you think are the two most important health care issues for the government to address?- Government/politics/politicians,political_attitudes,government
+2002,QN12_79,Q.12 What do you think are the two most important health care issues for the government to address?- Human cloning/cloning,political_attitudes,government
+2002,QN12_79,Q.12 What do you think are the two most important health care issues for the government to address?- Human cloning/cloning,political_attitudes,government
+2002,QN12_80,Q.12 What do you think are the two most important health care issues for the government to address?- Social security,political_attitudes,government
+2002,QN12_80,Q.12 What do you think are the two most important health care issues for the government to address?- Social security,political_attitudes,government
+2002,QN12_81,Q.12 What do you think are the two most important health care issues for the government to address?- Medicaid,political_attitudes,government
+2002,QN12_81,Q.12 What do you think are the two most important health care issues for the government to address?- Medicaid,political_attitudes,government
+2002,QN12_82,Q.12 What do you think are the two most important health care issues for the government to address?- Welfare,political_attitudes,government
+2002,QN12_82,Q.12 What do you think are the two most important health care issues for the government to address?- Welfare,political_attitudes,government
+2002,QN12_83,Q.12 What do you think are the two most important health care issues for the government to address?- Child care,political_attitudes,government
+2002,QN12_83,Q.12 What do you think are the two most important health care issues for the government to address?- Child care,political_attitudes,government
+2002,QN12_84,Q.12 What do you think are the two most important health care issues for the government to address?- Women's health/women's issues,political_attitudes,government
+2002,QN12_84,Q.12 What do you think are the two most important health care issues for the government to address?- Women's health/women's issues,political_attitudes,government
+2002,QN12_85,Q.12 What do you think are the two most important health care issues for the government to address?- Public safety/safety issues/security/military,political_attitudes,government
+2002,QN12_85,Q.12 What do you think are the two most important health care issues for the government to address?- Public safety/safety issues/security/military,political_attitudes,government
+2002,QN12_86,Q.12 What do you think are the two most important health care issues for the government to address?- Teens/teen pregnancy/prevention,political_attitudes,government
+2002,QN12_86,Q.12 What do you think are the two most important health care issues for the government to address?- Teens/teen pregnancy/prevention,political_attitudes,government
+2002,QN12_88,Q.12 What do you think are the two most important health care issues for the government to address?- Pay more attention to Hispanics/Hispanic issues,political_attitudes,government
+2002,QN12_88,Q.12 What do you think are the two most important health care issues for the government to address?- Pay more attention to Hispanics/Hispanic issues,political_attitudes,government
+2002,QN12_89,Q.12 What do you think are the two most important health care issues for the government to address?- Health (n.s.),political_attitudes,government
+2002,QN12_89,Q.12 What do you think are the two most important health care issues for the government to address?- Health (n.s.),political_attitudes,government
+2002,QN12_90,Q.12 What do you think are the two most important health care issues for the government to address?- Abortion issues,political_attitudes,government
+2002,QN12_90,Q.12 What do you think are the two most important health care issues for the government to address?- Abortion issues,political_attitudes,government
+2002,QN12_91,Q.12 What do you think are the two most important health care issues for the government to address?- Education/help schools/better schools,political_attitudes,government
+2002,QN12_91,Q.12 What do you think are the two most important health care issues for the government to address?- Education/help schools/better schools,political_attitudes,government
+2002,QN12_96,Q.12 What do you think are the two most important health care issues for the government to address?- None,political_attitudes,government
+2002,QN12_96,Q.12 What do you think are the two most important health care issues for the government to address?- None,political_attitudes,government
+2002,QN12_97,Q.12 What do you think are the two most important health care issues for the government to address?- Other,political_attitudes,government
+2002,QN12_97,Q.12 What do you think are the two most important health care issues for the government to address?- Other,political_attitudes,government
+2002,QN12_98,Q.12 What do you think are the two most important health care issues for the government to address?- Don't Know,political_attitudes,government
+2002,QN12_98,Q.12 What do you think are the two most important health care issues for the government to address?- Don't Know,political_attitudes,government
+2002,QN12_99,Q.12 What do you think are the two most important health care issues for the government to address?- Refused,political_attitudes,government
+2002,QN12_99,Q.12 What do you think are the two most important health care issues for the government to address?- Refused,political_attitudes,government
+2002,QN13,"Q.13 Based on your experience, do you think political leaders are interested in the problems of particular concern to Latinos/Hispanics living here, or not?",political_attitudes,political
+2002,QN13,"Q.13 Based on your experience, do you think political leaders are interested in the problems of particular concern to Latinos/Hispanics living here, or not?",political_attitudes,political
+2002,QN72,"Q.72 The US government has traditionally divided people into racial categories. Earlier you told me you were (Race in QN7), if you had a choice, would you prefer to call yourself (Race in QN7) or do you wish you had another option?",political_attitudes,government
+2002,QN72,"Q.72 The US government has traditionally divided people into racial categories. Earlier you told me you were (Race in QN7), if you had a choice, would you prefer to call yourself (Race in QN7) or do you wish you had another option?",political_attitudes,government
+2002,QN73,"Q.73 Earlier you were asked what your race was and you said it was not one of the categories listed by the US government, but that it was some other race. What race is that?",political_attitudes,government
+2002,QN73,"Q.73 Earlier you were asked what your race was and you said it was not one of the categories listed by the US government, but that it was some other race. What race is that?",political_attitudes,government
+2002,QN76,"Q.76 Which party do you think has more concern for Latinos/Hispanics --the Democratic party, the Republican party, or is there no difference?",political_attitudes,party
+2002,QN76,"Q.76 Which party do you think has more concern for Latinos/Hispanics --the Democratic party, the Republican party, or is there no difference?",political_attitudes,party
+2002,QN77,Q.77 Some people are registered to vote and others are not. Are you currently registered to vote at your present address?,political_attitudes,vote
+2002,QN77,Q.77 Some people are registered to vote and others are not. Are you currently registered to vote at your present address?,political_attitudes,vote
+2002,QN78,Q.78 Have you ever voted in an election in the U.S.?,political_attitudes,vote
+2002,QN78,Q.78 Have you ever voted in an election in the U.S.?,political_attitudes,vote
+2002,QN79,"Q.79 Now I'm going to read you a list of issues that might be important in determining your votes for a political candidate. In general, which of these issues is the MOST important in deciding your vote?",political_attitudes,vote
+2002,QN79,"Q.79 Now I'm going to read you a list of issues that might be important in determining your votes for a political candidate. In general, which of these issues is the MOST important in deciding your vote?",political_attitudes,vote
+2002,QN79_1,Q.79 top 2 issues that might be important in determining your votes for a political candidate.,political_attitudes,vote
+2002,QN79_1,Q.79 top 2 issues that might be important in determining your votes for a political candidate.,political_attitudes,vote
+2002,QN79_2,Q.79 And which is the second most important in deciding your vote for a political candidate?,political_attitudes,vote
+2002,QN79_2,Q.79 And which is the second most important in deciding your vote for a political candidate?,political_attitudes,vote
+2002,QN79__2,Q.79 top 2 issues that might be important in determining your votes for a political candidate.,political_attitudes,vote
+2002,QN79__2,Q.79 top 2 issues that might be important in determining your votes for a political candidate.,political_attitudes,vote
+2002,QN8,"Q.8 How much of the time do you trust the government in Washington to do what is right-just about always, most of the time, or only some of the time?",political_attitudes,government
+2002,QN8,"Q.8 How much of the time do you trust the government in Washington to do what is right-just about always, most of the time, or only some of the time?",political_attitudes,government
+2002,QN80,"Q.80 In considering whether or not to vote for a political candidate, how important is the candidate's position on HIV/AIDS in making your choice?",political_attitudes,vote
+2002,QN80,"Q.80 In considering whether or not to vote for a political candidate, how important is the candidate's position on HIV/AIDS in making your choice?",political_attitudes,vote
+2002,QN81,"Q.81 Overall, in whom do you have more confidence when it comes to dealing with the economy- President Bush or the Democrats in Congress?",political_attitudes,president
+2002,QN81,"Q.81 Overall, in whom do you have more confidence when it comes to dealing with the economy- President Bush or the Democrats in Congress?",political_attitudes,president
+2002,QN82,"Q.82 Overall, in whom do you have more confidence when it comes to dealing with the economy- the Republicans or the Democrats?",political_attitudes,republican
+2002,QN82,"Q.82 Overall, in whom do you have more confidence when it comes to dealing with the economy- the Republicans or the Democrats?",political_attitudes,republican
+2002,QN84,"Q.84 Since you moved to the U.S., have you voted in your country of origin or not?",political_attitudes,vote
+2002,QN84,"Q.84 Since you moved to the U.S., have you voted in your country of origin or not?",political_attitudes,vote
+2002,QN90,"Q.90 In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2002,QN90,"Q.90 In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2002,QN91,Q.91 Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2002,QN91,Q.91 Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2004,QN44,"44. On another subject, do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?",border_immigration,illegal
+2004,QN44,"44. On another subject, do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?",border_immigration,illegal
+2004,QN17,17. Now we would like to ask you about US citizenship. Are you.?,citizenship,citizen
+2004,QN17,17. Now we would like to ask you about US citizenship. Are you.?,citizenship,citizen
+2004,QN19C,"19c. Please tell me whether you agree with this statement: In the United States, citizens can have an influence at all levels of government, from top to bottom, by voting and engaging in other political activities",citizenship; political_attitudes,citizen; government
+2004,QN19C,"19c. Please tell me whether you agree with this statement: In the United States, citizens can have an influence at all levels of government, from top to bottom, by voting and engaging in other political activities",citizenship; political_attitudes,citizen; government
+2004,QN43,"43. How important is it to you that future generations of Latinos living in the United States speak Spanish-very important, somewhat important, not too important, or not important at all?",generation,generation
+2004,QN43,"43. How important is it to you that future generations of Latinos living in the United States speak Spanish-very important, somewhat important, not too important, or not important at all?",generation,generation
+2004,QN41A,"41a. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Speak English to say they are part of American society, or not?",immigration,immigrant
+2004,QN41A,"41a. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Speak English to say they are part of American society, or not?",immigration,immigrant
+2004,QN41B,"41b. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Believe in the U.S. constitution, to say they are part of American society, or not?",immigration,immigrant
+2004,QN41B,"41b. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Believe in the U.S. constitution, to say they are part of American society, or not?",immigration,immigrant
+2004,QN38,38. Some people say UNDOCUMENTED or ILLEGAL immigrants Help the economy by providing low-cost labor. Others say they Hurt the economy by driving wages down. Which is closer to your views?,immigration; border_immigration,immigrant; undocumented
+2004,QN38,38. Some people say UNDOCUMENTED or ILLEGAL immigrants Help the economy by providing low-cost labor. Others say they Hurt the economy by driving wages down. Which is closer to your views?,immigration; border_immigration,immigrant; undocumented
+2004,QN40A,40a. Which is closer to your view? In future: All legal immigrants to the US should have a chance to become Citizens or Some immigrants should come to the US through a temporary worker program which requires them to go back to their country of origin,immigration; citizenship,immigrant; citizen
+2004,QN40A,40a. Which is closer to your view? In future: All legal immigrants to the US should have a chance to become Citizens or Some immigrants should come to the US through a temporary worker program which requires them to go back to their country of origin,immigration; citizenship,immigrant; citizen
+2004,QN41H,"41h. In order for an immigrant to say they are part of American society, do they have to each of the following, or not? Do immigrants have to Be a U.S. Citizen or not?",immigration; citizenship,immigrant; citizen
+2004,QN41H,"41h. In order for an immigrant to say they are part of American society, do they have to each of the following, or not? Do immigrants have to Be a U.S. Citizen or not?",immigration; citizenship,immigrant; citizen
+2004,QN40,40. Another proposal would give many of the undocumented or illegal Hispanic/Latino immigrants living in the U.S. a chance to remain here permanently with legal status and eventually become US citizens. Is this something you would favor?,immigration; citizenship; border_immigration,immigrant; legal status; undocumented
+2004,QN40,40. Another proposal would give many of the undocumented or illegal Hispanic/Latino immigrants living in the U.S. a chance to remain here permanently with legal status and eventually become US citizens. Is this something you would favor?,immigration; citizenship; border_immigration,immigrant; legal status; undocumented
+2004,QN20J,"20j. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Immigration",immigration; political_attitudes,immigration; president
+2004,QN20J,"20j. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Immigration",immigration; political_attitudes,immigration; president
+2004,QN41E,"41e. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Vote in U.S. elections to say they are part of American society, or not?",immigration; political_attitudes,immigrant; vote
+2004,QN41E,"41e. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Vote in U.S. elections to say they are part of American society, or not?",immigration; political_attitudes,immigrant; vote
+2004,QN39,39. President Bush has proposed a plan that would allow some illegal immigrants in the U.S. to stay in this country legally for as temporary workers. The plan would these workers to eventually return to their countries. Do you favor this plan?,immigration; political_attitudes; border_immigration,immigrant; president; illegal
+2004,QN39,39. President Bush has proposed a plan that would allow some illegal immigrants in the U.S. to stay in this country legally for as temporary workers. The plan would these workers to eventually return to their countries. Do you favor this plan?,immigration; political_attitudes; border_immigration,immigrant; president; illegal
+2004,LEAN,64/65. Leaned Party Table,political_attitudes,party
+2004,LEAN,64/65. Leaned Party Table,political_attitudes,party
+2004,QN11B,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Contributed money to a candidate running for public office, or not?",political_attitudes,candidate
+2004,QN11B,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Contributed money to a candidate running for public office, or not?",political_attitudes,candidate
+2004,QN11BB,"11bb. Was the candidate Latino, non-Latino, or have you contributed money to both Latino and non- Latino candidates?",political_attitudes,candidate
+2004,QN11BB,"11bb. Was the candidate Latino, non-Latino, or have you contributed money to both Latino and non- Latino candidates?",political_attitudes,candidate
+2004,QN11C,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Worked as a volunteeer or for pay for a political candidate, or not?",political_attitudes,political
+2004,QN11C,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Worked as a volunteeer or for pay for a political candidate, or not?",political_attitudes,political
+2004,QN11CC,"11cc. Was the candidate Latino, non-Latino, or have you worked for both Latino and non-Latino candidates?",political_attitudes,candidate
+2004,QN11CC,"11cc. Was the candidate Latino, non-Latino, or have you worked for both Latino and non-Latino candidates?",political_attitudes,candidate
+2004,QN11E,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Attended a political party meeting or function, or not?",political_attitudes,political
+2004,QN11E,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Attended a political party meeting or function, or not?",political_attitudes,political
+2004,QN13,"13. Based on your experience, do you think political leaders are interested in the problems of particular concern to Hispanics/Latinos living here or not?",political_attitudes,political
+2004,QN13,"13. Based on your experience, do you think political leaders are interested in the problems of particular concern to Hispanics/Latinos living here or not?",political_attitudes,political
+2004,QN14,"14. Which party do you think has more concern for Latinos -- the Democratic party, the Republican party, or is there no difference?",political_attitudes,party
+2004,QN14,"14. Which party do you think has more concern for Latinos -- the Democratic party, the Republican party, or is there no difference?",political_attitudes,party
+2004,QN15,"15. Which comes closer to your views, Hispanics/Latinos from different countries Today are working together to achieve common political goals or Are not working together politically",political_attitudes,political
+2004,QN15,"15. Which comes closer to your views, Hispanics/Latinos from different countries Today are working together to achieve common political goals or Are not working together politically",political_attitudes,political
+2004,QN16,16. Some Hispanics/Latinos are more concerned about government and politics in their country of origin than in the U.S. Others are more concerned about government and politics in the U.S. How about you? Are you...?,political_attitudes,government
+2004,QN16,16. Some Hispanics/Latinos are more concerned about government and politics in their country of origin than in the U.S. Others are more concerned about government and politics in the U.S. How about you? Are you...?,political_attitudes,government
+2004,QN18,18. Some people are registered to vote and others are not. Are you currently registered to vote at your present address?,political_attitudes,vote
+2004,QN18,18. Some people are registered to vote and others are not. Are you currently registered to vote at your present address?,political_attitudes,vote
+2004,QN19A,19a. Please tell me whether you agree with this statement: Political leaders do not care much what people like me think,political_attitudes,political
+2004,QN19A,19a. Please tell me whether you agree with this statement: Political leaders do not care much what people like me think,political_attitudes,political
+2004,QN19E,19e. Please tell me whether you agree with this statement: Hispanics/Latinos are more likely to vote if there are Hispanics/Latinos on the ballot,political_attitudes,vote
+2004,QN19E,19e. Please tell me whether you agree with this statement: Hispanics/Latinos are more likely to vote if there are Hispanics/Latinos on the ballot,political_attitudes,vote
+2004,QN19F,19f. Please tell me whether you agree with this statement: Hispanic/Latino voters are more likely to vote for a Hispanic/Latino candidate instead of as non-Hispanic/Latino running for the same office if they have the same qualifications,political_attitudes,vote
+2004,QN19F,19f. Please tell me whether you agree with this statement: Hispanic/Latino voters are more likely to vote for a Hispanic/Latino candidate instead of as non-Hispanic/Latino running for the same office if they have the same qualifications,political_attitudes,vote
+2004,QN19G,19g. Please tell me whether you agree with this statement: Hispanic/Latino voters will usually pick a Hispanic/Latino candidate even if there is a better qualified non-Hispanic/Latino running for the same office,political_attitudes,vote
+2004,QN19G,19g. Please tell me whether you agree with this statement: Hispanic/Latino voters will usually pick a Hispanic/Latino candidate even if there is a better qualified non-Hispanic/Latino running for the same office,political_attitudes,vote
+2004,QN19H,19h. Please tell me whether you agree with this statement: I am more likely to vote if there are Hispanics/Latinos on the ballot,political_attitudes,vote
+2004,QN19H,19h. Please tell me whether you agree with this statement: I am more likely to vote if there are Hispanics/Latinos on the ballot,political_attitudes,vote
+2004,QN19I,19i. Please tell me whether you agree with this statement: I am more likely to vote for a Hispanic/Latino candidate instead of a non-Hispanic/Latino running for the same office if they have the same qualifications,political_attitudes,vote
+2004,QN19I,19i. Please tell me whether you agree with this statement: I am more likely to vote for a Hispanic/Latino candidate instead of a non-Hispanic/Latino running for the same office if they have the same qualifications,political_attitudes,vote
+2004,QN19J,19j. Please tell me whether you agree with this statement: I will usually pick a Hispanic/Latino candidate even if there is a better qualified non-Hispanic/Latino running for the same office,political_attitudes,candidate
+2004,QN19J,19j. Please tell me whether you agree with this statement: I will usually pick a Hispanic/Latino candidate even if there is a better qualified non-Hispanic/Latino running for the same office,political_attitudes,candidate
+2004,QN20A,"20a. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Education",political_attitudes,president
+2004,QN20A,"20a. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Education",political_attitudes,president
+2004,QN20B,"20b. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The economy and jobs",political_attitudes,president
+2004,QN20B,"20b. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The economy and jobs",political_attitudes,president
+2004,QN20C,"20c. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Social Security",political_attitudes,president
+2004,QN20C,"20c. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Social Security",political_attitudes,president
+2004,QN20D,"20d. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Taxes",political_attitudes,president
+2004,QN20D,"20d. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Taxes",political_attitudes,president
+2004,QN20E,"20e. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Crime",political_attitudes,president
+2004,QN20E,"20e. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Crime",political_attitudes,president
+2004,QN20F,"20f. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Moral values",political_attitudes,president
+2004,QN20F,"20f. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Moral values",political_attitudes,president
+2004,QN20G,"20g. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Health care and Medicare",political_attitudes,president
+2004,QN20G,"20g. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Health care and Medicare",political_attitudes,president
+2004,QN20H,"20h. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. U.S. campaign against terrorism",political_attitudes,president
+2004,QN20H,"20h. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. U.S. campaign against terrorism",political_attitudes,president
+2004,QN20I,"20i. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The war in Iraq",political_attitudes,president
+2004,QN20I,"20i. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The war in Iraq",political_attitudes,president
+2004,QN20K,"20k. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The federal budget deficit",political_attitudes,president
+2004,QN20K,"20k. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The federal budget deficit",political_attitudes,president
+2004,QN27A,27a. Please tell me how important these issues will be in your vote for president this year. The cost of health care and health insurance,political_attitudes,vote
+2004,QN27A,27a. Please tell me how important these issues will be in your vote for president this year. The cost of health care and health insurance,political_attitudes,vote
+2004,QN27B,27b. Please tell me how important these issues will be in your vote for president this year. The number of Americans without health insurance,political_attitudes,vote
+2004,QN27B,27b. Please tell me how important these issues will be in your vote for president this year. The number of Americans without health insurance,political_attitudes,vote
+2004,QN27C,27c. Please tell me how important these issues will be in your vote for president this year. Medicare,political_attitudes,vote
+2004,QN27C,27c. Please tell me how important these issues will be in your vote for president this year. Medicare,political_attitudes,vote
+2004,QN27D,27d. Please tell me how important these issues will be in your vote for president this year. Prescription drug benefits for seniors,political_attitudes,vote
+2004,QN27D,27d. Please tell me how important these issues will be in your vote for president this year. Prescription drug benefits for seniors,political_attitudes,vote
+2004,QN28,"28. Do you think the government should provide health insurance for Americans without insurance, or is this something the government should not do?",political_attitudes,government
+2004,QN28,"28. Do you think the government should provide health insurance for Americans without insurance, or is this something the government should not do?",political_attitudes,government
+2004,QN31,31. Do you approve or disapprove of the way George W. Bush is handling the situation in Iraq?,political_attitudes,approve
+2004,QN31,31. Do you approve or disapprove of the way George W. Bush is handling the situation in Iraq?,political_attitudes,approve
+2004,QN47A,"47a. If you agreed with a presidential candidate on other issues, but not on the issue of Abortion could you still vote for him, or not?",political_attitudes,president
+2004,QN47A,"47a. If you agreed with a presidential candidate on other issues, but not on the issue of Abortion could you still vote for him, or not?",political_attitudes,president
+2004,QN47B,"47b. If you agreed with a presidential candidate on other issues, but not on the issue of A constitutional amendment against same sex marriages could you still vote for him, or not?",political_attitudes,president
+2004,QN47B,"47b. If you agreed with a presidential candidate on other issues, but not on the issue of A constitutional amendment against same sex marriages could you still vote for him, or not?",political_attitudes,president
+2004,QN47C,"47c. If you agreed with a presidential candidate on other issues, but not on the issue of The war in Iraq could you still vote for him, or not?",political_attitudes,president
+2004,QN47C,"47c. If you agreed with a presidential candidate on other issues, but not on the issue of The war in Iraq could you still vote for him, or not?",political_attitudes,president
+2004,QN48,"48. Have you ever voted in an election in the U.S., or not?",political_attitudes,vote
+2004,QN48,"48. Have you ever voted in an election in the U.S., or not?",political_attitudes,vote
+2004,QN49,"49. We often find out that a lot of people aren't able to vote because they were not registered, or they were sick, or they just didn't have time. Do you remember for sure whether you voted in the November 2002 congressional election in your district?",political_attitudes,vote
+2004,QN49,"49. We often find out that a lot of people aren't able to vote because they were not registered, or they were sick, or they just didn't have time. Do you remember for sure whether you voted in the November 2002 congressional election in your district?",political_attitudes,vote
+2004,QN50,50. Do you remember for sure whether you voted in the November 2000 presidential election when George W. Bush ran against Al Gore and Ralph Nader?,political_attitudes,vote
+2004,QN50,50. Do you remember for sure whether you voted in the November 2000 presidential election when George W. Bush ran against Al Gore and Ralph Nader?,political_attitudes,vote
+2004,QN51,"51. How closely are you following the 2004 presidential race: very closely, somewhat closely, not too closely, or not closely at all?",political_attitudes,president
+2004,QN51,"51. How closely are you following the 2004 presidential race: very closely, somewhat closely, not too closely, or not closely at all?",political_attitudes,president
+2004,QN52A,52a. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I sometimes feel I don't know enough about the candidates to vote?,political_attitudes,vote
+2004,QN52A,52a. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I sometimes feel I don't know enough about the candidates to vote?,political_attitudes,vote
+2004,QN52B,52b. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about It's complicated to register to vote where I live?,political_attitudes,vote
+2004,QN52B,52b. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about It's complicated to register to vote where I live?,political_attitudes,vote
+2004,QN52C,52c. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about It's difficult for me to get out to the polls to vote?,political_attitudes,vote
+2004,QN52C,52c. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about It's difficult for me to get out to the polls to vote?,political_attitudes,vote
+2004,QN52D,52d. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I sometimes don't like any of the candidates?,political_attitudes,vote
+2004,QN52D,52d. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I sometimes don't like any of the candidates?,political_attitudes,vote
+2004,QN52F,52f. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I can make more of a difference by getting involved in my community,political_attitudes,vote
+2004,QN52F,52f. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I can make more of a difference by getting involved in my community,political_attitudes,vote
+2004,QN62B,"62B. Overall, would you say the amount of political freedom is better in the United States, better in the country you came from, or about the same?",political_attitudes,political
+2004,QN62B,"62B. Overall, would you say the amount of political freedom is better in the United States, better in the country you came from, or about the same?",political_attitudes,political
+2004,QN64,"64. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2004,QN64,"64. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2004,QN65,65. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2004,QN65,65. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2004,QN73A,73A. Do you agree or disagree with the following statement: Religion is a private matter that should be kept out of public debates over social and political issues. Is that strongly or somewhat?,political_attitudes,political
+2004,QN73A,73A. Do you agree or disagree with the following statement: Religion is a private matter that should be kept out of public debates over social and political issues. Is that strongly or somewhat?,political_attitudes,political
+2004,QN8,"8. How much attention would you say you pay to politics and government? A lot, a fair amount, not much, or none at all?",political_attitudes,government
+2004,QN8,"8. How much attention would you say you pay to politics and government? A lot, a fair amount, not much, or none at all?",political_attitudes,government
+2004,QN9,"9. How much of the time do you trust the government in Washington to do what is right - just about always, most of the time, or only some of the time?",political_attitudes,government
+2004,QN9,"9. How much of the time do you trust the government in Washington to do what is right - just about always, most of the time, or only some of the time?",political_attitudes,government
+2006,qn15b,15b. Are you in favor or do you oppose... Increase the number of border patrol agents?,border_immigration,border
+2006,qn4a,"4a. On another subject, do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?",border_immigration,illegal
+2006,qn5,5. Are you a citizen of the United States?,citizenship,citizen
+2006,qn6b,"6b. Please tell me whether you agree or disagree with... In the United States, citizens can have an influence at all levels of government, from top to bottom, by voting and engaging in other political activities.",citizenship; political_attitudes,citizen; government
+2006,qn3,3. I am now going to read you two statements about the immigrant marches in many American cities that took place this Spring. Please tell me which comes closest to your views.,immigration,immigrant
+2006,qn31d,31d. We know that discrimination can result from many factors. How about differences in immigration status?,immigration,immigration
+2006,qn33,"33. Do you think that the debate over immigration policy in the U.S. has made discrimination against (HISPANICS/LATINOS) more of a problem, less of a problem or has it had no effect on discrimination?",immigration,immigration
+2006,qn7a,"7a. Do immigrants have to Speak English to say they are part of American society, or not?",immigration,immigrant
+2006,qn7b,"7b. Do immigrants have to Believe in the U.S. constitution to say they are part of American society, or not?",immigration,immigrant
+2006,qn3a,"3a. Do you think the recent immigrant marches this spring had a positive effect on the way the American public thinks about illegal or undocumented immigrants, a negative effect or no effect?",immigration; border_immigration,immigrant; illegal
+2006,qn7c,"7c. Do immigrants have to Be a U.S. Citizen to say they are part of American society, or not?",immigration; citizenship,immigrant; citizen
+2006,qn16,"16. In general, which of the political parties has the best position on immigration issues?",immigration; political_attitudes,immigration; political
+2006,qn3c,"3c. Some people say that as a result of the debate over immigration policy in Washington, many more (HISPANICS/LATINOS) will vote in the November elections. Others say that the debate will not have much effect on political participation by (HISPANICS...",immigration; political_attitudes,immigration; vote
+2006,qn71a,"71a. Now, thinking about where you were born, do you belong to a civic organization, sports team, or social club of people from (INSERT COUNTRY OF ORIGIN)?",nativity,where you were born
+2006,qn10c,"10c. Overall would you say... The political traditions are better in the United States, better in (the country your parents or ancestors came from/Puerto Rico/the country you came from) or about the same?",political_attitudes,political
+2006,qn16a,16a. Do you think the government should create a data base of all legal workers and require verification by employers before hiring a worker?,political_attitudes,government
+2006,qn4,4. Some (COUNTRY OR REGION OF ORIGIN GROUP)s are more concerned about government and politics in (COUNTRY OR REGION OF ORIGIN) than in the U.S. Others are more concerned about government and politics in the U.S. Are you...?,political_attitudes,government
+2006,qn40,"40. Which party do you think has more concern for (HISPANICS/LATINOS) -- the Democratic party, the Republican party, or is there no difference?",political_attitudes,party
+2006,qn41,41. Some people are registered to vote and others are not. Are you currently registered to vote at your present address?,political_attitudes,vote
+2006,qn45,"45. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2006,qn6a,6a. Please tell me whether you agree or disagree with... Political leaders do not care much what people like me think.,political_attitudes,political
+2006,qn6c,6c. Please tell me whether you agree or disagree with... (HISPANICS/LATINOS) are more likely to vote if there are (HISPANICS/LATINOS) on the ballot.,political_attitudes,vote
+2006,qn6d,6d. Please tell me whether you agree or disagree with... (HISPANIC/LATINO) voters are more likely to vote for a (HISPANIC/LATINO) candidate instead of a non-(HISPANIC/LATINO) running for the same office if they have the same qualificati...,political_attitudes,vote
+2006,qn6f,6f. Please tell me whether you agree or disagree with... I am more likely to vote if there are (HISPANICS/LATINOS) on the ballot.,political_attitudes,vote
+2006,qn6g,6g. Please tell me whether you agree or disagree with... I am more likely to vote for a (HISPANIC/LATINO) candidate instead of a non-(HISPANIC/LATINO) running for the same office if they have the same qualifications.,political_attitudes,vote
+2006,qns46,46. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2007,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2007,qn24,"24. Do you think there are too many, too few, or about the right amount of immigrants living in the United States today?",immigration,immigrant
+2007,qn26,26. Some people say UNDOCUMENTED or ILLEGAL immigrants help the economy by providing low-cost labor. Others say they hu,immigration; border_immigration,immigrant; undocumented
+2007,qn27,"27. Overall, what is the effect of the growing number of undocumented or illegal immigrants on Hispanics/Latinos living",immigration; border_immigration,immigrant; undocumented
+2007,qn38,"38. Thinking about the past few months, how much attention has been given to the issue of illegal immigration by local o",immigration; border_immigration,immigration; illegal
+2007,qn42,"42. Should local police take an active role in identifying undocumented or illegal immigrants, or should enforcement be",immigration; border_immigration,immigrant; undocumented
+2007,qn33,"33. Regardless of your own immigration or citizenship status, how much do you worry that you, a family member, or a clos",immigration; citizenship,immigration; citizen
+2007,qn45a,"45A. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu",immigration; citizenship,immigration; citizen
+2007,qn45b,"45B. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu",immigration; citizenship,immigration; citizen
+2007,qn45c,"45C. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu",immigration; citizenship,immigration; citizen
+2007,qn46a,"46A. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu",immigration; citizenship,immigration; citizen
+2007,qn46b,"46B. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu",immigration; citizenship,immigration; citizen
+2007,qn41,41. Do you approve or disapprove of states checking for immigration status before issuing driver's licenses?,immigration; political_attitudes,immigration; approve
+2007,qn44,44. Do you think that the debate over immigration policy and the failure of Congress to enact an immigration reform bill,immigration; political_attitudes,immigration; congress
+2007,qn15,15. Which political party do you think is doing a better job of dealing with illegal immigration?,immigration; political_attitudes; border_immigration,immigration; political; illegal
+2007,qn40,40. Do you approve or disapprove of workplace raids to discourage employers from hiring undocumented or illegal immigran,immigration; political_attitudes; border_immigration,immigr; approve; undocumented
+2007,qn43,43. How closely did you follow news accounts earlier this year of the debate in Congress about illegal immigration?,immigration; political_attitudes; border_immigration,immigration; congress; illegal
+2007,qn13,"13. Which party do you think has more concern for Hispanics/Latinos: -- the Democratic party, the Republican party, or i",political_attitudes,party
+2007,qn16,16. Some people are registered to vote and others are not. Are you currently registered to vote at your present address,political_attitudes,vote
+2007,qn17,"17. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2007,qn18,18. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2007,qn19,19. How closely are you following the presidential race?,political_attitudes,president
+2007,qn20_01,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_02,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_03,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_04,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_05,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_06,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_07,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_08,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_09,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn20_10,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?",political_attitudes,president
+2007,qn21,21. I'm going to read you the names of some possible DEMOCRATIC presidential candidates. Who would you most like to see,political_attitudes,democrat
+2007,qn22,22. I'm going to read you the names of some possible REPUBLICAN presidential candidates. Who would you most like to see,political_attitudes,republican
+2007,qn23a,23A. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea,political_attitudes,president
+2007,qn23b,23B. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea,political_attitudes,president
+2007,qn23e,23E. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea,political_attitudes,president
+2007,qn23g,23G. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea,political_attitudes,president
+2007,qn23i,23I. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea,political_attitudes,president
+2007,qn23j,23J. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea,political_attitudes,president
+2007,qn39,"39. In the past year in your local community, has the government made more efforts to discourage undocumented or illegal",political_attitudes; border_immigration,government; undocumented
+2008,combo14,Citizenship & Registration (qn5/5A/9/14),citizenship,citizen
+2008,combo24,Citizenship & Dem vs. Rep Primary (qn5/5A/9/14/23/24),citizenship,citizen
+2008,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2008,comb27a2,Citizenship & Candidate Summary (qn5/5A/9/14/23/24/26/27/27A),citizenship; political_attitudes,citizen; candidate
+2008,combo15,Citizenship & Candidate Choice (qn5/5A/9/15),citizenship; political_attitudes,citizen; candidate
+2008,combo16,Citizenship & Leaned Candidate (qn5/5A/9/15/16),citizenship; political_attitudes,citizen; candidate
+2008,combo23,Citizenship & Whether Voted (qn5/5A/9/14/23),citizenship; political_attitudes,citizen; vote
+2008,combo25,Citizenship & Whether 1st Time Primary Voter (qn5/5A/9/14/23/25),citizenship; political_attitudes,citizen; vote
+2008,combo26,Citizenship & Candidate-Dem Primary (qn5/5A/9/14/23/24/26),citizenship; political_attitudes,citizen; candidate
+2008,combo27,Citizenship & Candidate-Rep Primary (qn5/5A/9/14/23/24/27),citizenship; political_attitudes,citizen; candidate
+2008,combo27a,Citizenship & Candidate-Other Primary (qn5/5A/9/14/23/24/27A),citizenship; political_attitudes,citizen; candidate
+2008,qn17g,"17G. Is the issue of Immigration extremely important, very important, somewhat important, or not too important?",immigration,immigration
+2008,qn36a,36A. Have you Been stopped by police or other authorities and asked about your immigration status?,immigration,immigration
+2008,qn51,"51. In general, do you think immigrants increase, reduce, or have no effect on crime in your community?",immigration,immigrant
+2008,qn40,"40. Should local police take an active role in identifying undocumented or illegal immigrants, or should enforcement be left mainly to the federal authorities?",immigration; border_immigration,immigrant; undocumented
+2008,qn40a,"40a. Just your best guess, in the past year, has there been an increase, a decrease, or no change in the number of immigration enforcement actions around the country aimed at undocumented immigrants?",immigration; border_immigration,immigration; undocumented
+2008,qn40ca,40CA. Do you ..... of the following immigration enforcement actions: Workplace raids to discourage employers from hiring undocumented or illegal immigrants,immigration; border_immigration,immigration; undocumented
+2008,qn40cc,40CC. Do you ..... of the following immigration enforcement actions: Criminal prosecution of employers who hire undocumented immigrants,immigration; border_immigration,immigration; undocumented
+2008,qn40cd,40CD. Do you ..... of the following immigration enforcement actions: Criminal prosecution of undocumented immigrants who are working without authorization,immigration; border_immigration,immigration; undocumented
+2008,qn41,"41. Should an illegal immigrant who graduated from a high school in your state and is accepted to a state public college qualify for the in-state tuition rate, or shouldn't they?",immigration; border_immigration,immigrant; illegal
+2008,qn37,"37. Regardless of your own immigration or citizenship status, how much, if at all, do you worry that you, a family member, or a close friend could be deported? Would you say that you worry a lot, some, not much, or not at all?",immigration; citizenship,immigration; citizen
+2008,qn38,"38. Regardless of your own immigration or citizenship status, how much do you worry that you, a family member, or a close friend could be deported? Would you say that you worry a lot, some, not much, or not at all?",immigration; citizenship,immigration; citizen
+2008,qn18g,18G. Which candidate do you think will do a better job dealing with: Immigration,immigration; political_attitudes,immigration; candidate
+2008,qn31,"31. Which candidate do you think is better for IMMIGRANTS, or is there no difference?",immigration; political_attitudes,immigrant; candidate
+2008,qn40cb,40CB. Do you ..... of the following immigration enforcement actions: A requirement that employers check with a federal government database to verify the legal immigration status of any job applicant they are considering hiring,immigration; political_attitudes,immigration; government
+2008,combo5a,Nativity & Country of Birth (qn5/5A),nativity,nativity
+2008,combo6,Nativity & Years in U.S. (qn5/6),nativity,nativity
+2008,combo9,Citizenship & Nativity (qn5/5A/9),nativity; citizenship,nativity; citizen
+2008,combo20,Political Contribution & Method (qn19A/20),political_attitudes,political
+2008,combo22,Leaned Party Identification (qn21/22),political_attitudes,party
+2008,qn13,13. How closely are you following the 2008 presidential race?,political_attitudes,president
+2008,qn14,"14. These days, many people are so busy they can't find time to register to vote, or move around so often they don't get a chance to re-register. Are you NOW registered to vote in your precinct or election district or haven't you been a...",political_attitudes,vote
+2008,qn15,15. Now suppose the 2008 presidential election were being held TODAY. If you had to choose between - who would you vote for?,political_attitudes,president
+2008,qn16a,"16A. If Barack Obama chooses Hillary Clinton as his vice-presidential running mate, would that make you more likely to vote for Barack Obama, less likely to vote for Barack Obama, or would it make no difference in determining your vote",political_attitudes,president
+2008,qn18a,18A. Which candidate do you think will do a better job dealing with: Education,political_attitudes,candidate
+2008,qn18b,18B. Which candidate do you think will do a better job dealing with: Jobs,political_attitudes,candidate
+2008,qn18c,18C. Which candidate do you think will do a better job dealing with: The cost of living,political_attitudes,candidate
+2008,qn18d,18D. Which candidate do you think will do a better job dealing with: Crime,political_attitudes,candidate
+2008,qn18e,18E. Which candidate do you think will do a better job dealing with: Health care,political_attitudes,candidate
+2008,qn18f,18F. Which candidate do you think will do a better job dealing with: The war in Iraq,political_attitudes,candidate
+2008,qn19a,"19A. In the past year, have you Contributed money to a candidate running for public office, or not?",political_attitudes,candidate
+2008,qn19b,"19B. In the past year, have you Attended a political or campaign-related meeting, or not?",political_attitudes,political
+2008,qn19c,"19C. In the past year, have you Used the internet to find information about a political candidate, or not?",political_attitudes,political
+2008,qn20a,"20A. Do you, yourself, plan to vote in the election this November?",political_attitudes,vote
+2008,qn21,"21. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2008,qn22,22. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2008,qn23,23. A lot of people have been telling us they didn't get a chance to vote in the presidential primaries or caucuses this year. How about you...did things come up that kept you from voting or did you happen to vote?,political_attitudes,vote
+2008,qn24,24. Did you vote in a DEMOCRATIC primary or caucus or a REPUBLICAN primary or caucus?,political_attitudes,vote
+2008,qn25,"25. Was this primary/caucus the FIRST time that you have voted in a U.S. election, or have you voted before?",political_attitudes,vote
+2008,qn26,26. In this year's Democratic caucus or primary election which candidate did you vote for?,political_attitudes,democrat
+2008,qn27,27. In this year's Republican caucus or primary election which candidate did you vote for?,political_attitudes,republican
+2008,qn27a,27A. In this year's caucus or primary election which candidate did you vote for?,political_attitudes,election
+2008,qn29,"29. Which party do you think has more concern for (LATINOS), or is there no difference?",political_attitudes,party
+2008,qn30,30. Which candidate do you think is better for (LATINOS) or is there no difference?,political_attitudes,candidate
+2008,qn32,"32. For (LATINO) voters, do you think BARACK OBAMA's being black will help him, hurt him, or won't it make a difference to (LATINO) VOTERS in the general election this November?",political_attitudes,vote
+2008,qn33,"33. And with you, will BARACK OBAMA's being black help him, hurt him, or won't it make a difference in deciding YOUR vote in the general election this November?",political_attitudes,vote
+2008,qn34,"34. For (LATINO) voters, do you think JOHN MCCAIN's being white will help him, hurt him, or won't it make a difference to (LATINO) VOTERS in the general election this November?",political_attitudes,vote
+2008,qn35,"35. And with you, will John McCain's being white help him, hurt him, or won't it make a difference in deciding YOUR vote in the general election this November?",political_attitudes,vote
+2009,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2009,qn98,"98. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2009,qn99,99. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2010,qn53,"53. Would you favor changing the Constitution so that the parents must be legal residents of the U.S. in order for their newborn child to be a citizen, or should the Constitution be left as it is?",citizenship,citizen
+2010,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2010,qn44,"44. As you may know, the state of Arizona recently passed a law that requires police to verify the legal status of someone they have already stopped or arrested if they suspect that the person is in the country illegally. Do you approve of AZ's new law?",citizenship; political_attitudes; border_immigration,legal status; approve; illegal
+2010,qn21b,"21b. Which comes closer to your views, even if neither is exactly correct? Hispanic/Latino immigrants and native-born Hispanics/Latinos...",immigration,immigrant
+2010,qn23e,"23e. Please tell me how important this issue is to you personally. Is the issue of Immigration extremely important, very important, somewhat important, or not too important?",immigration,immigration
+2010,qn34,"34. In the last year, have you been stopped by police or other authorities and asked about your immigration status, or not?",immigration,immigration
+2010,qn40,"40. In general would you say that people in the United States are more accepting of immigrants now than they were five years ago, are they less accepting now than they were five years ago, or has there been no change?",immigration,immigrant
+2010,qn55_1,"55. In the United States in the past year have you participated in any protests or demonstrations to support immigrations rights, or not?",immigration,immigration
+2010,qn55a_1,"55a. In the United States in the past year have you talked about the immigration policy debate with family, friends or coworkers, or not?",immigration,immigration
+2010,qn47,"47. Overall, what is the effect of UNDOCUMENTED or ILLEGAL immigration on Hispanics/Latinos already living in the U.S.? Would you say it's...?",immigration; border_immigration,immigration; undocumented
+2010,qn48,"48. All things considered, which of these statements comes closer to your own views about immigrants who are in the U.S. illegally - even if none of them is exactly right:",immigration; border_immigration,immigrant; illegal
+2010,qn50,"50. Should an illegal immigrant who graduated from a high school in your state and is accepted to a state public college qualify for the in-state college tuition rate, or shouldn't they?",immigration; border_immigration,immigrant; illegal
+2010,qn51,"51. Should local police take an active role in identifying undocumented or illegal immigrants, OR should enforcement be left mainly to the federal authorities?",immigration; border_immigration,immigrant; undocumented
+2010,qn54,"54. Some have said that one of the reasons many immigrants come to the U.S. illegally is to have a child here. Do you think this is true, or not?",immigration; border_immigration,immigrant; illegal
+2010,qn32,"32. Regardless of your own immigration or citizenship status, how much, if at all, do you worry that you, a family member, or a close friend could be deported? Would you say that you worry a lot, some, not much, or not at all?",immigration; citizenship,immigration; citizen
+2010,qn42,"42. Thinking about immigrants who are living in the U.S. illegally... do you favor or oppose providing a way for illegal immigrants currently in the country to gain legal citizenship if they pass background checks, pay fines and have jobs?",immigration; citizenship; border_immigration,immigrant; citizen; illegal
+2010,qn52,"52. Were you aware that a child born to illegal immigrants in the U.S. is automatically a U.S. citizen, or weren't you aware of that?",immigration; citizenship; border_immigration,immigrant; citizen; illegal
+2010,qn31a,"31a. In general, which of the political parties' agendas on immigration do you have the most confidence in?",immigration; political_attitudes,immigration; political
+2010,qn33,33. Do you personally know someone who has been deported or detained by the federal government for immigration reasons in the last 12 months?,immigration; political_attitudes,immigration; government
+2010,qn49a,49a. Do you approve or disapprove of the following actions aimed at enforcing the nation's immigration laws. How about... Workplace raids,immigration; political_attitudes,immigration; approve
+2010,qn49e,49e. Do you approve or disapprove of the following actions aimed at enforcing the nation's immigration laws. How about... A requirement that all U.S. residents carry a national identity card?,immigration; political_attitudes,immigration; approve
+2010,qn49c,49c. Do you approve or disapprove of the following actions aimed at enforcing the nation's immigration laws. How about... Building more fences on the nation's borders?,immigration; political_attitudes; border_immigration,immigration; approve; border
+2010,qn49d,49d. Do you approve or disapprove of the following actions aimed at enforcing the nation's immigration laws. How about... Increasing the number of border patrol agents?,immigration; political_attitudes; border_immigration,immigration; approve; border
+2010,Combo13_14,13/14. Leaned Party/Congressional Election,political_attitudes,party
+2010,Combo65_66,65/66. Leaned Party,political_attitudes,party
+2010,qn12,12. How much thought have you given to the coming November election? Quite a lot or only a little?,political_attitudes,election
+2010,qn13,"13. If the elections for U.S. Congress were being held TODAY, would you vote for the Republican Party's candidate OR the Democratic Party's candidate for Congress in your district?",political_attitudes,election
+2010,qn14,"14. As of TODAY, do you LEAN more to the Republican or Democrat?",political_attitudes,republican
+2010,qn22,22. Which party do you think has more concern for Hispanics/Latinos - (READ LIST) or is there no difference?,political_attitudes,party
+2010,qn23a,23a. Now I'm going to read you a list of issues that might be discussed during this year's congressional campaign. Please tell me how important this issue is to you personally. Is the issue of Education important to you?,political_attitudes,congress
+2010,qn26,"26. Thinking ahead to November, do you yourself plan to vote in the Congressional election this November, or not?",political_attitudes,vote
+2010,qn27,"27. How certain are you that you will vote? Are you absolutely certain, fairly certain, or not certain?",political_attitudes,vote
+2010,qn28,"28. Overall, do you approve or disapprove of the way Barack Obama is handling his job as president?",political_attitudes,approve
+2010,qn65,"65. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2010,qn66,66. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2010,qn67,"67. These days, many people are so busy they can't find time to register to vote, or move around so often they don't get a chance to re-register. Are you NOW registered to vote in your precinct or election district or haven't you been able to register?",political_attitudes,vote
+2010,qn68,"68. In general, would you describe your political views as...?",political_attitudes,political
+2011,qn84,84. Are you a citizen of the United States?,citizenship,citizen
+2011,qn85,85. What year did you become a citizen?,citizenship,citizen
+2011,qn70,"70. How important is it to you that future generations of (Latinos/Hispanics) living in the United States be able to speak Spanish- very important, somewhat important, not too important, or not important at all?",generation,generation
+2011,qn69,69. Do you think adult (Latino/Hispanic) immigrants need to learn to speak English to succeed in the United States or can they succeed even if they only speak Spanish?,immigration,immigrant
+2011,qn24,24. Thinking about immigrants whose parents brought them to the United States illegally when they were children... Would you favor or oppose a law that would let these young adults become legal residents if they go to college or serve in the milita...,immigration; border_immigration,immigrant; illegal
+2011,qn25,25. What should be the priority for dealing with illegal immigration in the U.S.? (READ LIST)?,immigration; border_immigration,immigration; illegal
+2011,qn28,"28. Compared with the George W. Bush administration, would you say the Obama administration is deporting more illegal immigrants, fewer illegal immigrants, or about the same number of illegal immigrants?",immigration; border_immigration,immigrant; illegal
+2011,qn30,"30. Do you think an illegal immigrant who went to high school in your state and is accepted to a public college should be eligible for the in-state tuition rate, or shouldn't they?",immigration; border_immigration,immigrant; illegal
+2011,qn22d,"22d. Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Immigration extremely important, very important, somewhat important, or not too important to you personally?",immigration; political_attitudes,immigration; president
+2011,qn27,27. Do you personally know someone who has been deported or detained by the federal government for immigration reasons in the last twelve months?,immigration; political_attitudes,immigration; government
+2011,combo81_82,81/82. Leaned Party,political_attitudes,party
+2011,qn12,12. Do you approve or disapprove of the way Barack Obama is handling his job as president?,political_attitudes,approve
+2011,qn15,15. Which party do you think has more concern for (Latinos/Hispanics) - (READ LIST) or is there no difference?,political_attitudes,party
+2011,qn17,"17. How much thought, if any, have you given to candidates who may be running for president in 2012?",political_attitudes,candidate
+2011,qn19,"19. If you had to choose between, (READ LIST), who would you vote for?",political_attitudes,vote
+2011,qn20,"20. If you had to choose between, (READ LIST), who would you vote for?",political_attitudes,vote
+2011,qn21,"21. If you had to choose between, (READ LIST), who would you vote for?",political_attitudes,vote
+2011,qn22a,"22a. Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Education extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2011,qn22b,"22b. Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Jobs extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2011,qn22c,"22c. Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Health care extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2011,qn22e,"22e. Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of The federal budget deficit extremely important, very important, somewhat important, or not too important to you pers...",political_attitudes,president
+2011,qn22g,"22g. Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Taxes extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2011,qn53,"53. If you had to choose, would you rather have a smaller government providing fewer services, or a bigger government providing more services?",political_attitudes,government
+2011,qn81,"81. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2011,qn82,82. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2011,qn83,"83. In general, would you describe your political views as... [READ LIST]?",political_attitudes,political
+2011,qn29,"29. In general, do you approve or disapprove of the way the Obama administration is handling the issue of deportations?",political_attitudes; border_immigration,approve; deportation
+2012,qn76,76. Earlier you said you are a naturalized U.S. citizen. Could you please tell me what was the main reason why you decided to get naturalized?,citizenship,naturalized
+2012,qn79,"79. If you could, would you naturalize and become a U.S. citizen, or not?",citizenship,citizen
+2012,qn80,80. What is the main reason why you have not naturalized and become a U.S. citizen?,citizenship,naturalized
+2012,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2012,qn9a,9A. What year did you become a citizen?,citizenship,citizen
+2012,qn70b,70B. Does the clergy at your place of worship ever speak out about immigration?,immigration,immigration
+2012,qn21d,"21d. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Immigration extremely important, very important, somewhat important, or not too important to you personally?",immigration; political_attitudes,immigration; president
+2012,qn34,34. Do you personally know someone who has been deported or detained by the federal government for immigration reasons in the last twelve months?,immigration; political_attitudes,immigration; government
+2012,qn31,"31. President Obama recently announced a policy that will allow illegal immigrants who were brought to the US as children to remain in the US & apply for work permits. Do you strongly approve, approve, disapprove or strongly disapprove of this new policy?",immigration; political_attitudes; border_immigration,immigrant; president; illegal
+2012,qn78,"78. As far as you know, does (the country where you were born) allow its citizens to hold citizenship from two countries at the same time, or not?",nativity; citizenship,where you were born; citizen
+2012,Combo13_14,13/14. Presidential vote,political_attitudes,president
+2012,Combo17_17a,17/17a. Plan to vote,political_attitudes,vote
+2012,Combo61_62,61/62. Leaned Party,political_attitudes,party
+2012,qn11,11. How much thought have you given to the coming presidential election ... Quite a lot or only a little?,political_attitudes,president
+2012,qn13,"13. If the presidential election were being held TODAY, would you vote...?",political_attitudes,president
+2012,qn17,17. Do you yourself plan to vote in the election this November?,political_attitudes,vote
+2012,qn17a,"17A. How certain are you that you will vote? Are you absolutely certain, fairly certain, or not certain?",political_attitudes,vote
+2012,qn18,"18. Now in thinking about the 2012 Presidential election, in your opinion, will the (Hispanic/Latino) vote have a major impact, a minor impact or will it have no impact at all in determining who wins the 2012 Presidential election?",political_attitudes,president
+2012,qn19,19. Which party do you think has more concern for (Hispanics/Latinos) - or is there no difference?,political_attitudes,party
+2012,qn21a,"21a. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Education extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn21b,"21b. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Jobs and the Economy extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn21c,"21c. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Health care extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn21e,"21e. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of The federal budget deficit extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn21g,"21g. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Taxes extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn27,"27. As far as you know, does your state require voters to present photo identification to be allowed to vote on Election Day, or not?",political_attitudes,vote
+2012,qn27a,27a. Do you think voters should or should not be required to show an official photo identification before they are allowed to vote on Election Day?,political_attitudes,vote
+2012,qn29,"29. Are you confident that you have the identification you might need to be allowed to vote in your state, or not?",political_attitudes,vote
+2012,qn32,32. Do you personally know someone who has applied for or is planning to apply for this new U.S. government program?,political_attitudes,government
+2012,qn61,"61. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2012,qn62,62. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2012,qn70g,70G. Does the clergy at your place of worship ever speak out about candidates and elections?,political_attitudes,candidate
+2015,q59,"59. If you could, would you naturalize and become a U.S. citizen, or not?",citizenship,citizen
+2015,q60,60. Have you done any research about the steps that are necessary to become a U.S. citizen?,citizenship,citizen
+2015,q62,62. Do you know how many tests you have to take to become a U.S. citizen?,citizenship,citizen
+2015,q63,63. What is the main reason why you have not naturalized and become a U.S. citizen?,citizenship,naturalized
+2015,q9,9. Are you a citizen of the United States?,citizenship,citizen
+2015,q58,58. Earlier you said you are not a citizen of the U.S. Do you have a green card or have you been approved for one?,citizenship; political_attitudes,citizen; approve
+2015,q43,"43. How important is it to you that future generations of Hispanics/Latinos living in the United States be able to speak Spanish- very important, somewhat important, not too important, or not important at all?",generation,generation
+2015,immgen,Immigration generations with Puerto Rico as foreign born,immigration; generation,immigration; generation
+2015,immgen1,Immigrant generations with Puerto Rico as U.S. born,immigration; generation,immigrant; generation
+2015,nativity,Nativity with Puerto Rico as foreign born,nativity,nativity
+2015,q4q5_combo,Q4/Q5 combo - Country of birth,nativity,country of birth
+2015,q7q8_combo,Q7/Q8 combo - Parent's nativity,nativity,nativity
+2015,q8ab_combo,Q8aa/ab/ba/bb combo - Grandparent's nativity,nativity,nativity
+2015,nativity1,Nativity with Puerto Rico as U.S. born,nativity; generation,nativity; u.s. born
+2015,party,"PARTY. In politics today, do you consider yourself a Republican, Democrat, or Independent?",political_attitudes,party
+2015,party_combo,PARTY/PARTYLN combo - Party affiliation,political_attitudes,party
+2015,partyln,PARTYLN. As of today do you lean more to the Republican Party or more to the Democratic Party?,political_attitudes,party
+2015,q32,"32. Which party do you think has more concern for Hispanics/Latinos, or is there no difference?",political_attitudes,party
+2016,qn37a_52,37a. Obtaining legal status,citizenship,legal status
+2016,qn37b_52,37b. Obtaining legal status,citizenship,legal status
+2016,qn41_52,41. Obtaining legal status,citizenship,legal status
+2016,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2016,qn43,43. Earlier you said you are not a citizen of the U.S. Do you have a green card or have you been approved for one?,citizenship; political_attitudes,citizen; approve
+2016,generations,Immigrant generation,immigration; generation,immigrant; generation
+2016,qn20d,"20D. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Immigration) be very important, somewhat important, not too important, or not at all important?",immigration; political_attitudes,immigration; vote
+2016,nativity,Nativity,nativity,nativity
+2016,nativity1,Nativity with Puerto Rico as native born,nativity,nativity
+2016,nativity2,Nativity with Puerto Rico as foreign born,nativity,nativity
+2016,party,"PARTY. In politics today, do you consider yourself a Republican, Democrat, or Independent?",political_attitudes,party
+2016,party_combo,PARTY/PARTYLN combo,political_attitudes,party
+2016,partyln,PARTYLN. As of today do you lean more to the Republican Party or more to the Democratic Party?,political_attitudes,party
+2016,qn11,"11. If the presidential election were being held TODAY, would you vote ...?",political_attitudes,president
+2016,qn13a,13A. Would you say that your choice is more a vote FOR Donald Trump or more a vote AGAINST Hillary Clinton?,political_attitudes,vote
+2016,qn13b,13B. Would you say that your choice is more a vote FOR Hillary Clinton or more a vote AGAINST Donald Trump?,political_attitudes,vote
+2016,qn14,14. What is the main reason why you are not planning to vote in the election this November?,political_attitudes,vote
+2016,qn16,"16.Which party do you think has more concern for (HISPANICS/LATINOS), or is there no difference?",political_attitudes,party
+2016,qn19,"19. Are you confident that you have the identification you might need to be allowed to vote in your state, or not?",political_attitudes,vote
+2016,qn20a,"20A. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Education) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20b,"20B. In making your decision about who to vote for in the 2016 presidential election, will the issue of (The economy) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20c,"20C. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Health care) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20e,"20E. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Terrorism ) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20f,"20F. In making your decision about who to vote for in the 2016 presidential election, will the issue of (How Hispanics in the U.S. are treated) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20j,"20J. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Gun policy) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn29b,29B. How about news about ... National government and politics?,political_attitudes,government
+2016,qn37a_94,37a. Economic/Political change,political_attitudes,political
+2016,qn37b_94,37b. Economic/Political change,political_attitudes,political
+2016,qn41_94,41. Economic/Political change,political_attitudes,political
+2016,qnfirst,"FIRST. Will the election this November be the FIRST time that you have voted, or have you voted before?",political_attitudes,election
+2016,qnideo,"IDEO. In general, would you describe your political views as ...?",political_attitudes,political
+2016,qnplanto1,PLANTO1. Do you yourself plan to vote in the election this November?,political_attitudes,vote
+2016,qnplanto2,"PLANTO2. How certain are you that you will vote? Are you absolutely certain, fairly certain, or not certain?",political_attitudes,vote
+2016,qnthought,THOUGHT. How much thought have you given to the coming presidential election…Quite a lot or only a little?,political_attitudes,president
+2018,qn29,"29. As you may know, there is a proposal to substantially expand the wall along the U.S. border with Mexico. In general, do you favor or oppose this proposal?",border_immigration,border
+2018,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2018,qn31,"31. Do you think there are too many, too few, or about the right amount of immigrants living in the United States today?",immigration,immigrant
+2018,qn24,"24. Regardless of your own immigration or citizenship status, how much, if at all, do you worry that you, a family member, or a close friend could be deported? Would you say that you worry a lot, some, not much, or not at all?",immigration; citizenship,immigration; citizen
+2018,qn28,"28. As you may know, many immigrants who came illegally to the U.S. when they were children now have temporary legal status that may be ending. Would you favor or oppose Congress passing a law granting them permanent legal status?",immigration; citizenship; political_attitudes; border_immigration,immigrant; legal status; congress; illegal
+2018,immgen,Immigrant generations,immigration; generation,immigrant; generation
+2018,qn19,"19. In the United States since Trump became president have you participated in any protests or demonstrations to support immigrants' rights, or not?",immigration; political_attitudes,immigrant; president
+2018,qn19a,"19A. In the United States since Trump became president have you talked about the immigration policy debate with family, friends or coworkers, or not?",immigration; political_attitudes,immigration; president
+2018,party,"PARTY. In politics today, do you consider yourself a Republican, Democrat, or Independent?",political_attitudes,party
+2018,party_combo,PARTY/PARTYLN Combo,political_attitudes,party
+2018,partyln,PARTYLN. As of today do you lean more to the Republican Party or more to the Democratic Party?,political_attitudes,party
+2018,qn14a,14A. Do you approve or disapprove of the way Donald Trump is handling his job as President?,political_attitudes,approve
+2018,qn14b,"14B. Compared to previous congressional elections, are you more enthusiastic about voting than usual, or less enthusiastic?",political_attitudes,congress
+2018,qn15,"15. Which party do you think has more concern for (Hispanics/Latinos), or is there no difference?",political_attitudes,party
+2018,qn18c,"18C. Now that Donald Trump is president, which statement comes closer to your view?",political_attitudes,president
+2018,thought,"THOUGHT. How much thought have you given to the coming November election . . . Quite a lot, or only a little?",political_attitudes,election
+2021,ASYLUMHA_MOD_W86,"ASYLUMHA_MOD_W86. How much, if anything, have you heard about the increase in the number of children and families seeking asylum at the United States border with Mexico?",border_immigration,border
+2021,KNOWUNAUTH_W86,KNOWUNAUTH_W86. Do you personally know someone who either came to the country illegally or is currently residing here without the documentation?,border_immigration,illegal
+2021,F_CITIZEN,Citizenship,citizenship,citizen
+2021,F_CITIZEN2,Citizenship among those born in another country,citizenship,citizen
+2021,IMMVAL_g_W86,"IMMVAL_g_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Encouraging more highly skilled individuals from around the world to immigrate and work in the United",immigration,immigration
+2021,IMMVAL_h_W86,"IMMVAL_h_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Establishing stricter policies to prevent people who enter the country legally from overstaying their",immigration,immigration
+2021,IMMVAL_j_W86,"IMMVAL_j_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Restricting immigration from countries with high COVID infection rates",immigration,immigration
+2021,ST2_W86,"ST2_W86. As far as you know, do you think the immigration system in this country…",immigration,immigration
+2021,USVSCOO1_e_W86,USVSCOO1_e_W86. How would you rate each of the following when comparing the United States to the country you came from? The way immigrants are treated,immigration,immigrant
+2021,USVSCOO2_e_W86,USVSCOO2_e_W86. How would you rate each of the following when comparing the United States to Puerto Rico? The way immigrants are treated,immigration,immigrant
+2021,USVSCOO3_e_W86,USVSCOO3_e_W86. How would you rate each of the following when comparing the United States to the country your parents or Hispanic ancestors came from? The way immigrants are treated,immigration,immigrant
+2021,USVSCOOCMB_E_W86,[Combining USVSCOO1-3_e] How would you rate each of the following when comparing the United States to the country you came from? The way immigrants are treated,immigration,immigrant
+2021,IMMVAL_b_W86,"IMMVAL_b_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Increasing deportations of immigrants currently in the country illegally",immigration; border_immigration,immigration; deportation
+2021,IMMVAL_c_W86,"IMMVAL_c_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Establishing a way for most immigrants currently in the country illegally to stay here legally",immigration; border_immigration,immigration; illegal
+2021,IMMVAL_d_W86,"IMMVAL_d_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Increasing security along the United States-Mexico border to reduce illegal crossings",immigration; border_immigration,immigration; border
+2021,IMMVAL_i_W86,"IMMVAL_i_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Allowing immigrants who came to the country illegally as children to remain in the United States and",immigration; border_immigration,immigration; illegal
+2021,IMMVAL_k_W86,"IMMVAL_k_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Making it easier for United States citizens or legal residents to sponsor a family member to immigrat",immigration; citizenship,immigration; citizen
+2021,WORRYDPORT_W86,"WORRYDPORT_W86. Regardless of your own immigration or citizenship status, how much, if at all, do you worry that you, a family member, or a close friend could be deported?",immigration; citizenship,immigration; citizen
+2021,IMMGEN2_W86,IMMGEN2. Immigrant Generations 2 (U.S. excludes born in Puerto Rico),immigration; generation,immigrant; generation
+2021,IMMGEN_W86,IMMGEN. Immigrant Generations 1 (U.S. born includes born in Puerto Rico),immigration; generation,immigrant; generation
+2021,FATHERNAT_W86,FATHERNAT_W86. Where was your FATHER born?,nativity,where was your father born
+2021,MOTHERNAT_W86,MOTHERNAT_W86. Where was your MOTHER born?,nativity,where was your mother born
+2021,SELFNAT_W86,SELFNAT_W86. Where were you born? [INCLUDES BACKCODED RESPONSES FOR MEXICO AND CUBA],nativity,where were you born
+2021,NATIVITY1_W86,NATIVITY1. SELFNAT RECODED (U.S. born includes born in Puerto Rico),nativity; generation,nativity; u.s. born
+2021,NATIVITY2_W86,NATIVITY2. SELFNAT RECODED (U.S. born excludes born in Puerto Rico),nativity; generation,nativity; u.s. born
+2021,FINANCES_f_W86,"FINANCES_f_W86. Since the coronavirus outbreak began in February 2020, have any of the following happened to you? Received government food assistance, such as SNAP benefits",political_attitudes,government
+2021,F_PARTYLN_FINAL,Party lean,political_attitudes,party
+2021,F_PARTYSUM_FINAL,Party summary,political_attitudes,party
+2021,F_PARTY_FINAL,Party,political_attitudes,party
+2021,POL1JBSTR_W86,POL1JBSTR_W86. Do you [IF POL1JB=1: approve; IF POL1JB=2: disapprove] of the way Joe Biden is handling his job as President…,political_attitudes,approve
+2021,POL1JB_W86,POL1JB_W86. Do you approve or disapprove of the way Joe Biden is handling his job as President?,political_attitudes,approve
+2021,BRDERJOB_MOD_W86,BRDERJOB_MOD_W86. How would you rate the job the United States government is doing dealing with the increased number of children and families seeking asylum at the United States border with Mexico?,political_attitudes; border_immigration,government; border
+2023,FATHERNAT_W138,FATHERNAT_W138. Where was your FATHER born?,nativity,where was your father born
+2023,MOTHERNAT_W138,MOTHERNAT_W138. Where was your MOTHER born?,nativity,where was your mother born
+2023,F_PARTYLN_FINAL,Party lean,political_attitudes,party
+2023,F_PARTYSUM_FINAL,Party summary,political_attitudes,party
+2023,F_PARTY_FINAL,Party,political_attitudes,party
+2023,F_REG,REG. Voter registration,political_attitudes,vote
+2023,JOY_f_W138,"JOY_f_W138. Supporting social or political causes // Regardless of how much time you spend on it, how much joy or fulfillment does each of the following bring to your life?",political_attitudes,political
