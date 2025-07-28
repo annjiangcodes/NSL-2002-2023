@@ -1,0 +1,264 @@
+year,raw_variable_name,label,matched_concepts,matched_keywords
+2008,combo14,Citizenship & Registration (qn5/5A/9/14),citizenship,citizen
+2008,combo24,Citizenship & Dem vs. Rep Primary (qn5/5A/9/14/23/24),citizenship,citizen
+2008,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2008,comb27a2,Citizenship & Candidate Summary (qn5/5A/9/14/23/24/26/27/27A),citizenship; political_attitudes,citizen; candidate
+2008,combo15,Citizenship & Candidate Choice (qn5/5A/9/15),citizenship; political_attitudes,citizen; candidate
+2008,combo16,Citizenship & Leaned Candidate (qn5/5A/9/15/16),citizenship; political_attitudes,citizen; candidate
+2008,combo23,Citizenship & Whether Voted (qn5/5A/9/14/23),citizenship; political_attitudes,citizen; vote
+2008,combo25,Citizenship & Whether 1st Time Primary Voter (qn5/5A/9/14/23/25),citizenship; political_attitudes,citizen; vote
+2008,combo26,Citizenship & Candidate-Dem Primary (qn5/5A/9/14/23/24/26),citizenship; political_attitudes,citizen; candidate
+2008,combo27,Citizenship & Candidate-Rep Primary (qn5/5A/9/14/23/24/27),citizenship; political_attitudes,citizen; candidate
+2008,combo27a,Citizenship & Candidate-Other Primary (qn5/5A/9/14/23/24/27A),citizenship; political_attitudes,citizen; candidate
+2008,qn17g,"17G. Is the issue of Immigration extremely important, very important, somewhat important, or not too important?",immigration,immigration
+2008,qn36a,36A. Have you Been stopped by police or other authorities and asked about your immigration status?,immigration,immigration
+2008,qn51,"51. In general, do you think immigrants increase, reduce, or have no effect on crime in your community?",immigration,immigrant
+2008,qn40,"40. Should local police take an active role in identifying undocumented or illegal immigrants, or should enforcement be left mainly to the federal authorities?",immigration; border_immigration,immigrant; undocumented
+2008,qn40a,"40a. Just your best guess, in the past year, has there been an increase, a decrease, or no change in the number of immigration enforcement actions around the country aimed at undocumented immigrants?",immigration; border_immigration,immigration; undocumented
+2008,qn40ca,40CA. Do you ..... of the following immigration enforcement actions: Workplace raids to discourage employers from hiring undocumented or illegal immigrants,immigration; border_immigration,immigration; undocumented
+2008,qn40cc,40CC. Do you ..... of the following immigration enforcement actions: Criminal prosecution of employers who hire undocumented immigrants,immigration; border_immigration,immigration; undocumented
+2008,qn40cd,40CD. Do you ..... of the following immigration enforcement actions: Criminal prosecution of undocumented immigrants who are working without authorization,immigration; border_immigration,immigration; undocumented
+2008,qn41,"41. Should an illegal immigrant who graduated from a high school in your state and is accepted to a state public college qualify for the in-state tuition rate, or shouldn't they?",immigration; border_immigration,immigrant; illegal
+2008,qn37,"37. Regardless of your own immigration or citizenship status, how much, if at all, do you worry that you, a family member, or a close friend could be deported? Would you say that you worry a lot, some, not much, or not at all?",immigration; citizenship,immigration; citizen
+2008,qn38,"38. Regardless of your own immigration or citizenship status, how much do you worry that you, a family member, or a close friend could be deported? Would you say that you worry a lot, some, not much, or not at all?",immigration; citizenship,immigration; citizen
+2008,qn18g,18G. Which candidate do you think will do a better job dealing with: Immigration,immigration; political_attitudes,immigration; candidate
+2008,qn31,"31. Which candidate do you think is better for IMMIGRANTS, or is there no difference?",immigration; political_attitudes,immigrant; candidate
+2008,qn40cb,40CB. Do you ..... of the following immigration enforcement actions: A requirement that employers check with a federal government database to verify the legal immigration status of any job applicant they are considering hiring,immigration; political_attitudes,immigration; government
+2008,combo5a,Nativity & Country of Birth (qn5/5A),nativity,nativity
+2008,combo6,Nativity & Years in U.S. (qn5/6),nativity,nativity
+2008,combo9,Citizenship & Nativity (qn5/5A/9),nativity; citizenship,nativity; citizen
+2008,combo20,Political Contribution & Method (qn19A/20),political_attitudes,political
+2008,combo22,Leaned Party Identification (qn21/22),political_attitudes,party
+2008,qn13,13. How closely are you following the 2008 presidential race?,political_attitudes,president
+2008,qn14,"14. These days, many people are so busy they can't find time to register to vote, or move around so often they don't get a chance to re-register. Are you NOW registered to vote in your precinct or election district or haven't you been a...",political_attitudes,vote
+2008,qn15,15. Now suppose the 2008 presidential election were being held TODAY. If you had to choose between - who would you vote for?,political_attitudes,president
+2008,qn16a,"16A. If Barack Obama chooses Hillary Clinton as his vice-presidential running mate, would that make you more likely to vote for Barack Obama, less likely to vote for Barack Obama, or would it make no difference in determining your vote",political_attitudes,president
+2008,qn18a,18A. Which candidate do you think will do a better job dealing with: Education,political_attitudes,candidate
+2008,qn18b,18B. Which candidate do you think will do a better job dealing with: Jobs,political_attitudes,candidate
+2008,qn18c,18C. Which candidate do you think will do a better job dealing with: The cost of living,political_attitudes,candidate
+2008,qn18d,18D. Which candidate do you think will do a better job dealing with: Crime,political_attitudes,candidate
+2008,qn18e,18E. Which candidate do you think will do a better job dealing with: Health care,political_attitudes,candidate
+2008,qn18f,18F. Which candidate do you think will do a better job dealing with: The war in Iraq,political_attitudes,candidate
+2008,qn19a,"19A. In the past year, have you Contributed money to a candidate running for public office, or not?",political_attitudes,candidate
+2008,qn19b,"19B. In the past year, have you Attended a political or campaign-related meeting, or not?",political_attitudes,political
+2008,qn19c,"19C. In the past year, have you Used the internet to find information about a political candidate, or not?",political_attitudes,political
+2008,qn20a,"20A. Do you, yourself, plan to vote in the election this November?",political_attitudes,vote
+2008,qn21,"21. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2008,qn22,22. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2008,qn23,23. A lot of people have been telling us they didn't get a chance to vote in the presidential primaries or caucuses this year. How about you...did things come up that kept you from voting or did you happen to vote?,political_attitudes,vote
+2008,qn24,24. Did you vote in a DEMOCRATIC primary or caucus or a REPUBLICAN primary or caucus?,political_attitudes,vote
+2008,qn25,"25. Was this primary/caucus the FIRST time that you have voted in a U.S. election, or have you voted before?",political_attitudes,vote
+2008,qn26,26. In this year's Democratic caucus or primary election which candidate did you vote for?,political_attitudes,democrat
+2008,qn27,27. In this year's Republican caucus or primary election which candidate did you vote for?,political_attitudes,republican
+2008,qn27a,27A. In this year's caucus or primary election which candidate did you vote for?,political_attitudes,election
+2008,qn29,"29. Which party do you think has more concern for (LATINOS), or is there no difference?",political_attitudes,party
+2008,qn30,30. Which candidate do you think is better for (LATINOS) or is there no difference?,political_attitudes,candidate
+2008,qn32,"32. For (LATINO) voters, do you think BARACK OBAMA's being black will help him, hurt him, or won't it make a difference to (LATINO) VOTERS in the general election this November?",political_attitudes,vote
+2008,qn33,"33. And with you, will BARACK OBAMA's being black help him, hurt him, or won't it make a difference in deciding YOUR vote in the general election this November?",political_attitudes,vote
+2008,qn34,"34. For (LATINO) voters, do you think JOHN MCCAIN's being white will help him, hurt him, or won't it make a difference to (LATINO) VOTERS in the general election this November?",political_attitudes,vote
+2008,qn35,"35. And with you, will John McCain's being white help him, hurt him, or won't it make a difference in deciding YOUR vote in the general election this November?",political_attitudes,vote
+2009,qn9,9.  Are you a citizen of the United States?,citizenship,citizen
+2009,qn98,"98.  In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2009,qn99,99.  Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2010,qn53,"53. Would you favor changing the Constitution so that the parents must be legal residents of the U.S. in order for their newborn child to be a citizen, or should the Constitution be left as it is?",citizenship,citizen
+2010,qn9,9.  Are you a citizen of the United States?,citizenship,citizen
+2010,qn44,"44. As you may know, the state of Arizona recently passed a law that requires police to verify the legal status of someone they have already stopped or arrested if they suspect that the person is in the country illegally. Do you approve of AZ's new law?",citizenship; political_attitudes; border_immigration,legal status; approve; illegal
+2010,qn21b,"21b. Which comes closer to your views, even if neither is exactly correct? Hispanic/Latino immigrants and native-born Hispanics/Latinos...",immigration,immigrant
+2010,qn23e,"23e. Please tell me how important this issue is to you personally. Is the issue of Immigration extremely important, very important, somewhat important, or not too important?",immigration,immigration
+2010,qn34,"34. In the last year, have you been stopped by police or other authorities and asked about your immigration status, or not?",immigration,immigration
+2010,qn40,"40. In general would you say that people in the United States are more accepting of immigrants now than they were five years ago, are they less accepting now than they were five years ago, or has there been no change?",immigration,immigrant
+2010,qn55_1,"55. In the United States in the past year have you participated in any protests or demonstrations to support immigrations rights, or not?",immigration,immigration
+2010,qn55a_1,"55a. In the United States in the past year have you talked about the immigration policy debate with family, friends or coworkers, or not?",immigration,immigration
+2010,qn47,"47. Overall, what is the effect of UNDOCUMENTED or ILLEGAL immigration on Hispanics/Latinos already living in the U.S.?  Would you say it's...?",immigration; border_immigration,immigration; undocumented
+2010,qn48,"48. All things considered, which of these statements comes closer to your own views about immigrants who are in the U.S. illegally - even if none of them is exactly right:",immigration; border_immigration,immigrant; illegal
+2010,qn50,"50. Should an illegal immigrant who graduated from a high school in your state and is accepted to a state public college qualify for the in-state college tuition rate, or shouldn't they?",immigration; border_immigration,immigrant; illegal
+2010,qn51,"51. Should local police take an active role in identifying undocumented or illegal immigrants, OR should enforcement be left mainly to the federal authorities?",immigration; border_immigration,immigrant; undocumented
+2010,qn54,"54. Some have said that one of the reasons many immigrants come to the U.S. illegally is to have a child here.  Do you think this is true, or not?",immigration; border_immigration,immigrant; illegal
+2010,qn32,"32. Regardless of your own immigration or citizenship status, how much, if at all, do you worry that you, a family member, or a close friend could be deported?  Would you say that you worry a lot, some, not much, or not at all?",immigration; citizenship,immigration; citizen
+2010,qn42,"42. Thinking about immigrants who are living in the U.S. illegally... do you favor or oppose providing a way for illegal immigrants currently in the country to gain legal citizenship if they pass background checks, pay fines and have jobs?",immigration; citizenship; border_immigration,immigrant; citizen; illegal
+2010,qn52,"52.  Were you aware that a child born to illegal immigrants in the U.S. is automatically a U.S. citizen, or weren't you aware of that?",immigration; citizenship; border_immigration,immigrant; citizen; illegal
+2010,qn31a,"31a. In general, which of the political parties' agendas on immigration do you have the most confidence in?",immigration; political_attitudes,immigration; political
+2010,qn33,33. Do you personally know someone who has been deported or detained by the federal government for immigration reasons in the last 12 months?,immigration; political_attitudes,immigration; government
+2010,qn49a,49a. Do you approve or disapprove of the following actions aimed at enforcing the nation's immigration laws.  How about... Workplace raids,immigration; political_attitudes,immigration; approve
+2010,qn49e,49e. Do you approve or disapprove of the following actions aimed at enforcing the nation's immigration laws.  How about... A requirement that all U.S. residents carry a national identity card?,immigration; political_attitudes,immigration; approve
+2010,qn49c,49c. Do you approve or disapprove of the following actions aimed at enforcing the nation's immigration laws.  How about... Building more fences on the nation's borders?,immigration; political_attitudes; border_immigration,immigration; approve; border
+2010,qn49d,49d. Do you approve or disapprove of the following actions aimed at enforcing the nation's immigration laws.  How about... Increasing the number of border patrol agents?,immigration; political_attitudes; border_immigration,immigration; approve; border
+2010,Combo13_14,13/14. Leaned Party/Congressional Election,political_attitudes,party
+2010,Combo65_66,65/66. Leaned Party,political_attitudes,party
+2010,qn12,12. How much thought have you given to the coming November election? Quite a lot or only a little?,political_attitudes,election
+2010,qn13,"13. If the elections for U.S. Congress were being held TODAY, would you vote for the Republican Party's candidate OR the Democratic Party's candidate for Congress in your district?",political_attitudes,election
+2010,qn14,"14. As of TODAY, do you LEAN more to the Republican or Democrat?",political_attitudes,republican
+2010,qn22,22. Which party do you think has more concern for Hispanics/Latinos - (READ LIST) or is there no difference?,political_attitudes,party
+2010,qn23a,23a. Now I'm going to read you a list of issues that might be discussed during this year's congressional campaign.  Please tell me how important this issue is to you personally.  Is the issue of Education important to you?,political_attitudes,congress
+2010,qn26,"26. Thinking ahead to November, do you yourself plan to vote in the Congressional election this November, or not?",political_attitudes,vote
+2010,qn27,"27. How certain are you that you will vote?  Are you absolutely certain, fairly certain, or not certain?",political_attitudes,vote
+2010,qn28,"28. Overall, do you approve or disapprove of the way Barack Obama is handling his job as president?",political_attitudes,approve
+2010,qn65,"65.  In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2010,qn66,66.  Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2010,qn67,"67. These days, many people are so busy they can't find time to register to vote, or move around so often they don't get a chance to re-register. Are you NOW registered to vote in your precinct or election district or haven't you been able to register?",political_attitudes,vote
+2010,qn68,"68. In general, would you describe your political views as...?",political_attitudes,political
+2011,qn84,84.  Are you a citizen of the United States?,citizenship,citizen
+2011,qn85,85.  What year did you become a citizen?,citizenship,citizen
+2011,qn70,"70.  How important is it to you that future generations of (Latinos/Hispanics) living in the United States be able to speak Spanish- very important, somewhat important, not too important, or not important at all?",generation,generation
+2011,qn69,69.  Do you think adult (Latino/Hispanic) immigrants need to learn to speak English to succeed in the United States or can they succeed even if they only speak Spanish?,immigration,immigrant
+2011,qn24,24.  Thinking about immigrants whose parents brought them to the United States illegally when they were children... Would you favor or oppose a law that would let these young adults become legal residents if they go to college or serve in the milita...,immigration; border_immigration,immigrant; illegal
+2011,qn25,25. What should be the priority for dealing with illegal immigration in the U.S.? (READ LIST)?,immigration; border_immigration,immigration; illegal
+2011,qn28,"28.  Compared with the George W. Bush administration, would you say the Obama administration is deporting more illegal immigrants, fewer illegal immigrants, or about the same number of illegal immigrants?",immigration; border_immigration,immigrant; illegal
+2011,qn30,"30.  Do you think an illegal immigrant who went to high school in your state and is accepted to a public college should be eligible for the in-state tuition rate, or shouldn't they?",immigration; border_immigration,immigrant; illegal
+2011,qn22d,"22d.  Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Immigration extremely important, very important, somewhat important, or not too important to you personally?",immigration; political_attitudes,immigration; president
+2011,qn27,27.  Do you personally know someone who has been deported or detained by the federal government for immigration reasons in the last twelve months?,immigration; political_attitudes,immigration; government
+2011,combo81_82,81/82.  Leaned Party,political_attitudes,party
+2011,qn12,12.  Do you approve or disapprove of the way Barack Obama is handling his job as president?,political_attitudes,approve
+2011,qn15,15.  Which party do you think has more concern for (Latinos/Hispanics) - (READ LIST) or is there no difference?,political_attitudes,party
+2011,qn17,"17.  How much thought, if any, have you given to candidates who may be running for president in 2012?",political_attitudes,candidate
+2011,qn19,"19.  If you had to choose between, (READ LIST), who would you vote for?",political_attitudes,vote
+2011,qn20,"20.  If you had to choose between, (READ LIST), who would you vote for?",political_attitudes,vote
+2011,qn21,"21.  If you had to choose between, (READ LIST), who would you vote for?",political_attitudes,vote
+2011,qn22a,"22a.  Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Education extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2011,qn22b,"22b.  Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Jobs extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2011,qn22c,"22c.  Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Health care extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2011,qn22e,"22e.  Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of The federal budget deficit extremely important, very important, somewhat important, or not too important to you pers...",political_attitudes,president
+2011,qn22g,"22g.  Now I'm going to read you a list of issues that might be discussed during next year's presidential campaign. Is the issue of Taxes extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2011,qn53,"53.  If you had to choose, would you rather have a smaller government providing fewer services, or a bigger government providing more services?",political_attitudes,government
+2011,qn81,"81.  In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2011,qn82,82.  Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2011,qn83,"83. In general, would you describe your political views as...  [READ LIST]?",political_attitudes,political
+2011,qn29,"29.  In general, do you approve or disapprove of the way the Obama administration is handling the issue of deportations?",political_attitudes; border_immigration,approve; deportation
+2012,qn76,76. Earlier you said you are a naturalized U.S. citizen. Could you please tell me what was the main reason why you decided to get naturalized?,citizenship,naturalized
+2012,qn79,"79. If you could, would you naturalize and become a U.S. citizen, or not?",citizenship,citizen
+2012,qn80,80. What is the main reason why you have not naturalized and become a U.S. citizen?,citizenship,naturalized
+2012,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2012,qn9a,9A. What year did you become a citizen?,citizenship,citizen
+2012,qn70b,70B. Does the clergy at your place of worship ever speak out about immigration?,immigration,immigration
+2012,qn21d,"21d. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Immigration extremely important, very important, somewhat important, or not too important to you personally?",immigration; political_attitudes,immigration; president
+2012,qn34,34. Do you personally know someone who has been deported or detained by the federal government for immigration reasons in the last twelve months?,immigration; political_attitudes,immigration; government
+2012,qn31,"31. President Obama recently announced a policy that will allow illegal immigrants who were brought to the US as children to remain in the US & apply for work permits. Do you strongly approve, approve, disapprove or strongly disapprove of this new policy?",immigration; political_attitudes; border_immigration,immigrant; president; illegal
+2012,qn78,"78. As far as you know, does (the country where you were born) allow its citizens to hold citizenship from two countries at the same time, or not?",nativity; citizenship,where you were born; citizen
+2012,Combo13_14,13/14. Presidential vote,political_attitudes,president
+2012,Combo17_17a,17/17a. Plan to vote,political_attitudes,vote
+2012,Combo61_62,61/62.  Leaned Party,political_attitudes,party
+2012,qn11,11. How much thought have you given to the coming presidential election ... Quite a lot or only a little?,political_attitudes,president
+2012,qn13,"13. If the presidential election were being held TODAY, would you vote...?",political_attitudes,president
+2012,qn17,17. Do you yourself plan to vote in the election this November?,political_attitudes,vote
+2012,qn17a,"17A. How certain are you that you will vote?  Are you absolutely certain, fairly certain, or not certain?",political_attitudes,vote
+2012,qn18,"18. Now in thinking about the 2012 Presidential election, in your opinion, will the (Hispanic/Latino) vote have a major impact, a minor impact or will it have no impact at all in determining who wins the 2012 Presidential election?",political_attitudes,president
+2012,qn19,19. Which party do you think has more concern for (Hispanics/Latinos) - or is there no difference?,political_attitudes,party
+2012,qn21a,"21a. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Education extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn21b,"21b. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Jobs and the Economy extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn21c,"21c. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Health care extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn21e,"21e. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of The federal budget deficit extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn21g,"21g. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. Is the issue of Taxes extremely important, very important, somewhat important, or not too important to you personally?",political_attitudes,president
+2012,qn27,"27. As far as you know, does your state require voters to present photo identification to be allowed to vote on Election Day, or not?",political_attitudes,vote
+2012,qn27a,27a. Do you think voters should or should not be required to show an official photo identification before they are allowed to vote on Election Day?,political_attitudes,vote
+2012,qn29,"29. Are you confident that you have the identification you might need to be allowed to vote in your state, or not?",political_attitudes,vote
+2012,qn32,32. Do you personally know someone who has applied for or is planning to apply for this new U.S. government program?,political_attitudes,government
+2012,qn61,"61. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?",political_attitudes,republican
+2012,qn62,62. Do you consider yourself closer to the Republican party or the Democratic party?,political_attitudes,republican
+2012,qn70g,70G. Does the clergy at your place of worship ever speak out about candidates and elections?,political_attitudes,candidate
+2015,q59,"59. If you could, would you naturalize and become a U.S. citizen, or not?",citizenship,citizen
+2015,q60,60. Have you done any research about the steps that are necessary to become a U.S. citizen?,citizenship,citizen
+2015,q62,62. Do you know how many tests you have to take to become a U.S. citizen?,citizenship,citizen
+2015,q63,63. What is the main reason why you have not naturalized and become a U.S. citizen?,citizenship,naturalized
+2015,q9,9. Are you a citizen of the United States?,citizenship,citizen
+2015,q58,58. Earlier you said you are not a citizen of the U.S. Do you have a green card or have you been approved for one?,citizenship; political_attitudes,citizen; approve
+2015,q43,"43. How important is it to you that future generations of Hispanics/Latinos living in the United States be able to speak Spanish- very important, somewhat important, not too important, or not important at all?",generation,generation
+2015,immgen,Immigration generations with Puerto Rico as foreign born,immigration; generation,immigration; generation
+2015,immgen1,Immigrant generations with Puerto Rico as U.S. born,immigration; generation,immigrant; generation
+2015,nativity,Nativity with Puerto Rico as foreign born,nativity,nativity
+2015,q4q5_combo,Q4/Q5 combo - Country of birth,nativity,country of birth
+2015,q7q8_combo,Q7/Q8 combo - Parent's nativity,nativity,nativity
+2015,q8ab_combo,Q8aa/ab/ba/bb combo - Grandparent's nativity,nativity,nativity
+2015,nativity1,Nativity with Puerto Rico as U.S. born,nativity; generation,nativity; u.s. born
+2015,party,"PARTY. In politics today, do you consider yourself a Republican, Democrat, or Independent?",political_attitudes,party
+2015,party_combo,PARTY/PARTYLN combo - Party affiliation,political_attitudes,party
+2015,partyln,PARTYLN. As of today do you lean more to the Republican Party or more to the Democratic Party?,political_attitudes,party
+2015,q32,"32. Which party do you think has more concern for Hispanics/Latinos, or is there no difference?",political_attitudes,party
+2016,qn37a_52,37a. Obtaining legal status,citizenship,legal status
+2016,qn37b_52,37b. Obtaining legal status,citizenship,legal status
+2016,qn41_52,41. Obtaining legal status,citizenship,legal status
+2016,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2016,qn43,43. Earlier you said you are not a citizen of the U.S. Do you have a green card or have you been approved for one?,citizenship; political_attitudes,citizen; approve
+2016,generations,Immigrant generation,immigration; generation,immigrant; generation
+2016,qn20d,"20D. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Immigration) be very important, somewhat important, not too important, or not at all important?",immigration; political_attitudes,immigration; vote
+2016,nativity,Nativity,nativity,nativity
+2016,nativity1,Nativity with Puerto Rico as native born,nativity,nativity
+2016,nativity2,Nativity with Puerto Rico as foreign born,nativity,nativity
+2016,party,"PARTY. In politics today, do you consider yourself a Republican, Democrat, or Independent?",political_attitudes,party
+2016,party_combo,PARTY/PARTYLN combo,political_attitudes,party
+2016,partyln,PARTYLN. As of today do you lean more to the Republican Party or more to the Democratic Party?,political_attitudes,party
+2016,qn11,"11. If the presidential election were being held TODAY, would you vote ...?",political_attitudes,president
+2016,qn13a,13A. Would you say that your choice is more a vote FOR Donald Trump or more a vote AGAINST Hillary Clinton?,political_attitudes,vote
+2016,qn13b,13B. Would you say that your choice is more a vote FOR Hillary Clinton or more a vote AGAINST Donald Trump?,political_attitudes,vote
+2016,qn14,14. What is the main reason why you are not planning to vote in the election this November?,political_attitudes,vote
+2016,qn16,"16.Which party do you think has more concern for (HISPANICS/LATINOS), or is there no difference?",political_attitudes,party
+2016,qn19,"19. Are you confident that you have the identification you might need to be allowed to vote in your state, or not?",political_attitudes,vote
+2016,qn20a,"20A. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Education) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20b,"20B. In making your decision about who to vote for in the 2016 presidential election, will the issue of (The economy) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20c,"20C. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Health care) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20e,"20E. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Terrorism ) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20f,"20F. In making your decision about who to vote for in the 2016 presidential election, will the issue of (How Hispanics in the U.S. are treated) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn20j,"20J. In making your decision about who to vote for in the 2016 presidential election, will the issue of (Gun policy) be very important, somewhat important, not too important, or not at all important?",political_attitudes,vote
+2016,qn29b,29B. How about news about ... National government and politics?,political_attitudes,government
+2016,qn37a_94,37a. Economic/Political change,political_attitudes,political
+2016,qn37b_94,37b. Economic/Political change,political_attitudes,political
+2016,qn41_94,41. Economic/Political change,political_attitudes,political
+2016,qnfirst,"FIRST. Will the election this November be the FIRST time that you have voted, or have you voted before?",political_attitudes,election
+2016,qnideo,"IDEO. In general, would you describe your political views as ...?",political_attitudes,political
+2016,qnplanto1,PLANTO1. Do you yourself plan to vote in the election this November?,political_attitudes,vote
+2016,qnplanto2,"PLANTO2. How certain are you that you will vote?  Are you absolutely certain, fairly certain, or not certain?",political_attitudes,vote
+2016,qnthought,THOUGHT. How much thought have you given to the coming presidential election…Quite a lot or only a little?,political_attitudes,president
+2018,qn29,"29. As you may know, there is a proposal to substantially expand the wall along the U.S. border with Mexico. In general, do you favor or oppose this proposal?",border_immigration,border
+2018,qn9,9. Are you a citizen of the United States?,citizenship,citizen
+2018,qn31,"31. Do you think there are too many, too few, or about the right amount of immigrants living in the United States today?",immigration,immigrant
+2018,qn24,"24. Regardless of your own immigration or citizenship status, how much, if at all, do you worry that you, a family member, or a close friend could be deported? Would you say that you worry a lot, some, not much, or not at all?",immigration; citizenship,immigration; citizen
+2018,qn28,"28. As you may know, many immigrants who came illegally to the U.S. when they were children now have temporary legal status that may be ending. Would you favor or oppose Congress passing a law granting them permanent legal status?",immigration; citizenship; political_attitudes; border_immigration,immigrant; legal status; congress; illegal
+2018,immgen,Immigrant generations,immigration; generation,immigrant; generation
+2018,qn19,"19. In the United States since Trump became president have you participated in any protests or demonstrations to support immigrants' rights, or not?",immigration; political_attitudes,immigrant; president
+2018,qn19a,"19A. In the United States since Trump became president have you talked about the immigration policy debate with family, friends or coworkers, or not?",immigration; political_attitudes,immigration; president
+2018,party,"PARTY. In politics today, do you consider yourself a Republican, Democrat, or Independent?",political_attitudes,party
+2018,party_combo,PARTY/PARTYLN Combo,political_attitudes,party
+2018,partyln,PARTYLN. As of today do you lean more to the Republican Party or more to the Democratic Party?,political_attitudes,party
+2018,qn14a,14A. Do you approve or disapprove of the way Donald Trump is handling his job as President?,political_attitudes,approve
+2018,qn14b,"14B. Compared to previous congressional elections, are you more enthusiastic about voting than usual, or less enthusiastic?",political_attitudes,congress
+2018,qn15,"15. Which party do you think has more concern for (Hispanics/Latinos), or is there no difference?",political_attitudes,party
+2018,qn18c,"18C. Now that Donald Trump is president, which statement comes closer to your view?",political_attitudes,president
+2018,thought,"THOUGHT. How much thought have you given to the coming November election . . . Quite a lot, or only a little?",political_attitudes,election
+2021,ASYLUMHA_MOD_W86,"ASYLUMHA_MOD_W86. How much, if anything, have you heard about the increase in the number of children and families seeking asylum at the United States border with Mexico?",border_immigration,border
+2021,KNOWUNAUTH_W86,KNOWUNAUTH_W86. Do you personally know someone who either came to the country illegally or is currently residing here without the documentation?,border_immigration,illegal
+2021,F_CITIZEN,Citizenship,citizenship,citizen
+2021,F_CITIZEN2,Citizenship among those born in another country,citizenship,citizen
+2021,IMMVAL_g_W86,"IMMVAL_g_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Encouraging more highly skilled individuals from around the world to immigrate and work in the United",immigration,immigration
+2021,IMMVAL_h_W86,"IMMVAL_h_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Establishing stricter policies to prevent people who enter the country legally from overstaying their",immigration,immigration
+2021,IMMVAL_j_W86,"IMMVAL_j_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Restricting immigration from countries with high COVID infection rates",immigration,immigration
+2021,ST2_W86,"ST2_W86. As far as you know, do you think the immigration system in this country…",immigration,immigration
+2021,USVSCOO1_e_W86,USVSCOO1_e_W86. How would you rate each of the following when comparing the United States to the country you came from?    The way immigrants are treated,immigration,immigrant
+2021,USVSCOO2_e_W86,USVSCOO2_e_W86. How would you rate each of the following when comparing the United States to Puerto Rico?    The way immigrants are treated,immigration,immigrant
+2021,USVSCOO3_e_W86,USVSCOO3_e_W86. How would you rate each of the following when comparing the United States to the country your parents or Hispanic ancestors came from?    The way immigrants are treated,immigration,immigrant
+2021,USVSCOOCMB_E_W86,[Combining USVSCOO1-3_e] How would you rate each of the following when comparing the United States to the country you came from? The way immigrants are treated,immigration,immigrant
+2021,IMMVAL_b_W86,"IMMVAL_b_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Increasing deportations of immigrants currently in the country illegally",immigration; border_immigration,immigration; deportation
+2021,IMMVAL_c_W86,"IMMVAL_c_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Establishing a way for most immigrants currently in the country illegally to stay here legally",immigration; border_immigration,immigration; illegal
+2021,IMMVAL_d_W86,"IMMVAL_d_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Increasing security along the United States-Mexico border to reduce illegal crossings",immigration; border_immigration,immigration; border
+2021,IMMVAL_i_W86,"IMMVAL_i_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Allowing immigrants who came to the country illegally as children to remain in the United States and",immigration; border_immigration,immigration; illegal
+2021,IMMVAL_k_W86,"IMMVAL_k_W86. Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States?Making it easier for United States citizens or legal residents to sponsor a family member to immigrat",immigration; citizenship,immigration; citizen
+2021,WORRYDPORT_W86,"WORRYDPORT_W86. Regardless of your own immigration or citizenship status, how much, if at all, do you worry that you, a family member, or a close friend could be deported?",immigration; citizenship,immigration; citizen
+2021,IMMGEN2_W86,IMMGEN2. Immigrant Generations 2 (U.S. excludes born in Puerto Rico),immigration; generation,immigrant; generation
+2021,IMMGEN_W86,IMMGEN. Immigrant Generations 1 (U.S. born includes born in Puerto Rico),immigration; generation,immigrant; generation
+2021,FATHERNAT_W86,FATHERNAT_W86. Where was your FATHER born?,nativity,where was your father born
+2021,MOTHERNAT_W86,MOTHERNAT_W86. Where was your MOTHER born?,nativity,where was your mother born
+2021,SELFNAT_W86,SELFNAT_W86. Where were you born? [INCLUDES BACKCODED RESPONSES FOR MEXICO AND CUBA],nativity,where were you born
+2021,NATIVITY1_W86,NATIVITY1. SELFNAT RECODED (U.S. born includes born in Puerto Rico),nativity; generation,nativity; u.s. born
+2021,NATIVITY2_W86,NATIVITY2. SELFNAT RECODED (U.S. born excludes born in Puerto Rico),nativity; generation,nativity; u.s. born
+2021,FINANCES_f_W86,"FINANCES_f_W86. Since the coronavirus outbreak began in February 2020, have any of the following happened to you?    Received government food assistance, such as SNAP benefits",political_attitudes,government
+2021,F_PARTYLN_FINAL,Party lean,political_attitudes,party
+2021,F_PARTYSUM_FINAL,Party summary,political_attitudes,party
+2021,F_PARTY_FINAL,Party,political_attitudes,party
+2021,POL1JBSTR_W86,POL1JBSTR_W86. Do you [IF POL1JB=1: approve; IF POL1JB=2: disapprove] of the way Joe Biden is handling his job as President…,political_attitudes,approve
+2021,POL1JB_W86,POL1JB_W86. Do you approve or disapprove of the way Joe Biden is handling his job as President?,political_attitudes,approve
+2021,BRDERJOB_MOD_W86,BRDERJOB_MOD_W86. How would you rate the job the United States government is doing dealing with the increased number of children and families seeking asylum at the United States border with Mexico?,political_attitudes; border_immigration,government; border
+2023,FATHERNAT_W138,FATHERNAT_W138. Where was your FATHER born?,nativity,where was your father born
+2023,MOTHERNAT_W138,MOTHERNAT_W138. Where was your MOTHER born?,nativity,where was your mother born
+2023,F_PARTYLN_FINAL,Party lean,political_attitudes,party
+2023,F_PARTYSUM_FINAL,Party summary,political_attitudes,party
+2023,F_PARTY_FINAL,Party,political_attitudes,party
+2023,F_REG,REG.   Voter registration,political_attitudes,vote
+2023,JOY_f_W138,"JOY_f_W138. Supporting social or political causes // Regardless of how much time you spend on it, how much joy or fulfillment does each of the following bring to your life?",political_attitudes,political
