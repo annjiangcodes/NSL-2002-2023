@@ -1,0 +1,837 @@
+Data File: ATPW113 (Description Only Codebook)
+
+1) QKEY
+Unique ID
+
+
+
+2) INTERVIEW_START_W113
+Interview start time
+
+
+
+3) INTERVIEW_END_W113
+Interview end time
+
+
+
+4) DEVICE_TYPE_W113
+The device used in the latest access of the survey link
+
+
+
+5) LANG_W113
+Language of the interview
+
+
+
+6) XPANEL_W113
+Panel of respondent
+
+
+
+7) FORM_W113
+Wave 113 form assignment
+
+
+
+8) XATPHISP_W113
+ATP Hispanic and non-Hispanic panelists
+
+
+
+9) XATTEND_W113
+Do you attend religious service at least a few times a year?
+
+
+
+10) SATIS_W113
+All in all, are you satisfied or dissatisfied with the way things are going in this country today?
+
+
+
+11) LIFE1_W113
+Overall, are you satisfied or dissatisfied with the way things are going in your life today?
+
+
+
+12) POL1JB_W113
+Do you approve or disapprove of the way Joe Biden is handling his job as president?
+
+
+
+13) POL1JBSTR_W113
+Do you approve or disapprove of the way Joe Biden is handling his job as president? [1 = approve; 2 = disapprove]
+
+
+
+14) BIDENDESC_MDL_W113
+How well does each of the following describe Joe Biden? A good role model
+
+
+
+15) BIDENDESC_ORD_W113
+How well does each of the following describe Joe Biden? Cares about the needs of ordinary people
+
+
+
+16) BIDENDESC_MENT_W113
+How well does each of the following describe Joe Biden? Mentally sharp
+
+
+
+17) BIDENDESC_STND_W113
+How well does each of the following describe Joe Biden? Stands up for what he believes in
+
+
+
+18) BIDENDESC_HON_W113
+How well does each of the following describe Joe Biden? Honest
+
+
+
+19) BIDENDESC_INSP_W113
+How well does each of the following describe Joe Biden? Inspiring
+
+
+
+20) MIDCMPGN_W113
+How much thought, if any, have you given to the congressional election coming up in November?
+
+
+
+21) MATTERSCONG_W113
+Thinking about how you feel about the 2022 congressional election, where would you place yourself on the following scale?
+
+
+
+22) CONG_W113
+If the elections for the U.S. House of Representatives were being held TODAY, which of the following would you vote for?
+
+
+
+23) CONGA_W113
+[ASK IF CONG=4 OR REFUSED] As of TODAY, who of the following do you lean more towards?
+
+
+
+24) POL10_W113
+Which of the following do you think about your vote for Congress this fall?
+
+
+
+25) EMTCONGREP_W113
+How would you feel if the REPUBLICAN PARTY gains control of the U.S. House of Representatives?
+
+
+
+26) EMTCONGDEM_W113
+How would you feel if the DEMOCRATIC PARTY keeps control of the U.S. House of Representatives?
+
+
+
+27) ISSUECONG_ABTN_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Abortion?
+
+
+
+28) ISSUECONG_EDUC_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Education?
+
+
+
+29) ISSUECONG_CRIM_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Violent crime?
+
+
+
+30) ISSUECONG_RCE_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Issues around race and ethnicity?
+
+
+
+31) ISSUECONG_GOV_W113
+[ASK FORM 1 ONLY (XFORM=1)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Size and scope of the federal government?
+
+
+
+32) ISSUECONG_VOTING_W113
+[ASK FORM 1 ONLY (XFORM=1)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Voting policies?
+
+
+
+33) ISSUECONG_COV_W113
+[ASK FORM 2 ONLY (XFORM=2)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? The coronavirus outbreak?
+
+
+
+34) ISSUECONG_ENG_W113
+[ASK FORM 2 ONLY (XFORM=2)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Energy policy?
+
+
+
+35) ISSUECONG_ECON_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? The economy?
+
+
+
+36) ISSUECONG_GUN_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Gun policy?
+
+
+
+37) ISSUECONG_HEALTH_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Health care?
+
+
+
+38) ISSUECONG_IMM_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Immigration?n
+
+
+
+39) ISSUECONG_CLIM_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Climate change?
+
+
+
+40) ISSUECONG_FP_W113
+[ASK FORM 1 ONLY (XFORM=1)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Foreign policy?
+
+
+
+41) ISSUECONG_SCOTUS_W113
+[ASK FORM 2 ONLY (XFORM=2)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Supreme Court appointments?
+
+
+
+42) ELECT_CONFCONG_A_W113
+Thinking about the congressional election this November, how confident, if at all, are you that..The election will be conducted fairly and accurately?
+
+
+
+43) ELECT_CONFCONG_B_W113
+Thinking about the congressional election this November, how confident, if at all, are you that..All citizens who want to vote in the election will be able to?
+
+
+
+44) REPRSNTREP_W113
+How well does the REPUBLICAN PARTY represent the interests of people like you?
+
+
+
+45) REPRSNTDEM_W113
+How well does the DEMOCRATIC PARTY represent the interests of people like you?
+
+
+
+46) VOTEDIR_MOD_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How much, if at all, do you think that voting by people like you can affect the direction the country takes in the future?
+
+
+
+47) CANMTCHPOL_W110_W113
+[ASK KP (XPANEL=1)] Which comes closer to your view of candidates for political office, even if neither is exactly right? I usually feel like...
+
+
+
+48) DIFFPARTY_W110_W113
+[ASK KP (XPANEL=1)] Thinking about the Democratic and Republican parties, which of the following would you say there is?
+
+
+
+49) DEALBRK_A_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about policy areas that would matter to your vote, would you vote for a candidate who DISAGREES with you about the following if they AGREE with you on most other issues? Immigration?
+
+
+
+50) DEALBRK_B_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about policy areas that would matter to your vote, would you vote for a candidate who DISAGREES with you about the following if they AGREE with you on most other issues? Abortion?
+
+
+
+51) DEALBRK_C_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about policy areas that would matter to your vote, would you vote for a candidate who DISAGREES with you about the following if they AGREE with you on most other issues? The economy?
+
+
+
+52) DEALBRK_D_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about policy areas that would matter to your vote, would you vote for a candidate who DISAGREES with you about the following if they AGREE with you on most other issues? Gun policy?
+
+
+
+53) HISPLABEL_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] The terms Hispanic, Latino, or Latinx are used to describe people who are of Hispanic or Latino origin or descent. Which of these terms do you prefer?
+
+
+
+54) PRTYCARE_A_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well do each of the following statements describe your own views? The Democratic Party really cares about Hispanics, Latinos, and Latinx people?
+
+
+
+55) PRTYCARE_B_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well do each of the following statements describe your own views? Democrats work hard to earn Hispanics', Latinos', and Latinx people's votes?
+
+
+
+56) PRTYCARE_C_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well do each of the following statements describe your own views? The Republican Party really cares about Hispanic, Latino, and Latinx people?
+
+
+
+57) PRTYCARE_D_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well do each of the following statements describe your own views? Republicans work hard to earn Hispanics', Latinos', and Latinx people's votes?
+
+
+
+58) USEXCEPT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Which of these statements best describes your opinion about the United States?
+
+
+
+59) WHYPOOR_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] In your opinion, which generally has more to do with why a person is poor?
+
+
+
+60) WHYRICH_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] In your opinion, which generally has more to do with why a person is rich?
+
+
+
+61) IMMVAL_A_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Taking in civilian refugees from countries where people are trying to escape violence and war
+
+
+
+62) IMMVAL_B_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Increasing deportations of immigrants currently in the country illegally
+
+
+
+63) IMMVAL_C_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Establishing a way for most immigrants currently in the country illegally to stay here legally
+
+
+
+64) IMMVAL_D_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Increasing security along the United States-Mexico border to reduce illegal crossings
+
+
+
+65) IMMVAL_I_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Allowing immigrants who came to the country illegally as children to remain in the United States and apply for legal status
+
+
+
+66) IMMVAL_K_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Making it easier for the United States or legal residents to sponsor a family member to immigrate to the United States
+
+
+
+67) INSTFAV_C_W113
+Do you have a favorable or unfavorable opinion of each of the following? Congress?
+
+
+
+68) INSTFAV_D_W113
+Do you have a favorable or unfavorable opinion of each of the following? The Supreme Court?
+
+
+
+69) COURTIDEO_W113
+[ASK FORM 1 (XFORM=1)] Now, thinking about the U.S. Supreme Court...In your view, do you think the Supreme Court is...
+
+
+
+70) COURTPOWER_W113
+[ASK FORM 2 (XFORM=2)] Now, thinking about the U.S. Supreme Court...Do you think that the U.S. Supreme Court has...
+
+
+
+71) SCOTUS_PRTSN_W113
+Thinking about the Supreme Court, do you think justices should or should not bring their own political views into how they decide major cases?
+
+
+
+72) SCOTUS_JOB_W113
+[ASK IF SCOTUS_PRTSN=2] How would you rate the job that the Supreme Court justices are doing in keeping their own political views out of how they decide major cases?
+
+
+
+73) TRUMPFUT_W113
+Would you, personally, like to see Donald Trump continue to be a major national political figure for many years to come?
+
+
+
+74) TRUMPFUT2_W113
+[ASK IF YES (TRUMPFUT=1)] Thinking about the 2024 presidential election, which comes closer to your view?
+
+
+
+75) WORD_POL_A_W113
+For the following list of words, please indicate your reaction to each. Would you say you have a positive or negative impression of...Socialism?
+
+
+
+76) WORD_POL_C_W113
+For the following list of words, please indicate your reaction to each. Would you say that you have a positive or negative impression of...Capitalism?
+
+
+
+77) WORDPOL_SOCDESC_OPPOR_W113
+[ASK FORM 1] How well do each of the following phrases describe socialism? Gives all people an equal opportunity to be successful
+
+
+
+78) WORDPOL_SOCDESC_NEEDS_W113
+[ASK FORM 1] How well do each of the following phrases describe socialism? Makes sure everyone's basic needs, such as food, health care and housing, are met
+
+
+
+79) WORDPOL_SOCDESC_FREED_W113
+[ASK FORM 1] How well do each of the following phrases describe socialism? Restricts people's individual freedoms
+
+
+
+80) WORDPOL_CAPDESC_OPPOR_W113
+[ASK FORM 2] How well do each of the following phrases describe capitalism? Gives all people an equal opportunity to be successful
+
+
+
+81) WORDPOL_CAPDESC_NEEDS_W113
+[ASK FORM 2] How well do each of the following phrases describe capitalism? Makes sure everyone's basic needs, such as food, health care and housing, are met
+
+
+
+82) WORDPOL_CAPDESC_FREED_W113
+[ASK FORM 2] How well do each of the following phrases describe capitalism? Restricts people's individual freedoms
+
+
+
+83) LAN1_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well, if at all, would you say you can carry on a conversation in SPANISH, both understanding and speaking?
+
+
+
+84) LAN2_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well, if at all, would you say you can read a newspaper or book in SPANISH?
+
+
+
+85) LAN3_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well, if at all, would you say you can carry on a conversation in ENGLISH, both understanding and speaking?
+
+
+
+86) LAN4_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well, if at all, would you say you can read a newspaper or book in ENGLISH?
+
+
+
+87) SPANEC_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] In your opinion, does a person need to speak Spanish to be considered Hispanic/Latino/Latinx, or not?
+
+
+
+88) SPANGEN_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How important is it to you that future generations of Hispanics/Latinos/Latinx people living in the United States be able to speak Spanish?
+
+
+
+89) DISCSPAN_W113
+[ASK IF LATINO OR HISPANIC AND CAN CARRY CONVERSATION IN SPANISH JUST A LITTLE OR NOT AT ALL (HISP=1 and LAN1=3,4)] Has someone who is Hispanic/Latino/Latinx ever made you feel bad for not being able to speak Spanish?
+
+
+
+90) DISCSPAN2_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Sometimes Hispanic/Latinos/Latinx people make comments or jokes about other Hispanic/Latinos/Latinx who do not speak Spanish very well. How often have you heard a friend or family member do this?
+
+
+
+91) SPANGLI_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Some people use both Spanish and English words interchangeably in their conversations. This is often referred to as Spanglish. How often, it at all, do you use Spanglish in your conversations with friends and family?
+
+
+
+92) ABRTLGL_W110_W113
+[ASK KP (XPANEL=1)] Do you think abortion should be...
+
+
+
+93) RGHTCNTRLW110_W113
+[ASK KP (XPANEL=1)] What do you think is more important?
+
+
+
+94) SOCIETYGUNS_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? An increase in the number of guns in the U.S.
+
+
+
+95) SOCIETYSSM_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? Same-sex marriages being legal in the U.S.
+
+
+
+96) SOCIETYTRANS_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? Greater social acceptance of people who are transgender (people who identify as a gender that is different from the sex they were assigned at birth)
+
+
+
+97) SOCIETYABRT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? Increasing limits on abortion in many states
+
+
+
+98) SOCIETYBC_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? Birth control pills, condoms and other forms of contraception being widely available
+
+
+
+99) SOCIETYRELG_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? A decline in the share of Americans belonging to an organized religion
+
+
+
+100) PRNTSTAY_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Please choose the statement that comes closer to your own views - even if neither is exactly right.
+
+
+
+101) MARRFAM_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Please choose the statement that comes closer to your own views - even if neither is exactly right.
+
+
+
+102) GENDRESP1_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Who do you think should be mostly responsible for providing for the family financially in households where there's a mother and a father?
+
+
+
+103) GENDRESP2_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Who do you think should be mostly responsible for taking care of the children in households where there's a mother and a father?
+
+
+
+104) BELIEVE_GOD_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Please choose the statement that comes closer to your own views - even if neither is exactly right.
+
+
+
+105) RACESURV6_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] When it comes to racial discrimination, which do you think is the bigger problem for the country today?
+
+
+
+106) RACESURV20_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about your own experience, have you ever personally experienced discrimination or been treated unfairly because of your race or ethnicity?
+
+
+
+107) HISPIDIMPORT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Previously you said you consider yourself Hispanic/Latino/Latinx. How important is being Hispanic/Latino/Latinx to how you think about yourself?
+
+
+
+108) HISPAFFECT_B_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How much do you think what happens to each of the following groups overall affects what happens in your own life? Hispanic/Latino/Latinx immigrants living in the U.S. illegally?
+
+
+
+109) HISPAFFECT_C_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How much do you think what happens to each of the following groups overall affects what happens in your own life? Hispanic/Latino/Latinx immigrants living in the U.S. legally?
+
+
+
+110) HISPAFFECT_D_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)]How much do you think what happens to each of the following groups overall affects what happens in your own life? Hispanics/Latino/Latinx people who were born in the United States?
+
+
+
+111) IMMINTEG_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Which comes closer to your view - even if neither is exactly right?
+
+
+
+112) PERSFNC_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about your personal finances...How would you rate your own personal financial situation? Would you say you are in...
+
+
+
+113) MOTHERNAT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Where was your MOTHER born?
+
+
+
+114) FATHERNAT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)]Where was your FATHER born?
+
+
+
+115) CHRELIGMOD_W113
+Thinking about when you were a child, in what religion were you raised, if any?
+
+
+
+116) ATTEND1B_W113
+[ASK IF HISPANIC AND ATTEND AT LEAST A FEW TIMES A YEAR] Thinking about the religious service you attend most often, how often does it include people speaking or praying in tongues?
+
+
+
+117) US_GERM_REL_W113
+In general, how would you describe relations today between the United States and Germany?
+
+
+
+118) PARTNER_BATT_A_W113
+For each of the following issues, do you see Germany as a partner or not? Protecting the environment?
+
+
+
+119) PARTNER_BATT_B_W113
+For each of the following issues, do you see Germany as a partner or not? Dealing with China?
+
+
+
+120) PARTNER_BATT_C_W113
+For each of the following issues, do you see Germany as a partner or not? Securing access to energy sources?
+
+
+
+121) PARTNER_BATT_D_W113
+For each of the following issues, do you see Germany as a partner or not? Protecting European security?
+
+
+
+122) PARTNER_BATT_E_W113
+For each of the following issues, do you see Germany as a partner or not? Dealing with Russia?
+
+
+
+123) EU_RUS_OIL_W113
+Do you think European countries are doing enough to become independent from Russian energy supplies?
+
+
+
+124) EDUCCAT3_W113
+Three-way education coded from F_EDUCCAT and F_EDUCCAT2
+
+
+
+125) PRIMARY_LANGUAGE_W113
+Primary language of respondent (based on LAN1-LAN4)
+
+
+
+126) NATIVITY1_W113
+Nativity recoded from F_BIRTHPLACE, including P.R. and other territories as U.S. born
+
+
+
+127) NATIVITY2_W113
+Nativity recoded from F_BIRTHPLACE, including P.R. and other territories as foreign born
+
+
+
+128) IMMGEN1_W113
+Immigrant generations, including P.R. and other territories as U.S. born
+
+
+
+129) IMMGEN2_W113
+Immigrant generations, including P.R. and other territories as foreign born
+
+
+
+130) RELCAT2HISP_W113
+Hispanic religious groups variable
+
+
+
+131) F_METRO
+Metropolitan area indicator
+
+
+
+132) F_CREGION
+Census region
+
+
+
+133) F_CDIVISION
+Census division
+
+
+
+134) F_USR_SELFID
+Self-identified Urban, Suburban, Rural (USR)
+
+
+
+135) F_AGECAT
+Four-way category based on the panelist age as calculated from their date of birth.
+
+
+
+136) F_GENDER
+Gender
+
+
+
+137) F_EDUCCAT
+Three-way category coded from self-reported educational attainment.
+
+
+
+138) F_EDUCCAT2
+Six-way category coded from self-reported educational attainment.
+
+
+
+139) F_HISP
+Hispanic identification. Are you of Hispanic, Latino, or Spanish origin, such as Mexican, Puerto Rican or Cuban?
+
+
+
+140) F_HISP_ORIGIN
+Hispanic origin
+
+
+
+141) F_RACECMB
+Combining Race
+
+
+
+142) F_RACETHNMOD
+Race-Ethnicity
+
+
+
+143) F_CITIZEN
+Citizenship
+
+
+
+144) F_BIRTHPLACE
+Birthplace
+
+
+
+145) F_RELIG
+Religion
+
+
+
+146) F_BORN
+Born-again or evangelical Christian
+
+
+
+147) F_RELIGCAT1
+Condensed 4-way religion variable.
+
+
+
+148) F_RELIGCAT2
+Religion - 12 category
+
+
+
+149) F_ATTEND
+Self-repored religious service attendance frequency.
+
+
+
+150) F_PARTY_FINAL
+Party
+
+
+
+151) F_PARTYLN_FINAL
+Party lean
+
+
+
+152) F_PARTYSUM_FINAL
+Party summary
+
+
+
+153) F_PARTYSUMIDEO_FINAL
+Combining ideology and party identification
+
+
+
+154) F_INC_SDT1
+Family income
+
+
+
+155) F_REG
+Registered voter. Which of these statements best describes you?
+
+
+
+156) F_IDEO
+Ideology. In general, would you describe your political views as...
+
+
+
+157) F_INTFREQ
+Frequency of internet use. About how often do you use the internet?
+
+
+
+158) F_VOLSUM
+Self-reported volunteerism status
+
+
+
+159) F_INC_TIER2
+Income tier 3-way
+
+
+
+160) F_BIRTHPLACE_EXPANDED
+Expanded country of birth using backcoded variable
+
+
+
+161) F_YEARSINUS_RECODE
+Years lived in the United States (excluding Puerto Rico or other U.S. territories) - 4 category
+
+
+
+162) WEIGHT_W113
+Wave 113 weight
+
+
+
+163) I-RELIGION
+Religion (Recoded for use with online analysis)
+
+
+
+164) I-GENDER
+Gender (Recoded for use with online analysis)
+
+
+
+165) I-REGION
+Census division (Recoded for use with online analysis)
+
+
+
+166) I-ATTEND
+Religious service attendance (Recoded for use with online analysis)
+
+
+
+167) I-INCOME
+Family Income (Recoded for use with online analysis)
+
+
+

@@ -1,0 +1,2047 @@
+Data File: ATPW113 (Full Data Codebook)
+
+1) QKEY
+Unique ID
+RANGE: 112 to 202101013430
+	N	Mean	Std. Deviation
+Total	7647	140058874421.587	93037071984.496
+
+
+2) INTERVIEW_START_W113
+Interview start time
+RANGE: 0 to 0
+	N	Mean	Std. Deviation
+Total	7647	0	0
+
+
+3) INTERVIEW_END_W113
+Interview end time
+RANGE: 0 to 0
+	N	Mean	Std. Deviation
+Total	7647	0	0
+
+
+4) DEVICE_TYPE_W113
+The device used in the latest access of the survey link
+RANGE: 1 to 3
+	N	Mean	Std. Deviation
+Total	7647	1.733	0.537
+1) Laptop/PC	2397	31.3
+2) Smartphone	4897	64.0
+3) Tablet	353	4.6
+
+
+5) LANG_W113
+Language of the interview
+RANGE: 1 to 2
+	N	Mean	Std. Deviation
+Total	7647	1.162	0.368
+1) English	6411	83.8
+2) Spanish	1236	16.2
+
+
+6) XPANEL_W113
+Panel of respondent
+RANGE: 1 to 2
+	N	Mean	Std. Deviation
+Total	7647	1.788	0.409
+1) KP	1622	21.2
+2) ATP	6025	78.8
+
+
+7) FORM_W113
+Wave 113 form assignment
+RANGE: 1 to 2
+	N	Mean	Std. Deviation
+Total	7647	1.505	0.5
+1) Form 1	3786	49.5
+2) Form 2	3861	50.5
+
+
+8) XATPHISP_W113
+ATP Hispanic and non-Hispanic panelists
+RANGE: 1 to 2
+	N	Mean	Std. Deviation
+Total	6025	1.754	0.431
+1) Yes	1480	24.6
+2) No	4545	75.4
+Missing	1622
+
+
+9) XATTEND_W113
+Do you attend religious service at least a few times a year?
+RANGE: 1 to 2
+	N	Mean	Std. Deviation
+Total	6025	1.513	0.5
+1) Attend religious service at least a few times a year	2933	48.7
+2) Do not attend religious service at least a few times a year	3092	51.3
+Missing	1622
+
+
+10) SATIS_W113
+All in all, are you satisfied or dissatisfied with the way things are going in this country today?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.258	11.838
+1) Satisfied	1532	20.0
+2) Dissatisfied	6000	78.5
+99) Refused	115	1.5
+
+
+11) LIFE1_W113
+Overall, are you satisfied or dissatisfied with the way things are going in your life today?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.644	11.379
+1) Satisfied	5257	68.7
+2) Dissatisfied	2285	29.9
+99) Refused	105	1.4
+
+
+12) POL1JB_W113
+Do you approve or disapprove of the way Joe Biden is handling his job as president?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.962	15.056
+1) Approve	3135	41.0
+2) Disapprove	4325	56.6
+99) Refused	187	2.4
+
+
+13) POL1JBSTR_W113
+Do you approve or disapprove of the way Joe Biden is handling his job as president? [1 = approve; 2 = disapprove]
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7460	2.729	11.233
+1) Very strongly	4263	57.1
+2) Not so strongly	3097	41.5
+99) Refused	100	1.3
+Missing	187
+
+
+14) BIDENDESC_MDL_W113
+How well does each of the following describe Joe Biden? A good role model
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.638	9.928
+1) Very well	1419	18.6
+2) Fairly well	2302	30.1
+3) Not too well	1602	20.9
+4) Not at all well	2243	29.3
+99) Refused	81	1.1
+
+
+15) BIDENDESC_ORD_W113
+How well does each of the following describe Joe Biden? Cares about the needs of ordinary people
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.478	9.698
+1) Very well	1737	22.7
+2) Fairly well	2282	29.8
+3) Not too well	1528	20.0
+4) Not at all well	2023	26.5
+99) Refused	77	1.0
+
+
+16) BIDENDESC_MENT_W113
+How well does each of the following describe Joe Biden? Mentally sharp
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.991	10.535
+1) Very well	843	11.0
+2) Fairly well	2253	29.5
+3) Not too well	1774	23.2
+4) Not at all well	2685	35.1
+99) Refused	92	1.2
+
+
+17) BIDENDESC_STND_W113
+How well does each of the following describe Joe Biden? Stands up for what he believes in
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.845	11.753
+1) Very well	1689	22.1
+2) Fairly well	2649	34.6
+3) Not too well	1654	21.6
+4) Not at all well	1541	20.2
+99) Refused	114	1.5
+
+
+18) BIDENDESC_HON_W113
+How well does each of the following describe Joe Biden? Honest
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.815	11.231
+1) Very well	1658	21.7
+2) Fairly well	2416	31.6
+3) Not too well	1487	19.4
+4) Not at all well	1982	25.9
+99) Refused	104	1.4
+
+
+19) BIDENDESC_INSP_W113
+How well does each of the following describe Joe Biden? Inspiring
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.948	10.069
+1) Very well	811	10.6
+2) Fairly well	1929	25.2
+3) Not too well	2085	27.3
+4) Not at all well	2738	35.8
+99) Refused	84	1.1
+
+
+20) MIDCMPGN_W113
+How much thought, if any, have you given to the congressional election coming up in November?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.303	4.305
+1) A lot	2172	31.3
+2) Some	2506	36.2
+3) Not much	1465	21.1
+4) None at all	773	11.2
+99) Refused	13	0.2
+Missing	718
+
+
+21) MATTERSCONG_W113
+Thinking about how you feel about the 2022 congressional election, where would you place yourself on the following scale?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.474	8.773
+1) Really matters which party wins control of Congress	4258	61.5
+2) 	1243	17.9
+3) 	636	9.2
+4) Doesn't really matter which party wins control of Congress	736	10.6
+99) Refused	56	0.8
+Missing	718
+
+
+22) CONG_W113
+If the elections for the U.S. House of Representatives were being held TODAY, which of the following would you vote for?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	3.175	10.15
+1) The Republican Party's candidate in your district	2295	33.1
+2) The Democratic Party's candidate in your district	2910	42.0
+3) Another candidate	234	3.4
+4) Not sure	1414	20.4
+99) Refused	76	1.1
+Missing	718
+
+
+23) CONGA_W113
+[ASK IF CONG=4 OR REFUSED] As of TODAY, who of the following do you lean more towards?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	1490	6.242	16.784
+1) The Republican Party's candidate in your district	199	13.4
+2) The Democratic Party's candidate in your district	231	15.5
+3) Lean to another candidate	66	4.4
+4) Not sure	947	63.6
+99) Refused	47	3.2
+Missing	6157
+
+
+24) POL10_W113
+Which of the following do you think about your vote for Congress this fall?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	4.196	13.538
+1) A vote FOR Biden	1488	21.5
+2) A vote AGAINST Biden	1986	28.7
+3) Biden is not much of a factor in my vote for Congress this fall	3317	47.9
+99) Refused	138	2.0
+Missing	718
+
+
+25) EMTCONGREP_W113
+How would you feel if the REPUBLICAN PARTY gains control of the U.S. House of Representatives?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	7.022	20.164
+1) Excited	829	10.8
+2) Relieved	2300	30.1
+3) Disappointed	3053	39.9
+4) Angry	1115	14.6
+99) Refused	350	4.6
+
+
+26) EMTCONGDEM_W113
+How would you feel if the DEMOCRATIC PARTY keeps control of the U.S. House of Representatives?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	6.563	19.556
+1) Excited	897	11.7
+2) Relieved	3136	41.0
+3) Disappointed	2499	32.7
+4) Angry	788	10.3
+99) Refused	327	4.3
+
+
+27) ISSUECONG_ABTN_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Abortion?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.424	8.288
+1) Very important	3780	54.6
+2) Somewhat important	1746	25.2
+3) Not too important	838	12.1
+4) Not at all important	515	7.4
+99) Refused	50	0.7
+Missing	718
+
+
+28) ISSUECONG_EDUC_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Education?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.122	7.951
+1) Very important	4330	62.5
+2) Somewhat important	1974	28.5
+3) Not too important	448	6.5
+4) Not at all important	131	1.9
+99) Refused	46	0.7
+Missing	718
+
+
+29) ISSUECONG_CRIM_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Violent crime?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.152	8.038
+1) Very important	4391	63.4
+2) Somewhat important	1766	25.5
+3) Not too important	567	8.2
+4) Not at all important	158	2.3
+99) Refused	47	0.7
+Missing	718
+
+
+30) ISSUECONG_RCE_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Issues around race and ethnicity?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.807	8.819
+1) Very important	2703	39.0
+2) Somewhat important	2175	31.4
+3) Not too important	1225	17.7
+4) Not at all important	769	11.1
+99) Refused	57	0.8
+Missing	718
+
+
+31) ISSUECONG_GOV_W113
+[ASK FORM 1 ONLY (XFORM=1)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Size and scope of the federal government?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3440	2.983	10.451
+1) Very important	1377	40.0
+2) Somewhat important	1302	37.8
+3) Not too important	562	16.3
+4) Not at all important	159	4.6
+99) Refused	40	1.2
+Missing	4207
+
+
+32) ISSUECONG_VOTING_W113
+[ASK FORM 1 ONLY (XFORM=1)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Voting policies?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3440	2.401	8.789
+1) Very important	1927	56.0
+2) Somewhat important	1013	29.4
+3) Not too important	355	10.3
+4) Not at all important	117	3.4
+99) Refused	28	0.8
+Missing	4207
+
+
+33) ISSUECONG_COV_W113
+[ASK FORM 2 ONLY (XFORM=2)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? The coronavirus outbreak?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3489	2.922	8.702
+1) Very important	1126	32.3
+2) Somewhat important	1139	32.6
+3) Not too important	765	21.9
+4) Not at all important	431	12.4
+99) Refused	28	0.8
+Missing	4158
+
+
+34) ISSUECONG_ENG_W113
+[ASK FORM 2 ONLY (XFORM=2)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Energy policy?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3489	2.511	9.315
+1) Very important	1805	51.7
+2) Somewhat important	1248	35.8
+3) Not too important	323	9.3
+4) Not at all important	81	2.3
+99) Refused	32	0.9
+Missing	4158
+
+
+35) ISSUECONG_ECON_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? The economy?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	1.89	7.871
+1) Very important	5428	78.3
+2) Somewhat important	1225	17.7
+3) Not too important	163	2.4
+4) Not at all important	68	1.0
+99) Refused	45	0.6
+Missing	718
+
+
+36) ISSUECONG_GUN_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Gun policy?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.179	7.871
+1) Very important	4284	61.8
+2) Somewhat important	1713	24.7
+3) Not too important	615	8.9
+4) Not at all important	272	3.9
+99) Refused	45	0.6
+Missing	718
+
+
+37) ISSUECONG_HEALTH_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Health care?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.091	7.781
+1) Very important	4418	63.8
+2) Somewhat important	1841	26.6
+3) Not too important	474	6.8
+4) Not at all important	152	2.2
+99) Refused	44	0.6
+Missing	718
+
+
+38) ISSUECONG_IMM_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Immigration?n
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.29	7.507
+1) Very important	3370	48.6
+2) Somewhat important	2352	33.9
+3) Not too important	932	13.5
+4) Not at all important	234	3.4
+99) Refused	41	0.6
+Missing	718
+
+
+39) ISSUECONG_CLIM_W113
+How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Climate change?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.75	8.754
+1) Very important	3116	45.0
+2) Somewhat important	1815	26.2
+3) Not too important	1006	14.5
+4) Not at all important	936	13.5
+99) Refused	56	0.8
+Missing	718
+
+
+40) ISSUECONG_FP_W113
+[ASK FORM 1 ONLY (XFORM=1)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Foreign policy?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3440	2.389	8.134
+1) Very important	1514	44.0
+2) Somewhat important	1474	42.8
+3) Not too important	331	9.6
+4) Not at all important	97	2.8
+99) Refused	24	0.7
+Missing	4207
+
+
+41) ISSUECONG_SCOTUS_W113
+[ASK FORM 2 ONLY (XFORM=2)] How important are each of the following issues in making your decision about who to vote for in the 2022 congressional election? Supreme Court appointments?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3489	2.438	8.879
+1) Very important	1924	55.1
+2) Somewhat important	1021	29.3
+3) Not too important	390	11.2
+4) Not at all important	125	3.6
+99) Refused	29	0.8
+Missing	4158
+
+
+42) ELECT_CONFCONG_A_W113
+Thinking about the congressional election this November, how confident, if at all, are you that..The election will be conducted fairly and accurately?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.974	9.142
+1) Very confident	2160	28.2
+2) Somewhat confident	3084	40.3
+3) Not too confident	1660	21.7
+4) Not at all confident	675	8.8
+99) Refused	68	0.9
+
+
+43) ELECT_CONFCONG_B_W113
+Thinking about the congressional election this November, how confident, if at all, are you that..All citizens who want to vote in the election will be able to?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.842	9.217
+1) Very confident	2576	33.7
+2) Somewhat confident	3101	40.6
+3) Not too confident	1482	19.4
+4) Not at all confident	419	5.5
+99) Refused	69	0.9
+
+
+44) REPRSNTREP_W113
+How well does the REPUBLICAN PARTY represent the interests of people like you?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	5.691	16.645
+1) Very well	811	10.6
+2) Somewhat well	2500	32.7
+3) Not too well	1962	25.7
+4) Not at all well	2139	28.0
+99) Refused	235	3.1
+
+
+45) REPRSNTDEM_W113
+How well does the DEMOCRATIC PARTY represent the interests of people like you?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	5.297	16.046
+1) Very well	1102	14.4
+2) Somewhat well	2887	37.8
+3) Not too well	1617	21.1
+4) Not at all well	1824	23.9
+99) Refused	217	2.8
+
+
+46) VOTEDIR_MOD_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How much, if at all, do you think that voting by people like you can affect the direction the country takes in the future?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.157	14.723
+1) A lot	1197	39.5
+2) Some	1095	36.2
+3) Not much	487	16.1
+4) Not at all	179	5.9
+99) Refused	71	2.3
+Missing	4618
+
+
+47) CANMTCHPOL_W110_W113
+[ASK KP (XPANEL=1)] Which comes closer to your view of candidates for political office, even if neither is exactly right? I usually feel like...
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	2891	4.993	18.439
+1) There is at least one candidate who shares most of my views	1727	59.7
+2) None of the candidates represent my views well	1057	36.6
+99) Refused	107	3.7
+Missing	4756
+
+
+48) DIFFPARTY_W110_W113
+[ASK KP (XPANEL=1)] Thinking about the Democratic and Republican parties, which of the following would you say there is?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	2891	4.155	15.497
+1) A great deal of difference in what they stand for	1430	49.5
+2) A fair amount of difference in what they stand for	1001	34.6
+3) Hardly any difference at all in what they stand for	385	13.3
+99) Refused	75	2.6
+Missing	4756
+
+
+49) DEALBRK_A_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about policy areas that would matter to your vote, would you vote for a candidate who DISAGREES with you about the following if they AGREE with you on most other issues? Immigration?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.298	15.37
+1) I definitely would	390	12.9
+2) I probably would	771	25.5
+3) I probably would not	861	28.4
+4) I definitely would not	928	30.6
+99) Refused	79	2.6
+Missing	4618
+
+
+50) DEALBRK_B_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about policy areas that would matter to your vote, would you vote for a candidate who DISAGREES with you about the following if they AGREE with you on most other issues? Abortion?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.689	16.081
+1) I definitely would	326	10.8
+2) I probably would	713	23.5
+3) I probably would not	745	24.6
+4) I definitely would not	1158	38.2
+99) Refused	87	2.9
+Missing	4618
+
+
+51) DEALBRK_C_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about policy areas that would matter to your vote, would you vote for a candidate who DISAGREES with you about the following if they AGREE with you on most other issues? The economy?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.171	15.091
+1) I definitely would	440	14.5
+2) I probably would	754	24.9
+3) I probably would not	845	27.9
+4) I definitely would not	914	30.2
+99) Refused	76	2.5
+Missing	4618
+
+
+52) DEALBRK_D_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about policy areas that would matter to your vote, would you vote for a candidate who DISAGREES with you about the following if they AGREE with you on most other issues? Gun policy?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.622	15.999
+1) I definitely would	389	12.8
+2) I probably would	643	21.2
+3) I probably would not	803	26.5
+4) I definitely would not	1108	36.6
+99) Refused	86	2.8
+Missing	4618
+
+
+53) HISPLABEL_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] The terms Hispanic, Latino, or Latinx are used to describe people who are of Hispanic or Latino origin or descent. Which of these terms do you prefer?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	2.532	8.326
+1) Hispanic	1616	53.4
+2) Latino	816	26.9
+3) Latinx	56	1.8
+4) No preference	519	17.1
+99) Refused	22	0.7
+Missing	4618
+
+
+54) PRTYCARE_A_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well do each of the following statements describe your own views? The Democratic Party really cares about Hispanics, Latinos, and Latinx people?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.492	14.844
+1) Extremely well	273	9.0
+2) Very well	529	17.5
+3) Somewhat well	1099	36.3
+4) Not too well	589	19.4
+5) Not at all well	465	15.4
+99) Refused	74	2.4
+Missing	4618
+
+
+55) PRTYCARE_B_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well do each of the following statements describe your own views? Democrats work hard to earn Hispanics', Latinos', and Latinx people's votes?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.311	15.279
+1) Extremely well	450	14.9
+2) Very well	693	22.9
+3) Somewhat well	1016	33.5
+4) Not too well	478	15.8
+5) Not at all well	314	10.4
+99) Refused	78	2.6
+Missing	4618
+
+
+56) PRTYCARE_C_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well do each of the following statements describe your own views? The Republican Party really cares about Hispanic, Latino, and Latinx people?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	6.17	15.138
+1) Extremely well	156	5.2
+2) Very well	297	9.8
+3) Somewhat well	704	23.2
+4) Not too well	866	28.6
+5) Not at all well	928	30.6
+99) Refused	78	2.6
+Missing	4618
+
+
+57) PRTYCARE_D_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well do each of the following statements describe your own views? Republicans work hard to earn Hispanics', Latinos', and Latinx people's votes?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.903	15.282
+1) Extremely well	219	7.2
+2) Very well	420	13.9
+3) Somewhat well	883	29.2
+4) Not too well	788	26.0
+5) Not at all well	640	21.1
+99) Refused	79	2.6
+Missing	4618
+
+
+58) USEXCEPT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Which of these statements best describes your opinion about the United States?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.183	14.495
+1) The U.S. stands above all other countries in the world	747	24.7
+2) The U.S. is one of the greatest countries in the world, along with some others	1548	51.1
+3) There are other countries that are better than the U.S.	665	22.0
+99) Refused	69	2.3
+Missing	4618
+
+
+59) WHYPOOR_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] In your opinion, which generally has more to do with why a person is poor?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.106	17.801
+1) They have not worked as hard as most other people	777	25.7
+2) They have faced more obstacles in life that most other people	2147	70.9
+99) Refused	105	3.5
+Missing	4618
+
+
+60) WHYRICH_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] In your opinion, which generally has more to do with why a person is rich?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.84	17.317
+1) They have worked harder than most other people	1000	33.0
+2) They have had more advantages in life than most other people	1930	63.7
+99) Refused	99	3.3
+Missing	4618
+
+
+61) IMMVAL_A_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Taking in civilian refugees from countries where people are trying to escape violence and war
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.326	11.214
+1) Very important goal	2309	30.2
+2) Somewhat important goal	3310	43.3
+3) Not too important goal	1392	18.2
+4) Not at all important goal	533	7.0
+99) Refused	103	1.3
+
+
+62) IMMVAL_B_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Increasing deportations of immigrants currently in the country illegally
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.859	12.108
+1) Very important goal	2066	27.0
+2) Somewhat important goal	2079	27.2
+3) Not too important goal	2219	29.0
+4) Not at all important goal	1162	15.2
+99) Refused	121	1.6
+
+
+63) IMMVAL_C_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Establishing a way for most immigrants currently in the country illegally to stay here legally
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.363	10.719
+1) Very important goal	2350	30.7
+2) Somewhat important goal	2651	34.7
+3) Not too important goal	1449	18.9
+4) Not at all important goal	1103	14.4
+99) Refused	94	1.2
+
+
+64) IMMVAL_D_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Increasing security along the United States-Mexico border to reduce illegal crossings
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.888	9.989
+1) Very important goal	3458	45.2
+2) Somewhat important goal	2226	29.1
+3) Not too important goal	1370	17.9
+4) Not at all important goal	512	6.7
+99) Refused	81	1.1
+
+
+65) IMMVAL_I_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Allowing immigrants who came to the country illegally as children to remain in the United States and apply for legal status
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.062	10.572
+1) Very important goal	3143	41.1
+2) Somewhat important goal	2645	34.6
+3) Not too important goal	1098	14.4
+4) Not at all important goal	670	8.8
+99) Refused	91	1.2
+
+
+66) IMMVAL_K_W113
+Thinking about the issue of immigration, how important of a goal should each of the following be for immigration policy in the United States? Making it easier for the United States or legal residents to sponsor a family member to immigrate to the United States
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.556	11.83
+1) Very important goal	2184	28.6
+2) Somewhat important goal	3088	40.4
+3) Not too important goal	1594	20.8
+4) Not at all important goal	666	8.7
+99) Refused	115	1.5
+
+
+67) INSTFAV_C_W113
+Do you have a favorable or unfavorable opinion of each of the following? Congress?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	5.843	16.968
+1) Very favorable	361	4.7
+2) Mostly favorable	2385	31.2
+3) Mostly unfavorable	3331	43.6
+4) Very unfavorable	1325	17.3
+99) Refused	245	3.2
+
+
+68) INSTFAV_D_W113
+Do you have a favorable or unfavorable opinion of each of the following? The Supreme Court?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	5.209	15.75
+1) Very favorable	822	10.7
+2) Mostly favorable	3034	39.7
+3) Mostly unfavorable	2079	27.2
+4) Very unfavorable	1503	19.7
+99) Refused	209	2.7
+
+
+69) COURTIDEO_W113
+[ASK FORM 1 (XFORM=1)] Now, thinking about the U.S. Supreme Court...In your view, do you think the Supreme Court is...
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3786	4.569	16.95
+1) Conservative	1948	51.5
+2) Middle of the road	1491	39.4
+3) Liberal	229	6.0
+99) Refused	118	3.1
+Missing	3861
+
+
+70) COURTPOWER_W113
+[ASK FORM 2 (XFORM=2)] Now, thinking about the U.S. Supreme Court...Do you think that the U.S. Supreme Court has...
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3861	3.659	12.515
+1) Too much power	1748	45.3
+2) Too little power	198	5.1
+3) Right amount of power	1850	47.9
+99) Refused	65	1.7
+Missing	3786
+
+
+71) SCOTUS_PRTSN_W113
+Thinking about the Supreme Court, do you think justices should or should not bring their own political views into how they decide major cases?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	4.457	15.736
+1) Should do this	1195	15.6
+2) Should NOT do this	6246	81.7
+99) Refused	206	2.7
+
+
+72) SCOTUS_JOB_W113
+[ASK IF SCOTUS_PRTSN=2] How would you rate the job that the Supreme Court justices are doing in keeping their own political views out of how they decide major cases?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6246	3.61	4.954
+1) Excellent	323	5.2
+2) Good	1124	18.0
+3) Only fair	1586	25.4
+4) Poor	2347	37.6
+5) Not sure	850	13.6
+99) Refused	16	0.3
+Missing	1401
+
+
+73) TRUMPFUT_W113
+Would you, personally, like to see Donald Trump continue to be a major national political figure for many years to come?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.817	14.187
+1) Yes	2207	28.9
+2) No	5274	69.0
+99) Refused	166	2.2
+
+
+74) TRUMPFUT2_W113
+[ASK IF YES (TRUMPFUT=1)] Thinking about the 2024 presidential election, which comes closer to your view?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	2207	3.329	13.657
+1) Donald Trump should run for president himself	1336	60.5
+2) Donald Trump should support another presidential candidate who shares his views	827	37.5
+99) Refused	44	2.0
+Missing	5440
+
+
+75) WORD_POL_A_W113
+For the following list of words, please indicate your reaction to each. Would you say you have a positive or negative impression of...Socialism?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	6.307	17.759
+1) Very positive	456	6.0
+2) Somewhat positive	2296	30.0
+3) Somewhat negative	2049	26.8
+4) Very negative	2576	33.7
+99) Refused	270	3.5
+
+
+76) WORD_POL_C_W113
+For the following list of words, please indicate your reaction to each. Would you say that you have a positive or negative impression of...Capitalism?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	5.617	17.752
+1) Very positive	1688	22.1
+2) Somewhat positive	2947	38.5
+3) Somewhat negative	1947	25.5
+4) Very negative	799	10.4
+99) Refused	266	3.5
+
+
+77) WORDPOL_SOCDESC_OPPOR_W113
+[ASK FORM 1] How well do each of the following phrases describe socialism? Gives all people an equal opportunity to be successful
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3786	6.135	16.039
+1) Extremely well	327	8.6
+2) Very well	581	15.3
+3) Somewhat well	1046	27.6
+4) Not too well	805	21.3
+5) Not at all well	918	24.2
+99) Refused	109	2.9
+Missing	3861
+
+
+78) WORDPOL_SOCDESC_NEEDS_W113
+[ASK FORM 1] How well do each of the following phrases describe socialism? Makes sure everyone's basic needs, such as food, health care and housing, are met
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3786	5.755	16.182
+1) Extremely well	559	14.8
+2) Very well	831	21.9
+3) Somewhat well	1056	27.9
+4) Not too well	640	16.9
+5) Not at all well	590	15.6
+99) Refused	110	2.9
+Missing	3861
+
+
+79) WORDPOL_SOCDESC_FREED_W113
+[ASK FORM 1] How well do each of the following phrases describe socialism? Restricts people's individual freedoms
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3786	6.224	17.618
+1) Extremely well	839	22.2
+2) Very well	577	15.2
+3) Somewhat well	871	23.0
+4) Not too well	850	22.5
+5) Not at all well	518	13.7
+99) Refused	131	3.5
+Missing	3861
+
+
+80) WORDPOL_CAPDESC_OPPOR_W113
+[ASK FORM 2] How well do each of the following phrases describe capitalism? Gives all people an equal opportunity to be successful
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3861	5.588	15.897
+1) Extremely well	644	16.7
+2) Very well	778	20.2
+3) Somewhat well	1108	28.7
+4) Not too well	757	19.6
+5) Not at all well	466	12.1
+99) Refused	108	2.8
+Missing	3786
+
+
+81) WORDPOL_CAPDESC_NEEDS_W113
+[ASK FORM 2] How well do each of the following phrases describe capitalism? Makes sure everyone's basic needs, such as food, health care and housing, are met
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3861	6.308	16.503
+1) Extremely well	335	8.7
+2) Very well	485	12.6
+3) Somewhat well	1104	28.6
+4) Not too well	1037	26.9
+5) Not at all well	782	20.3
+99) Refused	118	3.1
+Missing	3786
+
+
+82) WORDPOL_CAPDESC_FREED_W113
+[ASK FORM 2] How well do each of the following phrases describe capitalism? Restricts people's individual freedoms
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3861	6.998	17.686
+1) Extremely well	249	6.4
+2) Very well	357	9.2
+3) Somewhat well	964	25.0
+4) Not too well	1168	30.3
+5) Not at all well	986	25.5
+99) Refused	137	3.5
+Missing	3786
+
+
+83) LAN1_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well, if at all, would you say you can carry on a conversation in SPANISH, both understanding and speaking?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	2.996	11.424
+1) Very well	1838	60.7
+2) Pretty well	569	18.8
+3) Just a little	379	12.5
+4) Not at all	201	6.6
+99) Refused	42	1.4
+Missing	4618
+
+
+84) LAN2_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well, if at all, would you say you can read a newspaper or book in SPANISH?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.159	11.681
+1) Very well	1729	57.1
+2) Pretty well	557	18.4
+3) Just a little	426	14.1
+4) Not at all	273	9.0
+99) Refused	44	1.5
+Missing	4618
+
+
+85) LAN3_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well, if at all, would you say you can carry on a conversation in ENGLISH, both understanding and speaking?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.101	11.813
+1) Very well	1815	59.9
+2) Pretty well	500	16.5
+3) Just a little	553	18.3
+4) Not at all	116	3.8
+99) Refused	45	1.5
+Missing	4618
+
+
+86) LAN4_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How well, if at all, would you say you can read a newspaper or book in ENGLISH?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.131	12.198
+1) Very well	1896	62.6
+2) Pretty well	526	17.4
+3) Just a little	452	14.9
+4) Not at all	107	3.5
+99) Refused	48	1.6
+Missing	4618
+
+
+87) SPANEC_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] In your opinion, does a person need to speak Spanish to be considered Hispanic/Latino/Latinx, or not?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	2.624	8.978
+1) Yes, necessary to be	632	20.9
+2) No, not necessary to be	2371	78.3
+99) Refused	26	0.9
+Missing	4618
+
+
+88) SPANGEN_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How important is it to you that future generations of Hispanics/Latinos/Latinx people living in the United States be able to speak Spanish?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	2.908	8.302
+1) Extremely important	1031	34.0
+2) Very important	923	30.5
+3) Somewhat important	622	20.5
+4) Not too important	269	8.9
+5) Not important at all	162	5.3
+99) Refused	22	0.7
+Missing	4618
+
+
+89) DISCSPAN_W113
+[ASK IF LATINO OR HISPANIC AND CAN CARRY CONVERSATION IN SPANISH JUST A LITTLE OR NOT AT ALL (HISP=1 and LAN1=3,4)] Has someone who is Hispanic/Latino/Latinx ever made you feel bad for not being able to speak Spanish?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	580	2.281	9.04
+1) Yes, this has happened to me	322	55.5
+2) No, this has not happened to me	253	43.6
+99) Refused	5	0.9
+Missing	7067
+
+
+90) DISCSPAN2_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Sometimes Hispanic/Latinos/Latinx people make comments or jokes about other Hispanic/Latinos/Latinx who do not speak Spanish very well. How often have you heard a friend or family member do this?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.052	10.193
+1) Extremely often	438	14.5
+2) Often	638	21.1
+3) Sometimes	861	28.4
+4) Rarely	679	22.4
+5) Never	379	12.5
+99) Refused	34	1.1
+Missing	4618
+
+
+91) SPANGLI_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Some people use both Spanish and English words interchangeably in their conversations. This is often referred to as Spanglish. How often, it at all, do you use Spanglish in your conversations with friends and family?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.236	11.045
+1) Extremely often	535	17.7
+2) Often	621	20.5
+3) Sometimes	764	25.2
+4) Rarely	542	17.9
+5) Never	527	17.4
+99) Refused	40	1.3
+Missing	4618
+
+
+92) ABRTLGL_W110_W113
+[ASK KP (XPANEL=1)] Do you think abortion should be...
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	2891	4.779	15.41
+1) Legal in all cases	728	25.2
+2) Legal in most cases	955	33.0
+3) Illegal in most cases	780	27.0
+4) Illegal in all cases	353	12.2
+99) Refused	75	2.6
+Missing	4756
+
+
+93) RGHTCNTRLW110_W113
+[ASK KP (XPANEL=1)] What do you think is more important?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	2891	3.237	12.052
+1) To protect the right of Americans to own guns	789	27.3
+2) To control gun ownership	2057	71.2
+99) Refused	45	1.6
+Missing	4756
+
+
+94) SOCIETYGUNS_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? An increase in the number of guns in the U.S.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.434	11.552
+1) Very good for society	162	5.3
+2) Somewhat good for society	174	5.7
+3) Neither good nor bad for society	569	18.8
+4) Somewhat bad for society	607	20.0
+5) Very bad for society	1472	48.6
+99) Refused	45	1.5
+Missing	4618
+
+
+95) SOCIETYSSM_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? Same-sex marriages being legal in the U.S.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.739	13.358
+1) Very good for society	732	24.2
+2) Somewhat good for society	314	10.4
+3) Neither good nor bad for society	1079	35.6
+4) Somewhat bad for society	309	10.2
+5) Very bad for society	536	17.7
+99) Refused	59	1.9
+Missing	4618
+
+
+96) SOCIETYTRANS_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? Greater social acceptance of people who are transgender (people who identify as a gender that is different from the sex they were assigned at birth)
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.048	14.406
+1) Very good for society	654	21.6
+2) Somewhat good for society	387	12.8
+3) Neither good nor bad for society	1096	36.2
+4) Somewhat bad for society	372	12.3
+5) Very bad for society	451	14.9
+99) Refused	69	2.3
+Missing	4618
+
+
+97) SOCIETYABRT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? Increasing limits on abortion in many states
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	6.06	15.663
+1) Very good for society	376	12.4
+2) Somewhat good for society	406	13.4
+3) Neither good nor bad for society	663	21.9
+4) Somewhat bad for society	543	17.9
+5) Very bad for society	958	31.6
+99) Refused	83	2.7
+Missing	4618
+
+
+98) SOCIETYBC_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? Birth control pills, condoms and other forms of contraception being widely available
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.328	12.188
+1) Very good for society	1648	54.4
+2) Somewhat good for society	633	20.9
+3) Neither good nor bad for society	477	15.7
+4) Somewhat bad for society	131	4.3
+5) Very bad for society	92	3.0
+99) Refused	48	1.6
+Missing	4618
+
+
+99) SOCIETYRELG_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Do you think each of the following is generally good or bad for our society? A decline in the share of Americans belonging to an organized religion
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	6.322	16.985
+1) Very good for society	269	8.9
+2) Somewhat good for society	285	9.4
+3) Neither good nor bad for society	1365	45.1
+4) Somewhat bad for society	547	18.1
+5) Very bad for society	465	15.4
+99) Refused	98	3.2
+Missing	4618
+
+
+100) PRNTSTAY_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Please choose the statement that comes closer to your own views - even if neither is exactly right.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	2.922	12.458
+1) Children are better off when a parent stays home to focus on the family	2057	67.9
+2) Children are just as well off when their parents work outside the home	922	30.4
+99) Refused	50	1.7
+Missing	4618
+
+
+101) MARRFAM_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Please choose the statement that comes closer to your own views - even if neither is exactly right.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	6.342	20.86
+1) Society is better off if people make marriage and having children a priority	1010	33.3
+2) Society is just as well off if people have priorities other than marriage and children	1873	61.8
+99) Refused	146	4.8
+Missing	4618
+
+
+102) GENDRESP1_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Who do you think should be mostly responsible for providing for the family financially in households where there's a mother and a father?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.657	9.388
+1) Mother	51	1.7
+2) Father	693	22.9
+3) Both equally	2256	74.5
+99) Refused	29	1.0
+Missing	4618
+
+
+103) GENDRESP2_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Who do you think should be mostly responsible for taking care of the children in households where there's a mother and a father?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.401	8.208
+1) Mother	428	14.1
+2) Father	41	1.4
+3) Both equally	2538	83.8
+99) Refused	22	0.7
+Missing	4618
+
+
+104) BELIEVE_GOD_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Please choose the statement that comes closer to your own views - even if neither is exactly right.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.009	12.321
+1) It is not necessary to believe in God in order to be moral and have good values	1696	56.0
+2) It is necessary to believe in God in order to be moral and have good values	1284	42.4
+99) Refused	49	1.6
+Missing	4618
+
+
+105) RACESURV6_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] When it comes to racial discrimination, which do you think is the bigger problem for the country today?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.9	17.576
+1) People seeing racial discrimination where it really does NOT exist	1111	36.7
+2) People NOT seeing racial discrimination where it really DOES exist	1816	60.0
+99) Refused	102	3.4
+Missing	4618
+
+
+106) RACESURV20_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about your own experience, have you ever personally experienced discrimination or been treated unfairly because of your race or ethnicity?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.574	10.631
+1) Yes, regularly	222	7.3
+2) Yes, from time to time	1369	45.2
+3) No	1401	46.3
+99) Refused	37	1.2
+Missing	4618
+
+
+107) HISPIDIMPORT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Previously you said you consider yourself Hispanic/Latino/Latinx. How important is being Hispanic/Latino/Latinx to how you think about yourself?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.389	9.811
+1) Extremely important	917	30.3
+2) Very important	911	30.1
+3) Somewhat important	578	19.1
+4) A little important	238	7.9
+5) Not at all important	354	11.7
+99) Refused	31	1.0
+Missing	4618
+
+
+108) HISPAFFECT_B_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How much do you think what happens to each of the following groups overall affects what happens in your own life? Hispanic/Latino/Latinx immigrants living in the U.S. illegally?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.386	13.493
+1) A great deal	658	21.7
+2) A fair amount	859	28.4
+3) Not too much	839	27.7
+4) Not at all	613	20.2
+99) Refused	60	2.0
+Missing	4618
+
+
+109) HISPAFFECT_C_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] How much do you think what happens to each of the following groups overall affects what happens in your own life? Hispanic/Latino/Latinx immigrants living in the U.S. legally?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.331	13.039
+1) A great deal	632	20.9
+2) A fair amount	799	26.4
+3) Not too much	824	27.2
+4) Not at all	718	23.7
+99) Refused	56	1.8
+Missing	4618
+
+
+110) HISPAFFECT_D_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)]How much do you think what happens to each of the following groups overall affects what happens in your own life? Hispanics/Latino/Latinx people who were born in the United States?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.315	12.925
+1) A great deal	659	21.8
+2) A fair amount	770	25.4
+3) Not too much	754	24.9
+4) Not at all	791	26.1
+99) Refused	55	1.8
+Missing	4618
+
+
+111) IMMINTEG_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Which comes closer to your view - even if neither is exactly right?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	5.045	18.076
+1) Immigrants in our country today should adopt American customs and way of life	1254	41.4
+2) Immigrants in our country should be able to hold on to the customs and way of life of their home country	1667	55.0
+99) Refused	108	3.6
+Missing	4618
+
+
+112) PERSFNC_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Thinking about your personal finances...How would you rate your own personal financial situation? Would you say you are in...
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.738	10.481
+1) Excellent shape	255	8.4
+2) Good shape	1094	36.1
+3) Only fair shape	1260	41.6
+4) Poor shape	384	12.7
+99) Refused	36	1.2
+Missing	4618
+
+
+113) MOTHERNAT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)] Where was your MOTHER born?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.701	7.482
+1) U.S. - 50 states, District of Columbia	710	23.4
+2) U.S. - Puerto Rico	225	7.4
+3) U.S. - other territory	37	1.2
+4) Another country	2039	67.3
+99) Refused	18	0.6
+Missing	4618
+
+
+114) FATHERNAT_W113
+[ASK IF LATINO OR HISPANIC (HISP=1)]Where was your FATHER born?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	3.849	8.24
+1) U.S. - 50 states, District of Columbia	691	22.8
+2) U.S. - Puerto Rico	221	7.3
+3) U.S. - other territory	31	1.0
+4) Another country	2064	68.1
+99) Refused	22	0.7
+Missing	4618
+
+
+115) CHRELIGMOD_W113
+Thinking about when you were a child, in what religion were you raised, if any?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.711	8.691
+1) Protestant (for example, Baptist, Methodist, Non-denominational, Lutheran, Presbyterian, Pentecostal, Episcopalian, Reformed, Church of Christ, etc.)	2991	39.1
+2) Roman Catholic	3166	41.4
+3) Mormon (Church of Jesus Christ of Latter-day Saints or LDS)	135	1.8
+4) Orthodox (such as Greek, Russian, or some other Orthodox church)	31	0.4
+5) Jewish	105	1.4
+6) Muslim	49	0.6
+7) Buddhist	63	0.8
+8) Hindu	58	0.8
+9) Atheist	67	0.9
+10) Agnostic	75	1.0
+11) Something else, specify:	46	0.6
+12) Nothing in particular	808	10.6
+99) Refused	53	0.7
+
+
+116) ATTEND1B_W113
+[ASK IF HISPANIC AND ATTEND AT LEAST A FEW TIMES A YEAR] Thinking about the religious service you attend most often, how often does it include people speaking or praying in tongues?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	1599	5.429	12.566
+1) All the time	137	8.6
+2) Most of the time	170	10.6
+3) Sometimes	294	18.4
+4) Rarely	300	18.8
+5) Never	670	41.9
+99) Refused	28	1.8
+Missing	6048
+
+
+117) US_GERM_REL_W113
+In general, how would you describe relations today between the United States and Germany?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	7.608	22.673
+1) Very good	1300	17.0
+2) Somewhat good	4842	63.3
+3) Somewhat bad	907	11.9
+4) Very bad	155	2.0
+99) Refused	443	5.8
+
+
+118) PARTNER_BATT_A_W113
+For each of the following issues, do you see Germany as a partner or not? Protecting the environment?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	9.361	26.888
+1) Yes, as a partner	4920	64.3
+2) No, not as a partner	2096	27.4
+99) Refused	631	8.3
+
+
+119) PARTNER_BATT_B_W113
+For each of the following issues, do you see Germany as a partner or not? Dealing with China?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	9.373	26.698
+1) Yes, as a partner	4048	52.9
+2) No, not as a partner	2976	38.9
+99) Refused	623	8.1
+
+
+120) PARTNER_BATT_C_W113
+For each of the following issues, do you see Germany as a partner or not? Securing access to energy sources?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	9.445	26.909
+1) Yes, as a partner	4469	58.4
+2) No, not as a partner	2545	33.3
+99) Refused	633	8.3
+
+
+121) PARTNER_BATT_D_W113
+For each of the following issues, do you see Germany as a partner or not? Protecting European security?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	8.791	26.089
+1) Yes, as a partner	5300	69.3
+2) No, not as a partner	1757	23.0
+99) Refused	590	7.7
+
+
+122) PARTNER_BATT_E_W113
+For each of the following issues, do you see Germany as a partner or not? Dealing with Russia?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	8.835	25.909
+1) Yes, as a partner	4287	56.1
+2) No, not as a partner	2777	36.3
+99) Refused	583	7.6
+
+
+123) EU_RUS_OIL_W113
+Do you think European countries are doing enough to become independent from Russian energy supplies?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	7.441	22.927
+1) Yes	2143	28.0
+2) No	5053	66.1
+99) Refused	451	5.9
+
+
+124) EDUCCAT3_W113
+Three-way education coded from F_EDUCCAT and F_EDUCCAT2
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	1.786	6.333
+1) Some college+	5319	69.6
+2) High school graduate	1716	22.4
+3) Less than high school graduate	580	7.6
+99) No answer	32	0.4
+
+
+125) PRIMARY_LANGUAGE_W113
+Primary language of respondent (based on LAN1-LAN4)
+RANGE: 1 to 3
+	N	Mean	Std. Deviation
+Total	7647	1.999	0.483
+1) English dominant	896	11.7
+2) Bilingual	5865	76.7
+3) Spanish dominant	886	11.6
+
+
+126) NATIVITY1_W113
+Nativity recoded from F_BIRTHPLACE, including P.R. and other territories as U.S. born
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	1.777	7.152
+1) U.S. born w/ P.R. and other territories	5685	74.3
+2) Foreign born w/o P.R. or other territories	1921	25.1
+99) No answer	41	0.5
+
+
+127) NATIVITY2_W113
+Nativity recoded from F_BIRTHPLACE, including P.R. and other territories as foreign born
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	1.805	7.151
+1) U.S. born w/o P.R. or other territories	5465	71.5
+2) Foreign born w/ P.R. and other territories	2141	28.0
+99) No answer	41	0.5
+
+
+128) IMMGEN1_W113
+Immigrant generations, including P.R. and other territories as U.S. born
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	54.566	48.488
+1) Foreign born w/o P.R. and other territories	1921	25.1
+2) Second generation	811	10.6
+3) Third generation	759	9.9
+99) No answer	4156	54.3
+
+
+129) IMMGEN2_W113
+Immigrant generations, including P.R. and other territories as foreign born
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	53.895	48.602
+1) Foreign born w/ P.R. and other territories	2141	28.0
+2) Second generation	895	11.7
+3) Third generation	503	6.6
+99) No answer	4108	53.7
+
+
+130) RELCAT2HISP_W113
+Hispanic religious groups variable
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	7.569	10.329
+1) Latino evangelical Protestant	465	6.1
+2) Latino, not evangelical Protestant	168	2.2
+3) Latino Catholic	1422	18.6
+4) Latino unaffiliated	791	10.3
+5) Latino, other faith	125	1.6
+6) White evangelical Protestant	777	10.2
+7) White, not evangelical Protestant	560	7.3
+8) White Catholic	554	7.2
+9) White unaffiliated	1014	13.3
+10) White, other faith	256	3.3
+11) Other race, any religion	1428	18.7
+99) No answer to religion	87	1.1
+
+
+131) F_METRO
+Metropolitan area indicator
+RANGE: 1 to 2
+	N	Mean	Std. Deviation
+Total	7647	1.1	0.3
+1) Metropolitan	6885	90.0
+2) Non-metropolitan	762	10.0
+
+
+132) F_CREGION
+Census region
+RANGE: 1 to 4
+	N	Mean	Std. Deviation
+Total	7647	2.812	0.981
+1) Northeast	1079	14.1
+2) Midwest	1290	16.9
+3) South	3264	42.7
+4) West	2014	26.3
+
+
+133) F_CDIVISION
+Census division
+RANGE: 1 to 9
+	N	Mean	Std. Deviation
+Total	7647	5.566	2.445
+1) New England	276	3.6
+2) Middle Atlantic	803	10.5
+3) East North Central	875	11.4
+4) West North Central	415	5.4
+5) South Atlantic	1802	23.6
+6) East South Central	343	4.5
+7) West South Central	1119	14.6
+8) Mountain	633	8.3
+9) Pacific	1381	18.1
+
+
+134) F_USR_SELFID
+Self-identified Urban, Suburban, Rural (USR)
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.874	9.722
+1) Urban	2378	31.1
+2) Suburban	3600	47.1
+3) Rural	1592	20.8
+99) Refused	77	1.0
+
+
+135) F_AGECAT
+Four-way category based on the panelist age as calculated from their date of birth.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.825	4.231
+1) 18-29	884	11.6
+2) 30-49	2746	35.9
+3) 50-64	2173	28.4
+4) 65+	1830	23.9
+99) Refused	14	0.2
+
+
+136) F_GENDER
+Gender
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	1.842	5.002
+1) A man	3221	42.1
+2) A woman	4337	56.7
+3) In some other way	69	0.9
+99) Refused	20	0.3
+
+
+137) F_EDUCCAT
+Three-way category coded from self-reported educational attainment.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.305	6.323
+1) College graduate+	3065	40.1
+2) Some college	2254	29.5
+3) H.S. graduate or less	2296	30.0
+99) Refused	32	0.4
+
+
+138) F_EDUCCAT2
+Six-way category coded from self-reported educational attainment.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	4.096	6.36
+1) Less than high school	580	7.6
+2) High school graduate	1716	22.4
+3) Some college, no degree	1504	19.7
+4) Associate's degree	750	9.8
+5) College graduate/some postgrad	1757	23.0
+6) Postgraduate	1308	17.1
+99) Refused	32	0.4
+
+
+139) F_HISP
+Hispanic identification. Are you of Hispanic, Latino, or Spanish origin, such as Mexican, Puerto Rican or Cuban?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	1.845	4.874
+1) Yes	3029	39.6
+2) No	4599	60.1
+99) Refused	19	0.2
+
+
+140) F_HISP_ORIGIN
+Hispanic origin
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	3029	4.723	13.156
+1) Mexican	1626	53.7
+2) Puerto Rican	259	8.6
+3) Cuban	175	5.8
+4) Dominican	101	3.3
+5) Salvadoran	132	4.4
+6) Spanish	105	3.5
+7) Other Central American	224	7.4
+8) Other South American	350	11.6
+97) Other country	34	1.1
+99) Refused	23	0.8
+Missing	4618
+
+
+141) F_RACECMB
+Combining Race
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.479	12.92
+1) White	5154	67.4
+2) Black or African-American	886	11.6
+3) Asian or Asian-American	387	5.1
+4) Mixed Race	365	4.8
+5) Or some other race	719	9.4
+99) Refused	136	1.8
+
+
+142) F_RACETHNMOD
+Race-Ethnicity
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.951	8.69
+1) White non-Hispanic	3175	41.5
+2) Black non-Hispanic	818	10.7
+3) Hispanic	3029	39.6
+4) Other	193	2.5
+5) Asian non-Hispanic	371	4.9
+99) Refused	61	0.8
+
+
+143) F_CITIZEN
+Citizenship
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	1.563	6.801
+1) Yes	6929	90.6
+2) No	681	8.9
+99) Refused	37	0.5
+
+
+144) F_BIRTHPLACE
+Birthplace
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.318	7.217
+1) U.S. - 50 states, District of Columbia	5465	71.5
+2) U.S. - Puerto Rico	140	1.8
+3) U.S. - other territory	80	1.0
+4) Another country	1921	25.1
+99) Refused	41	0.5
+
+
+145) F_RELIG
+Religion
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	5.674	10.967
+1) Protestant	2751	36.0
+2) Roman Catholic	2089	27.3
+3) Mormon (Church of Jesus Christ of Latter-day Saints or LDS)	123	1.6
+4) Orthodox (such as Greek, Russian, or some other Orthodox church)	26	0.3
+5) Jewish	94	1.2
+6) Muslim	54	0.7
+7) Buddhist	52	0.7
+8) Hindu	53	0.7
+9) Atheist	380	5.0
+10) Agnostic	368	4.8
+11) Other	149	1.9
+12) Nothing in particular	1421	18.6
+99) Refused	87	1.1
+
+
+146) F_BORN
+Born-again or evangelical Christian
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	5065	4.095	15.534
+1) Yes, born-again or evangelical Christian	2194	43.3
+2) No, not born-again or evangelical Christian	2739	54.1
+99) Refused	132	2.6
+Missing	2582
+
+
+147) F_RELIGCAT1
+Condensed 4-way religion variable.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	3.172	10.326
+1) Protestant	2751	36.0
+2) Catholic	2089	27.3
+3) Unaffiliated	2169	28.4
+4) Other	551	7.2
+99) Refused	87	1.1
+
+
+148) F_RELIGCAT2
+Religion - 12 category
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	7.911	10.373
+1) White evangelical Protestant	777	10.2
+2) White mainline Protestant	560	7.3
+3) White Protestant remaining	4	0.1
+4) Black Protestant	600	7.8
+5) Other race Protestant	810	10.6
+6) White non-Hispanic Catholic	554	7.2
+7) Hispanic Catholic	1422	18.6
+8) Other race Catholic	113	1.5
+9) Atheist	380	5.0
+10) Agnostic	368	4.8
+11) Nothing in particular	1421	18.6
+12) Other	551	7.2
+99) Refused	87	1.1
+
+
+149) F_ATTEND
+Self-repored religious service attendance frequency.
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	4.541	6.618
+1) More than once a week	619	8.1
+2) Once a week	1325	17.3
+3) Once or twice a month	557	7.3
+4) A few times a year	1206	15.8
+5) Seldom	1937	25.3
+6) Never	1968	25.7
+99) Refused	35	0.5
+
+
+150) F_PARTY_FINAL
+Party
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	4.127	13.454
+1) Republican	1942	25.4
+2) Democrat	2750	36.0
+3) Independent	1953	25.5
+4) Something else	852	11.1
+99) Refused	150	2.0
+
+
+151) F_PARTYLN_FINAL
+Party lean
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	2955	13.27	31.687
+1) The Republican Party	1131	38.3
+2) The Democratic Party	1469	49.7
+99) Refused	355	12.0
+Missing	4692
+
+
+152) F_PARTYSUM_FINAL
+Party summary
+RANGE: 1 to 9
+	N	Mean	Std. Deviation
+Total	7647	1.923	1.634
+1) Rep/Lean Rep	3073	40.2
+2) Dem/Lean Dem	4219	55.2
+9) DK/Refused/No lean	355	4.6
+
+
+153) F_PARTYSUMIDEO_FINAL
+Combining ideology and party identification
+RANGE: 1 to 9
+	N	Mean	Std. Deviation
+Total	7647	2.945	1.876
+1) Conservative Rep/Lean	1904	24.9
+2) Moderate/Liberal Rep/Lean	1129	14.8
+3) Moderate/Conservative Dem/Lean	2380	31.1
+4) Liberal Dem/Lean	1778	23.3
+9) Refused either F_IDEO or F_PARTYSUM_FINAL	456	6.0
+
+
+154) F_INC_SDT1
+Family income
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	9.383	20.399
+1) Less than $30,000	1536	20.1
+2) $30,000 to less than $40,000	793	10.4
+3) $40,000 to less than $50,000	688	9.0
+4) $50,000 to less than $60,000	666	8.7
+5) $60,000 to less than $70,000	547	7.2
+6) $70,000 to less than $80,000	508	6.6
+7) $80,000 to less than $90,000	420	5.5
+8) $90,000 to less than $100,000	433	5.7
+9) $100,000 or more	1687	22.1
+99) Refused	369	4.8
+
+
+155) F_REG
+Registered voter. Which of these statements best describes you?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	6929	2.244	9.655
+1) You are ABSOLUTELY CERTAIN that you are registered to vote at your current address	5681	82.0
+2) You are PROBABLY registered, but there is a chance your registration has lapsed	402	5.8
+3) You are NOT registered to vote at your current address	778	11.2
+99) Refused	68	1.0
+Missing	718
+
+
+156) F_IDEO
+Ideology. In general, would you describe your political views as...
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	5.789	16.299
+1) Very conservative	618	8.1
+2) Conservative	1701	22.2
+3) Moderate	3147	41.2
+4) Liberal	1345	17.6
+5) Very liberal	610	8.0
+99) Refused	226	3.0
+
+
+157) F_INTFREQ
+Frequency of internet use. About how often do you use the internet?
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7484	2.014	5.102
+1) Almost constantly	3417	45.7
+2) Several times a day	3094	41.3
+3) About once a day	500	6.7
+4) Several times a week	274	3.7
+5) Less often	179	2.4
+99) Refused	20	0.3
+Missing	163
+
+
+158) F_VOLSUM
+Self-reported volunteerism status
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.152	6.583
+1) Yes	2231	29.2
+2) No	5381	70.4
+99) Refused	35	0.5
+
+
+159) F_INC_TIER2
+Income tier 3-way
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	7.407	22.561
+1) Lower income	2354	30.8
+2) Middle income	3544	46.3
+3) Upper income	1312	17.2
+99) Refused	437	5.7
+
+
+160) F_BIRTHPLACE_EXPANDED
+Expanded country of birth using backcoded variable
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.721	7.378
+1) Born in the U.S. (not including unincorporated territories)	5465	71.5
+2) Born in Puerto Rico	140	1.8
+3) Born in Cuba	133	1.7
+4) Born in Mexico	652	8.5
+5) Born in Central America	223	2.9
+6) Born in Dominican Republic	72	0.9
+7) Born elsewhere	921	12.0
+99) Refused	41	0.5
+
+
+161) F_YEARSINUS_RECODE
+Years lived in the United States (excluding Puerto Rico or other U.S. territories) - 4 category
+RANGE: 1 to 99
+	N	Mean	Std. Deviation
+Total	7647	2.429	8.595
+1) Born in US (not including unincorporated territories)	5465	71.5
+2) 0-10 years	381	5.0
+3) 11-20 years	459	6.0
+4) 21+ years	1283	16.8
+99) Don't know/refused	59	0.8
+
+
+162) WEIGHT_W113
+Wave 113 weight
+RANGE: 0.000216113455148755 to 7.70280401398132
+	N	Mean	Std. Deviation
+Total	7647	1	1.11
+
+
+163) I-RELIGION
+Religion (Recoded for use with online analysis)
+RANGE: 1 to 4
+	N	Mean	Std. Deviation
+Total	7560	2.283	1.227
+1) Protestant	2751	36.4
+2) Roman Catholic	2089	27.6
+3) Other	551	7.3
+4) Atheist, Agnostic, or Nothing in particular	2169	28.7
+Missing	87
+
+
+164) I-GENDER
+Gender (Recoded for use with online analysis)
+RANGE: 1 to 2
+	N	Mean	Std. Deviation
+Total	7558	1.574	0.495
+1) A man	3221	42.6
+2) A woman	4337	57.4
+Missing	89
+
+
+165) I-REGION
+Census division (Recoded for use with online analysis)
+RANGE: 1 to 4
+	N	Mean	Std. Deviation
+Total	7647	2.812	0.981
+1) Northeast	1079	14.1
+2) Midwest	1290	16.9
+3) South	3264	42.7
+4) West	2014	26.3
+
+
+166) I-ATTEND
+Religious service attendance (Recoded for use with online analysis)
+RANGE: 1 to 6
+	N	Mean	Std. Deviation
+Total	7612	4.106	1.667
+1) More than once a week	619	8.1
+2) Once a week	1325	17.4
+3) Once or twice a month	557	7.3
+4) A few times a year	1206	15.8
+5) Seldom	1937	25.4
+6) Never	1968	25.9
+Missing	35
+
+
+167) I-INCOME
+Family Income (Recoded for use with online analysis)
+RANGE: 1 to 5
+	N	Mean	Std. Deviation
+Total	7278	2.755	1.565
+1) Less than $40,000	2329	32.0
+2) $40,000 to less than $60,000	1354	18.6
+3) $60,000 to less than $80,000	1055	14.5
+4) $80,000 to less than $100,000	853	11.7
+5) $100,000 or more	1687	23.2
+Missing	369
+
+
