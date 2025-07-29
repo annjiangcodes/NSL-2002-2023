@@ -62,3 +62,25 @@ year,matched_concepts,num_variables,example_variables
 2018,political_attitudes,11,"qn28, qn19, qn19a"
 2021,political_attitudes,7,"FINANCES_f_W86, F_PARTYLN_FINAL, F_PARTYSUM_FINAL"
 2023,political_attitudes,5,"F_PARTYLN_FINAL, F_PARTYSUM_FINAL, F_PARTY_FINAL"
+2007,age,1,qn50
+2008,age,1,qn62
+2009,age,2,"ageuse, agewgt"
+2010,age,1,qn58
+2011,age,1,qn64
+2012,age,1,qn67
+2007,gender,1,qnd18
+2008,gender,1,qnd18
+2009,gender,1,gender
+2010,gender,1,qnd18
+2011,gender,1,qnd18
+2012,gender,1,qnd18
+2007,ethnicity,1,qn4
+2008,ethnicity,1,qn4
+2009,ethnicity,1,qn4
+2010,ethnicity,1,qn4
+2011,ethnicity,1,qn4
+2012,ethnicity,1,qn4
+2009,race,2,"qn11, qn118"
+2007,language_home,1,qn70
+2009,language_home,2,"Primary_language, lang1"
+2008,place_birth,29,"combo5a, combo6, combo9, combo10, combo11, combo12, combo13, combo14, combo15, combo16, combo17, combo18, combo19, combo20, combo21, combo22, combo23, combo24, combo25, combo26, combo27, combo28, combo29, combo30, combo31, combo32, combo33, combo34, combo35"
