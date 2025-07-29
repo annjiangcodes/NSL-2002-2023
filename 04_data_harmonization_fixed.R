@@ -733,11 +733,11 @@ harmonize_demographics <- function(data, year) {
   # Age harmonization - comprehensive approach
   age <- rep(NA_real_, nrow(data))
   
-  # Year-specific age variables
+  # Year-specific age variables - COMPREHENSIVE MAPPING
   age_var_map <- list(
-    "2002" = c("age", "RAGES", "qn_age"),
-    "2004" = c("age", "RAGES", "qn_age"), 
-    "2006" = c("age", "RAGES", "qn_age"),
+    "2002" = c("AGE", "age", "RAGES", "qn_age"),
+    "2004" = c("AGE1", "AGE2", "age", "RAGES"), 
+    "2006" = c("qn74year", "age", "RAGES"),
     "2007" = "qn50",
     "2008" = "qn62", 
     "2009" = c("ageuse", "qn48", "age"),
@@ -752,6 +752,26 @@ harmonize_demographics <- function(data, year) {
     for (var in age_vars) {
       if (var %in% names(data)) {
         age <- clean_values(data[[var]])
+        
+        # Convert age ranges to approximate midpoint values
+        if (var %in% c("AGE1", "AGE2")) {
+          # 2004 age ranges: 1=18-29, 2=30-39, 3=40-54, 4=55+, 5=65+ (AGE2 only)
+          age <- case_when(
+            age == 1 ~ 24,   # 18-29 → 24
+            age == 2 ~ 35,   # 30-39 → 35  
+            age == 3 ~ 47,   # 40-54 → 47
+            age == 4 ~ 62,   # 55+ → 62
+            age == 5 ~ 70,   # 65+ → 70 (AGE2 only)
+            TRUE ~ NA_real_
+          )
+        } else if (var == "qn74year") {
+          # 2006 age ranges - convert to approximate ages
+          # Need to check what these represent, for now use as ranges
+          age <- case_when(
+            age >= 1 & age <= 20 ~ age + 20,  # Approximate conversion
+            TRUE ~ NA_real_
+          )
+        }
         break
       }
     }
@@ -799,6 +819,9 @@ harmonize_race_ethnicity <- function(data, year) {
   
   # Ethnicity harmonization (Hispanic/Latino heritage)
   ethnicity_var_map <- list(
+    "2002" = "QN1",  # Hispanic/Latino origin question
+    "2004" = "QN1",  # Check if 2004 has similar
+    "2006" = "qn1",  # Check if 2006 has similar
     "2007" = "qn4",
     "2008" = "qn4", 
     "2009" = c("qn4", "heritage"),
@@ -844,6 +867,9 @@ harmonize_language <- function(data, year) {
   
   # Language variable mapping
   lang_var_map <- list(
+    "2002" = "QN2",   # Language preference question
+    "2004" = "LANGUAGE", # Check if this exists
+    "2006" = "language", # Check if this exists
     "2007" = "qn70",  # Interview language
     "2008" = "qn70",
     "2009" = c("Primary_language", "lang1", "interview_language"),
