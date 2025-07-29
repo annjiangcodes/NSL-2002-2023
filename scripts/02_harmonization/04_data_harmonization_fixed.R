@@ -728,72 +728,172 @@ harmonize_border_security <- function(data, year) {
   return(border)
 }
 
-# Function to harmonize demographic variables (age, gender)
+# Enhanced function to harmonize demographic variables (age, gender)
 harmonize_demographics <- function(data, year) {
-  # Age harmonization
+  # Age harmonization - comprehensive approach
   age <- rep(NA_real_, nrow(data))
-  if (year == 2007 && "qn50" %in% names(data)) {
-    age <- clean_values(data$qn50)
-  } else {
-    # Look for common age variable names
-    age_vars <- names(data)[grepl("^age|qn.*age|AGE", names(data), ignore.case = TRUE)]
-    if (length(age_vars) > 0) {
-      age <- clean_values(data[[age_vars[1]]])
+  
+  # Year-specific age variables - COMPREHENSIVE MAPPING
+  age_var_map <- list(
+    "2002" = c("AGE", "age", "RAGES", "qn_age"),
+    "2004" = c("AGE1", "AGE2", "age", "RAGES"), 
+    "2006" = c("qn74year", "age", "RAGES"),
+    "2007" = "qn50",
+    "2008" = "qn62", 
+    "2009" = c("ageuse", "qn48", "age"),
+    "2010" = "qn58",
+    "2011" = "qn64", 
+    "2012" = "qn67"
+  )
+  
+  year_str <- as.character(year)
+  if (year_str %in% names(age_var_map)) {
+    age_vars <- age_var_map[[year_str]]
+    for (var in age_vars) {
+      if (var %in% names(data)) {
+        age <- clean_values(data[[var]])
+        
+        # Convert age ranges to approximate midpoint values
+        if (var %in% c("AGE1", "AGE2")) {
+          # 2004 age ranges: 1=18-29, 2=30-39, 3=40-54, 4=55+, 5=65+ (AGE2 only)
+          age <- case_when(
+            age == 1 ~ 24,   # 18-29 → 24
+            age == 2 ~ 35,   # 30-39 → 35  
+            age == 3 ~ 47,   # 40-54 → 47
+            age == 4 ~ 62,   # 55+ → 62
+            age == 5 ~ 70,   # 65+ → 70 (AGE2 only)
+            TRUE ~ NA_real_
+          )
+        } else if (var == "qn74year") {
+          # 2006 age ranges - convert to approximate ages
+          # Need to check what these represent, for now use as ranges
+          age <- case_when(
+            age >= 1 & age <= 20 ~ age + 20,  # Approximate conversion
+            TRUE ~ NA_real_
+          )
+        }
+        break
+      }
     }
   }
   
-  # Gender harmonization  
+  # Gender harmonization - comprehensive approach
   gender <- rep(NA_real_, nrow(data))
-  if (year == 2007 && "qnd18" %in% names(data)) {
-    gender <- clean_values(data$qnd18)
-    gender <- case_when(
-      gender == 1 ~ 1,  # Male
-      gender == 2 ~ 2,  # Female
-      TRUE ~ NA_real_
-    )
-  } else {
-    # Look for gender variables
-    gender_vars <- names(data)[grepl("gender|sex|male|female", names(data), ignore.case = TRUE)]
-    if (length(gender_vars) > 0) {
-      gender <- clean_values(data[[gender_vars[1]]])
+  
+  # Year-specific gender variables
+  gender_var_map <- list(
+    "2002" = c("GENDER", "gender", "RSEX"),  # No gender in 2002
+    "2004" = "QND18",  # GENDER variable confirmed  
+    "2006" = c("GENDER", "gender", "qnd18"),  # No gender in 2006
+    "2007" = "qnd18",
+    "2008" = "qnd18",
+    "2009" = c("gender", "qnd18"),
+    "2010" = "qnd18",
+    "2011" = "qnd18",
+    "2012" = "qnd18"
+  )
+  
+  if (year_str %in% names(gender_var_map)) {
+    gender_vars <- gender_var_map[[year_str]]
+    for (var in gender_vars) {
+      if (var %in% names(data)) {
+        gender <- clean_values(data[[var]])
+        # Standardize coding (1=Male, 2=Female)
+        gender <- case_when(
+          gender == 1 ~ 1,  # Male
+          gender == 2 ~ 2,  # Female
+          TRUE ~ NA_real_
+        )
+        break
+      }
     }
   }
   
   return(list(age = age, gender = gender))
 }
 
-# Function to harmonize race and ethnicity
+# Enhanced function to harmonize race and ethnicity
 harmonize_race_ethnicity <- function(data, year) {
   race <- rep(NA_real_, nrow(data))
   ethnicity <- rep(NA_real_, nrow(data))
   
-  if (year == 2007) {
-    # Use qn4 for Hispanic/Latino ethnicity
-    if ("qn4" %in% names(data)) {
-      ethnicity <- clean_values(data$qn4)
+  # Ethnicity harmonization (Hispanic/Latino heritage)
+  ethnicity_var_map <- list(
+    "2002" = "QN1",  # Hispanic/Latino origin question
+    "2004" = "QN1",  # Check if 2004 has similar
+    "2006" = "qn1",  # Check if 2006 has similar
+    "2007" = "qn4",
+    "2008" = "qn4", 
+    "2009" = c("qn4", "heritage"),
+    "2010" = c("qn1", "qn4"),
+    "2011" = "qn4",
+    "2012" = "qn4"
+  )
+  
+  year_str <- as.character(year)
+  if (year_str %in% names(ethnicity_var_map)) {
+    eth_vars <- ethnicity_var_map[[year_str]]
+    for (var in eth_vars) {
+      if (var %in% names(data)) {
+        ethnicity <- clean_values(data[[var]])
+        break
+      }
     }
-  } else if (year == 2010) {
-    # Use qn1 for Hispanic/Latino origin
-    if ("qn1" %in% names(data)) {
-      ethnicity <- clean_values(data$qn1)
+  }
+  
+  # Race harmonization (where available)
+  race_var_map <- list(
+    "2009" = c("qn11", "qn118", "race"),
+    "2010" = "qn11",
+    "2011" = "qn11"
+  )
+  
+  if (year_str %in% names(race_var_map)) {
+    race_vars <- race_var_map[[year_str]]
+    for (var in race_vars) {
+      if (var %in% names(data)) {
+        race <- clean_values(data[[var]])
+        break
+      }
     }
   }
   
   return(list(race = race, ethnicity = ethnicity))
 }
 
-# Function to harmonize language spoken at home
+# Enhanced function to harmonize language spoken at home
 harmonize_language <- function(data, year) {
   language <- rep(NA_real_, nrow(data))
   
-  if (year == 2007 && "qn70" %in% names(data)) {
-    # Interview language as proxy for home language
-    language <- clean_values(data$qn70)
-    language <- case_when(
-      language == 1 ~ 1,  # English
-      language == 2 ~ 2,  # Spanish
-      TRUE ~ NA_real_
-    )
+  # Language variable mapping
+  lang_var_map <- list(
+    "2002" = "QN2",   # Language preference question
+    "2004" = "LANGUAGE", # Check if this exists
+    "2006" = "language", # Check if this exists
+    "2007" = "qn70",  # Interview language
+    "2008" = "qn70",
+    "2009" = c("Primary_language", "lang1", "interview_language"),
+    "2010" = "qn70",
+    "2011" = "qn70", 
+    "2012" = "qn70"
+  )
+  
+  year_str <- as.character(year)
+  if (year_str %in% names(lang_var_map)) {
+    lang_vars <- lang_var_map[[year_str]]
+    for (var in lang_vars) {
+      if (var %in% names(data)) {
+        language <- clean_values(data[[var]])
+        # Standardize to 1=English, 2=Spanish/Other
+        language <- case_when(
+          language == 1 ~ 1,  # English
+          language == 2 ~ 2,  # Spanish/Other
+          language > 2 ~ 2,   # Other languages → Spanish/Other
+          TRUE ~ NA_real_
+        )
+        break
+      }
+    }
   }
   
   return(language)

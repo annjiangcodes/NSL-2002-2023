@@ -1,212 +1,266 @@
-# Longitudinal Survey Data Harmonization Workflow
+# 📊 Longitudinal Hispanic/Latino Survey Data Harmonization Project
 
-This repository contains R scripts for harmonizing longitudinal survey data focused on **immigration attitudes, nativity, generation, and political attitudes**. The workflow is designed to handle survey datasets stored in `.sav` (SPSS) or `.dta` (Stata) formats across multiple years.
+A comprehensive project for harmonizing and analyzing longitudinal survey data from the Hispanic/Latino community spanning 2002-2012, with a focus on demographic variables, political attitudes, and immigration-related opinions.
 
-## 🎯 Objectives
+## 🎯 Project Overview
 
-1. **Extract** variable names and labels from all survey files
-2. **Identify** variables related to immigration, nativity, generation, and political attitudes
-3. **Map** these variables across survey years despite differing names
-4. **Harmonize** them into a consistent longitudinal dataset
-5. **Create** reusable R scripts for cleaning and merging each wave
+This project extends harmonization of Hispanic/Latino survey data from the original 2002-2006 coverage to include **2007-2012**, creating a comprehensive 11-year longitudinal dataset (18,888 observations) suitable for studying political attitudes, immigration experiences, and demographic changes within Latino communities.
+
+### Key Achievements
+- ✅ **Extended temporal coverage**: 2002-2006 → 2002-2012 (11 years total)
+- ✅ **Comprehensive demographic harmonization**: Age (83.4%), Gender (44.0%), Ethnicity (93.3%), Language (64.7%), Race (23.0%)
+- ✅ **Advanced variable identification**: Sophisticated pattern matching across evolving survey designs
+- ✅ **Robust data validation**: Year-by-year coverage analysis and quality assurance
+- ✅ **Research-ready outputs**: Analysis-ready longitudinal dataset with full documentation
+
+---
 
 ## 📁 Repository Structure
 
 ```
-├── 00_master_script.R              # Runs complete workflow
-├── 01_variable_extraction.R        # Extracts variables from all files
-├── 02_keyword_search.R             # Searches for target concepts
-├── 03_harmonization_plan.R         # Creates harmonization mapping
-├── 04_data_harmonization.R         # Applies harmonization to data
-├── README.md                       # This documentation
-└── [survey data files]             # .sav/.dta files
+📦 longitudinal-survey-harmonization/
+├── 📂 data/                          # All data files organized by processing stage
+│   ├── 📂 raw/                       # Original survey files (.sav format)
+│   │   ├── 2002 RAE008b FINAL DATA FOR RELEASE.sav
+│   │   ├── 2004 Political Survey Rev 1-6-05.sav
+│   │   ├── f1171_050207 uploaded dataset.sav          # 2006 data
+│   │   ├── publicreleaseNSL07_UPDATED_3.7.22.sav     # 2007 data
+│   │   ├── PHCNSL2008aPublicRelease_UPDATED 3.7.22.sav
+│   │   ├── PHCNSL2009PublicRelease.sav
+│   │   ├── PHCNSL2010PublicRelease_UPDATED 3.7.22.sav
+│   │   ├── PHCNSL2011PubRelease_UPDATED 3.7.22.sav
+│   │   ├── PHCNSL2012PublicRelease_UPDATED 3.7.22.sav
+│   │   └── [Additional survey files...]
+│   ├── 📂 processed/                 # Intermediate processed data
+│   │   ├── 📂 cleaned_data/          # Year-by-year harmonized files
+│   │   │   ├── cleaned_2002.csv
+│   │   │   ├── cleaned_2004.csv
+│   │   │   └── [...through 2012]
+│   │   ├── 📂 cleaned_data_final/    # Final processing iterations
+│   │   └── 📂 cleaned_data_corrected/# Quality-corrected versions
+│   └── 📂 final/                     # Final research-ready datasets
+│       └── longitudinal_survey_data_fixed.csv  # 📊 MAIN DATASET (18,888 obs)
+├── 📂 scripts/                       # All analysis and processing scripts
+│   ├── 00_master_script.R            # 🎯 Main workflow orchestrator
+│   ├── 📂 01_extraction/             # Variable identification & extraction
+│   │   ├── 01_variable_extraction.R
+│   │   ├── 01_variable_extraction_extended.R
+│   │   ├── 01_variable_extraction_robust.R
+│   │   ├── 02_keyword_search.R
+│   │   └── 02_keyword_search_extended.R
+│   ├── 📂 02_harmonization/          # Data harmonization & combination
+│   │   ├── 03_harmonization_plan.R
+│   │   ├── 03_harmonization_plan_extended.R
+│   │   ├── 04_data_harmonization_fixed.R      # 🔧 Main harmonization script
+│   │   ├── 04_data_harmonization_ENHANCED.R
+│   │   ├── 05_combine_waves_fixed.R           # 🔗 Wave combination script
+│   │   └── [Additional harmonization versions...]
+│   ├── 📂 03_analysis/               # Analysis scripts (add your own here)
+│   └── 📂 utils/                     # Utility functions and helpers
+├── 📂 docs/                          # Documentation and guides
+│   ├── 📂 codebooks/                 # Survey codebooks and methodologies
+│   │   ├── 2002 RAE008b Additional Notes to accompany released data.docx
+│   │   ├── 2004 latino political survey codebook.docx
+│   │   ├── 2006 F1171col Codebook.docx
+│   │   ├── 2007 PublicReleaseNSL2007Codebook&Notes_UPDATED 3.7.22.docx
+│   │   ├── [Additional codebooks for 2008-2012...]
+│   │   ├── 2021 National Survey of Latinos ATP W86 methodology.pdf
+│   │   └── [PDF questionnaires and methodology documents...]
+│   └── 📂 guides/                    # Project guides and documentation
+│       ├── COMPREHENSIVE_HARMONIZATION_GUIDE.md     # 📚 Detailed technical guide
+│       ├── FUTURE_HARMONIZATION_PROMPT.md           # 🎯 Actionable prompt for future work
+│       ├── DATA_HARMONIZATION_FIXES_SUMMARY.md      # 📊 Complete project summary
+│       ├── COMPREHENSIVE_IMMIGRATION_ATTITUDES_SUMMARY.md
+│       └── Chat_History_Harmonization_Extension_2007_2012.Rmd
+├── 📂 outputs/                       # Analysis outputs and summaries
+│   ├── 📂 summaries/                 # Data summaries and metadata
+│   │   ├── variable_summary.csv                     # 📋 Variable coverage statistics
+│   │   ├── concept_summary_by_year.csv              # 📈 Concept availability by year
+│   │   ├── harmonization_review_template.csv        # 🔍 Harmonization documentation
+│   │   └── [Additional summary files...]
+│   ├── 📂 logs/                      # Processing logs and audit trails
+│   │   └── processing_log.csv                       # 📝 Processing metadata
+│   └── 📂 validation/                # Quality assurance outputs
+└── 📂 temp/                          # Temporary and backup files
+    ├── 📂 intermediate/              # Intermediate processing files
+    ├── 📂 backup/                    # Backup versions and archives
+    └── [Temporary files...]
 ```
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-Install required R packages:
-```r
-install.packages(c("haven", "dplyr", "stringr", "readr", "tidyr", "labelled", "purrr"))
-```
-
-### Option 1: Run Complete Workflow
-```r
-source("00_master_script.R")
-```
-
-### Option 2: Run Individual Steps
-```r
-# Step 1: Extract all variables
-source("01_variable_extraction.R")
-
-# Step 2: Search for target concepts
-source("02_keyword_search.R")
-
-# Step 3: Create harmonization plan
-source("03_harmonization_plan.R")
-
-# Step 4: Apply harmonization
-source("04_data_harmonization.R")
-```
-
-## 📊 Output Files
-
-| File | Description |
-|------|-------------|
-| `all_variables_extracted.csv` | All variables from all survey files |
-| `matched_variables_by_concept.csv` | Variables matching target concepts |
-| `concept_summary_by_year.csv` | Summary of concepts by year |
-| `harmonization_plan.csv` | Variable mapping plan |
-| `harmonization_review_template.csv` | Template for manual review |
-| `processing_summary.csv` | Data processing summary |
-| `cleaned_data/` | Directory with individual cleaned wave files |
-| `longitudinal_data_[timestamp].csv` | Final merged longitudinal dataset |
-
-## 🔍 Target Concepts and Keywords
-
-The workflow searches for variables related to:
-
-### Immigration Attitudes
-- Keywords: `immigration`, `immigrant`, `immigr`
-
-### Nativity/Place of Birth
-- Keywords: `nativity`, `born in u.s`, `born in united states`, `place of birth`, `country of birth`, `native born`
-
-### Generation Status
-- Keywords: `generation`, `first generation`, `second generation`, `u.s. born`
-
-### Citizenship
-- Keywords: `citizen`, `citizenship`, `naturalized`, `legal status`
-
-### Political Attitudes
-- Keywords: `political`, `party`, `vote`, `election`, `approve`, `president`, `democrat`, `republican`
-
-### Border/Immigration Policy
-- Keywords: `border`, `illegal`, `undocumented`, `deportation`, `amnesty`
-
-## 🛠 Harmonization Process
-
-### Step 1: Variable Extraction
-```r
-# Function extracts:
-# - Variable names
-# - Variable labels  
-# - Year (from filename)
-extract_variables(file_path, year)
-```
-
-### Step 2: Keyword Matching
-```r
-# Searches variable names and labels for target keywords
-# Creates concept assignments for each variable
-search_keywords(variables_df)
-```
-
-### Step 3: Harmonization Planning
-```r
-# Suggests harmonized variable names and recoding schemes
-# Example output:
-| year | raw_name | concept | harmonized_name | values_recode | notes |
-|------|----------|---------|------------------|---------------|-------|
-| 2002 | q15a     | immigration | immigration_attitude | 1=Approve, 2=Disapprove | Original label: Immigration policy |
-```
-
-### Step 4: Data Harmonization
-```r
-# Applies harmonization plan to actual data
-# Recodes variables according to plan
-# Exports cleaned CSV files
-harmonize_variable(data, raw_name, harmonized_name, values_recode)
-```
-
-## 📋 Example Harmonized Variables
-
-| Concept | Harmonized Name | Description |
-|---------|-----------------|-------------|
-| Immigration | `immigration_attitude` | General immigration attitudes |
-| Nativity | `place_birth` | US-born vs foreign-born |
-| Generation | `immigrant_generation` | 1st, 2nd, 3rd+ generation |
-| Citizenship | `citizenship_status` | Citizen, permanent resident, other |
-| Political | `political_party` | Party identification |
-| Political | `vote_intention` | Voting preferences |
-| Political | `approval_rating` | Presidential approval |
-
-## 🔧 Customization
-
-### Adding New Keywords
-Edit the `keyword_patterns` list in `02_keyword_search.R`:
-```r
-keyword_patterns <- list(
-  immigration = c("immigration", "immigrant", "border"),
-  # Add new concepts:
-  new_concept = c("keyword1", "keyword2", "keyword3")
-)
-```
-
-### Modifying Harmonization Rules
-Edit the `suggest_harmonized_names()` function in `03_harmonization_plan.R`:
-```r
-if (str_detect(label_lower, "your_pattern")) {
-  return("your_harmonized_name")
-}
-```
-
-### Adding New Survey Years
-1. Place new `.sav` or `.dta` files in the repository
-2. Update year mappings in `01_variable_extraction.R` if needed
-3. Modify `focus_years` parameter in scripts
-
-## 📝 Manual Review Process
-
-1. **Review** `harmonization_review_template.csv`
-2. **Verify** suggested harmonized names make sense
-3. **Check** value recoding schemes using original codebooks
-4. **Update** `harmonization_plan.csv` as needed
-5. **Re-run** steps 4-5 with refined plan
-
-## ⚠️ Important Notes
-
-- **Always backup** original data files
-- **Review harmonization plan** before applying to data
-- **Check value distributions** in harmonized variables
-- **Consult original codebooks** for complex recoding
-- **Test on subset** before processing all waves
-
-## 🔄 Iterative Workflow
-
-1. Start with 2002-2004 (as implemented)
-2. Review and refine harmonization rules
-3. Add 2006-2008 waves
-4. Continue adding waves iteratively
-5. Validate harmonized variables across waves
-
-## 📚 Dependencies
-
-- `haven`: Reading SPSS/Stata files
-- `dplyr`: Data manipulation
-- `stringr`: String operations
-- `readr`: CSV I/O
-- `tidyr`: Data reshaping
-- `labelled`: Variable labels
-- `purrr`: Functional programming
-
-## 🤝 Contributing
-
-1. Test workflow on new survey waves
-2. Improve keyword detection patterns
-3. Enhance harmonization logic
-4. Add validation checks
-5. Document new variable concepts
-
-## 📞 Support
-
-For questions about specific survey variables or harmonization decisions, consult:
-- Original survey codebooks
-- Variable documentation files
-- Survey methodology reports
 
 ---
 
-**Note**: This workflow is designed for the specific survey collection in this repository. Adapt keyword patterns and harmonization rules for other survey series.
+## 🚀 Quick Start Guide
+
+### **1. Main Dataset Access**
+The primary research-ready dataset is located at:
+```
+data/final/longitudinal_survey_data_fixed.csv
+```
+- **18,888 observations** across 2002-2012
+- **14 harmonized variables** including demographics, political attitudes, and immigration opinions
+- **Analysis-ready format** with consistent coding across years
+
+### **2. Running the Harmonization Pipeline**
+To reproduce the entire harmonization process:
+
+```r
+# Navigate to project root
+setwd("/path/to/longitudinal-survey-harmonization")
+
+# Run the complete harmonization pipeline
+source("scripts/00_master_script.R")
+
+# Or run individual components:
+source("scripts/02_harmonization/04_data_harmonization_fixed.R")
+source("scripts/02_harmonization/05_combine_waves_fixed.R")
+```
+
+### **3. Understanding Variable Coverage**
+Check coverage statistics:
+```r
+# Load coverage summary
+coverage <- read.csv("outputs/summaries/variable_summary.csv")
+print(coverage)
+
+# Load concept availability by year
+concepts <- read.csv("outputs/summaries/concept_summary_by_year.csv")
+print(concepts)
+```
+
+---
+
+## 📊 Dataset Overview
+
+### **Temporal Coverage**
+- **2002-2012**: 11 survey waves
+- **Total observations**: 18,888
+- **Survey population**: Hispanic/Latino adults in the United States
+
+### **Key Variables & Coverage**
+| Variable | Coverage | Description |
+|----------|----------|-------------|
+| **age** | 83.4% | Continuous age (18-90+) + converted categorical ranges |
+| **gender** | 44.0% | Interviewer-recorded gender (limited by survey design) |
+| **ethnicity** | 93.3% | Hispanic subgroup heritage (Mexican, Puerto Rican, Cuban, etc.) |
+| **language_home** | 64.7% | Interview language preference (English vs Spanish) |
+| **race** | 23.0% | Within-Hispanic racial identity (White/Black/Asian/Indigenous Hispanic) |
+| **citizenship_status** | 56.4% | U.S. citizenship status |
+| **place_birth** | 70.0% | Country/place of birth (U.S. vs foreign-born) |
+| **immigrant_generation** | 62.4% | Generation status (1st, 2nd, 3rd+ generation) |
+| **immigration_attitude** | 83.7% | Attitudes toward immigration policy |
+| **border_security_attitude** | 83.6% | Border security and enforcement attitudes |
+| **political_party** | 57.3% | Political party identification |
+| **vote_intention** | 28.5% | Voting intention and candidate preference |
+
+### **Important Notes**
+- **Race interpretation**: In this Hispanic-focused survey, "race" measures racial identity *within* the Hispanic population (e.g., White Hispanic, Black Hispanic), not general population race categories.
+- **Gender limitation**: Gender variables are genuinely absent in some early survey years (2002, 2006) and later years (2010-2012) due to survey design decisions.
+- **Missing data**: Coded as NA; legacy missing codes (8, 9, 98, 99, 999) have been standardized to NA.
+
+---
+
+## 🔧 Advanced Usage
+
+### **For Researchers**
+1. **Longitudinal Analysis**: Use `survey_year` for time-series analysis
+2. **Cohort Studies**: Leverage `immigrant_generation` for generational comparisons  
+3. **Policy Impact Analysis**: Track `immigration_attitude` and `border_security_attitude` across political periods
+4. **Demographic Trends**: Analyze changes in `ethnicity`, `language_home`, and `citizenship_status` over time
+
+### **For Data Scientists**
+1. **Variable Harmonization**: Reference `docs/guides/COMPREHENSIVE_HARMONIZATION_GUIDE.md` for technical details
+2. **Quality Assessment**: Use `outputs/summaries/variable_summary.csv` for coverage analysis
+3. **Extension Guidelines**: Follow `docs/guides/FUTURE_HARMONIZATION_PROMPT.md` for adding new years/variables
+4. **Validation Scripts**: Check `outputs/logs/processing_log.csv` for processing audit trail
+
+---
+
+## 📚 Documentation Guide
+
+### **Essential Reading**
+1. **`docs/guides/DATA_HARMONIZATION_FIXES_SUMMARY.md`** - Complete project overview and methodology
+2. **`docs/guides/COMPREHENSIVE_HARMONIZATION_GUIDE.md`** - Technical harmonization guide
+3. **`outputs/summaries/variable_summary.csv`** - Variable coverage and statistics
+
+### **Codebooks by Year**
+- **2002**: `docs/codebooks/2002 RAE008b Additional Notes to accompany released data.docx`
+- **2004**: `docs/codebooks/2004 latino political survey codebook.docx`
+- **2006**: `docs/codebooks/2006 F1171col Codebook.docx`
+- **2007**: `docs/codebooks/2007 PublicReleaseNSL2007Codebook&Notes_UPDATED 3.7.22.docx`
+- **2008-2012**: Additional codebooks in `docs/codebooks/`
+
+### **Methodology References**
+- Survey methodologies and questionnaires are available in `docs/codebooks/`
+- Processing methodology detailed in `docs/guides/DATA_HARMONIZATION_FIXES_SUMMARY.md`
+
+---
+
+## 🤝 Contributing
+
+### **Adding New Years**
+Follow the comprehensive guide in `docs/guides/FUTURE_HARMONIZATION_PROMPT.md` for:
+- Systematic variable identification
+- Flexible harmonization strategies  
+- Quality validation procedures
+
+### **Analysis Scripts**
+Add your analysis scripts to `scripts/03_analysis/` with clear documentation.
+
+### **Documentation Updates**
+Keep documentation current when making significant changes to data or methods.
+
+---
+
+## 📈 Research Applications
+
+This dataset enables research on:
+
+### **Temporal Analysis (2002-2012)**
+- Immigration attitude evolution during Bush and early Obama administrations
+- Political participation changes across economic recession (2008-2010)
+- Demographic transitions within Latino communities
+- Pre-DACA period baseline attitudes (2002-2011)
+
+### **Cross-Sectional Analysis**
+- Generational differences in political views using `immigrant_generation`
+- Language preferences and political attitudes via `language_home`
+- Citizenship status effects on political participation using `citizenship_status`
+- Within-Hispanic racial identity patterns via `race`
+
+### **Policy Period Comparisons**
+- **Bush era** (2002-2008): Immigration enforcement attitudes
+- **Obama early years** (2009-2012): Immigration reform expectations
+- **Economic impact** (2008-2010): Recession effects on immigration attitudes
+
+---
+
+## ⚠️ Important Considerations
+
+### **Survey Design Limitations**
+- **Gender data**: Limited availability due to survey design evolution
+- **Race data**: Context-specific (within-Hispanic identity), available primarily 2009-2011
+- **Political variables**: Coverage varies by electoral cycles
+
+### **Data Quality Notes**  
+- All missing value codes have been standardized to NA
+- Age ranges have been converted to midpoint estimates where necessary
+- Variable harmonization decisions are documented in `outputs/summaries/harmonization_review_template.csv`
+
+### **Citation**
+When using this dataset, please cite the original survey sources (detailed in individual codebooks) and acknowledge the harmonization methodology developed in this project.
+
+---
+
+## 📞 Support
+
+For questions about:
+- **Data structure**: See `docs/guides/DATA_HARMONIZATION_FIXES_SUMMARY.md`
+- **Variable definitions**: Check individual codebooks in `docs/codebooks/`
+- **Harmonization methods**: Reference `docs/guides/COMPREHENSIVE_HARMONIZATION_GUIDE.md`
+- **Adding new data**: Follow `docs/guides/FUTURE_HARMONIZATION_PROMPT.md`
+
+---
+
+**Last Updated**: December 2024  
+**Dataset Version**: v2.0 (2002-2012 Extended)  
+**Total Observations**: 18,888 across 11 survey years
