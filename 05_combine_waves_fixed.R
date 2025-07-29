@@ -154,8 +154,9 @@ combine_waves_fixed <- function(cleaned_data_dir = "cleaned_data") {
   cat("Combining", length(wave_data_list), "valid wave files...\\n")
   combined_data <- bind_rows(wave_data_list)
   
-  # Ensure consistent column ordering
-  col_order <- c("survey_year", "citizenship_status", "place_birth", "immigrant_generation", 
+  # Ensure consistent column ordering - UPDATED to include all demographic variables
+  col_order <- c("survey_year", "age", "gender", "race", "ethnicity", "language_home",
+                 "citizenship_status", "place_birth", "immigrant_generation", 
                  "immigration_attitude", "border_security_attitude", "political_party", 
                  "vote_intention", "approval_rating")
   
