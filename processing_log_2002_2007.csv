@@ -1,0 +1,5 @@
+files_processed,processing_date,total_observations,years_included,n_variables
+cleaned_2002.csv,2025-07-29,10501,"2002, 2004, 2006, 2007",18
+cleaned_2004.csv,2025-07-29,10501,"2002, 2004, 2006, 2007",18
+cleaned_2006.csv,2025-07-29,10501,"2002, 2004, 2006, 2007",18
+cleaned_2007.csv,2025-07-29,10501,"2002, 2004, 2006, 2007",18

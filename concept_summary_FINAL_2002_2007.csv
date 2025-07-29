@@ -1,0 +1,7 @@
+concept,n_variables,avg_missing,n_excellent,n_good,n_ok,n_warnings,n_critical
+Socioeconomic,4,30.5,0,2,2,0,0
+Immigration/Nativity,4,30.8,0,2,2,0,0
+Immigration Attitudes,3,49.4,0,1,1,1,0
+Geographic,1,38.1,0,0,1,0,0
+Political,1,39.1,0,0,1,0,0
+Demographics,2,52.3,0,0,2,0,0

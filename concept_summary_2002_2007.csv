@@ -1,0 +1,8 @@
+concept,n_variables,avg_missing,n_good,n_warnings,n_critical
+Immigration/Nativity,4,34,0,0,0
+Ethnicity/Culture,2,73.8,0,0,1
+Demographics,2,80.3,0,0,1
+Political,3,89.2,0,0,2
+Attitudes,1,100,0,0,1
+Other,2,100,0,0,2
+Socioeconomic,4,100,0,0,4

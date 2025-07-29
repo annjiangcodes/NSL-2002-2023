@@ -1,0 +1,19 @@
+variable,concept,n_unique,pct_missing,sample_values,value_range,notes
+immigration_attitude,Attitudes,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+age,Demographics,72,60.6,"18, 19, 20, 21, 22",18 to 90,OK: Adequate variation
+gender,Demographics,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+hispanic_origin,Ethnicity/Culture,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+language_home,Ethnicity/Culture,4,47.7,"1, 2, 3, 4",1 to 4,OK: Adequate variation
+citizenship_status,Immigration/Nativity,2,40.4,"1, 2",1 to 2,OK: Adequate variation
+immigrant_generation,Immigration/Nativity,3,12.6,"1, 2, 3",1 to 3,OK: Adequate variation
+parent_nativity,Immigration/Nativity,3,70.5,"1, 2, 3",1 to 3,OK: Adequate variation
+place_birth,Immigration/Nativity,2,12.3,"1, 2",1 to 2,OK: Adequate variation
+geography,Other,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+religion,Other,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+political_party,Political,3,67.5,"1, 2, 3",1 to 3,OK: Adequate variation
+political_trust,Political,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+vote_intention,Political,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+education,Socioeconomic,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+employment,Socioeconomic,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+income,Socioeconomic,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working
+marital_status,Socioeconomic,0,100,No valid values,No valid values,CRITICAL: No valid values - variable not working

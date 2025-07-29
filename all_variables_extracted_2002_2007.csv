@@ -1,0 +1,882 @@
+year,raw_variable_name,label
+2002,AGE,99
+2002,AGEARRI1,Age of Arrival (1-4)
+2002,AGEARRI2,Age of Arrival (1-2)
+2002,AGEARRI3,"Age of Arrival (10 or younger, older than 10)"
+2002,AGECODE,Q.105 What is your age?
+2002,ARIVEAGE,Age of Arrival
+2002,ARIVEDEC,Decade of Arrival
+2002,ARIVEYR,Year of Arrival
+2002,ARRIVE,
+2002,ASSEMBLE,
+2002,BANK,
+2002,BORNAGAI,"evangelical, catholic"
+2002,CABORN,Table for Central Americans
+2002,CITIZEN2,Recoded citizen
+2002,COLBORN,Table for Colombians
+2002,COUNTL1,Latino
+2002,COUNTL2,Latino- Puerto Rican/Mexican/Cuban/Salvadoran/Dominican/Columbian
+2002,COUNTL2B,Latino- Puerto Rican/Mexican/Cuban/Salvadoran/Dominican/Columbian/Other Central American/Other South American/Other
+2002,COUNTL2C,Latino- Puerto Rican/Mexican/Cuban/Dominican//Other Central American/Other South American/Other
+2002,COUNTL2D,"Dominicans, Puerto Ricans, Mexicans, and Cubans, Central Americans, South Americans"
+2002,COUNTL2E,"Dominicans, Puerto Ricans, Mexicans, Cubans, Central and South Americans combined"
+2002,COUNTN1,Count- Non-Latino
+2002,COUNTN2,Non-Latino White/African-American/Asian/Other
+2002,COUNTNL,count Non-Latino and Latinos
+2002,COUNTOCA,Count- Other Central American
+2002,COUNTRY,Country of origin (includes all countries)
+2002,COUNTSA,Count- Total South American
+2002,COUNTTCA,Count- Total Central American
+2002,CREDIT,
+2002,CUBABORN,Table for Cubans
+2002,DISC_2,Summary variable discriminated against or experienced unfair treatment
+2002,DIVISION,Census Division
+2002,DOMBORN,Table for Dominicans
+2002,ECON,Economic Attachment
+2002,EDUC,Education
+2002,ENGLISH,
+2002,ENGRD,
+2002,ENGSPK,
+2002,EX_UN,experience with the uninsured
+2002,FILTER_$,qn1 = 1 (FILTER)
+2002,FIPSCNTY,FIPS COUNTY CODE
+2002,FIPSTATE,FIPS STATE CODE
+2002,FORBORN1,Foreign Born (W/ PR as foreign born)
+2002,FORBORN2,Foreign Born (W/ PR as US born)
+2002,GEN1TO2,Generation (PR as gen 2)
+2002,GEN1TO4,Generation (PR as gen 1)
+2002,GEN1_3,"PR gen 1, gen3 and 4 combined"
+2002,HALF,Half sample- Ask Q.11/Q.12
+2002,ICRMATCH,ICR MATCH CODE
+2002,ID,
+2002,IDENT1,IDENT - REGION
+2002,INC1,Income (1-4)
+2002,INC2,Income (1-3)
+2002,INC3,Income (1-2)
+2002,INCOME,Q.110/111/112/113. Income Summary Table
+2002,INSULT,Recode of qn62c
+2002,LANGUAGE,
+2002,LAT_W_B,"Latinos, Non Latino Whites, Non Latino Blacks"
+2002,MEDPROBS,Have you had any problems getting medical care
+2002,METRO,Metro Status
+2002,MEXBORN,Table for Mexicans
+2002,MEX_PR,"CA Mexicans, TX Mexicans, PR"
+2002,NAMESEL2,Respondent describes themself first/only as... (with recode of system missing)
+2002,OWN,
+2002,PARTLEAN,Q.90/91. Combination Leaned Party Table
+2002,PRBORN,Table for Puerto Ricans
+2002,PRILANG,Primary Language
+2002,PROBLEMS,"Had healthcare problems, Did not have healthcare problems"
+2002,Q12_1,Q.12 What do you think are the two most important health care issues for the government to address?- Diseases
+2002,Q12_10,Q.12 What do you think are the two most important health care issues for the government to address?- Social Issues Related to Health
+2002,Q12_11,Q.12 What do you think are the two most important health care issues for the government to address?- Terrorism/Public Safety
+2002,Q12_12,Q.12 What do you think are the two most important health care issues for the government to address?- Other
+2002,Q12_13,Q.12 What do you think are the two most important health care issues for the government to address?- Medicaid
+2002,Q12_14,Q.12 What do you think are the two most important health care issues for the government to address?- None
+2002,Q12_15,Q.12 What do you think are the two most important health care issues for the government to address?- Don't Know
+2002,Q12_16,Q.12 What do you think are the two most important health care issues for the government to address?- Refused
+2002,Q12_2,Q.12 What do you think are the two most important health care issues for the government to address?- Lifestyle
+2002,Q12_3,Q.12 What do you think are the two most important health care issues for the government to address?- Perscription Drugs
+2002,Q12_4,Q.12 What do you think are the two most important health care issues for the government to address?- Healthcare Costs General and HC Access
+2002,Q12_5,Q.12 What do you think are the two most important health care issues for the government to address?- Health Insurance
+2002,Q12_6,Q.12 What do you think are the two most important health care issues for the government to address?- Elderly Perscription Drugs
+2002,Q12_7,Q.12 What do you think are the two most important health care issues for the government to address?- Medicare/Elderly
+2002,Q12_8,Q.12 What do you think are the two most important health care issues for the government to address?- Issues related to Healthcare Professional
+2002,Q12_9,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance Issues
+2002,QN1,"Q.1 Are you, yourself of Hispanic or Latin origin or descent such as Mexican, Puerto Rican, Cuban, Dominican, Central or South American, Caribbean or some other Latin American background?"
+2002,QN10,"Q.10 Some people believe that Religious, charitable and community organizations can do the best job of providing services to people in need. Others believe that The government can do the best job. Which is closer to your view?"
+2002,QN100,"Q.100 Would you consider yourself a born-again or evangelical Christian, or not?"
+2002,QN101,Q.101 What is the last grade or class that you completed in school?
+2002,QN102,"Q.102 Do you happen to have any credit cards, or not?"
+2002,QN103,Q.103 Do you own the place where you live or do you pay rent?
+2002,QN104,Q.104 Do you have an account with a bank or not?
+2002,QN105,Q.105 What is your age?
+2002,QN106,Q.106 Were either of your parents born outside the US? One or both?
+2002,QN107,Q.107 How long ago did they come to the US? (MOTHER)
+2002,QN108,Q.108 How long ago did they come to the US? (FATHER)
+2002,QN109,"Q.109 How many of your grandparents, if any, were born outside the US?"
+2002,QN110,"Q.110 Is your total annual household income from all sources, and before taxes:"
+2002,QN1101,Q.11 What do you think are the two most important issues for the government to address?
+2002,QN1102,Q.11 What do you think are the two most important issues for the government to address?
+2002,QN1103,Q.11 What do you think are the two most important issues for the government to address?
+2002,QN111,Q.111 Would that be...?
+2002,QN112,Q.112 Would that be...?
+2002,QN113,Q.113 Would that be...?
+2002,QN114,Q.114 RECORD GENDER
+2002,QN115,"Q.115 INTERVIEWER: In what language did the respondent complete the interview: Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2002,QN11_01,Q.11 What do you think are the two most important issues for the government to address?- Healthcare/healthcare reform
+2002,QN11_02,Q.11 What do you think are the two most important issues for the government to address?- Medicare
+2002,QN11_03,Q.11 What do you think are the two most important issues for the government to address?- Prescription drug costs are too high
+2002,QN11_04,Q.11 What do you think are the two most important issues for the government to address?- Other healthcare
+2002,QN11_05,Q.11 What do you think are the two most important issues for the government to address?- The economy
+2002,QN11_06,Q.11 What do you think are the two most important issues for the government to address?- Better wages/increase minimum wage
+2002,QN11_07,Q.11 What do you think are the two most important issues for the government to address?- Unemployment/create more jobs
+2002,QN11_08,Q.11 What do you think are the two most important issues for the government to address?- Poverty/more help for the poor/homeless
+2002,QN11_09,Q.11 What do you think are the two most important issues for the government to address?- Welfare/welfare reform
+2002,QN11_10,Q.11 What do you think are the two most important issues for the government to address?- Housing/better housing for low income
+2002,QN11_11,Q.11 What do you think are the two most important issues for the government to address?- Other economical
+2002,QN11_12,Q.11 What do you think are the two most important issues for the government to address?- The election process/revamping the voting process
+2002,QN11_13,Q.11 What do you think are the two most important issues for the government to address?- National budget/deficit/reducing the nation's deficit
+2002,QN11_14,Q.11 What do you think are the two most important issues for the government to address?- Foreign policy/foreign relations
+2002,QN11_15,Q.11 What do you think are the two most important issues for the government to address?- World peace/peace in the Middle East
+2002,QN11_16,Q.11 What do you think are the two most important issues for the government to address?- Military/national defense/strengthen our country's defense
+2002,QN11_17,Q.11 What do you think are the two most important issues for the government to address?- Campaign finance reform
+2002,QN11_18,Q.11 What do you think are the two most important issues for the government to address?- Honesty in government
+2002,QN11_19,Q.11 What do you think are the two most important issues for the government to address?- Keep government out of our lives
+2002,QN11_20,Q.11 What do you think are the two most important issues for the government to address?- Other governmental/political issues
+2002,QN11_21,Q.11 What do you think are the two most important issues for the government to address?- Crime/violence
+2002,QN11_22,Q.11 What do you think are the two most important issues for the government to address?- Drug problems
+2002,QN11_23,Q.11 What do you think are the two most important issues for the government to address?- Gun control/gun laws
+2002,QN11_24,Q.11 What do you think are the two most important issues for the government to address?- Racism/civil rights
+2002,QN11_25,Q.11 What do you think are the two most important issues for the government to address?- Other unlawful
+2002,QN11_26,Q.11 What do you think are the two most important issues for the government to address?- Education/school system/better schooling
+2002,QN11_27,Q.11 What do you think are the two most important issues for the government to address?- Taxes/tax reform
+2002,QN11_28,Q.11 What do you think are the two most important issues for the government to address?- Social security
+2002,QN11_29,Q.11 What do you think are the two most important issues for the government to address?- Environmental issues/lack of concern for the environment
+2002,QN11_30,"Q.11 What do you think are the two most important issues for the government to address?- Utility rates/gas, electric and oil rates"
+2002,QN11_31,Q.11 What do you think are the two most important issues for the government to address?- Abortion issues
+2002,QN11_32,Q.11 What do you think are the two most important issues for the government to address?- Moral values
+2002,QN11_33,Q.11 What do you think are the two most important issues for the government to address?- Immigration/illegal alien issues (general)
+2002,QN11_34,Q.11 What do you think are the two most important issues for the government to address?- Senior citizens/more help for the elderly
+2002,QN11_35,Q.11 What do you think are the two most important issues for the government to address?- Energy crisis
+2002,QN11_36,Q.11 What do you think are the two most important issues for the government to address?- Childcare/childcare reform
+2002,QN11_37,Q.11 What do you think are the two most important issues for the government to address?- Terrorism/events of 9/11
+2002,QN11_38,Q.11 What do you think are the two most important issues for the government to address?- Aids
+2002,QN11_39,Q.11 What do you think are the two most important issues for the government to address?- Cancer
+2002,QN11_40,Q.11 What do you think are the two most important issues for the government to address?- Hispanic issues/help Hispanics
+2002,QN11_41,Q.11 What do you think are the two most important issues for the government to address?- Religion/religious/churches
+2002,QN11_42,Q.11 What do you think are the two most important issues for the government to address?- Teenagers/youth/teen issues
+2002,QN11_43,Q.11 What do you think are the two most important issues for the government to address?- Foreign aid/help our people first/well being of our people
+2002,QN11_96,Q.11 What do you think are the two most important issues for the government to address?- None
+2002,QN11_97,Q.11 What do you think are the two most important issues for the government to address?- Other
+2002,QN11_98,Q.11 What do you think are the two most important issues for the government to address?- Don't Know
+2002,QN11_99,Q.11 What do you think are the two most important issues for the government to address?- Refused
+2002,QN1201,Q.12 What do you think are the two most important health care issues for the government to address?
+2002,QN1202,Q.12 What do you think are the two most important health care issues for the government to address?
+2002,QN1203,Q.12 What do you think are the two most important health care issues for the government to address?
+2002,QN12_01,Q.12 What do you think are the two most important health care issues for the government to address?- Heart/heart disease (heart conditon/heart failure)
+2002,QN12_02,Q.12 What do you think are the two most important health care issues for the government to address?- Heart attack
+2002,QN12_03,Q.12 What do you think are the two most important health care issues for the government to address?- Blood pressure/high blood pressure/hypertension
+2002,QN12_04,Q.12 What do you think are the two most important health care issues for the government to address?- Stroke
+2002,QN12_05,Q.12 What do you think are the two most important health care issues for the government to address?- Cancer
+2002,QN12_06,Q.12 What do you think are the two most important health care issues for the government to address?- Hiv/aids
+2002,QN12_07,Q.12 What do you think are the two most important health care issues for the government to address?- Diabetes
+2002,QN12_08,Q.12 What do you think are the two most important health care issues for the government to address?- Arthritis
+2002,QN12_09,Q.12 What do you think are the two most important health care issues for the government to address?- Alzheimer's
+2002,QN12_10,Q.12 What do you think are the two most important health care issues for the government to address?- Std's
+2002,QN12_11,Q.12 What do you think are the two most important health care issues for the government to address?- Respiratory conditions/lung disease
+2002,QN12_12,Q.12 What do you think are the two most important health care issues for the government to address?- Cholesterol
+2002,QN12_13,Q.12 What do you think are the two most important health care issues for the government to address?- Mental health/depression
+2002,QN12_14,Q.12 What do you think are the two most important health care issues for the government to address?- Obesity/being overweight (over eating)
+2002,QN12_15,Q.12 What do you think are the two most important health care issues for the government to address?- Other diseases
+2002,QN12_16,Q.12 What do you think are the two most important health care issues for the government to address?- Drug abuse
+2002,QN12_17,Q.12 What do you think are the two most important health care issues for the government to address?- Smoking/tobacco (teen smoking
+2002,QN12_18,Q.12 What do you think are the two most important health care issues for the government to address?- Alcohol/drinking too much
+2002,QN12_19,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of exercise/inactivity
+2002,QN12_20,Q.12 What do you think are the two most important health care issues for the government to address?- Other lifestyle
+2002,QN12_21,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of drugs/prescription drugs (paying fro rx)
+2002,QN12_22,Q.12 What do you think are the two most important health care issues for the government to address?- Cost/high cost (affordability/bills) (n.s.)
+2002,QN12_23,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of healthcare/health services
+2002,QN12_24,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of doctors (affording to go to doctor)
+2002,QN12_25,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of insurance
+2002,QN12_26,Q.12 What do you think are the two most important health care issues for the government to address?- Cost of rx/healthcare for elderly/too high
+2002,QN12_27,Q.12 What do you think are the two most important health care issues for the government to address?- Other cost
+2002,QN12_28,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of (healthcare) insurance (getting it/availability)
+2002,QN12_29,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of national healthcare
+2002,QN12_30,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of healthcare for poor/lower income/minorities
+2002,QN12_31,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of coverage/insurance for poor/lower income/minorities
+2002,QN12_32,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of insurance/healthcare for children
+2002,QN12_33,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of healthcare/availability/not enough (unsp)
+2002,QN12_34,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance/health insurance (n.s.)
+2002,QN12_35,Q.12 What do you think are the two most important health care issues for the government to address?- Inadequate coverage
+2002,QN12_36,Q.12 What do you think are the two most important health care issues for the government to address?- Medicare/changes
+2002,QN12_37,Q.12 What do you think are the two most important health care issues for the government to address?- Healthcare for elderly
+2002,QN12_38,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of preventative care/programs to stay healthy
+2002,QN12_39,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of quality healthcare/doctors who care
+2002,QN12_40,Q.12 What do you think are the two most important health care issues for the government to address?- Access to healthcare/health services
+2002,QN12_41,Q.12 What do you think are the two most important health care issues for the government to address?- Long term healthcare
+2002,QN12_42,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance doesn't cover enough services/procedures (unsp)
+2002,QN12_43,Q.12 What do you think are the two most important health care issues for the government to address?- Other healthcare/insurance/coverage
+2002,QN12_44,Q.12 What do you think are the two most important health care issues for the government to address?- Shortage of healthcare professionals/doctors
+2002,QN12_45,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of qualified medical professionals/doctors
+2002,QN12_46,Q.12 What do you think are the two most important health care issues for the government to address?- Other healthcare professionals
+2002,QN12_47,Q.12 What do you think are the two most important health care issues for the government to address?- Improper diet (high fat)
+2002,QN12_48,Q.12 What do you think are the two most important health care issues for the government to address?- Malnutrition
+2002,QN12_49,Q.12 What do you think are the two most important health care issues for the government to address?- Other poor nutrition
+2002,QN12_50,Q.12 What do you think are the two most important health care issues for the government to address?- Rx's/rx drugs (unsp)
+2002,QN12_51,Q.12 What do you think are the two most important health care issues for the government to address?- Rx's for elderly
+2002,QN12_52,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of drugs/restrictive drug list
+2002,QN12_53,Q.12 What do you think are the two most important health care issues for the government to address?- Other prescription drugs
+2002,QN12_54,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance companies (HMO's) making healthcare decisions
+2002,QN12_55,Q.12 What do you think are the two most important health care issues for the government to address?- HMO's/insurance companies
+2002,QN12_56,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of choice of doctors/healthcare providers
+2002,QN12_57,Q.12 What do you think are the two most important health care issues for the government to address?- Can't go to specialist/problem getting referral
+2002,QN12_58,Q.12 What do you think are the two most important health care issues for the government to address?- Insurance company/managed care determines payout
+2002,QN12_59,Q.12 What do you think are the two most important health care issues for the government to address?- HMO-driven healthcare/too many/restrictive
+2002,QN12_60,Q.12 What do you think are the two most important health care issues for the government to address?- Doctors refuse to accept HMO's
+2002,QN12_61,Q.12 What do you think are the two most important health care issues for the government to address?- Other insurance company-driven
+2002,QN12_62,Q.12 What do you think are the two most important health care issues for the government to address?- Bioterrorism
+2002,QN12_63,Q.12 What do you think are the two most important health care issues for the government to address?- Terrorism (general)
+2002,QN12_64,Q.12 What do you think are the two most important health care issues for the government to address?- Osama bin laden
+2002,QN12_65,Q.12 What do you think are the two most important health care issues for the government to address?- Anthrax
+2002,QN12_66,Q.12 What do you think are the two most important health care issues for the government to address?- Smallpox
+2002,QN12_67,Q.12 What do you think are the two most important health care issues for the government to address?- Other September 11th terrorists attacks
+2002,QN12_68,Q.12 What do you think are the two most important health care issues for the government to address?- Aging/old age/being a senior
+2002,QN12_69,Q.12 What do you think are the two most important health care issues for the government to address?- Stress
+2002,QN12_70,Q.12 What do you think are the two most important health care issues for the government to address?- Poverty/homelessness (hunger)
+2002,QN12_71,Q.12 What do you think are the two most important health care issues for the government to address?- Environmental issues (toxins/air pollution)
+2002,QN12_72,Q.12 What do you think are the two most important health care issues for the government to address?- Drugs (unsp)
+2002,QN12_73,Q.12 What do you think are the two most important health care issues for the government to address?- Lack of education of general public
+2002,QN12_74,Q.12 What do you think are the two most important health care issues for the government to address?- Research/need more
+2002,QN12_75,Q.12 What do you think are the two most important health care issues for the government to address?- Elderly need more help
+2002,QN12_76,"Q.12 What do you think are the two most important health care issues for the government to address?- Minor sickness (flu, cold, etc.)"
+2002,QN12_77,Q.12 What do you think are the two most important health care issues for the government to address?- Guns/violence
+2002,QN12_78,Q.12 What do you think are the two most important health care issues for the government to address?- Government/politics/politicians
+2002,QN12_79,Q.12 What do you think are the two most important health care issues for the government to address?- Human cloning/cloning
+2002,QN12_80,Q.12 What do you think are the two most important health care issues for the government to address?- Social security
+2002,QN12_81,Q.12 What do you think are the two most important health care issues for the government to address?- Medicaid
+2002,QN12_82,Q.12 What do you think are the two most important health care issues for the government to address?- Welfare
+2002,QN12_83,Q.12 What do you think are the two most important health care issues for the government to address?- Child care
+2002,QN12_84,Q.12 What do you think are the two most important health care issues for the government to address?- Women's health/women's issues
+2002,QN12_85,Q.12 What do you think are the two most important health care issues for the government to address?- Public safety/safety issues/security/military
+2002,QN12_86,Q.12 What do you think are the two most important health care issues for the government to address?- Teens/teen pregnancy/prevention
+2002,QN12_87,Q.12 What do you think are the two most important health care issues for the government to address?- Immigrants/help immigrants
+2002,QN12_88,Q.12 What do you think are the two most important health care issues for the government to address?- Pay more attention to Hispanics/Hispanic issues
+2002,QN12_89,Q.12 What do you think are the two most important health care issues for the government to address?- Health (n.s.)
+2002,QN12_90,Q.12 What do you think are the two most important health care issues for the government to address?- Abortion issues
+2002,QN12_91,Q.12 What do you think are the two most important health care issues for the government to address?- Education/help schools/better schools
+2002,QN12_96,Q.12 What do you think are the two most important health care issues for the government to address?- None
+2002,QN12_97,Q.12 What do you think are the two most important health care issues for the government to address?- Other
+2002,QN12_98,Q.12 What do you think are the two most important health care issues for the government to address?- Don't Know
+2002,QN12_99,Q.12 What do you think are the two most important health care issues for the government to address?- Refused
+2002,QN13,"Q.13 Based on your experience, do you think political leaders are interested in the problems of particular concern to Latinos/Hispanics living here, or not?"
+2002,QN14,"Q.14 In the past year, has your personal financial situation gotten better, gotten worse, or stayed about the same?"
+2002,QN143,143. RECORD INTERVIEWER RACE
+2002,QN15A,"Q.15a For each of the following, please tell me whether or not it is something that has happened to you or your immediate family during the past year. Have you had problems paying your rent or mortgage?"
+2002,QN15B,"Q.15b For each of the following, please tell me whether or not it is something that has happened to you or your immediate family during the past year. Have you been able to save money for the future?"
+2002,QN15C,"Q.15c For each of the following, please tell me whether or not it is something that has happened to you or your immediate family during the past year. Have you lost your job or been laid off?"
+2002,QN16,Q.16 What is your employment status? Are you.... ?
+2002,QN17,Q.17 How long have you been self-employed/with your current employer?
+2002,QN18,Q.18 What type of work or occupation do you have?
+2002,QN19A,"Q.19a Thinking about your own values and morals, I'd like you to tell me whether you think in general, it is acceptable or unacceptable. How about divorce?"
+2002,QN19B,"Q.19b Thinking about your own values and morals, I'd like you to tell me whether you think in general, it is acceptable or unacceptable. How about sex between two adults of the same sex?"
+2002,QN19C,"Q.19c Thinking about your own values and morals, I'd like you to tell me whether you think in general, it is acceptable or unacceptable. How about having a child without being married?"
+2002,QN19D,"Q.19d Thinking about your own values and morals, I'd like you to tell me whether you think in general, it is acceptable or unacceptable. How about abortion?"
+2002,QN1_QN7,Q1/Q7 Race Summary Table
+2002,QN2,Q.2 Would you prefer to be interviewed in English or Spanish?
+2002,QN20,"Q.20 Do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?"
+2002,QN21A,"Q.21a How confident are you that Latino/Hispanic children growing up now in the United States... Will get a better education than you? Are you very confident, somewhat confident, not too confident, or not at all confident?"
+2002,QN21B,"Q.21b How confident are you that Latino/Hispanic children growing up now in the United States... Will have better jobs and make more money than you? Are you very confident, somewhat confident, not too confident, or not at all confident?"
+2002,QN21C,"Q.21c How confident are you that Latino/Hispanic children growing up now in the United States... Will have the same moral values as you? Are you very confident, somewhat confident, not too confident, or not at all confident?"
+2002,QN21D,"Q.21d How confident are you that Latino/Hispanic children growing up now in the United States... Will stay as close to their families as you? Are you very confident, somewhat confident, not too confident, or not at all confident?"
+2002,QN22A,"Q.22a Overall would you say.... Treatment of the poor is better in the United States, better in country you/your parents/ancestors came from/Puerto Rico, or about the same?"
+2002,QN22B,"Q.22b Overall would you say.... The moral values of the society is better in the United States, better in country you/your parents/ancestors came from/Puerto Rico, or about the same?"
+2002,QN22C,"Q.22c Overall would you say.... The strength of family ties is better in the United States, better in country you/your parents/ancestors came from/Puerto Rico, or about the same?"
+2002,QN22D,"Q.22d Overall would you say.... Opportunity to get ahead is better in the United States, better in country you/your parents/ancestors came from/Puerto Rico, or about the same?"
+2002,QN23,"Q.23 Do you think there are too many, too few, or about the right amount of immigrants living in the United States today?"
+2002,QN24,Q.24 Some people think the United States should allow more Latin Americans to come work in this country LEGALLY; some people think the US should allow the same number; others think it should reduce the number. Which is closer to your opinion?
+2002,QN25,Q.25 Some people say UNDOCUMENTED OR ILLEGAL immigrants help the economy by providing low-cost labor. Others say they hurt the economy by driving wages down. Which is closer to your views?
+2002,QN25_NB,NB Help/Hurt Economy
+2002,QN26,Q.26 What would you think of a proposal that would give many of the undocumented or illegal Latino/Hispanic immigrants working in the U.S. a chance to obtain legal status? Is this something you would favor or oppose?
+2002,QN27,"Q.27 What do you think of a guest worker proposal that would allow Latinos/Hispanics to enter the country legally and work here for a limited period of time, but then they would have to go home, would you favor or oppose such a program?"
+2002,QN28,Q.28 Do you think adult Latino/Hispanic immigrants need to learn to speak English to succeed in the US or can they succeed even if they only speak Spanish?
+2002,QN29A,Q.29a Do you agree or disagree that you can be more successful in American workplaces if you do each of the following. How about... Be willing to work long hours at the expense of your personal life
+2002,QN29B,Q.29b Do you agree or disagree that you can be more successful in American workplaces if you do each of the following. How about... Get along with people of different races and cultures
+2002,QN29C,Q.29c Do you agree or disagree that you can be more successful in American workplaces if you do each of the following. How about... Do what is best for yourself rather than what is best for others
+2002,QN3,"Q.3 Were you born in the United States, the island of Puerto Rico or in another country?"
+2002,QN30,"Q.30 If you were talking to a Latino/Hispanic immigrant who had just arrived in this country, which of the following statements offers the best advice?"
+2002,QN31,"Q.31 Again, which is the best advice to a recently arrived Latino/Hispanic immigrant?"
+2002,QN32A,Q.32a People choose different terms to describe themselves. I'm going to read you a few different descriptions. Please tell me whether you have ever described yourself as any of the following-- Respondent/parent Country of origin?
+2002,QN32B,Q.32b People choose different terms to describe themselves. I'm going to read you a few different descriptions. Please tell me whether you have ever described yourself as any of the following-- A Latino/Hispanic?
+2002,QN32C,Q.32c People choose different terms to describe themselves. I'm going to read you a few different descriptions. Please tell me whether you have ever described yourself as any of the following-- An American?
+2002,QN33A,"Q.33a You have said that you describe yourself as an American/Latino/Hispanic/Respondent/parent Country of origin? In general, which of the terms that you use to describe yourself is the term you use first?"
+2002,QN33B,Q.33b How about second?
+2002,QN33C,Q.33c How about third?
+2002,QN34,"Q.34 How important is religion in your everyday life: The most important thing in your life; a very important thing in your life, somewhat important; or not important at all?"
+2002,QN35,"Q.35 Aside from weddings and funerals, how often do you attend religious services? Would you say more than once a week, once a week, once or twice a month, a few times a year, seldom, or never?"
+2002,QN36,Q.36 How would you rate the job religious institutions are doing in helping to solve your community's most important problems?
+2002,QN37A,Q.37a Will you tell me for each of the following whether it is something you personally agree with or disagree with? In general the husband should have the final say in family matters.
+2002,QN37B,Q.37b Will you tell me for each of the following whether it is something you personally agree with or disagree with? It is better for children to live in their parents' home until they get married.
+2002,QN37C,Q.37c Will you tell me for each of the following whether it is something you personally agree with or disagree with? Elderly parents should live with their adult children.
+2002,QN37D,Q.37d Will you tell me for each of the following whether it is something you personally agree with or disagree with? Relatives are more important than friends
+2002,QN37E,Q.37e Will you tell me for each of the following whether it is something you personally agree with or disagree with? It doesn't do any good to plan for the future because you don't have control over it
+2002,QN38,Q.38 Which of these statements come closest to expressing your view:
+2002,QN39,"Q.39 Are you, yourself now covered by any form of health insurance or health plan or do you not have any health insurance at this time?"
+2002,QN3A,Q.3a The terms Hispanic and Latino are both used to describe people who are of Hispanic or Latin origin or descent. Do you happen to prefer one of these terms more than the other?
+2002,QN4,Q.4 In what country were you born?
+2002,QN40,Q.40 Do you personally know someone who doesn't have health insurance?
+2002,QN41,"Q.41 In the past year, did you have any problems paying medical bills, including doctor or hospital, prescription drugs, nursing home, or home care bills?"
+2002,QN42,"Q.42 How much of an impact have these bills had on you and your family, a major impact, a minor impact, or no real impact on you and your family?"
+2002,QN43,"Q.43 Was there a time over the past year when you or another family member living in your household needed medical care, but did not get it?"
+2002,QN44,"Q.44 How serious would you say the condition that you needed medical care for but did not get it was. Was it very serious, somewhat serious, not too serious, or not at all serious?"
+2002,QN45,"Q.45 In the past 12 months, have you (or someone else in your household) ever put off or postponed seeking health care you felt you needed but you could not afford?"
+2002,QN46,Q.46 Did you or that person eventually get the care you thought you needed?
+2002,QN47A,Q.47a Please tell me if each of these has been a problem for you during the last 12 months? How about .... Difficulty communicating with doctors or other health care providers because of language barriers
+2002,QN47B,Q.47b Please tell me if each of these has been a problem for you during the last 12 months? How about .... Having difficulty getting care because of your race or ethnic background
+2002,QN48,"Q.48 Would you say you can carry on a conversation in Spanish, both understanding and speaking,-- very well, pretty well, just a little, or not at all?"
+2002,QN49,"Q.49 Would you say you can read a newspaper or book in Spanish-- very well, pretty well, just a little, or not at all?"
+2002,QN50,"Q.50 Would you say you can carry on a conversation in English, both understanding and speaking,-- very well, pretty well, just a little, or not at all?"
+2002,QN501,"Q.5 What country did your parents, grandparents or ancestors come from?"
+2002,QN502,"Q.5 What country did your parents, grandparents or ancestors come from?"
+2002,QN503,"Q.5 What country did your parents, grandparents or ancestors come from?"
+2002,QN504,"Q.5 What country did your parents, grandparents or ancestors come from?"
+2002,QN51,"Q.51 Would you say you can read a newspaper or book in English-- very well, pretty well, just a little, or not at all?"
+2002,QN52,"Q.52 If you had to put something together from a set of instructions, would you prefer the instructions be written in English or in Spanish?"
+2002,QN53,"Q.53 What language do you usually speak at home? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2002,QN54,"Q.54 What language do you usually speak at work? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2002,QN55,"Q.55 In what language are the news programs you usually watch on TV or listen to on the radio? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2002,QN56,"Q.56 What language do your children usually speak with their friends? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2002,QN57A,"Q.57a In general, do you think discrimination against Latinos/Hispanics is a major problem, minor problem, or not a problem in... schools"
+2002,QN57B,"Q.57b In general, do you think discrimination against Latinos/Hispanics is a major problem, minor problem, or not a problem in... the workplace"
+2002,QN57D,"Q.57d In general, do you think discrimination against Latinos/Hispanics is a major problem, minor problem, or not a problem in... preventing Latinos/Hispanics in general from succeeding in America"
+2002,QN58,"Q.58 Do you think Latinos/Hispanics discriminating against other Latinos/Hispanics is a major problem, a minor problem or not a problem?"
+2002,QN59,"Q.59 Do you think Latinos/Hispanics discriminate against each other mainly because Latinos/Hispanics come from different countries, have different levels of income and education, or because of differences in skin color, or some other reason?"
+2002,QN5_01,"Q.5 What country did your parents, grandparents or ancestors come from?- Argentina"
+2002,QN5_02,"Q.5 What country did your parents, grandparents or ancestors come from?- Barbados"
+2002,QN5_03,"Q.5 What country did your parents, grandparents or ancestors come from?- Belize"
+2002,QN5_04,"Q.5 What country did your parents, grandparents or ancestors come from?- Bolivia"
+2002,QN5_05,"Q.5 What country did your parents, grandparents or ancestors come from?- Brazil"
+2002,QN5_06,"Q.5 What country did your parents, grandparents or ancestors come from?- Chile"
+2002,QN5_07,"Q.5 What country did your parents, grandparents or ancestors come from?- Colombia"
+2002,QN5_08,"Q.5 What country did your parents, grandparents or ancestors come from?- Costa Rica"
+2002,QN5_09,"Q.5 What country did your parents, grandparents or ancestors come from?- Cuba"
+2002,QN5_10,"Q.5 What country did your parents, grandparents or ancestors come from?- Dominican Republic"
+2002,QN5_11,"Q.5 What country did your parents, grandparents or ancestors come from?- Ecuador"
+2002,QN5_12,"Q.5 What country did your parents, grandparents or ancestors come from?- El Salvador"
+2002,QN5_13,"Q.5 What country did your parents, grandparents or ancestors come from?- Falkland Islands"
+2002,QN5_14,"Q.5 What country did your parents, grandparents or ancestors come from?- Guatemala"
+2002,QN5_15,"Q.5 What country did your parents, grandparents or ancestors come from?- Guyana"
+2002,QN5_16,"Q.5 What country did your parents, grandparents or ancestors come from?- Haiti"
+2002,QN5_17,"Q.5 What country did your parents, grandparents or ancestors come from?- Honduras"
+2002,QN5_18,"Q.5 What country did your parents, grandparents or ancestors come from?- Mexico"
+2002,QN5_19,"Q.5 What country did your parents, grandparents or ancestors come from?- Nicaragua"
+2002,QN5_20,"Q.5 What country did your parents, grandparents or ancestors come from?- Panama"
+2002,QN5_21,"Q.5 What country did your parents, grandparents or ancestors come from?- Paraguay"
+2002,QN5_22,"Q.5 What country did your parents, grandparents or ancestors come from?- Peru"
+2002,QN5_23,"Q.5 What country did your parents, grandparents or ancestors come from?- Portugal"
+2002,QN5_24,"Q.5 What country did your parents, grandparents or ancestors come from?- Puerto Rico"
+2002,QN5_25,"Q.5 What country did your parents, grandparents or ancestors come from?- Spain"
+2002,QN5_26,"Q.5 What country did your parents, grandparents or ancestors come from?- Suriname"
+2002,QN5_27,"Q.5 What country did your parents, grandparents or ancestors come from?- Uruguay"
+2002,QN5_28,"Q.5 What country did your parents, grandparents or ancestors come from?- Venezuela"
+2002,QN5_29,"Q.5 What country did your parents, grandparents or ancestors come from?- French Guyana"
+2002,QN5_30,"Q.5 What country did your parents, grandparents or ancestors come from?- Jamaica"
+2002,QN5_31,"Q.5 What country did your parents, grandparents or ancestors come from?- Trinidad/Caribbean Islands"
+2002,QN5_32,"Q.5 What country did your parents, grandparents or ancestors come from?- Italy"
+2002,QN5_33,"Q.5 What country did your parents, grandparents or ancestors come from?- Africa"
+2002,QN5_91,"Q.5 What country did your parents, grandparents or ancestors come from?- USA"
+2002,QN5_96,"Q.5 What country did your parents, grandparents or ancestors come from?- Not Really Hispanic/Latino"
+2002,QN5_97,"Q.5 What country did your parents, grandparents or ancestors come from?- Other"
+2002,QN5_98,"Q.5 What country did your parents, grandparents or ancestors come from?- Don't know"
+2002,QN5_99,"Q.5 What country did your parents, grandparents or ancestors come from?- Refused"
+2002,QN6,Q.6 Which country do you identify with more?
+2002,QN60,"Q.60 During the last 5 years, have you, a family member, or close friend experienced discrimination because of your racial or ethnic background, or not?"
+2002,QN61,Q.61 Was that you personally or was that someone else?
+2002,QN62A,"Q.62a In your day-to-day life, how often do any of the following things happen to you because of your racial or ethnic background? You are treated with less respect than other people."
+2002,QN62B,"Q.62b In your day-to-day life, how often do any of the following things happen to you because of your racial or ethnic background? You receive poorer service than other peoplle at restaurants or stores."
+2002,QN62C,"Q.62c In your day-to-day life, how often do any of the following things happen to you because of your racial or ethnic background? You are called names or insulted."
+2002,QN63,"Q.63 Has there ever been a time when you have NOT been hired or promoted for a job because of your race or ethnic background, or has this not happened to you?"
+2002,QN64,"Q.64 Thinking in general about when you have been treated unfairly or discriminated against, which of the following explains why you think you were treated unfairly. Was it mainly because of your:"
+2002,QN65,"Q.65 And if you had to choose, which do you think mattered more?"
+2002,QN66,"Q.66 By physical appearance, are you referring to your skin color, or something else?"
+2002,QN67,Q.67 How many years have you lived in the United States?
+2002,QN68,Q.68 Now we would like to ask you about US citizenship. Are you...?
+2002,QN69,Q.69 What year did you become a citizen?
+2002,QN7,"Q.7 What race do you consider yourself to be? White, Black or African-American, Asian or some other race?"
+2002,QN70,Q.70 Which comes closer to your views? Latinos/Hispanics from different countries...
+2002,QN71,Q.71 Which comes closer to your views? Latinos/Hispanics from different countries...
+2002,QN72,"Q.72 The US government has traditionally divided people into racial categories. Earlier you told me you were (Race in QN7), if you had a choice, would you prefer to call yourself (Race in QN7) or do you wish you had another option?"
+2002,QN73,"Q.73 Earlier you were asked what your race was and you said it was not one of the categories listed by the US government, but that it was some other race. What race is that?"
+2002,QN74,"Q.74 Would you prefer that (Answer given in QN73) be one of the options given when you are asked about your race, or not?"
+2002,QN75,Q.75 What option would you like to have?
+2002,QN76,"Q.76 Which party do you think has more concern for Latinos/Hispanics --the Democratic party, the Republican party, or is there no difference?"
+2002,QN77,Q.77 Some people are registered to vote and others are not. Are you currently registered to vote at your present address?
+2002,QN78,Q.78 Have you ever voted in an election in the U.S.?
+2002,QN79,"Q.79 Now I'm going to read you a list of issues that might be important in determining your votes for a political candidate. In general, which of these issues is the MOST important in deciding your vote?"
+2002,QN79_1,Q.79 top 2 issues that might be important in determining your votes for a political candidate.
+2002,QN79_2,Q.79 And which is the second most important in deciding your vote for a political candidate?
+2002,QN79__2,Q.79 top 2 issues that might be important in determining your votes for a political candidate.
+2002,QN8,"Q.8 How much of the time do you trust the government in Washington to do what is right-just about always, most of the time, or only some of the time?"
+2002,QN80,"Q.80 In considering whether or not to vote for a political candidate, how important is the candidate's position on HIV/AIDS in making your choice?"
+2002,QN81,"Q.81 Overall, in whom do you have more confidence when it comes to dealing with the economy- President Bush or the Democrats in Congress?"
+2002,QN82,"Q.82 Overall, in whom do you have more confidence when it comes to dealing with the economy- the Republicans or the Democrats?"
+2002,QN83,"Q.83 As you may know, some countries allow people to be legal citizens of their country even if they are also US citizens. Are you a legal citizen of your country or origin?"
+2002,QN84,"Q.84 Since you moved to the U.S., have you voted in your country of origin or not?"
+2002,QN85,Q.85 Do you regularly send money back to your country of origin or not?
+2002,QN86,Q.86 How recently have you returned to the country of your birth for a visit?
+2002,QN87,Q.87 About how often do you return?
+2002,QN88,Q.88 Which country do you consider your real homeland?
+2002,QN89,"Q.89 Do you plan to someday move back to the country you are from, or not?"
+2002,QN9,Q.9 Which of the following statements do you agree with more - ...?
+2002,QN90,"Q.90 In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?"
+2002,QN91,Q.91 Do you consider yourself closer to the Republican party or the Democratic party?
+2002,QN92,"Q.92 Are you currently married, living with a partner, widowed, divorced, separated, or have you never been married?"
+2002,QN93,"Q.93 Including yourself, how many people, live in your household?"
+2002,QN94,"Q.94 Including yourself, how many people living in your household are OVER 18?"
+2002,QN95,Q.95 How many people living in your household are UNDER 18?
+2002,QN96,Q.96 Are any other adults in your household currently employed?
+2002,QN97,Q.97 How many adults in your household are currently employed?
+2002,QN98,"Q.98 What is your religious preference? Are you Protestant, Catholic, Jewish, some other religion, or no religion?"
+2002,QN99,Q.99 Do you consider yourself a Christian?
+2002,QND20,D20. RECORD GENDER OF INTERVIEWER
+2002,R19A,
+2002,R19B,
+2002,R19C,
+2002,R19D,
+2002,R37A,
+2002,R37B,
+2002,R37C,
+2002,R37D,
+2002,REC_69,1996 Citizen
+2002,REGION,Census Region
+2002,RELIGA,Q98/99. Religion Combination Table
+2002,RELIGB,Q98/99/100. Religion Summary Table
+2002,REPLICAT,REPLICATE
+2002,RESPECT,Recode of qn62a
+2002,RQN105,What is your age?
+2002,RQN107,How long ago did they come to the US (Mother)?
+2002,RQN108,How long ago did they come to the US (Father)?
+2002,RQN55,In what language are the news programs you usually watch on TV or listen to on the radio?
+2002,RQN67,How many years have you lived in the U.S.?
+2002,RQN67_1,How many years have you lived in the U.S.?
+2002,RQN69,What year did you become a citizen?
+2002,RQN86,How recently have you returned to the country of your birth for a visit?
+2002,RQN93,"Including yourself, how many people live in your household?"
+2002,RQN94,"Including yourself, how many people living in your household are OVER 18?"
+2002,RQN95,"Including yourself, how many people living in your household are UNDER 18?"
+2002,RQN97,How many people in your household are employed?
+2002,SABORN,Table for South Americans
+2002,SALBORN,Table for Salvadorans
+2002,SERVICE,Recode of qn62b
+2002,SPANISH,
+2002,SPNRD,
+2002,SPNSPK,
+2002,STATE,State Abbreviation
+2002,STRATUM,Stratum Code
+2002,STUDY,
+2002,TOTAL,Total
+2002,WEIGHT,Weight for entire dataset
+2002,WEIGHTH,Weight for Latinos only
+2004,AGE1,75. What is your age? (Top Range 55+)
+2004,AGE2,75. What is your age? (Top Range 65+)
+2004,DIVISION,Census Division
+2004,ENGLISH,
+2004,ENGRD,
+2004,ENGSPK,
+2004,ID,
+2004,INCOME,79/80/81/82. Income Summary Table
+2004,LANGUAGE,Q53/54/55/56. Primary Language Raw Score
+2004,LEAN,64/65. Leaned Party Table
+2004,METRO,Metro Status
+2004,PRIMARYL,Q53/54/55/56. Primary Language
+2004,QN1,"1. Are you, yourself of Hispanic or Latino origin or descent such as Mexican, Puerto Rican, Cuban, Dominican, Central or South American, Carribean or some other Latin American background?"
+2004,QN10,10. Which of the following statements do you agree with more?
+2004,QN11A,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year, have you Contacted any elected official, or not?"
+2004,QN11B,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Contributed money to a candidate running for public office, or not?"
+2004,QN11BB,"11bb. Was the candidate Latino, non-Latino, or have you contributed money to both Latino and non- Latino candidates?"
+2004,QN11C,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Worked as a volunteeer or for pay for a political candidate, or not?"
+2004,QN11CC,"11cc. Was the candidate Latino, non-Latino, or have you worked for both Latino and non-Latino candidates?"
+2004,QN11D,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Attended a public meeting or demonstration in the community where you live, or not?"
+2004,QN11DD,"11dd. Was the public meeting or demonstration specific to Latino concerns, or not?"
+2004,QN11E,"11. People express their opinions about politics and current events in a number of ways. In the United States, In the past year have you Attended a political party meeting or function, or not?"
+2004,QN12A,12a. Next I would like to talk with you about volunteer (spending time helping w/o being paid for it) activity. In the PAST YEAR have you volunteered your time to Any church or religious group?
+2004,QN12AA,"12aa. In deciding whether to volunteer your time was it important that the organization(s) specifically addressed Latino concerns, or not?"
+2004,QN12B,12b. Next I would like to talk with you about volunteer (spending time helping w/o being paid for it) activity. In the PAST YEAR have you volunteered your time to Any school or tutoring program?
+2004,QN12C,"12c. Next I would like to talk with you about volunteer (spending time helping w/o being paid for it) activity. In the PAST YEAR have you volunteered your time to Any neighborhood, business or community group?"
+2004,QN12E,12e. Next I would like to talk with you about volunteer (spending time helping w/o being paid for it) activity. In the PAST YEAR have you volunteered your time to Any organization representing your own particular nationality or ethnic or racial group?
+2004,QN13,"13. Based on your experience, do you think political leaders are interested in the problems of particular concern to Hispanics/Latinos living here or not?"
+2004,QN14,"14. Which party do you think has more concern for Latinos -- the Democratic party, the Republican party, or is there no difference?"
+2004,QN15,"15. Which comes closer to your views, Hispanics/Latinos from different countries Today are working together to achieve common political goals or Are not working together politically"
+2004,QN16,16. Some Hispanics/Latinos are more concerned about government and politics in their country of origin than in the U.S. Others are more concerned about government and politics in the U.S. How about you? Are you...?
+2004,QN17,17. Now we would like to ask you about US citizenship. Are you.?
+2004,QN18,18. Some people are registered to vote and others are not. Are you currently registered to vote at your present address?
+2004,QN19A,19a. Please tell me whether you agree with this statement: Political leaders do not care much what people like me think
+2004,QN19C,"19c. Please tell me whether you agree with this statement: In the United States, citizens can have an influence at all levels of government, from top to bottom, by voting and engaging in other political activities"
+2004,QN19E,19e. Please tell me whether you agree with this statement: Hispanics/Latinos are more likely to vote if there are Hispanics/Latinos on the ballot
+2004,QN19F,19f. Please tell me whether you agree with this statement: Hispanic/Latino voters are more likely to vote for a Hispanic/Latino candidate instead of as non-Hispanic/Latino running for the same office if they have the same qualifications
+2004,QN19G,19g. Please tell me whether you agree with this statement: Hispanic/Latino voters will usually pick a Hispanic/Latino candidate even if there is a better qualified non-Hispanic/Latino running for the same office
+2004,QN19H,19h. Please tell me whether you agree with this statement: I am more likely to vote if there are Hispanics/Latinos on the ballot
+2004,QN19I,19i. Please tell me whether you agree with this statement: I am more likely to vote for a Hispanic/Latino candidate instead of a non-Hispanic/Latino running for the same office if they have the same qualifications
+2004,QN19J,19j. Please tell me whether you agree with this statement: I will usually pick a Hispanic/Latino candidate even if there is a better qualified non-Hispanic/Latino running for the same office
+2004,QN2,2. Would you prefer to be interviewed in English or Spanish?
+2004,QN20A,"20a. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Education"
+2004,QN20B,"20b. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The economy and jobs"
+2004,QN20C,"20c. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Social Security"
+2004,QN20D,"20d. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Taxes"
+2004,QN20E,"20e. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Crime"
+2004,QN20F,"20f. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Moral values"
+2004,QN20G,"20g. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Health care and Medicare"
+2004,QN20H,"20h. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. U.S. campaign against terrorism"
+2004,QN20I,"20i. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The war in Iraq"
+2004,QN20J,"20j. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. Immigration"
+2004,QN20K,"20k. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For each item I name, please tell me how important it will/should be in your vote for president this year. The federal budget deficit"
+2004,QN22,"22.Overall, do you think the tax cuts enacted in 2001 have been good for the economy, bad for the economy, or don't you think they've made much difference one way or the other?"
+2004,QN27A,27a. Please tell me how important these issues will be in your vote for president this year. The cost of health care and health insurance
+2004,QN27B,27b. Please tell me how important these issues will be in your vote for president this year. The number of Americans without health insurance
+2004,QN27C,27c. Please tell me how important these issues will be in your vote for president this year. Medicare
+2004,QN27D,27d. Please tell me how important these issues will be in your vote for president this year. Prescription drug benefits for seniors
+2004,QN28,"28. Do you think the government should provide health insurance for Americans without insurance, or is this something the government should not do?"
+2004,QN29,"29. Would you be willing to pay more--either in higher health insurance premiums or higher taxes--in order to increase the number of Americans who have health insurance, or not?"
+2004,QN3,"3. Were you born in the United States, the island of Puerto Rico or in another country?"
+2004,QN31,31. Do you approve or disapprove of the way George W. Bush is handling the situation in Iraq?
+2004,QN33,"33. Do you think George W. Bush has a clear plan for bringing the situation in Iraq to a successful conclusion, or don't you think so?"
+2004,QN34,34. Do you think the US made the right decision or the wrong decision in using military force against Iraq?
+2004,QN35,"35. Do you think the Bush Administration deliberately misled the American public about how big a threat Iraq was to the United States before the war began, or not?"
+2004,QN37,"37. Do you think the United States should increase the number of Latin Americans allowed to come and work in this country LEGALLY, reduce the number, or allow the same numbner as it does now?"
+2004,QN38,38. Some people say UNDOCUMENTED or ILLEGAL immigrants Help the economy by providing low-cost labor. Others say they Hurt the economy by driving wages down. Which is closer to your views?
+2004,QN39,39. President Bush has proposed a plan that would allow some illegal immigrants in the U.S. to stay in this country legally for as temporary workers. The plan would these workers to eventually return to their countries. Do you favor this plan?
+2004,QN4,"4. The terms Hispanic and Latino are both used to describe people who are of Hispanic or Latino origin or descent. Do you happen to prefer one of these terms more than the other? Which term do you prefer, Hispanic or Latino?"
+2004,QN40,40. Another proposal would give many of the undocumented or illegal Hispanic/Latino immigrants living in the U.S. a chance to remain here permanently with legal status and eventually become US citizens. Is this something you would favor?
+2004,QN40A,40a. Which is closer to your view? In future: All legal immigrants to the US should have a chance to become Citizens or Some immigrants should come to the US through a temporary worker program which requires them to go back to their country of origin
+2004,QN41A,"41a. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Speak English to say they are part of American society, or not?"
+2004,QN41B,"41b. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Believe in the U.S. constitution, to say they are part of American society, or not?"
+2004,QN41E,"41e. In order for an immigrant to say that they are part of American society, do they have to do each of the following, or not? Do immigrants have to Vote in U.S. elections to say they are part of American society, or not?"
+2004,QN41H,"41h. In order for an immigrant to say they are part of American society, do they have to each of the following, or not? Do immigrants have to Be a U.S. Citizen or not?"
+2004,QN42,42. Which comes closer to your views:
+2004,QN43,"43. How important is it to you that future generations of Latinos living in the United States speak Spanish-very important, somewhat important, not too important, or not important at all?"
+2004,QN43AA,"43aa. How important is it for different racial and ethnic groups to change so that they blend into the larger society, as in the idea of a melting pot of cultures?"
+2004,QN43AB,"43AB. How important is it for different racial and ethnic groups to maintain their distinct cultures, very important, somewhat important, not too important, or not at all important?"
+2004,QN43BA,"43BA. How important is it for Latinos to Change so that they blend into the larger society as in the idea of a melting pot of cultures very important, somewhat important, not too important, or not at all important?"
+2004,QN43BB,"43BB. How important is it for Latinos to maintain their distinct cultures very important, somewhat important, not too important, or not at all important?"
+2004,QN44,"44. On another subject, do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?"
+2004,QN45,45. Do you favor or oppose a constitutional amendment that would define marriage as a union between one man and one woman thereby prohibiting legally sanctioned marriages for same sex couples?
+2004,QN47A,"47a. If you agreed with a presidential candidate on other issues, but not on the issue of Abortion could you still vote for him, or not?"
+2004,QN47B,"47b. If you agreed with a presidential candidate on other issues, but not on the issue of A constitutional amendment against same sex marriages could you still vote for him, or not?"
+2004,QN47C,"47c. If you agreed with a presidential candidate on other issues, but not on the issue of The war in Iraq could you still vote for him, or not?"
+2004,QN48,"48. Have you ever voted in an election in the U.S., or not?"
+2004,QN49,"49. We often find out that a lot of people aren't able to vote because they were not registered, or they were sick, or they just didn't have time. Do you remember for sure whether you voted in the November 2002 congressional election in your district?"
+2004,QN5,"5. Now I want to ask you about you and your family's heritage. Are you Mexican, Puerto Rican, Cuban, Dominican, Salvadoran or are you and your ancestors from another country?"
+2004,QN50,50. Do you remember for sure whether you voted in the November 2000 presidential election when George W. Bush ran against Al Gore and Ralph Nader?
+2004,QN51,"51. How closely are you following the 2004 presidential race: very closely, somewhat closely, not too closely, or not closely at all?"
+2004,QN52A,52a. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I sometimes feel I don't know enough about the candidates to vote?
+2004,QN52B,52b. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about It's complicated to register to vote where I live?
+2004,QN52C,52c. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about It's difficult for me to get out to the polls to vote?
+2004,QN52D,52d. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I sometimes don't like any of the candidates?
+2004,QN52F,52f. I am going to read you some reasons why some people have told us they don't always vote. Please tell me whether you agree with it or disagree with it. How about I can make more of a difference by getting involved in my community
+2004,QN53,"53. Would you say you can carry on a conversation in Spanish, both understanding and speaking-- very well, pretty well, just a little, or not at all?"
+2004,QN54,"54. Would you say you can read a newspaper or book in Spanish- - very well, pretty well, just a little, or not at all?"
+2004,QN55,"55. Would you say you can carry on a conversation in English, both understanding and speaking, -- very well, pretty well, just a little, or not at all?"
+2004,QN56,"56. Would you say you can read a newspaper or book in English- - very well, pretty well, just a little, or not at all?"
+2004,QN57,"57. If you had to put something together from a set of instructions, would you prefer the instructions be written in English or in Spanish?"
+2004,QN58,"58. What language do you usually speak at home? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2004,QN59,"59. What language do you usually speak at work? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2004,QN6,"6. What race do you consider yourself to be? White, Black or African-American, Asian, or some other race?"
+2004,QN60,"60. In what language are the news programs you usually watch on TV or listen to on the radio? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2004,QN60A,60A. Do you have any children under the age of 18?
+2004,QN61,"61. What language do your children usually speak with their friends? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2004,QN62,62. How many years have you lived in the (continental) United States?
+2004,QN62A,"62a. Overall, would you say the friendliness and openness of the people is better in the United States, better in the country you came from, or about the same?"
+2004,QN62B,"62B. Overall, would you say the amount of political freedom is better in the United States, better in the country you came from, or about the same?"
+2004,QN62C,"62C. Overall, would you say relations between different races are better in the United States, better in the country you came from, or about the same?"
+2004,QN63,"63. In general, do you think discrimination against Latinos is a major problem, minor problem, or not a problem in preventing Latinos in general from succeeding in America?"
+2004,QN63A,"63A. In the past 5 years, have you or a family member experienced discrimination?"
+2004,QN64,"64. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?"
+2004,QN65,65. Do you consider yourself closer to the Republican party or the Democratic party?
+2004,QN66,"66. Are you currently married, living with a partner, widowed, divorced, separated, or have you never been married?"
+2004,QN67,"67. Including yourself, how many people live in your household?"
+2004,QN68,"68. Including yourself, how many people living in your household are 18 and over?"
+2004,QN69,69. What is your employment status? Are you.?
+2004,QN69A,"69A. How important is religion in your everyday life: The most important thing in your life, a very important thing in your life, somewhat important or not important at all?"
+2004,QN70,"70. Aside from weddings and funerals, how often do you attend religious services? Would you say more than once a week, once a week, once or twice a month, a few times a year, seldom, or never?"
+2004,QN71,"71. What is your religious preference? Are you Protestant, Catholic, Jewish, some other religion, or no religion?"
+2004,QN72,72. Do you consider yourself a Christian?
+2004,QN73,"73. Would you consider yourself a born-again or evangelical Christian, or not?"
+2004,QN73A,73A. Do you agree or disagree with the following statement: Religion is a private matter that should be kept out of public debates over social and political issues. Is that strongly or somewhat?
+2004,QN74,74. What is the last grade or class that you completed in school?
+2004,QN75,75. What is your age?
+2004,QN76,76. Were either of your parents born in Puerto Rico? One or both?
+2004,QN77,77. Were either of your parents born outside the US? One or both?
+2004,QN78A,78. How long ago did your mother come to the continental US?
+2004,QN78B,78. How long ago did your father come to the continental US?
+2004,QN79,"79. Is your total annual household income from all sources, and before taxes:"
+2004,QN8,"8. How much attention would you say you pay to politics and government? A lot, a fair amount, not much, or none at all?"
+2004,QN80,80. Would that be...?
+2004,QN81,81. Would that be...?
+2004,QN82,82. Would that be...?
+2004,QN83,83. Researchers would like to study first names to better understand some of the things we have been talking about today. Are you willing to provide researchers with your first name?
+2004,QN83_5,"INTERVIEWER: In what language did the respondent complete the interview? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2004,QN84,INTERVIEWER: Please record your race
+2004,QN9,"9. How much of the time do you trust the government in Washington to do what is right - just about always, most of the time, or only some of the time?"
+2004,QND18,GENDER
+2004,REGION,Census Region
+2004,RELIG1,71/72. Religion Combination Table
+2004,RELIG2,71/72/73. Religion Summary Table
+2004,SAMPLE18,MSA
+2004,SAMPLE19,ADI
+2004,SAMPLE32,ICR MATCH CODE
+2004,SAMPLE33,ADI RANK
+2004,SAMPLE34,DMA RANK
+2004,SPANISH,
+2004,SPNRD,
+2004,SPNSPK,
+2004,STATE,State Abbreviation
+2004,STUDY,
+2004,WEIGHT,Weight
+2006,caseid,
+2006,ident,
+2006,ident2a,
+2006,ident3a,
+2006,ident4a,
+2006,jobnbr,
+2006,language,Primary Language
+2006,metro,Metro Status
+2006,newwght,New sample weight
+2006,qn1,"1. Thinking about the U.S., what do you think is the most important problem facing the country today?"
+2006,qn10a,"10a. Overall would you say... The moral values of the society are better in the United States, better in (the country your parents or ancestors came from/Puerto Rico/the country you came from) or about the same?"
+2006,qn10b,"10b. Overall would you say... Relations between different racial and ethnic groups are better in the United States, better in (the country your parents or ancestors came from/Puerto Rico/the country you came from) or about the same?"
+2006,qn10c,"10c. Overall would you say... The political traditions are better in the United States, better in (the country your parents or ancestors came from/Puerto Rico/the country you came from) or about the same?"
+2006,qn11a,11. Which is closer to your opinion?
+2006,qn12b,12. Which is closer to your views?
+2006,qn13,"13. Let me read you three of the options under consideration, and please tell me which you would support. Would you support...?"
+2006,qn14,"14. As an alternative to a permanent stay, another proposal would allow thousands of migrants to come in as temporary workers for a limited period of time but only if they agree to return to their country. Are you in favor or do you oppose this?"
+2006,qn15a,15a. Are you in favor or do you oppose... Build more fences?
+2006,qn15b,15b. Are you in favor or do you oppose... Increase the number of border patrol agents?
+2006,qn15c,15c. Are you in favor or do you oppose... Send national guard troops?
+2006,qn16,"16. In general, which of the political parties has the best position on immigration issues?"
+2006,qn16a,16a. Do you think the government should create a data base of all legal workers and require verification by employers before hiring a worker?
+2006,qn17a,17a. Please tell me whether you have ever described yourself as Respondent/parent country of origin.
+2006,qn17b,17b. Please tell me whether you have ever described yourself as A Latino/Hispanic.
+2006,qn17c,17c. Please tell me whether you have ever described yourself as An American.
+2006,qn18b,"18. You have said that you describe yourself as [an American, a Latino/Hispanic, and as a (INSERT COUNTRY OF ORIGIN)]. In general, which of the terms that you use to describe yourself is the term you use first?"
+2006,qn19,"19. Now thinking about religion, what is your religious preference?"
+2006,qn2,2. What do you think is the most important issue to you and your family today?
+2006,qn20a,20a. Tell me which if any of these denominations you are affiliated with: Baptist.
+2006,qn20b,20b. Tell me which if any of these denominations you are affiliated with: Methodist.
+2006,qn20c,20c. Tell me which if any of these denominations you are affiliated with: Lutheran.
+2006,qn20d,20d. Tell me which if any of these denominations you are affiliated with: Presbyterian.
+2006,qn20e,20e. Tell me which if any of these denominations you are affiliated with: Congregational or United Church of Christ.
+2006,qn20f,20f. Tell me which if any of these denominations you are affiliated with: Nondenominational or Independent Church.
+2006,qn20g,20g. Tell me which if any of these denominations you are affiliated with: Pentecostal.
+2006,qn20h,20h. Tell me which if any of these denominations you are affiliated with: Episcopalian.
+2006,qn20i,20i. Tell me which if any of these denominations you are affiliated with: Reformed.
+2006,qn20j,20j. Tell me which if any of these denominations you are affiliated with: Something else.
+2006,qn21,"21. Would you describe yourself a born-again or evangelical Christian, or not?"
+2006,qn22a,22a. It is better for children to live in their parents' home until they get married.
+2006,qn22b,22b. Relatives are more important than friends.
+2006,qn22c,22c. It doesn't do any good to plan for the future because you don't have control over it.
+2006,qn24a,"24a. Thinking about a typical weekday, do you get any news from... Network television news shows, like the ABC Nightly News, CNN Headline News, or Noticiero Univision?"
+2006,qn24b,"24b. Thinking about a typical weekday, do you get any news from... Local television news broadcasts?"
+2006,qn24c,"24c. Thinking about a typical weekday, do you get any news from... Newspapers?"
+2006,qn24d,"24d. Thinking about a typical weekday, do you get any news from... Radio?"
+2006,qn24e,"24e. Thinking about a typical weekday, do you get any news from... The Internet?"
+2006,qn25a,"25a. When you get your news from Network television news is it in English, Spanish or both?"
+2006,qn25b,"25b. When you get your news from Local television news is it in English, Spanish or both?"
+2006,qn25c,"25c. When you get your news from Newspapers is it in English, Spanish or both?"
+2006,qn25d,"25d. When you get your news from Radio is it in English, Spanish or both?"
+2006,qn25e,"25e. When you get your news from The Internet is it in English, Spanish or both?"
+2006,qn3,3. I am now going to read you two statements about the immigrant marches in many American cities that took place this Spring. Please tell me which comes closest to your views.
+2006,qn30,"30. In general, do you think discrimination against (HISPANICS/LATINOS) is a major problem, minor problem, or not a problem in preventing (HISPANICS/LATINOS) in general from succeeding in America."
+2006,qn31a,31a. We know that discrimination can result from many factors. How about differences in income and education?
+2006,qn31b,31b. We know that discrimination can result from many factors. How about differences in skin color?
+2006,qn31c,31c. We know that discrimination can result from many factors. How about differences in language?
+2006,qn31d,31d. We know that discrimination can result from many factors. How about differences in immigration status?
+2006,qn32,"32. Thinking of the last few years, do you think that discrimination against (HISPANICS/LATINOS) in the U.S. has become more common, less common, or stayed about the same?"
+2006,qn33,"33. Do you think that the debate over immigration policy in the U.S. has made discrimination against (HISPANICS/LATINOS) more of a problem, less of a problem or has it had no effect on discrimination?"
+2006,qn36,"36. During the last 5 years, have you, a family member, or close friend experienced discrimination because of your racial or ethnic background, or not?"
+2006,qn37,37. How many years have you lived in the (continental) United States?
+2006,qn38,38. Which comes closer to your views? (HISPANICS/LATINOS) from different countries...
+2006,qn39,39. Which comes closer to your views? (HISPANICS/LATINOS) from different countries...
+2006,qn3a,"3a. Do you think the recent immigrant marches this spring had a positive effect on the way the American public thinks about illegal or undocumented immigrants, a negative effect or no effect?"
+2006,qn3b,"3b. If there was going to be another of these marches in your home town this weekend, would you participate or not?"
+2006,qn3c,"3c. Some people say that as a result of the debate over immigration policy in Washington, many more (HISPANICS/LATINOS) will vote in the November elections. Others say that the debate will not have much effect on political participation by (HISPANICS..."
+2006,qn4,4. Some (COUNTRY OR REGION OF ORIGIN GROUP)s are more concerned about government and politics in (COUNTRY OR REGION OF ORIGIN) than in the U.S. Others are more concerned about government and politics in the U.S. Are you...?
+2006,qn40,"40. Which party do you think has more concern for (HISPANICS/LATINOS) -- the Democratic party, the Republican party, or is there no difference?"
+2006,qn41,41. Some people are registered to vote and others are not. Are you currently registered to vote at your present address?
+2006,qn43,43. Which country do you consider your real homeland?
+2006,qn44,44. How long do you think you will remain in the U.S.?
+2006,qn45,"45. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?"
+2006,qn45a,"45a. Do you use a computer at your workplace, at school, at home, or anywhere else on at least an occasional basis?"
+2006,qn45b,"45b. Do you use the internet, at least occasionally?"
+2006,qn45c,"45c. Do you send or receive email, at least occasionally?"
+2006,qn45d,45d. Does ANYONE in your household use the internet from home or send and receive email from home?
+2006,qn45e,45e. Do you ever send email to people in (COUNTRY OF ORIGIN)?
+2006,qn45f,"45f. Do you happen to have a cell phone, or not?"
+2006,qn45g,45g. Do you ever send or receive text messages on your cell phone?
+2006,qn47,"47. Are you currently married, living with a partner, widowed, divorced, separated, or have you never been married?"
+2006,qn47a,47a. Is your (wife/husband/partner) a (Hispanic/Latino)?
+2006,qn48,48. How many children do you have?
+2006,qn49,49. How many of your children live in the United States now?
+2006,qn4a,"4a. On another subject, do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?"
+2006,qn5,5. Are you a citizen of the United States?
+2006,qn50,50. How many of your children live in your home country?
+2006,qn51,51. Do you expect that your children will stay in the United States or will they move back to your home country?
+2006,qn52,52. Do you expect that your children will stay in your home country or will they move to the United States?
+2006,qn53,"53. Would you say you can carry on a conversation in Spanish, both understanding and speaking, -- very well, pretty well, just a little, or not at all?"
+2006,qn54,"54. Would you say you can read a newspaper or book in Spanish -- very well, pretty well, just a little, or not at all?"
+2006,qn55,"55. Would you say you can carry on a conversation in English, both understanding and speaking, -- very well, pretty well, just a little, or not at all?"
+2006,qn56,"56. Would you say you can read a newspaper or book in English -- very well, pretty well, just a little, or not at all?"
+2006,qn57,"57. What language do you usually speak at home? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2006,qn58,"58. What language do you usually speak at work? Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2006,qn59,59. What is the last grade or class that you completed in school?
+2006,qn60,"60. Do you happen to have any credit cards, or not?"
+2006,qn61,61. Do you own the place where you live or do you pay rent?
+2006,qn62,62. Do you have an account with a bank or not?
+2006,qn63,63. What is your age?
+2006,qn64,64. Were either of your parents born outside the US?
+2006,qn65,65. Have you sent money to anyone (INSERT COUNTRY OF ORIGIN) over the past year?
+2006,qn66,66. How often?
+2006,qn67,"67. On average, how much money do you send?"
+2006,qn67a,67a. How long ago did you start sending this money?
+2006,qn67b,"67b. In general, what method do you use to send money?"
+2006,qn69a,69a. Tell me whether you send money home to any of the following people... How about your spouse?
+2006,qn69b,69b. Tell me whether you send money home to any of the following people... How about your children?
+2006,qn69c,69c. Tell me whether you send money home to any of the following people... How about your parents?
+2006,qn69d,69d. Tell me whether you send money home to any of the following people... How about your brothers or sisters?
+2006,qn69e,69E. Tell me whether you send money home to any of the following people... How about anyone else?
+2006,qn6a,6a. Please tell me whether you agree or disagree with... Political leaders do not care much what people like me think.
+2006,qn6b,"6b. Please tell me whether you agree or disagree with... In the United States, citizens can have an influence at all levels of government, from top to bottom, by voting and engaging in other political activities."
+2006,qn6c,6c. Please tell me whether you agree or disagree with... (HISPANICS/LATINOS) are more likely to vote if there are (HISPANICS/LATINOS) on the ballot.
+2006,qn6d,6d. Please tell me whether you agree or disagree with... (HISPANIC/LATINO) voters are more likely to vote for a (HISPANIC/LATINO) candidate instead of a non-(HISPANIC/LATINO) running for the same office if they have the same qualificati...
+2006,qn6f,6f. Please tell me whether you agree or disagree with... I am more likely to vote if there are (HISPANICS/LATINOS) on the ballot.
+2006,qn6g,6g. Please tell me whether you agree or disagree with... I am more likely to vote for a (HISPANIC/LATINO) candidate instead of a non-(HISPANIC/LATINO) running for the same office if they have the same qualifications.
+2006,qn71,71. What is the single most important reason for sending money home?
+2006,qn71a,"71a. Now, thinking about where you were born, do you belong to a civic organization, sports team, or social club of people from (INSERT COUNTRY OF ORIGIN)?"
+2006,qn72,72. How often do you talk by telephone with relatives or friends living in (COUNTRY OF ORIGIN)?
+2006,qn73aa,73aa. Are you the owner of Land in (COUNTRY OF ORIGIN)?
+2006,qn73ab,73ab. Are you the owner of A house in (COUNTRY OF ORIGIN)?
+2006,qn73ac,73ac. Are you the owner of A business in (COUNTRY OF ORIGIN)?
+2006,qn74,74. When did you last travel to (COUNTRY OF ORIGIN)?
+2006,qn74mnth,74. RECORD ANSWER IN MONTHS: 1-12
+2006,qn74year,74. RECORD ANSWER IN YEAR: 1-20
+2006,qn75_1,75. For how long did this most recent visit last?
+2006,qn75_2,75. For how long did this most recent visit last?
+2006,qn75_3,75. For how long did this most recent visit last?
+2006,qn75_4,75. For how long did this most recent visit last?
+2006,qn75_5,75. For how long did this most recent visit last?
+2006,qn75day,75. RECORD ANSWER IN DAYS: 1-7
+2006,qn75mnth,75. RECORD ANSWER IN MONTHS: 1-12
+2006,qn75week,75. RECORD ANSWER IN WEEKS: 1-52
+2006,qn76,76. Did you travel by yourself or with other members of your family who live in the U.S.?
+2006,qn78,78. Did you conduct any business or look after any investments or properties while you were there?
+2006,qn7a,"7a. Do immigrants have to Speak English to say they are part of American society, or not?"
+2006,qn7b,"7b. Do immigrants have to Believe in the U.S. constitution to say they are part of American society, or not?"
+2006,qn7c,"7c. Do immigrants have to Be a U.S. Citizen to say they are part of American society, or not?"
+2006,qn8,"8. Now thinking about work, what is your employment status? Are you.... ?"
+2006,qn80,"80. IS YOUR TOTAL ANNUAL HOUSEHOLD INCOME FROM ALL SOURCES, AND BEFORE TAXES:"
+2006,qn81,81. Would that be:
+2006,qn82,82. Would that be:
+2006,qn83,83. Would that be:
+2006,qn84,"84. In what language did the respondent complete the interview: Only Spanish, more Spanish than English, both equally, more English than Spanish, or only English?"
+2006,qn85,85. INTERVIEWER: What is your race?
+2006,qn86,86. INTERVIEWER: What is your gender?
+2006,qn9a,9a. How confident are you that (HISPANIC/LATINO) children growing up now in the United States Will have better jobs and make more money than you?
+2006,qn9aa,9a. Do you think it is better for (HISPANIC/LATINO) young people to marry other (HISPANICS/LATINOS) or is it not important?
+2006,qn9b,9b. How confident are you that (HISPANIC/LATINO) children growing up now in the United States Will stay as close to their families as you?
+2006,qns10,"S-10. Now I want to ask you about you and your family's heritage. Are you Mexican, Puerto Rican, Cuban, Dominican, Salvadoran or are you and your ancestors from another country?"
+2006,qns11,"s-11. What race do you consider yourself to be? White, Black or African-American, Asian or some other race?"
+2006,qns46,46. Do you consider yourself closer to the Republican party or the Democratic party?
+2006,qns5,S-5. GENDER
+2006,qns6,"S-6. Are you, yourself of Hispanic or Latin origin or descent such as Mexican, Puerto Rican, Cuban, Dominican, Central or South American, Caribbean or some other Latin American background?"
+2006,qns7,S-7. Would you prefer to be interviewed in English or Spanish?
+2006,qns8,"S-8. Were you born in the United States, the island of Puerto Rico or in another country?"
+2006,qns8a,S-8a. The terms Hispanic and Latino are both used to describe people who are of Hispanic or Latin origin or descent. Do you happen to prefer one more than the other?
+2006,qns9,9. In what country were you born?
+2006,region,Census Region
+2007,coweight,CO Weight
+2007,engrd,
+2007,engspk,
+2007,id,CASE ID
+2007,income,
+2007,llweight,LL Weight
+2007,primary,
+2007,qn1,"1. Are you, yourself of Hispanic or Latino origin or descent such as Mexican, Puerto Rican, Cuban, Dominican, Central or"
+2007,qn10,10. How would you rate the overall quality of your life?
+2007,qn11,11. How confident are you that Hispanic/LATINO children growing up now in the United States will have better jobs and ma
+2007,qn12,"12. Compared with 1 year ago, do you think the situation of Hispanics/Latinos in this country today is better, worse, or"
+2007,qn13,"13. Which party do you think has more concern for Hispanics/Latinos: -- the Democratic party, the Republican party, or i"
+2007,qn14,"14. Do you think that the Bush administration's policies have been helpful to Hispanics/Latinos, harmful to Hispanics/La"
+2007,qn15,15. Which political party do you think is doing a better job of dealing with illegal immigration?
+2007,qn16,16. Some people are registered to vote and others are not. Are you currently registered to vote at your present address
+2007,qn17,"17. In politics today, do you consider yourself a Republican, a Democrat, an Independent, or something else?"
+2007,qn18,18. Do you consider yourself closer to the Republican party or the Democratic party?
+2007,qn19,19. How closely are you following the presidential race?
+2007,qn2,2. Would you prefer to be interviewed in English or Spanish?
+2007,qn20_01,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_02,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_03,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_04,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_05,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_06,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_07,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_08,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_09,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn20_10,"20. As far as you know, are any of the presidential candidates Hispanics/Latinos? If so, who?"
+2007,qn21,21. I'm going to read you the names of some possible DEMOCRATIC presidential candidates. Who would you most like to see
+2007,qn22,22. I'm going to read you the names of some possible REPUBLICAN presidential candidates. Who would you most like to see
+2007,qn23a,23A. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea
+2007,qn23b,23B. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea
+2007,qn23e,23E. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea
+2007,qn23g,23G. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea
+2007,qn23i,23I. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea
+2007,qn23j,23J. Now I'm going to read you a list of issues that might be discussed during this year's presidential campaign. For ea
+2007,qn24,"24. Do you think there are too many, too few, or about the right amount of immigrants living in the United States today?"
+2007,qn25_01,25. Why do you say that?
+2007,qn25_02,25. Why do you say that?
+2007,qn25_03,25. Why do you say that?
+2007,qn26,26. Some people say UNDOCUMENTED or ILLEGAL immigrants help the economy by providing low-cost labor. Others say they hu
+2007,qn27,"27. Overall, what is the effect of the growing number of undocumented or illegal immigrants on Hispanics/Latinos living"
+2007,qn28a,"28a. In general, do you think discrimination against Hispanics/Latinos is a major problem, a minor problem, or not a pro"
+2007,qn28b,"28b. In general, do you think discrimination against Hispanics/Latinos is a major problem, a minor problem, or not a pro"
+2007,qn28c,"28c. In general, do you think discrimination against Hispanics/Latinos is a major problem, a minor problem, or not a pro"
+2007,qn29,"29. During the last 5 years, have you, a family member, or close friend experienced discrimination because of your racia"
+2007,qn3,3. The terms Hispanic and Latino are both used to describe people who are of Hispanic or Latino origin or descent. Do y
+2007,qn30a,"30a. In your day-to-day life, how often do any of the following things happen to you because of your racial or ethnic ba"
+2007,qn30b,"30b. In your day-to-day life, how often do any of the following things happen to you because of your racial or ethnic ba"
+2007,qn30c,"30c. In your day-to-day life, how often do any of the following things happen to you because of your racial or ethnic ba"
+2007,qn31,31. Has there ever been a time when you have NOT been hired or promoted for a job because of your race or ethnic backgro
+2007,qn32,32. We know that discrimination can result from many factors. Which of the following do you consider the biggest cause o
+2007,qn33,"33. Regardless of your own immigration or citizenship status, how much do you worry that you, a family member, or a clos"
+2007,qn34,"34. Would you say you can carry on a conversation in Spanish, both understanding and speaking,-- very well, pretty well,"
+2007,qn35,"35. Would you say you can read a newspaper or book in Spanish -- very well, pretty well, just a little, or not at all?"
+2007,qn36,"36. Would you say you can carry on a conversation in English, both understanding and speaking, -- very well, pretty well"
+2007,qn37,"37. Would you say you can read a newspaper or book in English -- very well, pretty well, just a little, or not at all?"
+2007,qn38,"38. Thinking about the past few months, how much attention has been given to the issue of illegal immigration by local o"
+2007,qn39,"39. In the past year in your local community, has the government made more efforts to discourage undocumented or illegal"
+2007,qn4,"4. Now I want to ask you about you and your family's heritage. Are you Mexican, Puerto Rican, Cuban, Dominican, Salvador"
+2007,qn40,40. Do you approve or disapprove of workplace raids to discourage employers from hiring undocumented or illegal immigran
+2007,qn41,41. Do you approve or disapprove of states checking for immigration status before issuing driver's licenses?
+2007,qn42,"42. Should local police take an active role in identifying undocumented or illegal immigrants, or should enforcement be"
+2007,qn43,43. How closely did you follow news accounts earlier this year of the debate in Congress about illegal immigration?
+2007,qn44,44. Do you think that the debate over immigration policy and the failure of Congress to enact an immigration reform bill
+2007,qn45a,"45A. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu"
+2007,qn45b,"45B. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu"
+2007,qn45c,"45C. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu"
+2007,qn46a,"46A. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu"
+2007,qn46b,"46B. Regardless of your immigration or citizenship status, as a result of increased public attention to immigration issu"
+2007,qn48,"48. Are you currently married, do you have a partner, are you widowed, divorced, or separated, or have you never been ma"
+2007,qn49,49. Are you the parent or guardian of any children under 18 now living in your household?
+2007,qn5,"5. Were you born on the island of Puerto Rico, in the United States, or in another country?"
+2007,qn50,50. What is your age?
+2007,qn51,51. What is the last grade or class that you completed in school?
+2007,qn52,"52. Are you now employed full-time, or part-time, or are you not employed?"
+2007,qn53,"53. Which of the following best describes your job? Are you a day laborer, do you work for a private household, are you"
+2007,qn54,"54. In your current job, what kind of work do you do?"
+2007,qn55,55. Just to be clear: is your job in any of the following businesses or industries?
+2007,qn56,"56. Is your total annual household income from all sources, and before taxes:"
+2007,qn57,57. Would that be...?
+2007,qn58,58. Would that be...?
+2007,qn59,59. Would that be...?
+2007,qn5a,5a. In what country were you born?
+2007,qn6,6. How many YEARS have you lived in the continental United States?
+2007,qn61,"61. Including yourself, how many adults ages 18 and older are currently living in your household?"
+2007,qn62,62. Do you have a working cellular telephone?
+2007,qn63,63. Does anyone else ages 18 or older living in your household have a working cellular telephone?
+2007,qn64,"64. Excluding the cell phone you're on now, how many working cellular telephones do the adults in your household own?"
+2007,qn65,65. Is there at least one telephone inside your home that is currently working and is not a cellular phone?
+2007,qn66,"66. Excluding cell phones, how many different telephone numbers, that is different telephone lines, not extensions, do y"
+2007,qn67,"67. How many of these phone numbers coming into your household, not including the cell phone, are used only as a busines"
+2007,qn68,"68. And thinking of all the telephone calls that all the adults in your household receive, are all or almost all calls r"
+2007,qn6m,6. How many MONTHS have you lived in the continental United States?
+2007,qn7,"7. Was your mother born on the island of Puerto Rico, in the United States, or in another country?"
+2007,qn70,69. INTERVIEWER: What language was this interview conducted in?
+2007,qn8,"8. Was your father born on the island of Puerto Rico, in the United States, or in another country?"
+2007,qn9,9. Are you a citizen of the United States?
+2007,qnd18,D18. RECORD GENDER FROM OBSERVATION
+2007,sample03,IDENT
+2007,sample14,Metro Status
+2007,sample28,IDENT2
+2007,sample29,IDENT3
+2007,spnrd,
+2007,spnspk,
+2007,study,
+2007,weight,Weight
