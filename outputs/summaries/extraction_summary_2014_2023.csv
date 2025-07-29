@@ -1,0 +1,7 @@
+year,survey_type,total_variables,demographic_vars,political_vars,total_obs
+2014,NSL,125,57,26,1520
+2015,NSL,150,97,7,1500
+2016,NSL,224,70,27,1507
+2018,NSL,106,46,15,1501
+2021,ATP,192,125,26,3375
+2023,ATP,133,71,8,5078
