@@ -167,6 +167,64 @@ precalc_generation_var_map <- list(
 )
 
 # =============================================================================
+# COMPREHENSIVE IMMIGRATION POLICY & POLITICAL ATTITUDE MAPPINGS
+# =============================================================================
+# Based on mini-project analysis and systematic variable discovery
+
+# IMMIGRATION POLICY VARIABLE MAPPINGS (Multiple distinct policies)
+immigration_policy_var_map <- list(
+  # Trump Support/Approval
+  "trump_support" = list(
+    "2018" = "qn14a",  # Trump approval
+    "2022" = "TRUMPFUT_W113"  # Trump future support
+  ),
+  
+  # Border Wall/Security
+  "border_wall" = list(
+    "2016" = c("qn29a", "qn29b", "qn29c", "qn29d"),  # Multiple border security questions
+    "2018" = "qn29"  # Border wall favorability
+  ),
+  
+  # Immigration Level/Population Opinion
+  "immigration_level" = list(
+    "2018" = "qn31"  # Too many immigrants opinion
+  ),
+  
+  # DACA/Dreamer Support (to be identified in other years)
+  "daca_support" = list(),
+  
+  # Deportation Policy (to be identified)
+  "deportation_policy" = list(),
+  
+  # Legalization/Path to Citizenship (to be identified)
+  "legalization_support" = list()
+)
+
+# POLITICAL ATTITUDE & AFFILIATION MAPPINGS (Expanded)
+political_attitude_var_map <- list(
+  # Party Identification
+  "party_id" = list(
+    "2014" = c("party", "partyln", "party_combo"),
+    "2015" = c("party", "partyln", "party_combo"),
+    "2016" = c("party", "partyln", "party_combo"),
+    "2018" = c("party", "partyln", "party_combo"),
+    "2021" = c("F_PARTY_FINAL", "F_PARTYLN_FINAL", "F_PARTYSUM_FINAL"),
+    "2022" = c("F_PARTY_FINAL", "F_PARTYLN_FINAL", "F_PARTYSUM_FINAL")
+  ),
+  
+  # Presidential Approval (to be expanded)
+  "presidential_approval" = list(
+    "2018" = "qn14a"  # Trump approval in 2018
+  ),
+  
+  # Congressional Approval (to be identified)
+  "congressional_approval" = list(),
+  
+  # Vote Intention/Choice (to be identified)
+  "vote_intention" = list()
+)
+
+# =============================================================================
 # ENHANCED HARMONIZATION FUNCTIONS FOR 2014-2023
 # =============================================================================
 
@@ -446,7 +504,169 @@ harmonize_citizenship_extended <- function(data, year) {
 }
 
 # =============================================================================
-# EXTENDED HARMONIZATION PIPELINE FOR 2014-2023
+# ENHANCED HARMONIZATION FUNCTIONS FOR COMPLEX POLICY VARIABLES
+# =============================================================================
+
+# NEW: Comprehensive Immigration Policy Harmonization
+harmonize_immigration_policies <- function(data, year) {
+  cat("  Harmonizing immigration policies for", year, "\n")
+  year_str <- as.character(year)
+  
+  # Initialize all immigration policy variables
+  trump_support <- rep(NA_real_, nrow(data))
+  border_wall_support <- rep(NA_real_, nrow(data))
+  immigration_level_concern <- rep(NA_real_, nrow(data))
+  
+  # Trump Support/Approval
+  if (year_str %in% names(immigration_policy_var_map$trump_support)) {
+    trump_vars <- immigration_policy_var_map$trump_support[[year_str]]
+    for (var in trump_vars) {
+      if (var %in% names(data)) {
+        trump_raw <- clean_values(data[[var]])
+        
+        if (var == "qn14a") {
+          # 2018: 1=Approve, 2=Disapprove
+          trump_support <- case_when(
+            trump_raw == 1 ~ 1,  # Approve
+            trump_raw == 2 ~ 0,  # Disapprove
+            TRUE ~ NA_real_
+          )
+        } else if (var == "TRUMPFUT_W113") {
+          # 2022: 1=Support, 2=Not support  
+          trump_support <- case_when(
+            trump_raw == 1 ~ 1,  # Support
+            trump_raw == 2 ~ 0,  # Not support
+            TRUE ~ NA_real_
+          )
+        }
+        break
+      }
+    }
+  }
+  
+  # Border Wall/Security Support
+  if (year_str %in% names(immigration_policy_var_map$border_wall)) {
+    wall_vars <- immigration_policy_var_map$border_wall[[year_str]]
+    
+    if (year == "2018" && "qn29" %in% names(data)) {
+      # 2018: Simple wall support
+      wall_raw <- clean_values(data$qn29)
+      border_wall_support <- case_when(
+        wall_raw == 1 ~ 1,  # Favor
+        wall_raw == 2 ~ 0,  # Oppose
+        TRUE ~ NA_real_
+      )
+    } else if (year == "2016") {
+      # 2016: Multiple border security questions - create composite
+      border_scores <- matrix(NA, nrow = nrow(data), ncol = 4)
+      
+      for (i in 1:4) {
+        var_name <- paste0("qn29", letters[i])
+        if (var_name %in% names(data)) {
+          raw_vals <- clean_values(data[[var_name]])
+          # Assuming 1=Strongly favor, 2=Favor, 3=Oppose, 4=Strongly oppose
+          border_scores[, i] <- case_when(
+            raw_vals %in% c(1, 2) ~ 1,  # Favor/Strongly favor
+            raw_vals %in% c(3, 4) ~ 0,  # Oppose/Strongly oppose
+            TRUE ~ NA_real_
+          )
+        }
+      }
+      
+      # Average across the four border security questions
+      border_wall_support <- rowMeans(border_scores, na.rm = TRUE)
+      border_wall_support[is.nan(border_wall_support)] <- NA
+    }
+  }
+  
+  # Immigration Level Concern
+  if (year_str %in% names(immigration_policy_var_map$immigration_level)) {
+    level_vars <- immigration_policy_var_map$immigration_level[[year_str]]
+    for (var in level_vars) {
+      if (var %in% names(data)) {
+        level_raw <- clean_values(data[[var]])
+        
+        if (var == "qn31") {
+          # 2018: 1=Too many, 2=Too few, 3=Right amount
+          immigration_level_concern <- case_when(
+            level_raw == 1 ~ 1,  # Too many (restrictionist view)
+            level_raw %in% c(2, 3) ~ 0,  # Too few or right amount
+            TRUE ~ NA_real_
+          )
+        }
+        break
+      }
+    }
+  }
+  
+  # Create composite immigration restrictionism score (following mini-project approach)
+  # Sum of binary indicators where available
+  valid_indicators <- cbind(trump_support, border_wall_support, immigration_level_concern)
+  valid_indicators[is.na(valid_indicators)] <- 0  # Treat NA as 0 for composite
+  
+  # Only create composite if at least one indicator is available
+  has_any_data <- rowSums(!is.na(cbind(trump_support, border_wall_support, immigration_level_concern))) > 0
+  
+  immigration_restrictionism_composite <- ifelse(has_any_data, 
+                                                rowSums(valid_indicators, na.rm = TRUE), 
+                                                NA_real_)
+  
+  return(list(
+    trump_support = trump_support,
+    border_wall_support = border_wall_support, 
+    immigration_level_concern = immigration_level_concern,
+    immigration_restrictionism_composite = immigration_restrictionism_composite
+  ))
+}
+
+# NEW: Comprehensive Political Attitude Harmonization  
+harmonize_political_attitudes <- function(data, year) {
+  cat("  Harmonizing political attitudes for", year, "\n")
+  year_str <- as.character(year)
+  
+  # Initialize political variables
+  party_identification <- rep(NA_real_, nrow(data))
+  
+  # Party Identification
+  if (year_str %in% names(political_attitude_var_map$party_id)) {
+    party_vars <- political_attitude_var_map$party_id[[year_str]]
+    
+    for (var in party_vars) {
+      if (var %in% names(data)) {
+        party_raw <- clean_values(data[[var]])
+        
+        if (var %in% c("party", "F_PARTY_FINAL")) {
+          # Standard party coding: 1=Republican, 2=Democrat, 3=Independent, etc.
+          party_identification <- case_when(
+            party_raw == 1 ~ 1,  # Republican
+            party_raw == 2 ~ 2,  # Democrat  
+            party_raw == 3 ~ 3,  # Independent
+            party_raw == 4 ~ 4,  # Other
+            TRUE ~ NA_real_
+          )
+        } else if (var %in% c("partyln", "F_PARTYLN_FINAL")) {
+          # Leaning party identification (includes leaners)
+          party_identification <- case_when(
+            party_raw == 1 ~ 1,  # Republican/Lean Republican
+            party_raw == 2 ~ 2,  # Democrat/Lean Democrat
+            party_raw == 3 ~ 3,  # Independent
+            TRUE ~ NA_real_
+          )
+        }
+        
+        # Use first available variable
+        if (sum(!is.na(party_identification)) > 0) break
+      }
+    }
+  }
+  
+  return(list(
+    party_identification = party_identification
+  ))
+}
+
+# =============================================================================
+# UPDATED HARMONIZATION PIPELINE FOR 2014-2023
 # =============================================================================
 
 harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
@@ -479,15 +699,17 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
   demographics <- harmonize_demographics_extended(data, year)
   place_birth <- harmonize_place_birth_extended(data, year)
   citizenship_status <- harmonize_citizenship_extended(data, year)
-  
-  # ENHANCED: Use improved generation derivation
   immigrant_generation <- derive_immigrant_generation_enhanced(data, year)
+  
+  # NEW: Apply comprehensive policy harmonization
+  immigration_policies <- harmonize_immigration_policies(data, year)
+  political_attitudes <- harmonize_political_attitudes(data, year)
   
   # Apply existing harmonization functions for other variables
   ethnicity <- harmonize_race_ethnicity(data, year)$ethnicity  # From existing script
   language_home <- harmonize_language(data, year)             # From existing script
   
-  # Create harmonized dataset
+  # Create EXPANDED harmonized dataset with new policy variables
   harmonized <- tibble(
     survey_year = year,
     age = demographics$age,
@@ -498,18 +720,34 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
     citizenship_status = citizenship_status,
     place_birth = place_birth,
     immigrant_generation = immigrant_generation,
-    immigration_attitude = rep(NA_real_, nrow(data)),      # To be implemented
-    border_security_attitude = rep(NA_real_, nrow(data)),  # To be implemented
-    political_party = rep(NA_real_, nrow(data)),           # To be implemented
-    vote_intention = rep(NA_real_, nrow(data)),            # To be implemented
-    approval_rating = rep(NA_real_, nrow(data))            # To be implemented
+    
+    # NEW: Expanded immigration policy variables
+    trump_support = immigration_policies$trump_support,
+    border_wall_support = immigration_policies$border_wall_support,
+    immigration_level_concern = immigration_policies$immigration_level_concern,
+    immigration_restrictionism_composite = immigration_policies$immigration_restrictionism_composite,
+    
+    # NEW: Political attitude variables
+    party_identification = political_attitudes$party_identification,
+    
+    # Legacy variables (to be deprecated or expanded)
+    immigration_attitude = immigration_policies$immigration_restrictionism_composite,  # Map to composite
+    border_security_attitude = immigration_policies$border_wall_support,              # Map to wall support
+    political_party = political_attitudes$party_identification,                       # Map to party ID
+    vote_intention = rep(NA_real_, nrow(data)),                                      # To be implemented
+    approval_rating = immigration_policies$trump_support                             # Map to Trump support
   )
   
-  # Quality check
+  # Quality check with expanded variables
   cat("  Variable coverage:\n")
-  for (var in c("age", "gender", "ethnicity", "place_birth", "immigrant_generation")) {
-    pct_available <- round(100 * sum(!is.na(harmonized[[var]])) / nrow(harmonized), 1)
-    cat("    ", var, ":", pct_available, "%\n")
+  key_vars <- c("age", "gender", "ethnicity", "place_birth", "immigrant_generation", 
+                "trump_support", "border_wall_support", "party_identification")
+  
+  for (var in key_vars) {
+    if (var %in% names(harmonized)) {
+      pct_available <- round(100 * sum(!is.na(harmonized[[var]])) / nrow(harmonized), 1)
+      cat("    ", var, ":", pct_available, "%\n")
+    }
   }
   
   return(harmonized)
