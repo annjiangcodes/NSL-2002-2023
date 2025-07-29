@@ -782,9 +782,9 @@ harmonize_demographics <- function(data, year) {
   
   # Year-specific gender variables
   gender_var_map <- list(
-    "2002" = c("gender", "RSEX", "qnd18"),
-    "2004" = c("gender", "RSEX", "qnd18"),
-    "2006" = c("gender", "RSEX", "qnd18"),
+    "2002" = c("GENDER", "gender", "RSEX"),  # No gender in 2002
+    "2004" = "QND18",  # GENDER variable confirmed  
+    "2006" = c("GENDER", "gender", "qnd18"),  # No gender in 2006
     "2007" = "qnd18",
     "2008" = "qnd18",
     "2009" = c("gender", "qnd18"),
