@@ -6,7 +6,7 @@ deportation_worry,Immigration Attitudes,4,81.2,"1, 2, 3, 4",1 to 4,WARNING: High
 legalization_support,Immigration Attitudes,3,21.6,"0, 0.5, 1",0 to 1,"GOOD: Reasonable missingness, good variation"
 immigration_levels_opinion,Immigration Attitudes,3,45.4,"1, 2, 3",1 to 3,OK: Adequate variation
 immigrant_generation,Immigration/Nativity,3,12.6,"1, 2, 3",1 to 3,"GOOD: Reasonable missingness, good variation"
-parent_nativity,Immigration/Nativity,3,70.5,"1, 2, 3",1 to 3,OK: Adequate variation
+parent_nativity,Immigration/Nativity,3,58,"1, 2, 3",1 to 3,OK: Adequate variation
 place_birth,Immigration/Nativity,2,12.3,"1, 2",1 to 2,"GOOD: Reasonable missingness, good variation"
 citizenship_status,Immigration/Nativity,2,40.4,"1, 2",1 to 2,OK: Adequate variation
 political_party,Political,3,39.1,"1, 2, 3",1 to 3,OK: Adequate variation

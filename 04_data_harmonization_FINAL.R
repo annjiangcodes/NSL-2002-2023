@@ -418,15 +418,18 @@ harmonize_place_birth <- function(data, year) {
   return(place_birth)
 }
 
-# Function to derive parent nativity (from previous working version)
+# Function to derive parent nativity (CORRECTED with proper value labels)
 harmonize_parent_nativity <- function(data, year) {
   if (year == 2002) {
     if ("QN106" %in% names(data)) {
       parent_nat <- clean_values(data$QN106)
+      # Value labels: 1=Mother, 2=Father, 3=Both parents, 4=No, 5=Born in Puerto Rico
       parent_nat <- case_when(
-        parent_nat == 1 ~ 3,  # Both foreign born
-        parent_nat == 2 ~ 2,  # One foreign born
-        parent_nat == 3 ~ 1,  # Both US born
+        parent_nat == 1 ~ 2,  # Mother only -> One foreign born
+        parent_nat == 2 ~ 2,  # Father only -> One foreign born
+        parent_nat == 3 ~ 3,  # Both parents -> Both foreign born
+        parent_nat == 4 ~ 1,  # No -> Both US born
+        parent_nat == 5 ~ 1,  # Born in Puerto Rico -> US born (PR is US territory)
         TRUE ~ NA_real_
       )
     } else {
@@ -435,10 +438,12 @@ harmonize_parent_nativity <- function(data, year) {
   } else if (year == 2004) {
     if ("QN77" %in% names(data)) {
       parent_nat <- clean_values(data$QN77)
+      # Value labels: 1=Yes only mother, 2=Yes only father, 3=Both, 4=No
       parent_nat <- case_when(
-        parent_nat == 1 ~ 3,  # Both foreign born
-        parent_nat == 2 ~ 2,  # One foreign born  
-        parent_nat == 3 ~ 1,  # Both US born
+        parent_nat == 1 ~ 2,  # Only mother -> One foreign born
+        parent_nat == 2 ~ 2,  # Only father -> One foreign born  
+        parent_nat == 3 ~ 3,  # Both -> Both foreign born
+        parent_nat == 4 ~ 1,  # No -> Both US born
         TRUE ~ NA_real_
       )
     } else {
@@ -447,9 +452,13 @@ harmonize_parent_nativity <- function(data, year) {
   } else if (year == 2006) {
     if ("qn64" %in% names(data)) {
       parent_nat <- clean_values(data$qn64)
+      # Value labels: 1=Yes only Mother, 2=Yes only Father, 3=Both, 4=No, 5=Born in Puerto Rico
       parent_nat <- case_when(
-        parent_nat == 1 ~ 2,  # At least one foreign born
-        parent_nat == 2 ~ 1,  # Both US born
+        parent_nat == 1 ~ 2,  # Only mother -> One foreign born
+        parent_nat == 2 ~ 2,  # Only father -> One foreign born
+        parent_nat == 3 ~ 3,  # Both -> Both foreign born
+        parent_nat == 4 ~ 1,  # No -> Both US born
+        parent_nat == 5 ~ 1,  # Born in Puerto Rico -> US born (PR is US territory)
         TRUE ~ NA_real_
       )
     } else {
@@ -460,6 +469,7 @@ harmonize_parent_nativity <- function(data, year) {
       mother <- clean_values(data$qn7)
       father <- clean_values(data$qn8)
       
+      # Value labels: 1=Puerto Rico, 2=U.S., 3=Another country
       parent_nat <- case_when(
         (mother == 3 & father == 3) ~ 3,  # Both foreign born
         (mother == 3 | father == 3) ~ 2,  # One foreign born
