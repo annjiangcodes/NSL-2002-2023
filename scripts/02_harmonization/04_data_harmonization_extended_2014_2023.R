@@ -39,6 +39,7 @@ age_var_map_extended <- list(
   "2016" = c("age", "age2"),
   "2018" = c("age", "age2"),
   "2021" = c("F_AGECAT", "F_AGE"),  # ATP format
+  "2022" = c("F_AGECAT", "F_AGE"),  # ATP format
   "2023" = c("F_AGECAT", "F_AGE")   # ATP format
 )
 
@@ -59,6 +60,7 @@ gender_var_map_extended <- list(
   "2016" = "sex", 
   "2018" = "sex",
   "2021" = "F_GENDER",  # ATP format
+  "2022" = "F_GENDER",  # ATP format
   "2023" = "F_GENDER"   # ATP format
 )
 
@@ -79,6 +81,7 @@ ethnicity_var_map_extended <- list(
   "2016" = c("q2", "q3"),
   "2018" = c("q2", "q3"),
   "2021" = c("F_HISP", "F_HISP_ORIGIN"),  # ATP format
+  "2022" = c("F_HISP", "F_HISP_ORIGIN"),  # ATP format
   "2023" = c("F_HISP", "F_HISP_ORIGIN")   # ATP format
 )
 
@@ -99,7 +102,8 @@ language_var_map_extended <- list(
   "2016" = c("primary_language", "endlang"),
   "2018" = c("primary_language", "endlang"),
   "2021" = "PRIMARY_LANGUAGE_W86",  # ATP format
-  "2023" = "PRIMARY_LANGUAGE_W138" # ATP format (check actual name)
+  "2022" = "PRIMARY_LANGUAGE_W113",  # ATP format
+  "2023" = "PRIMARY_LANGUAGE_W138" # ATP format
 )
 
 # NEW: Place of birth mappings (CRITICAL for generation derivation)
@@ -119,6 +123,7 @@ place_birth_var_map <- list(
   "2016" = c("q4", "nativity1", "born"),
   "2018" = c("q4", "nativity1", "born"),
   "2021" = c("F_BIRTHPLACE_EXPANDED", "NATIVITY1_W86", "NATIVITY2_W86"),  # ATP format
+  "2022" = c("F_BIRTHPLACE_EXPANDED", "NATIVITY1_W113", "NATIVITY2_W113"),  # ATP format
   "2023" = c("F_BIRTHPLACE_EXPANDED", "NATIVITY1_W138", "NATIVITY2_W138")  # ATP format
 )
 
@@ -136,7 +141,29 @@ citizenship_var_map <- list(
   "2016" = c("citizen", "citizenship"),
   "2018" = c("citizen", "citizenship"),
   "2021" = c("F_CITIZEN", "F_CITIZEN2"),  # ATP format
+  "2022" = c("F_CITIZEN", "F_CITIZEN2"),  # ATP format
   "2023" = c("F_CITIZEN", "F_CITIZEN2")   # ATP format
+)
+
+# NEW: Parent nativity variable mappings (CRITICAL for proper generation)
+parent_nativity_var_map <- list(
+  # NSL years - composite parent variable
+  "2014" = list(mother = NULL, father = NULL, composite = "parent"),
+  "2015" = list(mother = NULL, father = NULL, composite = "parent"),
+  "2016" = list(mother = NULL, father = NULL, composite = "parent"),
+  "2018" = list(mother = NULL, father = NULL, composite = "parent"),
+  
+  # ATP years - individual parent variables
+  "2021" = list(mother = "MOTHERNAT_W86", father = "FATHERNAT_W86", composite = NULL),
+  "2022" = list(mother = "MOTHERNAT_W113", father = "FATHERNAT_W113", composite = NULL),
+  "2023" = list(mother = "MOTHERNAT_W138", father = "FATHERNAT_W138", composite = NULL)
+)
+
+# NEW: Pre-calculated generation variable mappings
+precalc_generation_var_map <- list(
+  "2021" = "IMMGEN_W86",      # Use Puerto Rico as US version
+  "2022" = "IMMGEN1_W113",    # Use Puerto Rico as US version  
+  "2023" = "IMMGEN_W138"      # Check if this exists
 )
 
 # =============================================================================
@@ -259,7 +286,7 @@ harmonize_place_birth_extended <- function(data, year) {
             birth_raw >= 2 & birth_raw <= 98 ~ 2,  # Foreign born
             TRUE ~ NA_real_
           )
-        } else if (var %in% c("NATIVITY1_W86", "NATIVITY2_W86", "NATIVITY1_W138", "NATIVITY2_W138")) {
+        } else if (var %in% c("NATIVITY1_W86", "NATIVITY2_W86", "NATIVITY1_W113", "NATIVITY2_W113", "NATIVITY1_W138", "NATIVITY2_W138")) {
           # ATP nativity: 1=US born, 2=Foreign born
           place_birth <- case_when(
             birth_raw == 1 ~ 1,  # US born
@@ -298,37 +325,85 @@ harmonize_place_birth_extended <- function(data, year) {
   return(place_birth)
 }
 
-# NEW: Immigrant Generation Derivation (Portes Framework)
-derive_immigrant_generation <- function(respondent_birth, parent1_birth = NULL, parent2_birth = NULL) {
-  # Portes' three-generation framework:
-  # 1st generation: Foreign-born respondent
-  # 2nd generation: US-born respondent with ≥1 foreign-born parent
-  # 3rd+ generation: US-born respondent with both parents US-born
+# ENHANCED: Immigrant Generation Derivation with Pre-calculated Variables
+derive_immigrant_generation_enhanced <- function(data, year) {
+  year_str <- as.character(year)
   
-  generation <- rep(NA_real_, length(respondent_birth))
+  # First try pre-calculated generation variables (most reliable)
+  if (year_str %in% names(precalc_generation_var_map)) {
+    precalc_var <- precalc_generation_var_map[[year_str]]
+    
+    if (!is.null(precalc_var) && precalc_var %in% names(data)) {
+      cat("    Using pre-calculated generation variable:", precalc_var, "\n")
+      generation <- clean_values(data[[precalc_var]])
+      
+      # Keep only valid generation values (1, 2, 3)
+      generation <- case_when(
+        generation %in% c(1, 2, 3) ~ generation,
+        TRUE ~ NA_real_
+      )
+      
+      return(generation)
+    }
+  }
   
-  # First generation: Respondent foreign-born
-  generation <- case_when(
-    respondent_birth == 2 ~ 1,  # Foreign-born respondent
-    respondent_birth == 1 ~ {
-      # US-born respondent - check parents if available
-      if (!is.null(parent1_birth) || !is.null(parent2_birth)) {
-        # If we have parent data
-        parent1_foreign <- if (!is.null(parent1_birth)) parent1_birth == 2 else FALSE
-        parent2_foreign <- if (!is.null(parent2_birth)) parent2_birth == 2 else FALSE
+  # Fallback to manual derivation using parent nativity
+  cat("    Deriving generation from parent nativity data\n")
+  
+  # Get respondent nativity
+  respondent_birth <- harmonize_place_birth_extended(data, year)
+  
+  # Get parent nativity information
+  if (year_str %in% names(parent_nativity_var_map)) {
+    parent_info <- parent_nativity_var_map[[year_str]]
+    
+    if (!is.null(parent_info$composite) && parent_info$composite %in% names(data)) {
+      # NSL format: composite parent variable
+      parent_composite <- clean_values(data[[parent_info$composite]])
+      
+      generation <- case_when(
+        respondent_birth == 2 ~ 1,  # Foreign-born = 1st generation
+        respondent_birth == 1 & parent_composite == 2 ~ 2,  # US-born + foreign parent(s) = 2nd gen
+        respondent_birth == 1 & parent_composite == 1 ~ 3,  # US-born + US parent(s) = 3rd+ gen
+        TRUE ~ NA_real_
+      )
+      
+    } else if (!is.null(parent_info$mother) && !is.null(parent_info$father)) {
+      # ATP format: individual parent variables
+      mother_var <- parent_info$mother
+      father_var <- parent_info$father
+      
+      if (mother_var %in% names(data) && father_var %in% names(data)) {
+        mother_birth <- clean_values(data[[mother_var]])
+        father_birth <- clean_values(data[[father_var]])
         
-        case_when(
-          parent1_foreign | parent2_foreign ~ 2,  # 2nd gen: ≥1 parent foreign
-          !parent1_foreign & !parent2_foreign ~ 3,  # 3rd+ gen: both parents US
-          TRUE ~ NA_real_  # Missing parent data
+        generation <- case_when(
+          respondent_birth == 2 ~ 1,  # Foreign-born = 1st generation
+          respondent_birth == 1 & (mother_birth == 2 | father_birth == 2) ~ 2,  # US-born + foreign parent = 2nd gen
+          respondent_birth == 1 & mother_birth == 1 & father_birth == 1 ~ 3,  # US-born + US parents = 3rd+ gen
+          TRUE ~ NA_real_
         )
       } else {
-        # No parent data available - cannot distinguish 2nd from 3rd+ gen
-        NA_real_
+        # No parent data available
+        generation <- case_when(
+          respondent_birth == 2 ~ 1,  # Can only identify 1st generation
+          TRUE ~ NA_real_
+        )
       }
-    },
-    TRUE ~ NA_real_
-  )
+    } else {
+      # No parent data available
+      generation <- case_when(
+        respondent_birth == 2 ~ 1,  # Can only identify 1st generation
+        TRUE ~ NA_real_
+      )
+    }
+  } else {
+    # No parent nativity mapping for this year
+    generation <- case_when(
+      respondent_birth == 2 ~ 1,  # Can only identify 1st generation
+      TRUE ~ NA_real_
+    )
+  }
   
   return(generation)
 }
@@ -378,11 +453,19 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
   cat("Processing", year, "survey (", survey_type, "):\n")
   cat("  File:", basename(file_path), "\n")
   
-  # Load data with encoding handling
+  # Load data with encoding handling and format detection
   data <- NULL
-  try(data <- read_sav(file_path), silent = TRUE)
-  if (is.null(data)) {
-    try(data <- read_sav(file_path, encoding = "latin1"), silent = TRUE)
+  
+  # Handle different file formats
+  if (str_detect(file_path, "\\.dta$")) {
+    # Stata format
+    try(data <- read_dta(file_path), silent = TRUE)
+  } else {
+    # SPSS format
+    try(data <- read_sav(file_path), silent = TRUE)
+    if (is.null(data)) {
+      try(data <- read_sav(file_path, encoding = "latin1"), silent = TRUE)
+    }
   }
   
   if (is.null(data)) {
@@ -397,8 +480,8 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
   place_birth <- harmonize_place_birth_extended(data, year)
   citizenship_status <- harmonize_citizenship_extended(data, year)
   
-  # Derive immigrant generation using place of birth
-  immigrant_generation <- derive_immigrant_generation(place_birth)
+  # ENHANCED: Use improved generation derivation
+  immigrant_generation <- derive_immigrant_generation_enhanced(data, year)
   
   # Apply existing harmonization functions for other variables
   ethnicity <- harmonize_race_ethnicity(data, year)$ethnicity  # From existing script
@@ -433,7 +516,7 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
 }
 
 # =============================================================================
-# PROCESS ALL 2014-2023 SURVEYS
+# PROCESS ALL 2014-2023 SURVEYS (INCLUDING 2022)
 # =============================================================================
 
 survey_files_extended <- list(
@@ -442,10 +525,11 @@ survey_files_extended <- list(
   "2016" = list(file = "data/raw/NSL 2016_FOR RELEASE.sav", type = "NSL"),
   "2018" = list(file = "data/raw/NSL 2018_FOR RELEASE_UPDATED 3.7.22.sav", type = "NSL"),
   "2021" = list(file = "data/raw/2021 ATP W86.sav", type = "ATP"),
+  "2022" = list(file = "data/raw/NSL 2022 complete dataset national survey of latinos 2022.dta", type = "ATP"),
   "2023" = list(file = "data/raw/2023ATP W138.sav", type = "ATP")
 )
 
-cat("=== PROCESSING 2014-2023 SURVEYS ===\n\n")
+cat("=== PROCESSING 2014-2023 SURVEYS (INCLUDING 2022) ===\n\n")
 
 # Process each survey year
 for (year_name in names(survey_files_extended)) {
