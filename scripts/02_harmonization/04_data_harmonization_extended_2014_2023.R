@@ -39,6 +39,7 @@ age_var_map_extended <- list(
   "2016" = c("age", "age2"),
   "2018" = c("age", "age2"),
   "2021" = c("F_AGECAT", "F_AGE"),  # ATP format
+  "2022" = c("F_AGECAT", "F_AGE"),  # ATP format
   "2023" = c("F_AGECAT", "F_AGE")   # ATP format
 )
 
@@ -59,6 +60,7 @@ gender_var_map_extended <- list(
   "2016" = "sex", 
   "2018" = "sex",
   "2021" = "F_GENDER",  # ATP format
+  "2022" = "F_GENDER",  # ATP format
   "2023" = "F_GENDER"   # ATP format
 )
 
@@ -79,6 +81,7 @@ ethnicity_var_map_extended <- list(
   "2016" = c("q2", "q3"),
   "2018" = c("q2", "q3"),
   "2021" = c("F_HISP", "F_HISP_ORIGIN"),  # ATP format
+  "2022" = c("F_HISP", "F_HISP_ORIGIN"),  # ATP format
   "2023" = c("F_HISP", "F_HISP_ORIGIN")   # ATP format
 )
 
@@ -99,7 +102,8 @@ language_var_map_extended <- list(
   "2016" = c("primary_language", "endlang"),
   "2018" = c("primary_language", "endlang"),
   "2021" = "PRIMARY_LANGUAGE_W86",  # ATP format
-  "2023" = "PRIMARY_LANGUAGE_W138" # ATP format (check actual name)
+  "2022" = "PRIMARY_LANGUAGE_W113",  # ATP format
+  "2023" = "PRIMARY_LANGUAGE_W138" # ATP format
 )
 
 # NEW: Place of birth mappings (CRITICAL for generation derivation)
@@ -119,6 +123,7 @@ place_birth_var_map <- list(
   "2016" = c("q4", "nativity1", "born"),
   "2018" = c("q4", "nativity1", "born"),
   "2021" = c("F_BIRTHPLACE_EXPANDED", "NATIVITY1_W86", "NATIVITY2_W86"),  # ATP format
+  "2022" = c("F_BIRTHPLACE_EXPANDED", "NATIVITY1_W113", "NATIVITY2_W113"),  # ATP format
   "2023" = c("F_BIRTHPLACE_EXPANDED", "NATIVITY1_W138", "NATIVITY2_W138")  # ATP format
 )
 
@@ -136,6 +141,7 @@ citizenship_var_map <- list(
   "2016" = c("citizen", "citizenship"),
   "2018" = c("citizen", "citizenship"),
   "2021" = c("F_CITIZEN", "F_CITIZEN2"),  # ATP format
+  "2022" = c("F_CITIZEN", "F_CITIZEN2"),  # ATP format
   "2023" = c("F_CITIZEN", "F_CITIZEN2")   # ATP format
 )
 
@@ -259,7 +265,7 @@ harmonize_place_birth_extended <- function(data, year) {
             birth_raw >= 2 & birth_raw <= 98 ~ 2,  # Foreign born
             TRUE ~ NA_real_
           )
-        } else if (var %in% c("NATIVITY1_W86", "NATIVITY2_W86", "NATIVITY1_W138", "NATIVITY2_W138")) {
+        } else if (var %in% c("NATIVITY1_W86", "NATIVITY2_W86", "NATIVITY1_W113", "NATIVITY2_W113", "NATIVITY1_W138", "NATIVITY2_W138")) {
           # ATP nativity: 1=US born, 2=Foreign born
           place_birth <- case_when(
             birth_raw == 1 ~ 1,  # US born
@@ -378,11 +384,19 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
   cat("Processing", year, "survey (", survey_type, "):\n")
   cat("  File:", basename(file_path), "\n")
   
-  # Load data with encoding handling
+  # Load data with encoding handling and format detection
   data <- NULL
-  try(data <- read_sav(file_path), silent = TRUE)
-  if (is.null(data)) {
-    try(data <- read_sav(file_path, encoding = "latin1"), silent = TRUE)
+  
+  # Handle different file formats
+  if (str_detect(file_path, "\\.dta$")) {
+    # Stata format
+    try(data <- read_dta(file_path), silent = TRUE)
+  } else {
+    # SPSS format
+    try(data <- read_sav(file_path), silent = TRUE)
+    if (is.null(data)) {
+      try(data <- read_sav(file_path, encoding = "latin1"), silent = TRUE)
+    }
   }
   
   if (is.null(data)) {
@@ -433,7 +447,7 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
 }
 
 # =============================================================================
-# PROCESS ALL 2014-2023 SURVEYS
+# PROCESS ALL 2014-2023 SURVEYS (INCLUDING 2022)
 # =============================================================================
 
 survey_files_extended <- list(
@@ -442,10 +456,11 @@ survey_files_extended <- list(
   "2016" = list(file = "data/raw/NSL 2016_FOR RELEASE.sav", type = "NSL"),
   "2018" = list(file = "data/raw/NSL 2018_FOR RELEASE_UPDATED 3.7.22.sav", type = "NSL"),
   "2021" = list(file = "data/raw/2021 ATP W86.sav", type = "ATP"),
+  "2022" = list(file = "data/raw/NSL 2022 complete dataset national survey of latinos 2022.dta", type = "ATP"),
   "2023" = list(file = "data/raw/2023ATP W138.sav", type = "ATP")
 )
 
-cat("=== PROCESSING 2014-2023 SURVEYS ===\n\n")
+cat("=== PROCESSING 2014-2023 SURVEYS (INCLUDING 2022) ===\n\n")
 
 # Process each survey year
 for (year_name in names(survey_files_extended)) {
