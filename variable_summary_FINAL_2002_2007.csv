@@ -1,0 +1,16 @@
+variable,concept,n_unique,pct_missing,sample_values,value_range,notes
+age,Demographics,76,63.9,"18, 19, 20, 21, 22",18 to 97,OK: Adequate variation
+gender,Demographics,2,40.8,"1, 2",1 to 2,OK: Adequate variation
+state,Geographic,49,38.1,"1, 2, 3, 4, 5",1 to 49,OK: Adequate variation
+deportation_worry,Immigration Attitudes,4,81.2,"1, 2, 3, 4",1 to 4,WARNING: High missingness
+legalization_support,Immigration Attitudes,3,21.6,"0, 0.5, 1",0 to 1,"GOOD: Reasonable missingness, good variation"
+immigration_levels_opinion,Immigration Attitudes,3,45.4,"1, 2, 3",1 to 3,OK: Adequate variation
+immigrant_generation,Immigration/Nativity,3,12.6,"1, 2, 3",1 to 3,"GOOD: Reasonable missingness, good variation"
+parent_nativity,Immigration/Nativity,3,70.5,"1, 2, 3",1 to 3,OK: Adequate variation
+place_birth,Immigration/Nativity,2,12.3,"1, 2",1 to 2,"GOOD: Reasonable missingness, good variation"
+citizenship_status,Immigration/Nativity,2,40.4,"1, 2",1 to 2,OK: Adequate variation
+political_party,Political,3,39.1,"1, 2, 3",1 to 3,OK: Adequate variation
+income,Socioeconomic,21,32.6,"1, 2, 3, 4, 5",1 to 29,OK: Adequate variation
+marital_status,Socioeconomic,5,23.3,"1, 2, 3, 4, 5",1 to 5,"GOOD: Reasonable missingness, good variation"
+education,Socioeconomic,3,24.5,"1, 2, 3",1 to 3,"GOOD: Reasonable missingness, good variation"
+employment,Socioeconomic,3,41.5,"1, 2, 3",1 to 3,OK: Adequate variation
