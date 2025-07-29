@@ -1,14 +1,14 @@
 variable,n_unique,pct_missing,sample_values,notes
-age,76,11.8,"24, 47, 39, 35, 52",OK
+age,85,53.8,"24, 39, 42, 40, 31",OK
 approval_rating,0,100,,WARNING: High missingness
 border_security_attitude,4,16.4,"3, 1, 2, 4",OK
 citizenship_status,2,43.6,"1, 2",OK
-ethnicity,9,82.4,"1, 2, 4, 3, 6",WARNING: High missingness
-gender,2,55.7,"2, 1",OK
+ethnicity,9,45.8,"1, 2, 4, 3, 6",OK
+gender,2,68.1,"2, 1",OK
 immigrant_generation,3,37.6,"2, 1, 3",OK
 immigration_attitude,5,16.3,"1, 0, 3, 2, 4",OK
-language_home,2,93,"1, 2",WARNING: High missingness
+language_home,2,65.2,"1, 2",OK
 place_birth,30,30,"2, 1, 92, 18, 91",WARNING: Too many unique values
 political_party,4,42.7,"2, 1, 3, 4",OK
-race,0,100,,WARNING: High missingness
+race,6,77,"6, 4, 1, 2, 5",OK
 vote_intention,6,71.5,"2, 1, 3, 4, 0",OK
