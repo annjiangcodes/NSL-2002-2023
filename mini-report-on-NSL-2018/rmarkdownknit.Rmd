@@ -1,0 +1,329 @@
+
+---
+title: 'Integrated Report: Immigration Policy Attitudes'
+author: "Ann Jiang"
+date: "`r Sys.Date()`"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+# Global chunk options: show code output but hide warnings/messages if desired
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# Introduction
+
+This report analyzes anti-immigration attitudes using the NSL2018 dataset. The document describes the data preparation steps, presents descriptive analyses (including frequency tables and group comparisons), reports multiple regression models, and displays several visualizations. The goal is to examine how nativity and immigrant generation are associated with anti-immigration attitudes.
+
+# Data Preparation
+
+In this section, we load the required packages, set the working directory, read the dataset, and recode key variables.
+
+```{r load-data}
+# Load required packages
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(broom)  # for tidying regression output
+
+# Set working directory and read dataset (update the path accordingly)
+setwd("/Users/azure/Desktop/Coursework/PhD Coursework/1.2 Winter 2025/1.2.5 Survey Analysis--Anti-Immigration Immigrant/Pew-Research-Center_2018-National-Survey-of-Latinos-Dataset 2")
+nsl_data <- read.csv("NSL2018_data.csv", stringsAsFactors = FALSE)
+```
+
+## Recoding Variables
+
+### Nativity  
+We recode `qn4` so that respondents are flagged as foreign-born (1) if their answer is "another country" (case-insensitive), and U.S.-born (0) otherwise.
+
+```{r recode-nativity}
+nsl_data <- nsl_data %>%
+  mutate(foreign_born = ifelse(tolower(trimws(qn4)) == "another country", 1, 0))
+```
+
+### Generation Status  
+Based on the `immgen` variable, we recode generation status as follows:  
+- "First Gen FB w/o PR" → "First Gen"  
+- "Second Gen NB" → "Second Gen"  
+- "Third or more" → "Third+ Gen"  
+Other responses become NA.
+
+```{r recode-generation}
+nsl_data <- nsl_data %>%
+  mutate(generation = case_when(
+    tolower(trimws(immgen)) == "first gen fb w/o pr" ~ "First Gen",
+    tolower(trimws(immgen)) == "second gen nb" ~ "Second Gen",
+    tolower(trimws(immgen)) == "third or more" ~ "Third+ Gen",
+    TRUE ~ NA_character_
+  ))
+nsl_data$generation <- factor(nsl_data$generation, levels = c("First Gen", "Second Gen", "Third+ Gen"))
+```
+
+### Immigration Policy Indicators  
+We recode three items:
+- **qn14a (Trump Support):** 1 if "approve", 0 if "disapprove".
+- **qn29 (Border Wall Favorability):** 1 if "favor", 0 if "oppose".
+- **qn31 (Opinion on Immigrant Population):** 1 if "too many", 0 if "too few" or "right amount".
+
+```{r recode-policy}
+nsl_data <- nsl_data %>%
+  mutate(trump_support_bin = case_when(
+           tolower(trimws(qn14a)) == "approve" ~ 1,
+           tolower(trimws(qn14a)) == "disapprove" ~ 0,
+           TRUE ~ NA_real_
+         ),
+         favor_wall = case_when(
+           tolower(trimws(qn29)) == "favor"  ~ 1,
+           tolower(trimws(qn29)) == "oppose" ~ 0,
+           TRUE ~ NA_real_
+         ),
+         too_many_imm = case_when(
+           tolower(trimws(qn31)) == "too many" ~ 1,
+           tolower(trimws(qn31)) %in% c("too few", "right amount") ~ 0,
+           TRUE ~ NA_real_
+         ))
+```
+
+## Composite Variable
+
+We create the composite immigration policy score by summing the three binary indicators. The result is then categorized as a factor with levels 0–3.
+
+```{r composite-variable}
+nsl_data <- nsl_data %>%
+  mutate(immigration_policy = trump_support_bin + favor_wall + too_many_imm,
+         immigration_policy_cat = factor(immigration_policy, levels = 0:3, ordered = TRUE))
+# Check the composite variable summary
+summary(nsl_data$immigration_policy)
+```
+
+# Descriptive Analyses
+
+In this section, we output summaries, frequency tables, group comparisons, and statistical tests.
+
+## Independent Variables
+
+### Nativity
+```{r descriptives-nativity}
+cat("Nativity (foreign_born):\n")
+print(table(nsl_data$foreign_born, useNA = "ifany"))
+print(summary(nsl_data$foreign_born))
+```
+
+### Generation Status
+```{r descriptives-generation}
+cat("Generation Status (generation):\n")
+print(table(nsl_data$generation, useNA = "ifany"))
+print(summary(nsl_data$generation))
+```
+
+## Dependent Variable
+
+### Composite Immigration Policy
+```{r descriptives-policy}
+cat("Composite Immigration Policy (immigration_policy):\n")
+print(summary(nsl_data$immigration_policy))
+cat("\nFrequency Table for immigration_policy_cat:\n")
+print(table(nsl_data$immigration_policy_cat, useNA = "ifany"))
+cat("\nExplanation: NA values in 'immigration_policy_cat' indicate that one or more of the component indicators is missing.\n")
+```
+
+## Group Comparisons
+
+### Mean & SD by Nativity
+```{r group-comparisons}
+mean_by_nativity <- nsl_data %>%
+  group_by(foreign_born) %>%
+  summarise(mean_composite = mean(immigration_policy, na.rm = TRUE),
+            sd_composite = sd(immigration_policy, na.rm = TRUE),
+            n = n())
+cat("Mean and SD of immigration_policy by foreign_born:\n")
+print(mean_by_nativity)
+```
+
+### T-Test: Foreign-born vs. U.S.-born
+```{r t-test}
+t_test_result <- t.test(immigration_policy ~ foreign_born, data = nsl_data)
+cat("T-test for immigration_policy by foreign_born:\n")
+print(t_test_result)
+```
+
+### Cross-Tabulations and Chi-Square Tests
+```{r cross-tabs}
+cat("Cross-tabulation: Foreign-born vs. immigration_policy_cat:\n")
+cross_tab <- table(nsl_data$foreign_born, nsl_data$immigration_policy_cat)
+print(cross_tab)
+cat("\nChi-square Test (Foreign-born vs. immigration_policy_cat):\n")
+chi_sq_result <- chisq.test(cross_tab)
+print(chi_sq_result)
+
+cat("\nCross-tabulation: Generation vs. immigration_policy_cat:\n")
+cross_tab_gen <- table(nsl_data$generation, nsl_data$immigration_policy_cat)
+print(cross_tab_gen)
+cat("\nChi-square Test (Generation vs. immigration_policy_cat):\n")
+chi_sq_gen <- chisq.test(cross_tab_gen)
+print(chi_sq_gen)
+```
+
+# Regression Analyses
+
+We run three models: one with nativity only, one with generation among U.S.-born respondents, and one using a combined categorical variable.
+
+## Separate Models
+
+### Model 1: Immigration Policy ~ Nativity
+```{r regression-nativity}
+model_nat <- lm(immigration_policy ~ foreign_born, data = nsl_data)
+cat("Regression Model: Immigration Policy ~ Nativity\n")
+print(summary(model_nat))
+```
+
+### Model 2: Immigration Policy ~ Generation (U.S.-born only)
+```{r regression-generation}
+nsl_usborn <- subset(nsl_data, foreign_born == 0)
+model_gen <- lm(immigration_policy ~ generation, data = nsl_usborn)
+cat("Regression Model: Immigration Policy ~ Generation (U.S.-born only)\n")
+print(summary(model_gen))
+```
+
+## Combined Categorical Variable
+
+We create a combined variable that assigns "Foreign-born (First Gen)" if foreign_born == 1, and uses the generation value for U.S.-born respondents.
+```{r combined-variable}
+nsl_data <- nsl_data %>%
+  mutate(nativity_generation = ifelse(foreign_born == 1, "Foreign-born (First Gen)", as.character(generation)))
+nsl_data$nativity_generation <- factor(nsl_data$nativity_generation, levels = c("Foreign-born (First Gen)", "Second Gen", "Third+ Gen"))
+cat("Combined Nativity/Generation Variable Distribution:\n")
+print(table(nsl_data$nativity_generation, useNA = "ifany"))
+
+model_combined <- lm(immigration_policy ~ nativity_generation, data = nsl_data)
+cat("Regression Model: Immigration Policy ~ Combined Nativity/Generation\n")
+print(summary(model_combined))
+```
+
+# Visualizations
+
+Below are two types of visualizations: a bar chart of mean composite scores and a stacked bar chart of the distribution of composite scores.
+
+## Bar Chart: Mean Composite Score by Nativity/Generation
+```{r mean-bar-chart, fig.width=6, fig.height=4}
+mean_data <- nsl_data %>%
+  group_by(nativity_generation) %>%
+  summarise(mean_policy = mean(immigration_policy, na.rm = TRUE),
+            se_policy = sd(immigration_policy, na.rm = TRUE) / sqrt(n()),
+            n = n())
+
+ggplot(mean_data, aes(x = nativity_generation, y = mean_policy)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  geom_errorbar(aes(ymin = mean_policy - se_policy, ymax = mean_policy + se_policy), width = 0.2) +
+  labs(title = "Mean Anti-Immigration Attitude by Nativity/Generation",
+       x = "Nativity / Generation",
+       y = "Mean Composite Score") +
+  theme_minimal()
+```
+
+## Stacked Bar Chart: Distribution of Composite Scores
+We calculate percentages in the natural order (0 to 3) and then plot a stacked bar chart.
+```{r stacked-bar-chart, fig.width=6, fig.height=4}
+dist_data <- nsl_data %>%
+  filter(!is.na(nativity_generation), !is.na(immigration_policy_cat)) %>%
+  group_by(nativity_generation, immigration_policy_cat) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  group_by(nativity_generation) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    label_pos = cumsum(percentage) - 0.5 * percentage,
+    sample_size = sum(count)
+  ) %>%
+  arrange(nativity_generation, immigration_policy_cat)
+
+my_palette <- c(
+  "0" = "#F0E442",  # Yellow
+  "1" = "#009E73",  # Green
+  "2" = "#56B4E9",  # Blue
+  "3" = "#E69F00"   # Orange
+)
+
+ggplot(dist_data, aes(x = nativity_generation, y = percentage, fill = immigration_policy_cat)) +
+  geom_bar(stat = "identity", width = 0.7, position = "stack") +
+  geom_text(aes(y = label_pos, label = sprintf("%.1f%%", percentage)),
+            color = "black", size = 3.5,
+            data = subset(dist_data, percentage > 7)) +
+  scale_fill_manual(
+    values = my_palette,
+    name = "Anti-Immigration\nAttitude Score",
+    labels = c("0 (Low)", "1", "2", "3 (High)")
+  ) +
+  labs(
+    title = "Distribution of Anti-Immigration Attitudes by Nativity/Generation",
+    subtitle = "Score=0 is at the bottom, Score=3 is at the top",
+    x = "",
+    y = "Percentage of Respondents",
+    caption = "Groups: Foreign-born (First Gen), Second Gen, Third+ Gen"
+  ) +
+  scale_y_continuous(limits = c(0, 100), labels = percent_format(scale = 1)) +
+  theme_minimal() +
+  theme(
+    legend.position = "right",
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, color = "#636363"),
+    plot.caption = element_text(size = 9, color = "#636363", hjust = 0),
+    axis.text = element_text(size = 10),
+    axis.title.y = element_text(size = 11),
+    panel.grid.minor = element_blank()
+  ) +
+  geom_text(aes(y = -5, label = paste0("n=", sample_size)),
+            size = 3, color = "#636363")
+```
+
+## Regression Coefficient Plot
+
+We visualize the coefficients from the combined categorical model.
+```{r coef-plot, fig.width=6, fig.height=4}
+coef_data <- tidy(model_combined)
+# Exclude the intercept for clarity
+coef_data <- coef_data[coef_data$term != "(Intercept)", ]
+# Clean term labels
+coef_data$term <- gsub("nativity_generation", "", coef_data$term)
+
+ggplot(coef_data, aes(x = estimate, y = reorder(term, estimate))) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "#636363") +
+  geom_point(size = 3, color = "#3182bd") +
+  geom_errorbarh(aes(xmin = estimate - 1.96 * std.error, xmax = estimate + 1.96 * std.error),
+                 height = 0.2, color = "#3182bd") +
+  labs(
+    title = "Effect of Nativity/Generation on Anti-Immigration Attitudes",
+    subtitle = "Reference: Foreign-born (First Gen)",
+    x = "Regression Coefficient",
+    y = "",
+    caption = "Error bars represent 95% confidence intervals"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, color = "#636363"),
+    plot.caption = element_text(size = 9, color = "#636363"),
+    axis.title.x = element_text(size = 11),
+    axis.text = element_text(size = 10),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank()
+  )
+```
+
+# Conclusion
+
+This report has provided a comprehensive overview of the analysis of anti-immigration attitudes:
+- **Descriptive statistics** were generated for key independent and dependent variables.
+- **Group comparisons** (means, t-tests, cross-tabulations, and chi-square tests) were performed.
+- **Regression models** were run using separate and combined approaches to examine the influence of nativity and generation.
+- **Visualizations** including bar charts, stacked bar charts, and a regression coefficient plot are provided for clear interpretation of the results.
+
+==========================================================================
+
+# End of Report
+
+```
+
+
+

@@ -1,0 +1,47 @@
+Loading required package: grid
+Loading required package: Matrix
+Loading required package: survival
+
+Attaching package: ‘survey’
+
+The following object is masked from ‘package:graphics’:
+
+    dotchart
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+Removed 12 rows containing missing values or values outside the scale range (`geom_text()`). 
+Warning message:
+Removed 12 rows containing missing values or values outside the scale range (`geom_text()`). 
+Error: object 'plot_data' not found
+Warning message:
+Removed 12 rows containing missing values or values outside the scale range (`geom_text()`). 
+Error in stargazer(model, model_nat, model_gen, model_combined, type = "text",  : 
+  could not find function "stargazer"
+Warning message:
+There were 3 warnings in `summarise()`.
+The first warning was:
+ℹ In argument: `mean_age_total = mean(age, na.rm = TRUE)`.
+Caused by warning in `mean.default()`:
+! argument is not numeric or logical: returning NA
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 2 remaining warnings. 
+Warning message:
+There were 3 warnings in `summarise()`.
+The first warning was:
+ℹ In argument: `mean_age_total = mean(age, na.rm = TRUE)`.
+Caused by warning in `mean.default()`:
+! argument is not numeric or logical: returning NA
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 2 remaining warnings. 
+Warning message:
+In mean.default(nsl_data$age, na.rm = TRUE) :
+  argument is not numeric or logical: returning NA
