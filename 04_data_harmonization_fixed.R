@@ -1,5 +1,5 @@
 # ==============================================================================
-# Step 4: Fixed Data Harmonization and Cleaning Script
+# Step 4: Fixed Data Harmonization and Cleaning Script (Extended 2007-2012)
 # ==============================================================================
 
 # Load required libraries
@@ -58,6 +58,90 @@ harmonize_citizenship <- function(data, year) {
     } else {
       citizenship <- rep(NA_real_, nrow(data))
     }
+  } else if (year == 2006) {
+    # Use qn5 and qn6b variables
+    if ("qn5" %in% names(data)) {
+      citizenship <- clean_values(data$qn5)
+      citizenship <- case_when(
+        citizenship == 1 ~ 1,  # US Citizen
+        citizenship %in% c(2, 3) ~ 2,  # Non-citizen
+        TRUE ~ NA_real_
+      )
+    } else {
+      citizenship <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2007) {
+    # Use qn9 variable: "Are you a citizen of the United States?"
+    if ("qn9" %in% names(data)) {
+      citizenship <- clean_values(data$qn9)
+      citizenship <- case_when(
+        citizenship == 1 ~ 1,  # US Citizen
+        citizenship == 2 ~ 2,  # Non-citizen
+        TRUE ~ NA_real_
+      )
+    } else {
+      citizenship <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2008) {
+    # Use qn9 or combo14 (citizenship & registration)
+    if ("qn9" %in% names(data)) {
+      citizenship <- clean_values(data$qn9)
+      citizenship <- case_when(
+        citizenship == 1 ~ 1,  # US Citizen
+        citizenship == 2 ~ 2,  # Non-citizen
+        TRUE ~ NA_real_
+      )
+    } else {
+      citizenship <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2009) {
+    # Use qn9 variable
+    if ("qn9" %in% names(data)) {
+      citizenship <- clean_values(data$qn9)
+      citizenship <- case_when(
+        citizenship == 1 ~ 1,  # US Citizen
+        citizenship == 2 ~ 2,  # Non-citizen
+        TRUE ~ NA_real_
+      )
+    } else {
+      citizenship <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2010) {
+    # Use qn9 variable
+    if ("qn9" %in% names(data)) {
+      citizenship <- clean_values(data$qn9)
+      citizenship <- case_when(
+        citizenship == 1 ~ 1,  # US Citizen
+        citizenship == 2 ~ 2,  # Non-citizen
+        TRUE ~ NA_real_
+      )
+    } else {
+      citizenship <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2011) {
+    # Use qn84 or qn85 variables
+    if ("qn84" %in% names(data)) {
+      citizenship <- clean_values(data$qn84)
+      citizenship <- case_when(
+        citizenship == 1 ~ 1,  # US Citizen
+        citizenship == 2 ~ 2,  # Non-citizen
+        TRUE ~ NA_real_
+      )
+    } else {
+      citizenship <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2012) {
+    # Use qn76, qn79, or qn80 variables
+    if ("qn76" %in% names(data)) {
+      citizenship <- clean_values(data$qn76)
+      citizenship <- case_when(
+        citizenship == 1 ~ 1,  # US Citizen
+        citizenship == 2 ~ 2,  # Non-citizen
+        TRUE ~ NA_real_
+      )
+    } else {
+      citizenship <- rep(NA_real_, nrow(data))
+    }
   } else {
     citizenship <- rep(NA_real_, nrow(data))
   }
@@ -92,6 +176,85 @@ harmonize_place_birth <- function(data, year) {
     } else {
       place_birth <- rep(NA_real_, nrow(data))
     }
+  } else if (year == 2006) {
+    # Use qn71a for nativity information
+    if ("qn71a" %in% names(data)) {
+      place_birth <- clean_values(data$qn71a)
+      place_birth <- case_when(
+        place_birth == 1 ~ 1,  # US born
+        place_birth == 2 ~ 2,  # Foreign born
+        TRUE ~ NA_real_
+      )
+    } else {
+      place_birth <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2007) {
+    # Use qn5: "Were you born on the island of Puerto Rico, in the United States, or in another country?"
+    if ("qn5" %in% names(data)) {
+      place_birth <- clean_values(data$qn5)
+      place_birth <- case_when(
+        place_birth %in% c(1, 2) ~ 1,  # Puerto Rico or US -> US born
+        place_birth == 3 ~ 2,  # Another country -> Foreign born
+        TRUE ~ NA_real_
+      )
+    } else {
+      place_birth <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2008) {
+    # Use combo5a (nativity & country of birth) or qn5
+    if ("combo5a" %in% names(data)) {
+      place_birth <- clean_values(data$combo5a)
+    } else if ("qn5" %in% names(data)) {
+      place_birth <- clean_values(data$qn5)
+      place_birth <- case_when(
+        place_birth %in% c(1, 2) ~ 1,  # Puerto Rico or US
+        place_birth == 3 ~ 2,  # Another country
+        TRUE ~ NA_real_
+      )
+    } else {
+      place_birth <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2009) {
+    # Derive from citizenship if direct nativity not available
+    citizenship <- harmonize_citizenship(data, year)
+    place_birth <- case_when(
+      citizenship == 1 ~ 1,  # Citizen -> likely US born (approximate)
+      citizenship == 2 ~ 2,  # Non-citizen -> likely foreign born
+      TRUE ~ NA_real_
+    )
+  } else if (year == 2010) {
+    # Use available nativity questions
+    if ("qn53" %in% names(data)) {
+      place_birth <- clean_values(data$qn53)
+    } else {
+      # Derive from citizenship
+      citizenship <- harmonize_citizenship(data, year)
+      place_birth <- case_when(
+        citizenship == 1 ~ 1,  # Approximate
+        citizenship == 2 ~ 2,
+        TRUE ~ NA_real_
+      )
+    }
+  } else if (year == 2011) {
+    # Derive from citizenship or available birth variables
+    citizenship <- harmonize_citizenship(data, year)
+    place_birth <- case_when(
+      citizenship == 1 ~ 1,  # Approximate
+      citizenship == 2 ~ 2,
+      TRUE ~ NA_real_
+    )
+  } else if (year == 2012) {
+    # Use qn78 for nativity information
+    if ("qn78" %in% names(data)) {
+      place_birth <- clean_values(data$qn78)
+      place_birth <- case_when(
+        place_birth %in% c(1, 2) ~ 1,  # US born
+        place_birth == 3 ~ 2,  # Foreign born
+        TRUE ~ NA_real_
+      )
+    } else {
+      place_birth <- rep(NA_real_, nrow(data))
+    }
   } else {
     place_birth <- rep(NA_real_, nrow(data))
   }
@@ -99,8 +262,47 @@ harmonize_place_birth <- function(data, year) {
   return(place_birth)
 }
 
+# Function to harmonize parent nativity (mother and father birth)
+harmonize_parent_nativity <- function(data, year) {
+  mother_birth <- rep(NA_real_, nrow(data))
+  father_birth <- rep(NA_real_, nrow(data))
+  
+  if (year == 2007) {
+    # Use qn7 and qn8 for parent nativity
+    if ("qn7" %in% names(data)) {
+      mother_birth <- clean_values(data$qn7)
+      mother_birth <- case_when(
+        mother_birth %in% c(1, 2) ~ 1,  # Puerto Rico or US
+        mother_birth == 3 ~ 2,  # Another country
+        TRUE ~ NA_real_
+      )
+    }
+    if ("qn8" %in% names(data)) {
+      father_birth <- clean_values(data$qn8)
+      father_birth <- case_when(
+        father_birth %in% c(1, 2) ~ 1,  # Puerto Rico or US
+        father_birth == 3 ~ 2,  # Another country
+        TRUE ~ NA_real_
+      )
+    }
+  } else if (year == 2008) {
+    # Use combo6 and combo9 or individual parent questions
+    if ("combo6" %in% names(data)) {
+      mother_birth <- clean_values(data$combo6)
+    }
+    if ("combo9" %in% names(data)) {
+      father_birth <- clean_values(data$combo9)
+    }
+  }
+  
+  return(list(mother = mother_birth, father = father_birth))
+}
+
 # Function to derive immigrant generation
 derive_immigrant_generation <- function(data, year) {
+  place_birth <- harmonize_place_birth(data, year)
+  parent_nativity <- harmonize_parent_nativity(data, year)
+  
   if (year == 2002) {
     # Use existing GEN1TO4 variable but clean it
     if ("GEN1TO4" %in% names(data)) {
@@ -114,7 +316,6 @@ derive_immigrant_generation <- function(data, year) {
       )
     } else {
       # Derive from nativity if GEN1TO4 not available
-      place_birth <- harmonize_place_birth(data, year)
       generation <- case_when(
         place_birth == 2 ~ 1,  # Foreign born = first generation
         place_birth == 1 ~ 2,  # US born = assume second generation (conservative)
@@ -123,7 +324,67 @@ derive_immigrant_generation <- function(data, year) {
     }
   } else if (year == 2004) {
     # Derive from citizenship/nativity proxy
-    place_birth <- harmonize_place_birth(data, year)
+    generation <- case_when(
+      place_birth == 2 ~ 1,  # Foreign born = first generation
+      place_birth == 1 ~ 2,  # US born = assume second generation
+      TRUE ~ NA_real_
+    )
+  } else if (year == 2006) {
+    # Derive from available nativity information
+    generation <- case_when(
+      place_birth == 2 ~ 1,  # Foreign born = first generation
+      place_birth == 1 ~ 2,  # US born = assume second generation
+      TRUE ~ NA_real_
+    )
+  } else if (year == 2007) {
+    # Implement full derivation logic with parent nativity
+    mother_birth <- parent_nativity$mother
+    father_birth <- parent_nativity$father
+    
+    generation <- case_when(
+      place_birth == 2 ~ 1,  # First generation: respondent foreign-born
+      place_birth == 1 & (mother_birth == 2 | father_birth == 2) ~ 2,  # Second generation: US-born with ≥1 foreign-born parent
+      place_birth == 1 & mother_birth == 1 & father_birth == 1 ~ 3,  # Third+ generation: US-born with both parents US-born
+      TRUE ~ NA_real_
+    )
+  } else if (year == 2008) {
+    # Use parent nativity combos if available
+    mother_birth <- parent_nativity$mother
+    father_birth <- parent_nativity$father
+    
+    generation <- case_when(
+      place_birth == 2 ~ 1,  # First generation
+      place_birth == 1 & (mother_birth == 2 | father_birth == 2) ~ 2,  # Second generation
+      place_birth == 1 & mother_birth == 1 & father_birth == 1 ~ 3,  # Third+ generation
+      place_birth == 1 ~ 2,  # Default to second generation if parent info missing
+      TRUE ~ NA_real_
+    )
+  } else if (year %in% c(2009, 2010)) {
+    # Basic derivation from nativity
+    generation <- case_when(
+      place_birth == 2 ~ 1,  # Foreign born = first generation
+      place_birth == 1 ~ 2,  # US born = assume second generation
+      TRUE ~ NA_real_
+    )
+  } else if (year == 2011) {
+    # Use qn70 if available for generation information
+    if ("qn70" %in% names(data)) {
+      generation <- clean_values(data$qn70)
+      generation <- case_when(
+        generation == 1 ~ 1,  # First generation
+        generation == 2 ~ 2,  # Second generation
+        generation %in% c(3, 4) ~ 3,  # Third+ generation
+        TRUE ~ NA_real_
+      )
+    } else {
+      generation <- case_when(
+        place_birth == 2 ~ 1,  # Foreign born = first generation
+        place_birth == 1 ~ 2,  # US born = assume second generation
+        TRUE ~ NA_real_
+      )
+    }
+  } else if (year == 2012) {
+    # Basic derivation from nativity
     generation <- case_when(
       place_birth == 2 ~ 1,  # Foreign born = first generation
       place_birth == 1 ~ 2,  # US born = assume second generation
@@ -162,6 +423,54 @@ harmonize_political_party <- function(data, year) {
     } else {
       party <- rep(NA_real_, nrow(data))
     }
+  } else if (year == 2006) {
+    # Look for party identification variables
+    if ("qn6b" %in% names(data)) {
+      party <- clean_values(data$qn6b)
+    } else {
+      party <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2007) {
+    # Use qn18: "Do you consider yourself closer to the Republican party or the Democratic party?"
+    if ("qn18" %in% names(data)) {
+      party <- clean_values(data$qn18)
+      party <- case_when(
+        party == 1 ~ 2,  # Republican
+        party == 2 ~ 1,  # Democrat
+        party == 3 ~ 3,  # Independent/Neither
+        TRUE ~ NA_real_
+      )
+    } else {
+      party <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2008) {
+    # Use combo22 (leaned party identification) or individual party questions
+    if ("combo22" %in% names(data)) {
+      party <- clean_values(data$combo22)
+    } else {
+      party <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2009) {
+    # Limited party variables in 2009
+    party <- rep(NA_real_, nrow(data))
+  } else if (year == 2010) {
+    # Use qn13 or qn14 for party preference
+    if ("qn13" %in% names(data)) {
+      party <- clean_values(data$qn13)
+      party <- case_when(
+        party == 1 ~ 2,  # Republican
+        party == 2 ~ 1,  # Democrat
+        TRUE ~ NA_real_
+      )
+    } else {
+      party <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2011) {
+    # Use available party variables
+    party <- rep(NA_real_, nrow(data))
+  } else if (year == 2012) {
+    # Use available party variables
+    party <- rep(NA_real_, nrow(data))
   } else {
     party <- rep(NA_real_, nrow(data))
   }
@@ -193,6 +502,55 @@ harmonize_vote_intention <- function(data, year) {
     } else {
       vote <- rep(NA_real_, nrow(data))
     }
+  } else if (year == 2006) {
+    # Look for voting registration or intention
+    if ("qn6b" %in% names(data)) {
+      vote <- clean_values(data$qn6b)
+    } else {
+      vote <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2007) {
+    # Use qn16: "Are you currently registered to vote at your present address"
+    if ("qn16" %in% names(data)) {
+      vote <- clean_values(data$qn16)
+      vote <- case_when(
+        vote == 1 ~ 1,  # Yes, registered
+        vote == 2 ~ 0,  # No, not registered
+        TRUE ~ NA_real_
+      )
+    } else {
+      vote <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2008) {
+    # Use combo14 (citizenship & registration) or combo23 (citizenship & whether voted)
+    if ("combo23" %in% names(data)) {
+      vote <- clean_values(data$combo23)
+    } else if ("combo14" %in% names(data)) {
+      vote <- clean_values(data$combo14)
+    } else {
+      vote <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2009) {
+    # Limited voting variables
+    vote <- rep(NA_real_, nrow(data))
+  } else if (year == 2010) {
+    # Use qn12 or qn13 for election interest/intention
+    if ("qn12" %in% names(data)) {
+      vote <- clean_values(data$qn12)
+      vote <- case_when(
+        vote == 1 ~ 1,  # Quite a lot of thought
+        vote == 2 ~ 0,  # Only a little
+        TRUE ~ NA_real_
+      )
+    } else {
+      vote <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2011) {
+    # Limited voting variables
+    vote <- rep(NA_real_, nrow(data))
+  } else if (year == 2012) {
+    # Look for voting or election variables
+    vote <- rep(NA_real_, nrow(data))
   } else {
     vote <- rep(NA_real_, nrow(data))
   }
@@ -228,6 +586,61 @@ harmonize_immigration_attitude <- function(data, year) {
     } else {
       attitude <- rep(NA_real_, nrow(data))
     }
+  } else if (year == 2006) {
+    # Use qn3a or other immigration attitude variables
+    if ("qn3a" %in% names(data)) {
+      attitude <- clean_values(data$qn3a)
+      attitude <- case_when(
+        attitude == 1 ~ 1,  # Favor
+        attitude == 2 ~ 0,  # Oppose
+        TRUE ~ NA_real_
+      )
+    } else {
+      attitude <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2007) {
+    # Use qn26: "undocumented or illegal immigrants help the economy"
+    if ("qn26" %in% names(data)) {
+      attitude <- clean_values(data$qn26)
+      attitude <- case_when(
+        attitude == 1 ~ 1,  # Help economy (pro-immigrant)
+        attitude == 2 ~ 0,  # Hurt economy (anti-immigrant)
+        TRUE ~ NA_real_
+      )
+    } else {
+      attitude <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2008) {
+    # Look for immigration attitude variables
+    if ("qn17g" %in% names(data)) {
+      attitude <- clean_values(data$qn17g)
+    } else {
+      attitude <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2009) {
+    # Limited immigration attitude variables
+    attitude <- rep(NA_real_, nrow(data))
+  } else if (year == 2010) {
+    # Use qn21b or other immigration variables
+    if ("qn21b" %in% names(data)) {
+      attitude <- clean_values(data$qn21b)
+    } else {
+      attitude <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2011) {
+    # Use qn24 or qn25
+    if ("qn24" %in% names(data)) {
+      attitude <- clean_values(data$qn24)
+    } else {
+      attitude <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2012) {
+    # Use qn21d or other variables
+    if ("qn21d" %in% names(data)) {
+      attitude <- clean_values(data$qn21d)
+    } else {
+      attitude <- rep(NA_real_, nrow(data))
+    }
   } else {
     attitude <- rep(NA_real_, nrow(data))
   }
@@ -257,11 +670,133 @@ harmonize_border_security <- function(data, year) {
     } else {
       border <- rep(NA_real_, nrow(data))
     }
+  } else if (year == 2006) {
+    # Use qn15b or similar
+    if ("qn15b" %in% names(data)) {
+      border <- clean_values(data$qn15b)
+    } else {
+      border <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2007) {
+    # Use qn24: "too many, too few, or about the right amount of immigrants"
+    if ("qn24" %in% names(data)) {
+      border <- clean_values(data$qn24)
+      border <- case_when(
+        border == 1 ~ 3,  # Too many -> restrictive
+        border == 2 ~ 1,  # Too few -> permissive
+        border == 3 ~ 2,  # About right -> moderate
+        TRUE ~ NA_real_
+      )
+    } else {
+      border <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2008) {
+    # Use qn40ca or other border variables
+    if ("qn40ca" %in% names(data)) {
+      border <- clean_values(data$qn40ca)
+    } else {
+      border <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2009) {
+    # Limited border security variables
+    border <- rep(NA_real_, nrow(data))
+  } else if (year == 2010) {
+    # Use qn44, qn47, or qn48
+    if ("qn44" %in% names(data)) {
+      border <- clean_values(data$qn44)
+    } else {
+      border <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2011) {
+    # Use qn24, qn25, or qn28
+    if ("qn24" %in% names(data)) {
+      border <- clean_values(data$qn24)
+    } else {
+      border <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2012) {
+    # Use qn31
+    if ("qn31" %in% names(data)) {
+      border <- clean_values(data$qn31)
+    } else {
+      border <- rep(NA_real_, nrow(data))
+    }
   } else {
     border <- rep(NA_real_, nrow(data))
   }
   
   return(border)
+}
+
+# Function to harmonize demographic variables (age, gender)
+harmonize_demographics <- function(data, year) {
+  # Age harmonization
+  age <- rep(NA_real_, nrow(data))
+  if (year == 2007 && "qn50" %in% names(data)) {
+    age <- clean_values(data$qn50)
+  } else {
+    # Look for common age variable names
+    age_vars <- names(data)[grepl("^age|qn.*age|AGE", names(data), ignore.case = TRUE)]
+    if (length(age_vars) > 0) {
+      age <- clean_values(data[[age_vars[1]]])
+    }
+  }
+  
+  # Gender harmonization  
+  gender <- rep(NA_real_, nrow(data))
+  if (year == 2007 && "qnd18" %in% names(data)) {
+    gender <- clean_values(data$qnd18)
+    gender <- case_when(
+      gender == 1 ~ 1,  # Male
+      gender == 2 ~ 2,  # Female
+      TRUE ~ NA_real_
+    )
+  } else {
+    # Look for gender variables
+    gender_vars <- names(data)[grepl("gender|sex|male|female", names(data), ignore.case = TRUE)]
+    if (length(gender_vars) > 0) {
+      gender <- clean_values(data[[gender_vars[1]]])
+    }
+  }
+  
+  return(list(age = age, gender = gender))
+}
+
+# Function to harmonize race and ethnicity
+harmonize_race_ethnicity <- function(data, year) {
+  race <- rep(NA_real_, nrow(data))
+  ethnicity <- rep(NA_real_, nrow(data))
+  
+  if (year == 2007) {
+    # Use qn4 for Hispanic/Latino ethnicity
+    if ("qn4" %in% names(data)) {
+      ethnicity <- clean_values(data$qn4)
+    }
+  } else if (year == 2010) {
+    # Use qn1 for Hispanic/Latino origin
+    if ("qn1" %in% names(data)) {
+      ethnicity <- clean_values(data$qn1)
+    }
+  }
+  
+  return(list(race = race, ethnicity = ethnicity))
+}
+
+# Function to harmonize language spoken at home
+harmonize_language <- function(data, year) {
+  language <- rep(NA_real_, nrow(data))
+  
+  if (year == 2007 && "qn70" %in% names(data)) {
+    # Interview language as proxy for home language
+    language <- clean_values(data$qn70)
+    language <- case_when(
+      language == 1 ~ 1,  # English
+      language == 2 ~ 2,  # Spanish
+      TRUE ~ NA_real_
+    )
+  }
+  
+  return(language)
 }
 
 # Main harmonization function
@@ -272,9 +807,19 @@ harmonize_survey_data <- function(file_path, year) {
   data <- read_survey_data(file_path)
   cat("Original data dimensions:", dim(data), "\n")
   
+  # Get demographics
+  demographics <- harmonize_demographics(data, year)
+  race_eth <- harmonize_race_ethnicity(data, year)
+  language <- harmonize_language(data, year)
+  
   # Create harmonized dataset
   harmonized_data <- data.frame(
     survey_year = year,
+    age = demographics$age,
+    gender = demographics$gender,
+    race = race_eth$race,
+    ethnicity = race_eth$ethnicity,
+    language_home = language,
     citizenship_status = harmonize_citizenship(data, year),
     place_birth = harmonize_place_birth(data, year),
     immigrant_generation = derive_immigrant_generation(data, year),
@@ -286,6 +831,11 @@ harmonize_survey_data <- function(file_path, year) {
   )
   
   # Add variable labels
+  attr(harmonized_data$age, "label") <- "Age in years"
+  attr(harmonized_data$gender, "label") <- "Gender (1=Male, 2=Female)"
+  attr(harmonized_data$race, "label") <- "Race/ethnicity"
+  attr(harmonized_data$ethnicity, "label") <- "Hispanic/Latino ethnicity"
+  attr(harmonized_data$language_home, "label") <- "Language spoken at home (1=English, 2=Spanish)"
   attr(harmonized_data$citizenship_status, "label") <- "Citizenship status (1=US Citizen, 2=Non-citizen)"
   attr(harmonized_data$place_birth, "label") <- "Place of birth (1=US born, 2=Foreign born)"
   attr(harmonized_data$immigrant_generation, "label") <- "Immigrant generation (1=First, 2=Second, 3=Third+)"
@@ -302,7 +852,7 @@ harmonize_survey_data <- function(file_path, year) {
     values <- harmonized_data[[var]]
     n_unique <- length(unique(values[!is.na(values)]))
     pct_missing <- round(sum(is.na(values))/length(values) * 100, 1)
-    cat(sprintf("%-20s: %d unique values, %s%% missing\n", var, n_unique, pct_missing))
+    cat(sprintf("%-25s: %d unique values, %s%% missing\n", var, n_unique, pct_missing))
   }
   
   return(harmonized_data)
@@ -316,10 +866,17 @@ process_survey_files <- function() {
     dir.create("cleaned_data")
   }
   
-  # Define file mappings
+  # Define file mappings for 2002-2012
   file_mappings <- list(
     "2002" = "2002 RAE008b FINAL DATA FOR RELEASE.sav",
-    "2004" = "2004 Political Survey Rev 1-6-05.sav"
+    "2004" = "2004 Political Survey Rev 1-6-05.sav",
+    "2006" = "f1171_050207 uploaded dataset.sav",
+    "2007" = "publicreleaseNSL07_UPDATED_3.7.22.sav",
+    "2008" = "PHCNSL2008aPublicRelease_UPDATED 3.7.22.sav",
+    "2009" = "PHCNSL2009PublicRelease.sav",
+    "2010" = "PHCNSL2010PublicRelease_UPDATED 3.7.22.sav",
+    "2011" = "PHCNSL2011PubRelease_UPDATED 3.7.22.sav",
+    "2012" = "PHCNSL2012PublicRelease_UPDATED 3.7.22.sav"
   )
   
   harmonized_files <- list()
@@ -385,7 +942,7 @@ validate_harmonized_data <- function(data, year) {
 
 # Run the harmonization
 if (!interactive()) {
-  cat("=== Running Fixed Data Harmonization ===\n\n")
+  cat("=== Running Fixed Data Harmonization (2002-2012) ===\n\n")
   harmonized_files <- process_survey_files()
   
   # Validate each file
