@@ -171,9 +171,9 @@ precalc_generation_var_map <- list(
 # =============================================================================
 # Based on mini-project analysis and systematic variable discovery
 
-# IMMIGRATION POLICY VARIABLE MAPPINGS (Multiple distinct policies)
+# EXPANDED IMMIGRATION POLICY VARIABLE MAPPINGS (Including Implicit Measures)
 immigration_policy_var_map <- list(
-  # Trump Support/Approval
+  # Trump Support/Approval  
   "trump_support" = list(
     "2018" = "qn14a",  # Trump approval
     "2022" = "TRUMPFUT_W113"  # Trump future support
@@ -190,13 +190,29 @@ immigration_policy_var_map <- list(
     "2018" = "qn31"  # Too many immigrants opinion
   ),
   
-  # DACA/Dreamer Support (to be identified in other years)
+  # NEW: Border/Asylum Performance (Implicit Immigration Measure)
+  "border_asylum_performance" = list(
+    "2021" = "BRDERJOB_MOD_W86"  # Government performance on border asylum seekers
+  ),
+  
+  # NEW: Presidential Performance (Implicit through Immigration Lens)
+  "presidential_performance" = list(
+    "2018" = "qn14a",  # Trump approval
+    "2022" = c("BIDENDESC_MDL_W113", "BIDENDESC_ORD_W113", "BIDENDESC_MENT_W113", "BIDENDESC_HON_W113")  # Biden evaluations
+  ),
+  
+  # NEW: Issue Priorities (Immigration-Related Concerns)
+  "issue_priorities" = list(
+    "2022" = c("ISSUECONG_CRIM_W113", "ISSUECONG_ECON_W113", "ISSUECONG_EDUC_W113", "ISSUECONG_RCE_W113")
+  ),
+  
+  # DACA/Dreamer Support (to be expanded)
   "daca_support" = list(),
   
-  # Deportation Policy (to be identified)
+  # Deportation Policy (to be expanded)  
   "deportation_policy" = list(),
   
-  # Legalization/Path to Citizenship (to be identified)
+  # Legalization/Path to Citizenship (to be expanded)
   "legalization_support" = list()
 )
 
@@ -507,7 +523,7 @@ harmonize_citizenship_extended <- function(data, year) {
 # ENHANCED HARMONIZATION FUNCTIONS FOR COMPLEX POLICY VARIABLES
 # =============================================================================
 
-# NEW: Comprehensive Immigration Policy Harmonization
+# UPDATED: Comprehensive Immigration Policy Harmonization with Implicit Measures
 harmonize_immigration_policies <- function(data, year) {
   cat("  Harmonizing immigration policies for", year, "\n")
   year_str <- as.character(year)
@@ -516,6 +532,11 @@ harmonize_immigration_policies <- function(data, year) {
   trump_support <- rep(NA_real_, nrow(data))
   border_wall_support <- rep(NA_real_, nrow(data))
   immigration_level_concern <- rep(NA_real_, nrow(data))
+  
+  # NEW: Implicit measures
+  border_asylum_performance <- rep(NA_real_, nrow(data))
+  presidential_performance <- rep(NA_real_, nrow(data))
+  crime_priority <- rep(NA_real_, nrow(data))
   
   # Trump Support/Approval
   if (year_str %in% names(immigration_policy_var_map$trump_support)) {
@@ -599,22 +620,96 @@ harmonize_immigration_policies <- function(data, year) {
     }
   }
   
-  # Create composite immigration restrictionism score (following mini-project approach)
-  # Sum of binary indicators where available
-  valid_indicators <- cbind(trump_support, border_wall_support, immigration_level_concern)
-  valid_indicators[is.na(valid_indicators)] <- 0  # Treat NA as 0 for composite
+  # NEW: Border/Asylum Performance (2021 - Implicit measure)
+  if (year_str %in% names(immigration_policy_var_map$border_asylum_performance)) {
+    asylum_vars <- immigration_policy_var_map$border_asylum_performance[[year_str]]
+    for (var in asylum_vars) {
+      if (var %in% names(data)) {
+        asylum_raw <- clean_values(data[[var]])
+        
+        if (var == "BRDERJOB_MOD_W86") {
+          # 2021: Rating government performance on border asylum
+          # 1=Excellent, 2=Good, 3=Only fair, 4=Poor
+          # Reverse code: poor performance = restrictionist sentiment
+          border_asylum_performance <- case_when(
+            asylum_raw %in% c(3, 4) ~ 1,  # Only fair/Poor = restrictionist
+            asylum_raw %in% c(1, 2) ~ 0,  # Excellent/Good = not restrictionist
+            TRUE ~ NA_real_
+          )
+        }
+        break
+      }
+    }
+  }
+  
+  # NEW: Presidential Performance (2022 Biden evaluations)
+  if (year_str %in% names(immigration_policy_var_map$presidential_performance)) {
+    pres_vars <- immigration_policy_var_map$presidential_performance[[year_str]]
+    
+    if (year == "2022") {
+      # Multiple Biden evaluation dimensions - create composite
+      biden_scores <- matrix(NA, nrow = nrow(data), ncol = 4)
+      biden_vars <- c("BIDENDESC_MDL_W113", "BIDENDESC_ORD_W113", "BIDENDESC_MENT_W113", "BIDENDESC_HON_W113")
+      
+      for (i in 1:4) {
+        var_name <- biden_vars[i]
+        if (var_name %in% names(data)) {
+          raw_vals <- clean_values(data[[var_name]])
+          # 1=Very well, 2=Somewhat well, 3=Not too well, 4=Not at all well
+          # Reverse: negative evaluation = restrictionist sentiment
+          biden_scores[, i] <- case_when(
+            raw_vals %in% c(3, 4) ~ 1,  # Negative evaluation
+            raw_vals %in% c(1, 2) ~ 0,  # Positive evaluation
+            TRUE ~ NA_real_
+          )
+        }
+      }
+      
+      # Average Biden negativity as proxy for restrictionism
+      presidential_performance <- rowMeans(biden_scores, na.rm = TRUE)
+      presidential_performance[is.nan(presidential_performance)] <- NA
+    } else if (year == "2018") {
+      # Use Trump approval directly
+      presidential_performance <- trump_support
+    }
+  }
+  
+  # NEW: Issue Priorities (2022 - Crime priority as immigration proxy)
+  if (year_str %in% names(immigration_policy_var_map$issue_priorities)) {
+    issue_vars <- immigration_policy_var_map$issue_priorities[[year_str]]
+    
+    if ("ISSUECONG_CRIM_W113" %in% names(data)) {
+      crime_raw <- clean_values(data$ISSUECONG_CRIM_W113)
+      # 1=Very important, 2=Somewhat important, 3=Not too important, 4=Not at all important
+      # High crime priority = potential restrictionist sentiment
+      crime_priority <- case_when(
+        crime_raw == 1 ~ 1,  # Very important
+        crime_raw %in% c(2, 3, 4) ~ 0,  # Less important
+        TRUE ~ NA_real_
+      )
+    }
+  }
+  
+  # Create EXPANDED composite immigration restrictionism score
+  # Now includes: Trump support, border wall, immigration level, asylum performance, presidential negativity, crime priority
+  valid_indicators <- cbind(trump_support, border_wall_support, immigration_level_concern, 
+                           border_asylum_performance, presidential_performance, crime_priority)
   
   # Only create composite if at least one indicator is available
-  has_any_data <- rowSums(!is.na(cbind(trump_support, border_wall_support, immigration_level_concern))) > 0
+  has_any_data <- rowSums(!is.na(valid_indicators)) > 0
   
+  # Calculate composite as average of available indicators (0-1 scale)
   immigration_restrictionism_composite <- ifelse(has_any_data, 
-                                                rowSums(valid_indicators, na.rm = TRUE), 
+                                                rowMeans(valid_indicators, na.rm = TRUE), 
                                                 NA_real_)
   
   return(list(
     trump_support = trump_support,
     border_wall_support = border_wall_support, 
     immigration_level_concern = immigration_level_concern,
+    border_asylum_performance = border_asylum_performance,
+    presidential_performance = presidential_performance,
+    crime_priority = crime_priority,
     immigration_restrictionism_composite = immigration_restrictionism_composite
   ))
 }
@@ -721,16 +816,23 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
     place_birth = place_birth,
     immigrant_generation = immigrant_generation,
     
-    # NEW: Expanded immigration policy variables
+    # EXPANDED: Direct immigration policy variables
     trump_support = immigration_policies$trump_support,
     border_wall_support = immigration_policies$border_wall_support,
     immigration_level_concern = immigration_policies$immigration_level_concern,
+    
+    # NEW: Implicit immigration attitude measures
+    border_asylum_performance = immigration_policies$border_asylum_performance,
+    presidential_performance = immigration_policies$presidential_performance,
+    crime_priority = immigration_policies$crime_priority,
+    
+    # ENHANCED: Comprehensive restrictionism composite
     immigration_restrictionism_composite = immigration_policies$immigration_restrictionism_composite,
     
-    # NEW: Political attitude variables
+    # Political attitude variables
     party_identification = political_attitudes$party_identification,
     
-    # Legacy variables (to be deprecated or expanded)
+    # Legacy variables (mapped to new framework)
     immigration_attitude = immigration_policies$immigration_restrictionism_composite,  # Map to composite
     border_security_attitude = immigration_policies$border_wall_support,              # Map to wall support
     political_party = political_attitudes$party_identification,                       # Map to party ID
@@ -741,7 +843,8 @@ harmonize_survey_extended <- function(file_path, year, survey_type = "NSL") {
   # Quality check with expanded variables
   cat("  Variable coverage:\n")
   key_vars <- c("age", "gender", "ethnicity", "place_birth", "immigrant_generation", 
-                "trump_support", "border_wall_support", "party_identification")
+                "trump_support", "border_wall_support", "border_asylum_performance", 
+                "presidential_performance", "crime_priority", "party_identification")
   
   for (var in key_vars) {
     if (var %in% names(harmonized)) {
