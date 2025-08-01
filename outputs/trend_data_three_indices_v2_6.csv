@@ -1,0 +1,31 @@
+survey_year,generation_label,mean_index,se_index,n,index_name
+2002,First Generation,-0.29735148967252556,0.012594567970809944,1974,Immigration Policy Liberalism
+2002,Second Generation,-0.008620740792168761,0.043802047055102204,513,Immigration Policy Liberalism
+2002,Third+ Generation,0.1746389752731261,0.06169298622394664,348,Immigration Policy Liberalism
+2004,First Generation,-0.17620448595958396,0.01958554188503905,1254,Immigration Policy Liberalism
+2004,Second Generation,0.23389676266377094,0.049082785555871776,662,Immigration Policy Liberalism
+2004,Third+ Generation,0.23023211358131246,0.07403316348867486,290,Immigration Policy Liberalism
+2021,First Generation,-0.0010721331773319808,0.016155550158705397,3071,Immigration Policy Liberalism
+2021,Second Generation,-0.2333664666331329,0.2060076315630958,21,Immigration Policy Liberalism
+2021,Third+ Generation,0.0030878020429373734,0.07731738214440224,125,Immigration Policy Liberalism
+2022,First Generation,0.3251124955621874,0.019893316632279407,2111,Immigration Policy Liberalism
+2022,Second Generation,-0.15059079051882696,0.014343697579927225,4911,Immigration Policy Liberalism
+2022,Third+ Generation,0.0815812234088326,0.04389010816821355,495,Immigration Policy Liberalism
+2002,First Generation,-0.07936577824442029,0.02275068773209319,1866,Immigration Policy Restrictionism
+2002,Second Generation,0.08276726321656806,0.044812162697278994,496,Immigration Policy Restrictionism
+2002,Third+ Generation,-0.06940542658759645,0.0538169755591218,342,Immigration Policy Restrictionism
+2007,First Generation,-0.051351845793300634,0.028971441913261366,1198,Immigration Policy Restrictionism
+2007,Second Generation,0.14432276714722483,0.055588608215954155,309,Immigration Policy Restrictionism
+2007,Third+ Generation,0.06197039009769803,0.05558798450736324,322,Immigration Policy Restrictionism
+2021,First Generation,0.016490283373692568,0.015902656815896515,3056,Immigration Policy Restrictionism
+2021,Second Generation,-0.09623451358043549,0.2075512453725477,21,Immigration Policy Restrictionism
+2021,Third+ Generation,-0.32842047125565305,0.061043876016922856,125,Immigration Policy Restrictionism
+2022,First Generation,0.08573846997411103,0.018168190265549295,2111,Immigration Policy Restrictionism
+2022,Second Generation,-0.04516097047925388,0.013088087551463066,4935,Immigration Policy Restrictionism
+2022,Third+ Generation,0.08363342595007268,0.04218066289975556,496,Immigration Policy Restrictionism
+2007,First Generation,-0.2643178381224118,0.02586212781050997,1294,Deportation Concern
+2007,Second Generation,0.37370876245884577,0.05208036323724069,336,Deportation Concern
+2007,Third+ Generation,0.6266774866688861,0.04814680574642446,345,Deportation Concern
+2021,First Generation,0.008260156702942308,0.01802555421095909,3062,Deportation Concern
+2021,Second Generation,-0.4284292738145093,0.24167607825232928,21,Deportation Concern
+2021,Third+ Generation,0.17868425108174796,0.08752184049830757,124,Deportation Concern

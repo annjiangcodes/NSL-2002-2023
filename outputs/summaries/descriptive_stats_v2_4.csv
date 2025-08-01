@@ -1,0 +1,137 @@
+survey_year,generation_label,n,mean_value,se,ci_lower,ci_upper,index,index_label
+2002,"1st Generation
+(Foreign-born)",1974,-0.2973514896725256,0.012594567970809946,-0.3220368428953131,-0.27266613644973814,liberalism_index,Immigration Policy Liberalism
+2002,"2nd Generation
+(US-born, foreign parents)",513,-0.008620740792168761,0.0438020470551022,-0.09447275302016907,0.07723127143583154,liberalism_index,Immigration Policy Liberalism
+2002,"3rd+ Generation
+(US-born, US-born parents)",348,0.17463897527312613,0.06169298622394664,0.053720722274190724,0.29555722827206155,liberalism_index,Immigration Policy Liberalism
+2004,"1st Generation
+(Foreign-born)",1254,-0.17620448595958396,0.01958554188503905,-0.2145921480542605,-0.13781682386490743,liberalism_index,Immigration Policy Liberalism
+2004,"2nd Generation
+(US-born, foreign parents)",662,0.23389676266377094,0.049082785555871776,0.13769450297426225,0.3300990223532796,liberalism_index,Immigration Policy Liberalism
+2004,"3rd+ Generation
+(US-born, US-born parents)",290,0.23023211358131246,0.07403316348867486,0.08512711314350974,0.3753371140191152,liberalism_index,Immigration Policy Liberalism
+2010,"1st Generation
+(Foreign-born)",1,-0.3254854026402519,NA,NA,NA,liberalism_index,Immigration Policy Liberalism
+2010,"2nd Generation
+(US-born, foreign parents)",6,0.8063358374741166,0.7158266045835477,-0.596684307509637,2.20935598245787,liberalism_index,Immigration Policy Liberalism
+2011,"1st Generation
+(Foreign-born)",1,-0.28195631828822815,NA,NA,NA,liberalism_index,Immigration Policy Liberalism
+2011,"2nd Generation
+(US-born, foreign parents)",3,-0.28195631828822815,0,-0.28195631828822815,-0.28195631828822815,liberalism_index,Immigration Policy Liberalism
+2011,"3rd+ Generation
+(US-born, US-born parents)",3,-0.28195631828822815,0,-0.28195631828822815,-0.28195631828822815,liberalism_index,Immigration Policy Liberalism
+2012,"1st Generation
+(Foreign-born)",1,-0.8556234995275744,NA,NA,NA,liberalism_index,Immigration Policy Liberalism
+2012,"2nd Generation
+(US-born, foreign parents)",8,-0.6879990775746724,0.16762442195290206,-1.0165429446023604,-0.35945521054698437,liberalism_index,Immigration Policy Liberalism
+2021,"1st Generation
+(Foreign-born)",3071,-0.0010721331773319812,0.016155550158705397,-0.03273701148839456,0.030592745133730597,liberalism_index,Immigration Policy Liberalism
+2021,"2nd Generation
+(US-born, foreign parents)",21,-0.2333664666331329,0.2060076315630958,-0.6371414244968007,0.17040849123053484,liberalism_index,Immigration Policy Liberalism
+2021,"3rd+ Generation
+(US-born, US-born parents)",125,0.0030878020429373734,0.07731738214440224,-0.148454266960091,0.15462987104596576,liberalism_index,Immigration Policy Liberalism
+2022,"1st Generation
+(Foreign-born)",2111,0.32511249556218735,0.019893316632279407,0.2861215949629197,0.364103396161455,liberalism_index,Immigration Policy Liberalism
+2022,"2nd Generation
+(US-born, foreign parents)",4911,-0.15059079051882696,0.014343697579927223,-0.1787044377754843,-0.1224771432621696,liberalism_index,Immigration Policy Liberalism
+2022,"3rd+ Generation
+(US-born, US-born parents)",495,0.0815812234088326,0.043890108168213544,-0.004443388600865947,0.16760583541853113,liberalism_index,Immigration Policy Liberalism
+2002,"1st Generation
+(Foreign-born)",1866,-0.07936577824442029,0.022750687732093194,-0.12395712619932295,-0.03477443028951763,restrictionism_index,Immigration Policy Restrictionism
+2002,"2nd Generation
+(US-born, foreign parents)",496,0.08276726321656806,0.04481216269727899,-0.005064575670098756,0.17059910210323487,restrictionism_index,Immigration Policy Restrictionism
+2002,"3rd+ Generation
+(US-born, US-born parents)",342,-0.06940542658759645,0.0538169755591218,-0.17488669868347517,0.03607584550828227,restrictionism_index,Immigration Policy Restrictionism
+2007,"1st Generation
+(Foreign-born)",1198,-0.051351845793300634,0.028971441913261366,-0.10813587194329291,0.005432180356691643,restrictionism_index,Immigration Policy Restrictionism
+2007,"2nd Generation
+(US-born, foreign parents)",309,0.14432276714722483,0.055588608215954155,0.03536909504395469,0.253276439250495,restrictionism_index,Immigration Policy Restrictionism
+2007,"3rd+ Generation
+(US-born, US-born parents)",322,0.06197039009769803,0.055587984507363256,-0.04698205953673394,0.17092283973213002,restrictionism_index,Immigration Policy Restrictionism
+2010,"1st Generation
+(Foreign-born)",1,0.6734365847601428,NA,NA,NA,restrictionism_index,Immigration Policy Restrictionism
+2010,"2nd Generation
+(US-born, foreign parents)",6,-0.10221698773288018,0.1273962490740007,-0.3519136359179216,0.1474796604521612,restrictionism_index,Immigration Policy Restrictionism
+2011,"1st Generation
+(Foreign-born)",1,-1.0734732314932809,NA,NA,NA,restrictionism_index,Immigration Policy Restrictionism
+2011,"2nd Generation
+(US-born, foreign parents)",3,-0.3025271970156266,0.38547301723882715,-1.058054310803728,0.45299991677247464,restrictionism_index,Immigration Policy Restrictionism
+2011,"3rd+ Generation
+(US-born, US-born parents)",3,0.08294582022320053,0.6676588508045223,-1.225665527353663,1.391557167800064,restrictionism_index,Immigration Policy Restrictionism
+2012,"1st Generation
+(Foreign-born)",1,0.0567641000064031,NA,NA,NA,restrictionism_index,Immigration Policy Restrictionism
+2012,"2nd Generation
+(US-born, foreign parents)",8,0.0567641000064031,0.21616971616206207,-0.36692854367123856,0.48045674368404473,restrictionism_index,Immigration Policy Restrictionism
+2016,"2nd Generation
+(US-born, foreign parents)",5,-0.23134259134779062,0.27541670240038413,-0.7711593280525435,0.3084741453569622,restrictionism_index,Immigration Policy Restrictionism
+2021,"1st Generation
+(Foreign-born)",3056,0.016490283373692568,0.015902656815896515,-0.014678923985464599,0.04765949073284974,restrictionism_index,Immigration Policy Restrictionism
+2021,"2nd Generation
+(US-born, foreign parents)",21,-0.09623451358043549,0.2075512453725477,-0.503034954510629,0.310565927349758,restrictionism_index,Immigration Policy Restrictionism
+2021,"3rd+ Generation
+(US-born, US-born parents)",125,-0.32842047125565305,0.06104387601692286,-0.44806646824882185,-0.20877447426248424,restrictionism_index,Immigration Policy Restrictionism
+2022,"1st Generation
+(Foreign-born)",2111,0.08573846997411103,0.018168190265549295,0.05012881705363441,0.12134812289458764,restrictionism_index,Immigration Policy Restrictionism
+2022,"2nd Generation
+(US-born, foreign parents)",4935,-0.04516097047925388,0.013088087551463066,-0.07081362208012149,-0.019508318878386274,restrictionism_index,Immigration Policy Restrictionism
+2022,"3rd+ Generation
+(US-born, US-born parents)",496,0.0836334259500727,0.04218066289975556,9.593266665517963e-4,0.1663075252335936,restrictionism_index,Immigration Policy Restrictionism
+2007,"1st Generation
+(Foreign-born)",1294,-0.2643178381224118,0.025862127810509967,-0.3150076086310113,-0.21362806761381226,concern_index,Deportation Concern
+2007,"2nd Generation
+(US-born, foreign parents)",336,0.37370876245884577,0.05208036323724069,0.271631250513854,0.47578627440383753,concern_index,Deportation Concern
+2007,"3rd+ Generation
+(US-born, US-born parents)",345,0.6266774866688861,0.04814680574642445,0.5323097474058942,0.721045225931878,concern_index,Deportation Concern
+2010,"1st Generation
+(Foreign-born)",1,0.41862403234050416,NA,NA,NA,concern_index,Deportation Concern
+2010,"2nd Generation
+(US-born, foreign parents)",6,-0.0956746885114252,0.38141413954973136,-0.8432464020288987,0.6518970250060482,concern_index,Deportation Concern
+2021,"1st Generation
+(Foreign-born)",3062,0.008260156702942308,0.01802555421095909,-0.02706992955053751,0.04359024295642212,concern_index,Deportation Concern
+2021,"2nd Generation
+(US-born, foreign parents)",21,-0.4284292738145093,0.24167607825232928,-0.9021143871890747,0.04525583956005608,concern_index,Deportation Concern
+2021,"3rd+ Generation
+(US-born, US-born parents)",124,0.17868425108174796,0.08752184049830755,0.00714144370506517,0.3502270584584307,concern_index,Deportation Concern
+2002,"All Hispanic
+Respondents",4087,6.196277756716375e-17,0.01564219447851687,-0.030658701177893002,0.030658701177893127,liberalism_index,Immigration Policy Liberalism
+2004,"All Hispanic
+Respondents",2208,1.7892792722502807e-16,0.021281413268968718,-0.041711570007178504,0.041711570007178865,liberalism_index,Immigration Policy Liberalism
+2010,"All Hispanic
+Respondents",1304,-2.0276043965834435e-16,0.027692438781085564,-0.054277180010927906,0.0542771800109275,liberalism_index,Immigration Policy Liberalism
+2011,"All Hispanic
+Respondents",1194,2.204638853757325e-16,0.028939954008661634,-0.05672230985697658,0.05672230985697702,liberalism_index,Immigration Policy Liberalism
+2012,"All Hispanic
+Respondents",1724,-8.848297191618127e-17,0.0240841525429544,-0.04720493898419072,0.047204938984190536,liberalism_index,Immigration Policy Liberalism
+2018,"All Hispanic
+Respondents",1442,1.3823893486230711e-16,0.026334032657486166,-0.05161470400867275,0.051614704008673025,liberalism_index,Immigration Policy Liberalism
+2021,"All Hispanic
+Respondents",3355,-0.0014006096851893245,0.015405269345642677,-0.03159493760264897,0.02879371823227032,liberalism_index,Immigration Policy Liberalism
+2022,"All Hispanic
+Respondents",7553,-1.1409441436701265e-16,0.011506420936119475,-0.022552585034794286,0.022552585034794057,liberalism_index,Immigration Policy Liberalism
+2002,"All Hispanic
+Respondents",3906,4.53142103688852e-17,0.016000512024577314,-0.03136100356817149,0.031361003568171585,restrictionism_index,Immigration Policy Restrictionism
+2007,"All Hispanic
+Respondents",1832,1.711543328219213e-16,0.023363465675799888,-0.04579239272456761,0.045792392724567955,restrictionism_index,Immigration Policy Restrictionism
+2010,"All Hispanic
+Respondents",1367,0.004639034981687512,0.012665938700343509,-0.020186204870985765,0.02946427483436079,restrictionism_index,Immigration Policy Restrictionism
+2011,"All Hispanic
+Respondents",1199,3.4468767382545e-17,0.028879549112895392,-0.05660391626127493,0.056603916261275,restrictionism_index,Immigration Policy Restrictionism
+2012,"All Hispanic
+Respondents",1733,-2.2798650830264142e-17,0.02402153294460317,-0.04708220457142224,0.0470822045714222,restrictionism_index,Immigration Policy Restrictionism
+2016,"All Hispanic
+Respondents",1481,-3.96561769092983e-17,0.02598498501673715,-0.05093057063280485,0.05093057063280477,restrictionism_index,Immigration Policy Restrictionism
+2018,"All Hispanic
+Respondents",1469,-0.0027668841104419874,0.01860600987937248,-0.03923466347401205,0.033700895253128076,restrictionism_index,Immigration Policy Restrictionism
+2021,"All Hispanic
+Respondents",3339,3.8398027716417954e-4,0.015099758349385671,-0.029211546087631737,0.029979506641960096,restrictionism_index,Immigration Policy Restrictionism
+2022,"All Hispanic
+Respondents",7578,-2.9348402991758983e-4,0.010332761201490556,-0.020545695984839078,0.0199587279250039,restrictionism_index,Immigration Policy Restrictionism
+2007,"All Hispanic
+Respondents",1979,2.0041797652720422e-16,0.022479005982349896,-0.04405885172540559,0.044058851725405995,concern_index,Deportation Concern
+2010,"All Hispanic
+Respondents",1360,-5.122536382002101e-17,0.027116307227332024,-0.053147962165570814,0.05314796216557072,concern_index,Deportation Concern
+2018,"All Hispanic
+Respondents",1483,-9.223160932826654e-17,0.025967457200228868,-0.05089621611244867,0.05089621611244849,concern_index,Deportation Concern
+2021,"All Hispanic
+Respondents",3346,1.0861048727714682e-16,0.01728769260487695,-0.03388387750555871,0.033883877505558935,concern_index,Deportation Concern
