@@ -1,0 +1,4 @@
+index,scope,slope,p_value,significance,direction,n_years,years
+liberalism_index,Overall Population,0.0023117947843451056,0.5758714623487449,ns,INCREASING,8,"2002, 2004, 2010, 2011, 2012, 2018, 2021, 2022"
+restrictionism_index,Overall Population,0.0024135306373587457,0.16555476977459962,ns,INCREASING,9,"2002, 2007, 2010, 2011, 2012, 2016, 2018, 2021, 2022"
+concern_index,Overall Population,-0.01281407699022869,0.019053291418727365,*,DECREASING,4,"2007, 2010, 2018, 2021"

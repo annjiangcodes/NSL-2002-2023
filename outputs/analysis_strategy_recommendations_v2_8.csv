@@ -1,0 +1,4 @@
+scenario,strategy,expected_sample,pros,cons
+Conservative Approach,"Use complete cases only for core variables (liberalism, restrictionism, generation)",16327 observations,"Most conservative, no bias from imputation","Reduced sample size, potential selection bias"
+Moderate Approach,"Multiple imputation for variables with <30% missing, complete cases for generation",26247 observations (estimated),Good balance of sample size and data quality,Some uncertainty from imputation
+Comprehensive Approach,"Multiple imputation for all variables with <50% missing, careful sensitivity analysis",31872 observations (estimated),"Maximum sample size, most power for analysis","Higher uncertainty, more complex analysis"
