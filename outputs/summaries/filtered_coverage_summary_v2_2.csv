@@ -1,0 +1,7 @@
+survey_year,n_respondents,liberalism_data,restrictionism_data,concern_data,liberalism_coverage,restrictionism_coverage,concern_coverage
+2002,2791,2729,2598,0,TRUE,TRUE,FALSE
+2015,1382,0,0,0,FALSE,FALSE,FALSE
+2016,1491,0,1465,0,FALSE,TRUE,FALSE
+2018,1482,1425,1450,1465,TRUE,TRUE,TRUE
+2021,3214,3201,3187,3192,TRUE,TRUE,TRUE
+2022,2576,2541,2543,0,TRUE,TRUE,FALSE
