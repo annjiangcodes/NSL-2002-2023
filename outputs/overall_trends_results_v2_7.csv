@@ -1,0 +1,4 @@
+index,scope,slope,se,p_value,significance,direction,n_years,years
+Immigration Policy Liberalism,Overall Population,-2.082942218569376e-5,2.3338903120906753e-5,0.40650520090273057,ns,DECREASING,8,"2002, 2004, 2010, 2011, 2012, 2018, 2021, 2022"
+Immigration Policy Restrictionism,Overall Population,-3.8157820368499e-5,6.481976210455086e-5,0.5745744035113689,ns,DECREASING,9,"2002, 2007, 2010, 2011, 2012, 2016, 2018, 2021, 2022"
+Deportation Concern,Overall Population,-4.0253087530455104e-18,1.252920191453158e-17,0.7784693921020922,ns,DECREASING,4,"2007, 2010, 2018, 2021"
