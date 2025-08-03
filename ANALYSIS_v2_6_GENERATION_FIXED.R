@@ -260,6 +260,49 @@ harmonize_parent_nativity_corrected <- function(data, year) {
     } else {
       parent_nat <- rep(NA_real_, nrow(data))
     }
+  } else if (year %in% c(2008, 2009)) {
+    # 2008, 2009 use qn7 (mother) and qn8 (father) - SAME FORMAT AS 2007/2010
+    if ("qn7" %in% names(data) && "qn8" %in% names(data)) {
+      mother <- clean_values(data$qn7)
+      father <- clean_values(data$qn8)
+      
+      # Value labels: 1=Puerto Rico, 2=U.S., 3=Another country
+      parent_nat <- case_when(
+        (mother == 3 & father == 3) ~ 3,  # Both foreign born
+        (mother == 3 | father == 3) ~ 2,  # One foreign born
+        (mother %in% c(1,2) & father %in% c(1,2)) ~ 1,  # Both US/PR born
+        TRUE ~ NA_real_
+      )
+    } else {
+      parent_nat <- rep(NA_real_, nrow(data))
+    }
+  } else if (year %in% c(2015, 2018)) {
+    # 2015, 2018 likely use similar qn7/qn8 pattern - test both cases
+    if ("qn7" %in% names(data) && "qn8" %in% names(data)) {
+      mother <- clean_values(data$qn7)
+      father <- clean_values(data$qn8)
+      
+      # Try same coding as other NSL years
+      parent_nat <- case_when(
+        (mother == 3 & father == 3) ~ 3,  # Both foreign born
+        (mother == 3 | father == 3) ~ 2,  # One foreign born
+        (mother %in% c(1,2) & father %in% c(1,2)) ~ 1,  # Both US/PR born
+        TRUE ~ NA_real_
+      )
+    } else if ("Q7" %in% names(data) && "Q8" %in% names(data)) {
+      # Try uppercase Q7/Q8 format
+      mother <- clean_values(data$Q7)
+      father <- clean_values(data$Q8)
+      
+      parent_nat <- case_when(
+        (mother == 3 & father == 3) ~ 3,  # Both foreign born
+        (mother == 3 | father == 3) ~ 2,  # One foreign born
+        (mother %in% c(1,2) & father %in% c(1,2)) ~ 1,  # Both US/PR born
+        TRUE ~ NA_real_
+      )
+    } else {
+      parent_nat <- rep(NA_real_, nrow(data))
+    }
   } else if (year %in% c(2021, 2022, 2023)) {
     # ATP surveys have individual mother/father variables
     mother_vars <- c("MOTHERNAT_W86", "MOTHERNAT_W113", "MOTHERNAT_W138")
