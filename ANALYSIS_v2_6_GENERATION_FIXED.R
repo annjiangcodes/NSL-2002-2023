@@ -80,8 +80,17 @@ harmonize_place_birth_corrected <- function(data, year) {
       place_birth <- rep(NA_real_, nrow(data))
     }
   } else if (year %in% c(2008, 2009)) {
-    # Years that may not have good birth data
-    place_birth <- rep(NA_real_, nrow(data))
+    # 2008, 2009 use qn5 for place of birth
+    if ("qn5" %in% names(data)) {
+      place_birth <- clean_values(data$qn5)
+      place_birth <- case_when(
+        place_birth %in% c(1, 2) ~ 1,  # US or PR -> US born
+        place_birth == 3 ~ 2,  # Another country -> Foreign born
+        TRUE ~ NA_real_
+      )
+    } else {
+      place_birth <- rep(NA_real_, nrow(data))
+    }
   } else if (year == 2010) {
     # FIXED: 2010 should use qn3 (simple coding), NOT qn5 (country codes)
     if ("qn3" %in% names(data)) {
@@ -95,8 +104,20 @@ harmonize_place_birth_corrected <- function(data, year) {
     } else {
       place_birth <- rep(NA_real_, nrow(data))
     }
-  } else if (year %in% c(2011, 2012)) {
-    # Similar coding as 2010
+  } else if (year == 2011) {
+    # 2011 uses qn4 for place of birth
+    if ("qn4" %in% names(data)) {
+      place_birth <- clean_values(data$qn4)
+      place_birth <- case_when(
+        place_birth %in% c(1, 2) ~ 1,  # US or PR -> US born
+        place_birth == 3 ~ 2,  # Another country -> Foreign born
+        TRUE ~ NA_real_
+      )
+    } else {
+      place_birth <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2012) {
+    # 2012 uses qn3 for place of birth
     if ("qn3" %in% names(data)) {
       place_birth <- clean_values(data$qn3)
       place_birth <- case_when(
@@ -109,8 +130,8 @@ harmonize_place_birth_corrected <- function(data, year) {
       place_birth <- rep(NA_real_, nrow(data))
     }
   } else if (year %in% c(2015, 2016)) {
-    # Check for various possible birth variables
-    birth_vars <- c("qn3", "birthplace", "qn5", "qns8", "Q5")
+    # Check for various possible birth variables (nativity1 prioritized for 2015)
+    birth_vars <- c("nativity1", "nativity", "qn3", "birthplace", "qn5", "qns8", "Q5")
     place_birth <- rep(NA_real_, nrow(data))
     
     for (var in birth_vars) {
@@ -120,6 +141,13 @@ harmonize_place_birth_corrected <- function(data, year) {
           # Simple binary coding
           place_birth <- case_when(
             place_birth == 1 ~ 1,  # US born
+            place_birth == 2 ~ 2,  # Foreign born
+            TRUE ~ NA_real_
+          )
+        } else if (var %in% c("nativity", "nativity1")) {
+          # 2015 nativity coding: 1=US born, 2=foreign born
+          place_birth <- case_when(
+            place_birth == 1 ~ 1,  # US born (including PR for nativity1)
             place_birth == 2 ~ 2,  # Foreign born
             TRUE ~ NA_real_
           )
@@ -135,7 +163,15 @@ harmonize_place_birth_corrected <- function(data, year) {
       }
     }
   } else if (year == 2018) {
-    if ("birthplace" %in% names(data)) {
+    # 2018 uses qn4 for place of birth
+    if ("qn4" %in% names(data)) {
+      place_birth <- clean_values(data$qn4)
+      place_birth <- case_when(
+        place_birth %in% c(1, 2) ~ 1,  # US or PR -> US born
+        place_birth == 3 ~ 2,  # Another country -> Foreign born
+        TRUE ~ NA_real_
+      )
+    } else if ("birthplace" %in% names(data)) {
       place_birth <- clean_values(data$birthplace)
       place_birth <- case_when(
         place_birth == 1 ~ 1,  # US born
@@ -146,8 +182,16 @@ harmonize_place_birth_corrected <- function(data, year) {
       place_birth <- rep(NA_real_, nrow(data))
     }
   } else if (year %in% c(2021, 2022, 2023)) {
+    # ATP surveys use F_BIRTHPLACE or F_BIRTHPLACE_EXPANDED
+    birth_var <- NULL
     if ("F_BIRTHPLACE_EXPANDED" %in% names(data)) {
-      place_birth <- clean_values(data$F_BIRTHPLACE_EXPANDED)
+      birth_var <- "F_BIRTHPLACE_EXPANDED"
+    } else if ("F_BIRTHPLACE" %in% names(data)) {
+      birth_var <- "F_BIRTHPLACE"
+    }
+    
+    if (!is.null(birth_var)) {
+      place_birth <- clean_values(data[[birth_var]])
       place_birth <- case_when(
         place_birth == 1 ~ 1,  # US born
         place_birth >= 2 ~ 2,  # Foreign born (various countries)
@@ -208,13 +252,13 @@ harmonize_parent_nativity_corrected <- function(data, year) {
     } else {
       parent_nat <- rep(NA_real_, nrow(data))
     }
-  } else if (year == 2010) {
-    # FIXED: 2010 uses qn7 (mother) and qn8 (father), NOT qn58
+  } else if (year %in% c(2008, 2009, 2010)) {
+    # 2008, 2009, 2010 all use qn7 (mother) and qn8 (father)
     if ("qn7" %in% names(data) && "qn8" %in% names(data)) {
       mother <- clean_values(data$qn7)
       father <- clean_values(data$qn8)
       
-      # Similar coding as 2007
+      # Value labels: 1=Puerto Rico, 2=U.S., 3=Another country
       parent_nat <- case_when(
         (mother == 3 & father == 3) ~ 3,  # Both foreign born
         (mother == 3 | father == 3) ~ 2,  # One foreign born
@@ -225,19 +269,12 @@ harmonize_parent_nativity_corrected <- function(data, year) {
       parent_nat <- rep(NA_real_, nrow(data))
     }
   } else if (year == 2011) {
-    # Use whatever parent variable is actually available
-    if ("qn64" %in% names(data)) {
-      parent_nat <- clean_values(data$qn64)
-      parent_nat <- case_when(
-        parent_nat == 1 ~ 3,  # Both foreign born
-        parent_nat == 2 ~ 2,  # One foreign born
-        parent_nat == 3 ~ 1,  # Both US born
-        TRUE ~ NA_real_
-      )
-    } else if ("qn7" %in% names(data) && "qn8" %in% names(data)) {
-      # Fallback to individual parent variables
+    # 2011 uses qn7 (mother) and qn8 (father) - no combined parent variable exists
+    if ("qn7" %in% names(data) && "qn8" %in% names(data)) {
       mother <- clean_values(data$qn7)
       father <- clean_values(data$qn8)
+      
+      # Value labels: 1=Puerto Rico, 2=U.S., 3=Another country
       parent_nat <- case_when(
         (mother == 3 & father == 3) ~ 3,  # Both foreign born
         (mother == 3 | father == 3) ~ 2,  # One foreign born
@@ -255,6 +292,38 @@ harmonize_parent_nativity_corrected <- function(data, year) {
         parent_nat == 1 ~ 3,  # Both foreign born
         parent_nat == 2 ~ 2,  # One foreign born
         parent_nat == 3 ~ 1,  # Both US born
+        TRUE ~ NA_real_
+      )
+    } else {
+      parent_nat <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2015) {
+    # 2015 uses q7 (mother) and q8 (father) like other NSL years
+    if ("q7" %in% names(data) && "q8" %in% names(data)) {
+      mother <- clean_values(data$q7)
+      father <- clean_values(data$q8)
+      
+      # Value labels: 1=Puerto Rico, 2=U.S., 3=Another country
+      parent_nat <- case_when(
+        (mother == 3 & father == 3) ~ 3,  # Both foreign born
+        (mother == 3 | father == 3) ~ 2,  # One foreign born
+        (mother %in% c(1,2) & father %in% c(1,2)) ~ 1,  # Both US/PR born
+        TRUE ~ NA_real_
+      )
+    } else {
+      parent_nat <- rep(NA_real_, nrow(data))
+    }
+  } else if (year == 2018) {
+    # 2018 uses qn7 (mother) and qn8 (father)
+    if ("qn7" %in% names(data) && "qn8" %in% names(data)) {
+      mother <- clean_values(data$qn7)
+      father <- clean_values(data$qn8)
+      
+      # Value labels: 1=Puerto Rico, 2=U.S., 3=Another country
+      parent_nat <- case_when(
+        (mother == 3 & father == 3) ~ 3,  # Both foreign born
+        (mother == 3 | father == 3) ~ 2,  # One foreign born
+        (mother %in% c(1,2) & father %in% c(1,2)) ~ 1,  # Both US/PR born
         TRUE ~ NA_real_
       )
     } else {

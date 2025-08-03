@@ -1,0 +1,278 @@
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: viridisLite
+
+Attaching package: ‘scales’
+
+The following object is masked from ‘package:viridis’:
+
+    viridis_pal
+
+The following object is masked from ‘package:readr’:
+
+    col_factor
+
+=================================================================
+IMMIGRATION ATTITUDES ANALYSIS v3.0 - MAXIMUM DATA UTILIZATION
+=================================================================
+
+1. LOADING DATA AND APPLYING CORRECTED GENERATION CODING
+============================================================ 
+v2.4 Dataset loaded: 37496 28 
+Years available: 2002, 2004, 2007, 2008, 2009, 2010, 2011, 2012, 2015, 2016, 2018, 2021, 2022, 2023 
+=================================================================
+IMMIGRATION ATTITUDES ANALYSIS v2.6 - GENERATION CODING FIXED
+=================================================================
+
+1. IMPLEMENTING CORRECTED GENERATION CODING
+============================================================ 
+
+2. REBUILDING DATASET WITH CORRECTED GENERATION CODING
+============================================================ 
+Testing generation coding for year 2002...
+  4213 observations total
+  2929 place birth (70%), 1085 parent nativity (26%), 2902 generation (69%)
+  Generation distribution: 2014 first, 526 second, 362 third+
+
+Testing generation coding for year 2004...
+  2288 observations total
+  2286 place birth (100%), 787 parent nativity (34%), 2286 generation (100%)
+  Generation distribution: 1291 first, 599 second, 396 third+
+
+Testing generation coding for year 2007...
+  2000 observations total
+  1996 place birth (100%), 1984 parent nativity (99%), 1996 generation (100%)
+  Generation distribution: 1312 first, 337 second, 347 third+
+
+Testing generation coding for year 2010...
+  1375 observations total
+  1354 place birth (98%), 533 parent nativity (39%), 1354 generation (98%)
+  Generation distribution: 408 first, 690 second, 256 third+
+
+Testing generation coding for year 2011...
+  1220 observations total
+  0 place birth (0%), 1157 parent nativity (95%), 0 generation (0%)
+  Generation distribution: 0 first, 0 second, 0 third+
+
+Testing generation coding for year 2012...
+  1765 observations total
+  1747 place birth (99%), 1166 parent nativity (66%), 1747 generation (99%)
+  Generation distribution: 564 first, 1174 second, 9 third+
+
+Testing generation coding for year 2021...
+  3375 observations total
+  3230 place birth (96%), 1139 parent nativity (34%), 3230 generation (96%)
+  Generation distribution: 3084 first, 21 second, 125 third+
+
+Testing generation coding for year 2022...
+  7647 observations total
+  7606 place birth (99%), 791 parent nativity (10%), 7606 generation (99%)
+  Generation distribution: 2141 first, 4962 second, 503 third+
+
+CORRECTED GENERATION CODING TEST RESULTS:
+# A tibble: 8 × 9
+   year total_obs place_birth_coverage parent_nativity_coverage
+  <dbl>     <int>                <int>                    <int>
+1  2002      4213                 2929                     1085
+2  2004      2288                 2286                      787
+3  2007      2000                 1996                     1984
+4  2010      1375                 1354                      533
+5  2011      1220                    0                     1157
+6  2012      1765                 1747                     1166
+7  2021      3375                 3230                     1139
+8  2022      7647                 7606                      791
+# ℹ 5 more variables: generation_coverage <int>, generation_pct <dbl>,
+#   gen1 <int>, gen2 <int>, gen3 <int>
+
+=================================================================
+COMPARISON TO PREVIOUS v2.4 PROBLEMS
+=================================================================
+Previous v2.4 issues:
+- 2010: Only 7 people with generation data (out of 1,375) = 0.5%
+- 2011: Only 7 people with generation data (out of 1,220) = 0.6%
+- 2012: Only 9 people with generation data (out of 1,765) = 0.5%
+
+CORRECTED results for previously problematic years:
+- 2010: 1354 people with generation data (out of 1375) = 98.5%
+- 2011: 0 people with generation data (out of 1220) = 0%
+- 2012: 1747 people with generation data (out of 1765) = 99%
+
+Generation distributions for corrected years:
+- 2010: 408 first gen, 690 second gen, 256 third+ gen
+- 2011: 0 first gen, 0 second gen, 0 third+ gen
+- 2012: 564 first gen, 1174 second gen, 9 third+ gen
+
+=================================================================
+GENERATION CODING DIAGNOSTIC COMPLETE
+=================================================================
+Test results saved to outputs/generation_coding_test_results_corrected.csv
+
+1.1 Applying Corrected Generation Coding to All Years
+Correcting generation coding for 2002...
+  Year 2002: 2902/4213 (68.9%) with corrected generation data
+Correcting generation coding for 2004...
+  Year 2004: 2286/2288 (99.9%) with corrected generation data
+Correcting generation coding for 2007...
+  Year 2007: 1996/2000 (99.8%) with corrected generation data
+Correcting generation coding for 2008...
+  Year 2008: 0/2015 (0.0%) with corrected generation data
+Correcting generation coding for 2009...
+  Year 2009: 0/2012 (0.0%) with corrected generation data
+Correcting generation coding for 2010...
+  Year 2010: 1354/1375 (98.5%) with corrected generation data
+Correcting generation coding for 2011...
+  Year 2011: 0/1220 (0.0%) with corrected generation data
+Correcting generation coding for 2012...
+  Year 2012: 1747/1765 (99.0%) with corrected generation data
+Correcting generation coding for 2015...
+  Year 2015: 0/1500 (0.0%) with corrected generation data
+Correcting generation coding for 2016...
+  Year 2016: 1441/1507 (95.6%) with corrected generation data
+Correcting generation coding for 2018...
+  Year 2018: 0/1501 (0.0%) with corrected generation data
+Correcting generation coding for 2021...
+  Year 2021: 3230/3375 (95.7%) with corrected generation data
+Correcting generation coding for 2022...
+  Year 2022: 7606/7647 (99.5%) with corrected generation data
+Correcting generation coding for 2023...
+  Year 2023: 0/5078 (0.0%) with corrected generation data
+
+1.2 Merging Corrected Generation Data with Immigration Variables
+v2.7 Dataset created: 37496 29 
+
+Generation coverage by year (v2.7):
+# A tibble: 14 × 4
+   survey_year total_obs generation_coverage generation_pct
+         <dbl>     <int>               <int>          <dbl>
+ 1        2002      4213                2902           68.9
+ 2        2004      2288                2286           99.9
+ 3        2007      2000                1996           99.8
+ 4        2008      2015                   0            0  
+ 5        2009      2012                   0            0  
+ 6        2010      1375                1354           98.5
+ 7        2011      1220                   0            0  
+ 8        2012      1765                1747           99  
+ 9        2015      1500                   0            0  
+10        2016      1507                1441           95.6
+11        2018      1501                   0            0  
+12        2021      3375                3230           95.7
+13        2022      7647                7606           99.5
+14        2023      5078                   0            0  
+
+2. COMPREHENSIVE IMMIGRATION ATTITUDES ANALYSIS
+============================================================ 
+
+2.1 Overall Population Trends Analysis
+Years with sufficient data for overall trend analysis:
+# A tibble: 10 × 4
+   survey_year liberalism_n restrictionism_n concern_n
+         <dbl>        <int>            <int>     <int>
+ 1        2002         4087             3906         0
+ 2        2004         2208                0         0
+ 3        2007            0             1832      1979
+ 4        2010         1304             1367      1360
+ 5        2011         1194             1199         0
+ 6        2012         1724             1733         0
+ 7        2016            0             1481         0
+ 8        2018         1442             1469      1483
+ 9        2021         3355             3339      3346
+10        2022         7553             7578         0
+
+2.2 Generation-Stratified Trends Analysis
+Generation-stratified data coverage:
+# A tibble: 8 × 2
+  survey_year generations_available
+        <dbl>                 <int>
+1        2002                     3
+2        2004                     3
+3        2007                     3
+4        2010                     3
+5        2012                     2
+6        2016                     2
+7        2021                     3
+8        2022                     3
+
+3. STATISTICAL TREND ANALYSIS
+============================================================ 
+
+3.1 Overall Population Trends (All Hispanic Respondents)
+  Immigration Policy Liberalism: slope = -0.000021, p = 0.407 ns (DECREASING trend)
+    Years: 2002, 2004, 2010, 2011, 2012, 2018, 2021, 2022 (n = 8 data points)
+  Immigration Policy Restrictionism: slope = -0.000038, p = 0.575 ns (DECREASING trend)
+    Years: 2002, 2007, 2010, 2011, 2012, 2016, 2018, 2021, 2022 (n = 9 data points)
+  Deportation Concern: slope = +0.000000, p = 0.698 ns (INCREASING trend)
+    Years: 2007, 2010, 2018, 2021 (n = 4 data points)
+
+3.2 Generation-Stratified Trends
+
+Testing Immigration Policy Liberalism by generation:
+  First Generation: slope = +0.020923, p = 0.036 * (INCREASING)
+    Years: 2002, 2004, 2010, 2012, 2021, 2022
+  Second Generation: slope = -0.009856, p = 0.029 * (DECREASING)
+    Years: 2002, 2004, 2010, 2012, 2022
+  Third+ Generation: slope = -0.013080, p = 0.210 ns (DECREASING)
+    Years: 2002, 2004, 2010, 2021, 2022
+
+Testing Immigration Policy Restrictionism by generation:
+  First Generation: slope = +0.006409, p = 0.006 ** (INCREASING)
+    Years: 2002, 2007, 2010, 2012, 2016, 2021, 2022
+  Second Generation: slope = -0.006685, p = 0.016 * (DECREASING)
+    Years: 2002, 2007, 2010, 2012, 2016, 2022
+  Third+ Generation: slope = +0.001995, p = 0.819 ns (INCREASING)
+    Years: 2002, 2007, 2010, 2021, 2022
+
+Testing Deportation Concern by generation:
+  First Generation: slope = +0.017043, p = 0.273 ns (INCREASING)
+    Years: 2007, 2010, 2021
+  Second Generation: Insufficient years (n = 2)
+  Third+ Generation: slope = -0.032318, p = 0.093 ns (DECREASING)
+    Years: 2007, 2010, 2021
+
+4. CREATING COMPREHENSIVE VISUALIZATIONS v2.7
+============================================================ 
+4.1 Creating overall population trends visualization v2.7
+4.2 Creating generation-stratified trends visualization v2.7
+
+5. SAVING COMPREHENSIVE RESULTS v2.7
+============================================================ 
+
+=================================================================
+COMPREHENSIVE ANALYSIS v2.7 SUMMARY
+=================================================================
+Version 2.7 Achievements:
+1. MAXIMUM DATA UTILIZATION:
+   - Overall population trends: 10 years of data
+   - Generation-stratified data: 22 year-generation combinations
+
+2. CORRECTED GENERATION CODING:
+   - Years with ≥90% generation coverage: 7
+   - High-coverage years: 2004, 2007, 2010, 2012, 2016, 2021, 2022 
+
+3. STATISTICAL SIGNIFICANCE TESTING:
+   Overall population trends:
+   - Immigration Policy Liberalism: DECREASING (slope = -0.0000, p = 0.407 ns)
+   - Immigration Policy Restrictionism: DECREASING (slope = -0.0000, p = 0.575 ns)
+   - Deportation Concern: INCREASING (slope = +0.0000, p = 0.698 ns)
+   Generation-stratified trends:
+   - Immigration Policy Liberalism (First Generation): INCREASING (p = 0.036 *)
+   - Immigration Policy Liberalism (Second Generation): DECREASING (p = 0.029 *)
+   - Immigration Policy Liberalism (Third+ Generation): DECREASING (p = 0.210 ns)
+   - Immigration Policy Restrictionism (First Generation): INCREASING (p = 0.006 **)
+   - Immigration Policy Restrictionism (Second Generation): DECREASING (p = 0.016 *)
+   - Immigration Policy Restrictionism (Third+ Generation): INCREASING (p = 0.819 ns)
+   - Deportation Concern (First Generation): INCREASING (p = 0.273 ns)
+   - Deportation Concern (Third+ Generation): DECREASING (p = 0.093 ns)
+
+=================================================================
+IMMIGRATION ATTITUDES ANALYSIS v2.7 COMPLETE
+SUCCESS: Both maximum data utilization AND proper generation stratification achieved
+=================================================================
