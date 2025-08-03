@@ -1,17 +1,18 @@
-# 📊 Longitudinal Hispanic/Latino Survey Data Harmonization Project
+# 📊 National Survey of Latinos (NSL) Harmonization and Analysis Project
 
-A comprehensive project for harmonizing and analyzing longitudinal survey data from the Hispanic/Latino community spanning 2002-2012, with a focus on demographic variables, political attitudes, and immigration-related opinions.
+A comprehensive project created in July 2025 for harmonizing and analyzing longitudinal survey data from the National Survey of Latinos spanning 2002-2023, with a focus on immigration attitudes, generational differences, and demographic trends within the Hispanic/Latino community.
 
 ## 🎯 Project Overview
 
-This project extends harmonization of Hispanic/Latino survey data from the original 2002-2006 coverage to include **2007-2012**, creating a comprehensive 11-year longitudinal dataset (18,888 observations) suitable for studying political attitudes, immigration experiences, and demographic changes within Latino communities.
+This project harmonizes 22 years of National Survey of Latinos data (2002-2023), creating a comprehensive longitudinal dataset (37,496+ observations) suitable for studying immigration attitudes, political opinions, generational assimilation patterns, and demographic changes within Latino communities over two decades.
 
 ### Key Achievements
-- ✅ **Extended temporal coverage**: 2002-2006 → 2002-2012 (11 years total)
-- ✅ **Comprehensive demographic harmonization**: Age (83.4%), Gender (44.0%), Ethnicity (93.3%), Language (64.7%), Race (23.0%)
-- ✅ **Advanced variable identification**: Sophisticated pattern matching across evolving survey designs
-- ✅ **Robust data validation**: Year-by-year coverage analysis and quality assurance
-- ✅ **Research-ready outputs**: Analysis-ready longitudinal dataset with full documentation
+- ✅ **Complete temporal coverage**: Full harmonization of 2002-2023 NSL data (22 years)
+- ✅ **Comprehensive immigration attitudes**: Multiple indices including liberalism, restrictionism, and concern measures
+- ✅ **Generation variable derivation**: Sophisticated generation coding from nativity and parent birthplace data
+- ✅ **Survey weight integration**: Properly weighted analyses for nationally representative estimates
+- ✅ **Advanced statistical analysis**: Multilevel modeling, trend analysis, and generational comparisons
+- ✅ **Research-ready outputs**: Multiple versions of analysis-ready datasets with full documentation
 
 ---
 
@@ -20,7 +21,7 @@ This project extends harmonization of Hispanic/Latino survey data from the origi
 ```
 📦 longitudinal-survey-harmonization/
 ├── 📂 data/                          # All data files organized by processing stage
-│   ├── 📂 raw/                       # Original survey files (.sav format)
+│   ├── 📂 raw/                       # Original survey files (.sav, .dta, .txt formats)
 │   │   ├── 2002 RAE008b FINAL DATA FOR RELEASE.sav
 │   │   ├── 2004 Political Survey Rev 1-6-05.sav
 │   │   ├── f1171_050207 uploaded dataset.sav          # 2006 data
@@ -30,7 +31,13 @@ This project extends harmonization of Hispanic/Latino survey data from the origi
 │   │   ├── PHCNSL2010PublicRelease_UPDATED 3.7.22.sav
 │   │   ├── PHCNSL2011PubRelease_UPDATED 3.7.22.sav
 │   │   ├── PHCNSL2012PublicRelease_UPDATED 3.7.22.sav
-│   │   └── [Additional survey files...]
+│   │   ├── NSL2014_FOR RELEASE.sav
+│   │   ├── NSL2015_FOR RELEASE.sav
+│   │   ├── NSL 2016_FOR RELEASE.sav
+│   │   ├── NSL 2018_FOR RELEASE_UPDATED 3.7.22.sav
+│   │   ├── 2021 ATP W86.sav
+│   │   ├── NSL 2022 complete dataset national survey of latinos 2022.dta
+│   │   └── 2023ATP W138.sav
 │   ├── 📂 processed/                 # Intermediate processed data
 │   │   ├── 📂 cleaned_data/          # Year-by-year harmonized files
 │   │   │   ├── cleaned_2002.csv
@@ -39,7 +46,9 @@ This project extends harmonization of Hispanic/Latino survey data from the origi
 │   │   ├── 📂 cleaned_data_final/    # Final processing iterations
 │   │   └── 📂 cleaned_data_corrected/# Quality-corrected versions
 │   └── 📂 final/                     # Final research-ready datasets
-│       └── longitudinal_survey_data_fixed.csv  # 📊 MAIN DATASET (18,888 obs)
+│       ├── COMPREHENSIVE_IMMIGRATION_DATASET_v2_7.csv  # 📊 MAIN DATASET (37,496+ obs)
+│       ├── longitudinal_survey_data_2002_2023_COMPREHENSIVE.csv
+│       └── [Additional analysis-ready versions]
 ├── 📂 scripts/                       # All analysis and processing scripts
 │   ├── 00_master_script.R            # 🎯 Main workflow orchestrator
 │   ├── 📂 01_extraction/             # Variable identification & extraction
@@ -55,8 +64,12 @@ This project extends harmonization of Hispanic/Latino survey data from the origi
 │   │   ├── 04_data_harmonization_ENHANCED.R
 │   │   ├── 05_combine_waves_fixed.R           # 🔗 Wave combination script
 │   │   └── [Additional harmonization versions...]
-│   ├── 📂 03_analysis/               # Analysis scripts (add your own here)
-│   └── 📂 utils/                     # Utility functions and helpers
+│   ├── 📂 03_analysis/               # Analysis scripts organized by version
+│   │   ├── IMMIGRATION_ATTITUDES_ANALYSIS_v3_0_SURVEY_WEIGHTED.R  # 🎯 Latest version
+│   │   └── [Previous versions for reference]
+│   ├── 📂 04_diagnostics/            # Data quality and coverage diagnostics
+│   ├── 📂 05_visualization/          # Visualization and figure generation scripts
+│   └── 📂 06_utilities/              # Utility functions and specialized analyses
 ├── 📂 docs/                          # Documentation and guides
 │   ├── 📂 codebooks/                 # Survey codebooks and methodologies
 │   │   ├── 2002 RAE008b Additional Notes to accompany released data.docx
@@ -94,11 +107,12 @@ This project extends harmonization of Hispanic/Latino survey data from the origi
 ### **1. Main Dataset Access**
 The primary research-ready dataset is located at:
 ```
-data/final/longitudinal_survey_data_fixed.csv
+data/final/COMPREHENSIVE_IMMIGRATION_DATASET_v2_7.csv
 ```
-- **18,888 observations** across 2002-2012
-- **14 harmonized variables** including demographics, political attitudes, and immigration opinions
-- **Analysis-ready format** with consistent coding across years
+- **37,496+ observations** across 2002-2023
+- **40+ harmonized variables** including demographics, immigration attitudes, generation status
+- **Survey weights included** for nationally representative analyses
+- **Analysis-ready format** with consistent coding across all 22 years
 
 ### **2. Running the Harmonization Pipeline**
 To reproduce the entire harmonization process:
@@ -132,9 +146,10 @@ print(concepts)
 ## 📊 Dataset Overview
 
 ### **Temporal Coverage**
-- **2002-2012**: 11 survey waves
-- **Total observations**: 18,888
+- **2002-2023**: 14 survey waves (missing 2003, 2005, 2013, 2017, 2019, 2020)
+- **Total observations**: 37,496+
 - **Survey population**: Hispanic/Latino adults in the United States
+- **Survey organizations**: Pew Research Center, Kaiser Family Foundation, American Trends Panel
 
 ### **Key Variables & Coverage**
 | Variable | Coverage | Description |
@@ -261,6 +276,7 @@ For questions about:
 
 ---
 
-**Last Updated**: December 2024  
-**Dataset Version**: v2.0 (2002-2012 Extended)  
-**Total Observations**: 18,888 across 11 survey years# test
+**Last Updated**: January 2025  
+**Dataset Version**: v3.0 (2002-2023 Complete)  
+**Total Observations**: 37,496+ across 14 survey years  
+**Project Created**: July 2025
