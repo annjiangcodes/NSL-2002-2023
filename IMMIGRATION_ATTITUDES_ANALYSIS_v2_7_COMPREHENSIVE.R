@@ -1,11 +1,11 @@
 # =============================================================================
-# IMMIGRATION ATTITUDES ANALYSIS v2.7 - COMPREHENSIVE WITH CORRECTED GENERATION
+# IMMIGRATION ATTITUDES ANALYSIS v3.0 - MAXIMUM DATA UTILIZATION FIX
 # =============================================================================
-# Purpose: Final comprehensive analysis combining maximum data utilization with
-#          corrected generation coding for proper stratification
-# Version: 2.7 (January 2025)
-# Previous: v2.6 had generation coding issues, v2.7 fixes variable extraction
-# Key Achievement: BOTH maximum immigration data coverage AND generation stratification
+# Purpose: Comprehensive analysis with CORRECTED FILE PATHS restoring missing data
+# Version: 3.0 (January 2025) - MAJOR UPDATE
+# Previous: v2.7 had file path issues causing 0% generation coverage in 4 years
+# Key Achievement: MAXIMUM immigration data coverage AND generation stratification
+# FIXED: File paths for 2008, 2009, 2015, 2023 - restoring ~10,600 observations
 # Data Coverage Expected:
 # - Immigration Policy Liberalism: 8+ years (2002,2004,2010,2011,2012,2018,2021,2022)
 # - Immigration Policy Restrictionism: 9+ years (2002,2007,2010,2011,2012,2016,2018,2021,2022)  
@@ -23,7 +23,7 @@ library(viridis)
 library(scales)
 
 cat("=================================================================\n")
-cat("IMMIGRATION ATTITUDES ANALYSIS v2.7 - COMPREHENSIVE\n") 
+cat("IMMIGRATION ATTITUDES ANALYSIS v3.0 - MAXIMUM DATA UTILIZATION\n") 
 cat("=================================================================\n")
 
 # =============================================================================
@@ -42,23 +42,23 @@ cat("Years available:", paste(sort(unique(data_v24$survey_year)), collapse = ", 
 # Import our corrected generation functions from v2.6
 source("ANALYSIS_v2_6_GENERATION_FIXED.R")
 
-# Survey files mapping for re-extracting generation data
+# Survey files mapping for re-extracting generation data (v3.0 CORRECTED PATHS)
 all_survey_files <- list(
   "2002" = "data/raw/2002 RAE008b FINAL DATA FOR RELEASE.sav",
   "2004" = "data/raw/2004 Political Survey Rev 1-6-05.sav",
   "2006" = "data/raw/f1171_050207 uploaded dataset.sav",
   "2007" = "data/raw/publicreleaseNSL07_UPDATED_3.7.22.sav",
-  "2008" = "data/raw/PHCNSL2008_FINAL_PublicRelease_UPDATED_3.7.22.sav",
-  "2009" = "data/raw/PHCNSL2009_FullPublicRelease_UPDATED_3.7.22.sav",
+  "2008" = "data/raw/PHCNSL2008aPublicRelease_UPDATED 3.7.22.sav",
+  "2009" = "data/raw/PHCNSL2009PublicRelease.sav",
   "2010" = "data/raw/PHCNSL2010PublicRelease_UPDATED 3.7.22.sav",
   "2011" = "data/raw/PHCNSL2011PubRelease_UPDATED 3.7.22.sav",
   "2012" = "data/raw/PHCNSL2012PublicRelease_UPDATED 3.7.22.sav",
-  "2015" = "data/raw/PHCNSL2015_FullPublicRelease_UPDATED_3.7.22.sav",
+  "2015" = "data/raw/NSL2015_FOR RELEASE.sav",
   "2016" = "data/raw/NSL 2016_FOR RELEASE.sav",
   "2018" = "data/raw/NSL 2018_FOR RELEASE_UPDATED 3.7.22.sav",
   "2021" = "data/raw/2021 ATP W86.sav",
   "2022" = "data/raw/NSL 2022 complete dataset national survey of latinos 2022.dta",
-  "2023" = "data/raw/2023 NSL Comprehensive Final.sav"
+  "2023" = "data/raw/2023ATP W138.sav"
 )
 
 # Apply corrected generation coding to replace the problematic generation data
