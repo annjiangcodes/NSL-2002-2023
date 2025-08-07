@@ -276,7 +276,7 @@ For questions about:
 
 ---
 
-**Last Updated**: January 2025  
+**Last Updated**: August 2025  
 **Dataset Version**: v3.0 (2002-2023 Complete)  
 **Total Observations**: 37,496+ across 14 survey years  
 **Project Created**: July 2025
