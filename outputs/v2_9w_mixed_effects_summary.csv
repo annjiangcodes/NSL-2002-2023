@@ -1,0 +1,37 @@
+variable,term,estimate,std_error,p_value
+liberalism_index,(Intercept),-0.062208870820519985,2.8644744899786185,NA
+liberalism_index,year_c,0.019977379692285198,0.004148034464561179,NA
+liberalism_index,generation_label2nd Generation,0.01941089588811894,4.051084187631882,NA
+liberalism_index,generation_label3rd+ Generation,0.2834197460519244,4.051517132255948,NA
+liberalism_index,year_c:generation_label2nd Generation,-0.030094384083028822,0.006922742400626135,NA
+liberalism_index,year_c:generation_label3rd+ Generation,-0.029850354196462463,0.01051061276103228,NA
+restrictionism_index,(Intercept),-0.03549123242501524,0.9269176290878584,NA
+restrictionism_index,year_c,0.006047476633299928,0.003112787020186987,NA
+restrictionism_index,generation_label2nd Generation,0.07298259660209094,1.3110298598035264,NA
+restrictionism_index,generation_label3rd+ Generation,0.08698600150290675,1.3117156122148812,NA
+restrictionism_index,year_c:generation_label2nd Generation,-0.013466774585973357,0.005293138242164056,NA
+restrictionism_index,year_c:generation_label3rd+ Generation,-0.0034899083785544854,0.007986172084773976,NA
+legalization_support,(Intercept),-0.26317239918016333,0.5386101774329065,NA
+legalization_support,year_c,-0.15244392905514142,0.016141904957663766,NA
+legalization_support,generation_label2nd Generation,0.014311419740448264,0.7765493849971573,NA
+legalization_support,generation_label3rd+ Generation,0.15042152719977725,0.8206106570503167,NA
+legalization_support,year_c:generation_label2nd Generation,-0.04637162894969892,0.027600911876796454,NA
+legalization_support,year_c:generation_label3rd+ Generation,-0.02123101734985182,0.042347253158404416,NA
+daca_support,(Intercept),0.29765163451361176,0.8934136142134513,NA
+daca_support,year_c,-0.3065451704628634,0.07851477278159252,NA
+daca_support,generation_label2nd Generation,0.8863292352230994,1.414387198068643,NA
+daca_support,generation_label3rd+ Generation,0.506181031095439,1.457510884145334,NA
+daca_support,year_c:generation_label2nd Generation,0.20354743848376855,0.2248079462162309,NA
+daca_support,year_c:generation_label3rd+ Generation,0.15412008570077607,0.22717243367555545,NA
+deportation_policy_support,(Intercept),2.398429829665175,0.4761745309355806,NA
+deportation_policy_support,year_c,0.03482060584205783,0.0034470282735486173,NA
+deportation_policy_support,generation_label2nd Generation,-0.15962764029562318,0.6733759824360268,NA
+deportation_policy_support,generation_label3rd+ Generation,-0.1911999247799755,0.673745931599714,NA
+deportation_policy_support,year_c:generation_label2nd Generation,-0.034849456259221534,0.004305368429107002,NA
+deportation_policy_support,year_c:generation_label3rd+ Generation,-0.00837314164192818,0.005870311049025521,NA
+border_security_support,(Intercept),1.7150693989727344,0.5203180718734345,NA
+border_security_support,year_c,0.03383322155440478,0.012689024867792081,NA
+border_security_support,generation_label2nd Generation,0.037262791547105045,0.7353959276988473,NA
+border_security_support,generation_label3rd+ Generation,-0.02611738371728939,0.7400167642909127,NA
+border_security_support,year_c:generation_label2nd Generation,-0.009617742753714737,0.015870382707353956,NA
+border_security_support,year_c:generation_label3rd+ Generation,0.01831526723552071,0.021683904648862835,NA

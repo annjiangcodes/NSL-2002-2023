@@ -1,0 +1,10 @@
+variable,n_obs,n_years,year_range,pct_coverage
+restrictionism_index,22486,9,2002-2022,62.7
+liberalism_index,21398,8,2002-2022,59.7
+legalization_support,17044,5,2002-2022,47.5
+border_security_support,11992,3,2010-2022,33.4
+deportation_policy_support,11944,3,2010-2022,33.3
+daca_support,7544,4,2011-2021,21
+immigration_level_opinion,5827,3,2002-2018,16.2
+border_wall_support,2673,2,2010-2018,7.5
+immigrants_strengthen,0,0,Inf--Inf,0
