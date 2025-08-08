@@ -1,0 +1,7 @@
+generation,variable,slope,p_value,n_years,significance
+1st Generation,liberalism_mean,0.017733494783122222,0.0525236862227161,8,ns
+1st Generation,restrictionism_mean,0.0037732143256890005,0.44012664839185356,9,ns
+2nd Generation,liberalism_mean,-0.005483412012295686,0.28723126273547334,7,ns
+2nd Generation,restrictionism_mean,-0.0028159053871787887,0.6022582809170225,8,ns
+3rd+ Generation,liberalism_mean,-0.010870429357336672,0.21007281270086872,7,ns
+3rd+ Generation,restrictionism_mean,-0.0039047116544394717,0.7463641468615714,7,ns

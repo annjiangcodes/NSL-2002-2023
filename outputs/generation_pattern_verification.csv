@@ -1,0 +1,4 @@
+Generation,Color,Expected_Liberalism,Expected_Volatility,Actual_Liberalism_Rank,Actual_Most_Volatile
+1st Generation,RED,Most Liberal,Stable,1,TRUE
+2nd Generation,BLUE,Middle,Volatile,2,FALSE
+3rd+ Generation,GREEN,Most Conservative,Stable,3,FALSE
