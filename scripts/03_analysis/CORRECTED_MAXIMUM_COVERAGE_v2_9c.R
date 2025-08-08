@@ -124,7 +124,8 @@ if (file.exists("outputs/v2_9w_volatility_comparison.csv")) {
           range = max(mean_value) - min(mean_value),
           mean_value = mean(mean_value, na.rm = TRUE),
           .groups = "drop"
-        )
+        ) %>%
+        rename(generation_label = generation_recovered)
       volatility_list[[length(volatility_list) + 1]] <- vol_stats
     }
   }
