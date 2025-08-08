@@ -116,15 +116,22 @@ compute_yearly_weighted_with_ci <- function(data, var_name, wcol, by_generation 
     summarise(
       W = sum(.data[[wcol]], na.rm = TRUE),
       weighted_mean = ifelse(W > 0, sum(.data[[var_name]] * .data[[wcol]], na.rm = TRUE) / W, NA_real_),
-      se = sqrt(sum(.data[[wcol]] * (.data[[var_name]] - weighted_mean)^2, na.rm = TRUE) / (W * (n() - 1))),
+      # FIXED: Proper weighted variance and SE calculation
+      weighted_var = ifelse(n() > 1 & W > 0, 
+                           sum(.data[[wcol]] * (.data[[var_name]] - weighted_mean)^2, na.rm = TRUE) / W,
+                           0),
+      se = ifelse(n() > 1 & W > 0,
+                  sqrt(weighted_var / n()),  # Simple approach avoiding division by zero
+                  0),  # For single observations, SE = 0
       n = dplyr::n(),
       .groups = "drop"
     ) %>%
     filter(!is.na(weighted_mean)) %>%
     mutate(
       variable = var_name,
-      ci_lower = weighted_mean - 1.96 * se,
-      ci_upper = weighted_mean + 1.96 * se
+      # FIXED: Handle cases where SE is 0 or very small
+      ci_lower = ifelse(se > 0, weighted_mean - 1.96 * se, weighted_mean),
+      ci_upper = ifelse(se > 0, weighted_mean + 1.96 * se, weighted_mean)
     )
 }
 

@@ -133,10 +133,10 @@ if (nrow(pooled_df) > 0) {
     geom_line(color = "#333333", linewidth = 0.8) +
     geom_point(color = "#333333", size = 1.8) +
     geom_smooth(method = "lm", se = FALSE, linetype = "dotted", color = "#1f78b4", linewidth = 0.7) +
-    geom_text_repel(
+    geom_text(
       data = trend_stats,
-      aes(x = Inf, y = -Inf, label = annotation),
-      hjust = 1.1, vjust = -0.5, size = 3, color = "gray30",
+      aes(x = 2020, y = Inf, label = annotation),
+      hjust = 1, vjust = 1.1, size = 3, color = "gray30",
       inherit.aes = FALSE
     ) +
     facet_wrap(~ variable, scales = "free_y") +
@@ -186,13 +186,12 @@ if (nrow(gen_df) > 0) {
     geom_line(linewidth = 0.8) +
     geom_point(size = 1.7) +
     geom_smooth(method = "lm", se = FALSE, linetype = "dotted", linewidth = 0.6) +
-    geom_text_repel(
+    geom_text(
       data = gen_trend_stats,
-      aes(x = Inf, y = -Inf, label = annotation),
-      hjust = 1.1, vjust = -0.7, size = 2.5,
+      aes(x = 2020, y = Inf, label = annotation),
+      hjust = 1, vjust = 1.1, size = 2.5,
       inherit.aes = FALSE,
-      direction = "y",
-      segment.color = "transparent"
+      color = "gray30"
     ) +
     scale_color_manual(values = c("1st Generation" = "#E41A1C", "2nd Generation" = "#377EB8", "3rd+ Generation" = "#4DAF4A")) +
     facet_wrap(~ variable, scales = "free_y") +
