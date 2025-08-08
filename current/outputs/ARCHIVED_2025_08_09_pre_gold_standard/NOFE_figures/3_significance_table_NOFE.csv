@@ -1,0 +1,7 @@
+variable,Overall Population,1st Generation,2nd Generation,3rd+ Generation
+liberalism_index,0.005 ns,0.020 *,-0.010 **,-0.010 NA
+restrictionism_index,0.002 *,0.006 NA,-0.007 NA,0.003 NA
+legalization_support,-0.172 **,-0.152 **,-0.199 **,-0.174 **
+daca_support,-0.298 ns,-0.307 NA,-0.103 NA,-0.152 NA
+deportation_policy_support,0.016 ns,0.035 NA,-0.000 NA,0.026 NA
+border_security_support,0.032 *,0.034 NA,0.024 *,0.052 NA
