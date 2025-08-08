@@ -1,0 +1,12 @@
+LATEST VERSION: 2025_01_15
+MIGRATION DATE: 2025-08-08
+
+This project now uses date-based naming convention.
+See VERSION_HISTORY.md for details.
+
+Latest files are symlinked in:
+- data/latest/
+- scripts/latest/
+- docs/latest/
+
+All dated versions archived in respective archive/ folders.

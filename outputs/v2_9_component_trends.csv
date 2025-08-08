@@ -1,0 +1,13 @@
+generation,variable,slope,p_value,n_years,significance
+1st Generation,legalization_support,-0.15720290383477448,0.015791151538236865,5,*
+2nd Generation,legalization_support,-0.17833215808662392,0.012848880011555272,5,*
+3rd+ Generation,legalization_support,-0.17093205218384616,0.01212496229412133,5,*
+1st Generation,daca_support,-0.2434027489758348,0.20334986160333712,4,ns
+2nd Generation,daca_support,-0.2701037252280814,0.20932440699049013,4,ns
+3rd+ Generation,daca_support,-0.2584006059584224,0.2141624045322942,4,ns
+1st Generation,deportation_policy_support,0.035070923596891325,0.026032081173023792,3,*
+2nd Generation,deportation_policy_support,0.001740263408296847,0.7192612095608233,3,ns
+3rd+ Generation,deportation_policy_support,0.023830239965749414,0.2134730531119527,3,ns
+1st Generation,border_security_support,0.0344890275935859,0.06862945652643285,3,ns
+2nd Generation,border_security_support,0.025122192587165904,0.047796325475470004,3,*
+3rd+ Generation,border_security_support,0.04138955694511682,0.4385599296408243,3,ns

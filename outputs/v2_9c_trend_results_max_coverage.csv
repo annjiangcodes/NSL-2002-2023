@@ -1,0 +1,4 @@
+generation,variable,slope,p_value,n_years,significance
+1st Generation,restrictionism_index,0.0037732143256890005,0.44012664839185356,9,ns
+2nd Generation,restrictionism_index,-0.006199581493850406,0.2538099689943776,9,ns
+3rd+ Generation,restrictionism_index,-0.003255276985985546,0.7893307000356597,8,ns

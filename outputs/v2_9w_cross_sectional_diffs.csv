@@ -1,0 +1,22 @@
+generation_label,W,mean_value,n,variable
+1st Generation,10792,-0.03169671834940786,10792,liberalism_index
+2nd Generation,8370,-0.0860738540485436,8370,liberalism_index
+3rd+ Generation,2236,0.22114905875408586,2236,liberalism_index
+1st Generation,11446,-0.02635856648330724,11446,restrictionism_index
+2nd Generation,8838,0.00700472278819135,8838,restrictionism_index
+3rd+ Generation,2202,0.051726974761334386,2202,restrictionism_index
+1st Generation,8779,-0.607700193643923,8779,legalization_support
+2nd Generation,6679,-1.4276089234915406,6679,legalization_support
+3rd+ Generation,1586,-0.04728877679697352,1586,legalization_support
+1st Generation,5059,-0.5204585886538842,5059,daca_support
+2nd Generation,1712,1.4293224299065421,1712,daca_support
+3rd+ Generation,773,0.7153945666235446,773,daca_support
+1st Generation,1069,-1.765201122544434,1069,border_wall_support
+2nd Generation,977,-1.7430910951893552,977,border_wall_support
+3rd+ Generation,627,-1.6140350877192982,627,border_wall_support
+1st Generation,5497,2.5017282153902127,5497,deportation_policy_support
+2nd Generation,5584,2.23871776504298,5584,deportation_policy_support
+3rd+ Generation,863,2.228273464658169,863,deportation_policy_support
+1st Generation,5526,1.8154180238870792,5526,border_security_support
+2nd Generation,5603,1.823308941638408,5603,border_security_support
+3rd+ Generation,863,1.73117033603708,863,border_security_support
