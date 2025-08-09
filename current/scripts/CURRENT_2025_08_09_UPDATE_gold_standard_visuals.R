@@ -277,10 +277,34 @@ survey_design <- svydesign(ids = ~1, data = df_processed, weights = as.formula(p
 
 cross_sectional_data <- bind_rows(lapply(present_measures, function(measure) {
   formula <- as.formula(paste0("~", measure))
-  result <- svyby(formula, by = ~generation_label, design = survey_design, svymean, na.rm = TRUE)
-  colnames(result) <- c("generation_label", "mean", "se")
-  result$variable <- measure
-  result
+  
+  # FIXED: Calculate mean and SE by generation with explicit vartype
+  result <- svyby(formula, by = ~generation_label, design = survey_design, svymean, 
+                  na.rm = TRUE, vartype = "se")
+  
+  # FIXED: Robust column handling - check actual structure
+  result_df <- as.data.frame(result)
+  
+  # Extract generation labels (always first column)
+  generation_labels <- result_df[, 1]
+  
+  # Find mean and SE columns (could be named se.measure or just se)
+  mean_col <- which(grepl(paste0("^", measure, "$"), names(result_df)))
+  se_col <- which(grepl(paste0("^se(\\.", measure, ")?$"), names(result_df)))
+  
+  if (length(mean_col) != 1 || length(se_col) != 1) {
+    stop("Could not identify mean and SE columns for ", measure, 
+         ". Available columns: ", paste(names(result_df), collapse = ", "))
+  }
+  
+  # Create clean output
+  data.frame(
+    generation_label = generation_labels,
+    mean = result_df[, mean_col],
+    se = result_df[, se_col],
+    variable = measure,
+    stringsAsFactors = FALSE
+  )
 })) %>%
   mutate(
     ci_lower = mean - 1.96 * se,
